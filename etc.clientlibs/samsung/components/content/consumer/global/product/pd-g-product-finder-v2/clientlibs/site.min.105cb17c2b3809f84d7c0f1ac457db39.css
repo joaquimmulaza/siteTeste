@@ -59,7 +59,7 @@
 .pd03-product-card__price-origin{overflow:hidden;max-width:98%;white-space:nowrap;margin-right:2px}
 .pd03-product-card__price-save{color:#006bea;font-weight:700}
 .pd03-product-card__price-main{margin-top:4px;font-size:18px;font-weight:700}
-.pd03-product-card__price--sepr .pd03-product-card__price-main{font-size:14px}
+.pd03-product-card__price--sepr .pd03-product-card__price-main{font-size:14px;}
 .pd03-product-card__price-main-unit{font-size:12px;font-weight:400;vertical-align:baseline}
 .pd03-product-card__price-main+.pd03-product-card__price-second{margin-top:4px}
 .pd03-product-card__price-croatia .pd03-product-card__price-second{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
@@ -199,7 +199,7 @@
 .pd03-product-card--horizontal .pd03-product-card__product-content-secondary{width:345px;border-color:#ddd;border-style:solid;padding:0 24px 0 23px;border-width:0 0 0 1px}
 .pd03-product-card--horizontal [class^='pd03-product-card__product-content-']>div[class^='pd03-product-card__']{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}
 .pd03-product-card--horizontal .pd03-product-card__option-selector .option-selector-v2{margin-top:12px}
-.pd03-product-card--horizontal .pd03-product-card__price{max-width:258px;min-height:24px}
+.pd03-product-card--horizontal .pd03-product-card__price{max-width:258px;min-height:24px; display: none;}
 .pd03-product-card--horizontal .pd03-product-card__price-main{margin-top:0}
 .pd03-product-card--horizontal .pd03-product-card__price-second+.pd03-product-card__price-main{margin-top:4px}
 .pd03-product-card--horizontal .pd03-product-card__price-second.no-data+.pd03-product-card__price-main{margin-top:0}
