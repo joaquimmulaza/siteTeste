@@ -99,7 +99,7 @@
 .curation-card .lineup-card .badge-energy-label__text{max-width:184px;word-wrap:break-word;color:#000}
 .curation-card .lineup-card .badge-repairability{display:block;padding-top:8px}
 .curation-card .lineup-card .badge-repairability__image{width:37px;height:24px}
-.curation-card .lineup-card__price{margin:12px 16px}
+.curation-card .lineup-card__price{margin:12px 16px; display: none;}
 .curation-card .lineup-card__price-current{font-size:18px;font-weight:bold}
 .curation-card .lineup-card__price-current-payment-unit{font-weight:400;vertical-align:baseline;font-size:12px}
 .curation-card .lineup-card__price-save{font-size:12px;line-height:1.33;color:#006ff2;font-weight:bold}
