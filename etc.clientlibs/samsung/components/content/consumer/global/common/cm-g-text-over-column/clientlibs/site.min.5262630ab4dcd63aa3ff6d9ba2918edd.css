@@ -1,0 +1,226 @@
+.text-over-column{margin:0 auto;overflow:hidden;max-width:1440px}
+.text-over-column.text-over-column--width-1920{max-width:1920px}
+.text-over-column__inner{font-size:0;margin:0 auto}
+.text-over-column--width-860 .text-over-column__inner{max-width:860px}
+.text-over-column--width-1206-edge .text-over-column__inner{max-width:1206px}
+.text-over-column--width-1200 .text-over-column__inner{max-width:1200px}
+.text-over-column--width-1440 .text-over-column__inner{max-width:1440px}
+.text-over-column--width-1440-edge .text-over-column__inner{max-width:1440px}
+.text-over-column--width-1920 .text-over-column__inner{max-width:1920px}
+.text-over-column__wrap{margin:0 auto}
+.text-over-column--space-normal .text-over-column__wrap{margin:0 -6px}
+.text-over-column--space-wide .text-over-column__wrap{margin:0 -12px}
+.text-over-column--width-1206-edge.text-over-column--space-normal .text-over-column__wrap,.text-over-column--width-1440-edge.text-over-column--space-normal .text-over-column__wrap{padding:0 12px}
+.text-over-column--width-1206-edge.text-over-column--space-wide .text-over-column__wrap,.text-over-column--width-1440-edge.text-over-column--space-wide .text-over-column__wrap{padding:0 24px}
+.text-over-column__wrap .swiper-wrapper{-ms-flex-wrap:wrap;flex-wrap:wrap}
+.text-over-column__item{display:inline-block;font-size:16px;vertical-align:top;opacity:1;pointer-events:none}
+.text-over-column--use-more .text-over-column__item{display:none}
+.text-over-column__item.is-item-active{display:inline-block;opacity:1 !important}
+.text-over-column__item.is-item-visible{display:inline-block;opacity:0;transition:opacity .5s;-webkit-transition:opacity .5s}
+.text-over-column--2columns .text-over-column__item{width:50%}
+.text-over-column--2columns .text-over-column__item:nth-of-type(2n+1)::before{display:none}
+.text-over-column--3columns .text-over-column__item{width:33.33333%}
+.text-over-column--3columns .text-over-column__item:nth-of-type(3n+1)::before{display:none}
+.text-over-column--4columns .text-over-column__item{width:25%}
+.text-over-column--4columns .text-over-column__item:nth-of-type(4n+1)::before{display:none}
+.text-over-column--5columns .text-over-column__item{width:20%}
+.text-over-column--5columns .text-over-column__item:nth-of-type(5n+1)::before{display:none}
+.text-over-column--space-normal .text-over-column__item{padding:0 6px}
+.text-over-column--space-wide .text-over-column__item{padding:0 12px}
+.text-over-column--desktop-line .text-over-column__item{position:relative}
+.text-over-column--desktop-line .text-over-column__item:before{display:block;position:absolute;z-index:2;top:50%;left:0;height:100%;border-right:1px solid #dadada;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-transition:height .5s ease-in-out;transition:height .5s ease-in-out;content:""}
+.text-over-column--desktop-line .text-over-column__item:first-of-type:before{display:none !important}
+.text-over-column__card{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;max-width:600px;padding-top:24px;margin:0 auto;text-align:left}
+.text-over-column__item:first-child .text-over-column__card,.text-over-column--2columns .text-over-column__item:nth-child(2) .text-over-column__card,.text-over-column--3columns .text-over-column__item:nth-child(2) .text-over-column__card,.text-over-column--3columns .text-over-column__item:nth-child(3) .text-over-column__card,.text-over-column--4columns .text-over-column__item:nth-child(2) .text-over-column__card,.text-over-column--4columns .text-over-column__item:nth-child(3) .text-over-column__card,.text-over-column--4columns .text-over-column__item:nth-child(4) .text-over-column__card,.text-over-column--5columns .text-over-column__item:nth-child(2) .text-over-column__card,.text-over-column--5columns .text-over-column__item:nth-child(3) .text-over-column__card,.text-over-column--5columns .text-over-column__item:nth-child(4) .text-over-column__card,.text-over-column--5columns .text-over-column__item:nth-child(5) .text-over-column__card{padding-top:0}
+.text-over-column__card-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;position:relative;width:100%;-webkit-mask-image:radial-gradient(#fff,#000);mask-image:radial-gradient(#fff,#000)}
+.text-over-column__card-inner:focus{outline:0}
+.text-over-column__card-inner:focus:after{content:' ';position:absolute;top:2px;bottom:2px;left:2px;right:2px;-webkit-box-shadow:0 0 0 2px #fff;box-shadow:0 0 0 2px #fff;outline:2px dotted black;pointer-events:none;z-index:2}
+.text-over-column__card-inner .cta{position:absolute;left:24px;bottom:24px;color:#000}
+.text-over-column--card-bg-black .text-over-column__card-inner .cta,.text-over-column--card-bg-gray06 .text-over-column__card-inner .cta,.text-over-column--card-bg-gray07 .text-over-column__card-inner .cta,.text-over-column--card-bg-gray08 .text-over-column__card-inner .cta,.text-over-column--card-bg-gray09 .text-over-column__card-inner .cta,.text-over-column--card-bg-gray10 .text-over-column__card-inner .cta,.text-over-column--card-bg-teal .text-over-column__card-inner .cta,.text-over-column--card-bg-skyblue .text-over-column__card-inner .cta,.text-over-column--card-bg-skyblue-dark .text-over-column__card-inner .cta{color:#fff}
+.text-over-column--card-bg-black .text-over-column__card-inner .cta .icon,.text-over-column--card-bg-gray06 .text-over-column__card-inner .cta .icon,.text-over-column--card-bg-gray07 .text-over-column__card-inner .cta .icon,.text-over-column--card-bg-gray08 .text-over-column__card-inner .cta .icon,.text-over-column--card-bg-gray09 .text-over-column__card-inner .cta .icon,.text-over-column--card-bg-gray10 .text-over-column__card-inner .cta .icon,.text-over-column--card-bg-teal .text-over-column__card-inner .cta .icon,.text-over-column--card-bg-skyblue .text-over-column__card-inner .cta .icon,.text-over-column--card-bg-skyblue-dark .text-over-column__card-inner .cta .icon{fill:#fff}
+.text-over-column--card-bg-white .text-over-column__card-inner{background:#fff}
+.text-over-column--card-bg-light-gray .text-over-column__card-inner{background:#f7f7f7}
+.text-over-column--card-bg-black .text-over-column__card-inner{background:#000}
+.text-over-column--card-bg-gray02 .text-over-column__card-inner{background:#eee}
+.text-over-column--card-bg-gray03 .text-over-column__card-inner{background:#ddd}
+.text-over-column--card-bg-gray04 .text-over-column__card-inner{background:#bbb}
+.text-over-column--card-bg-gray05 .text-over-column__card-inner{background:#aaa}
+.text-over-column--card-bg-gray06 .text-over-column__card-inner{background:#8f8f8f}
+.text-over-column--card-bg-gray07 .text-over-column__card-inner{background:#757575}
+.text-over-column--card-bg-gray08 .text-over-column__card-inner{background:#555}
+.text-over-column--card-bg-gray09 .text-over-column__card-inner{background:#313131}
+.text-over-column--card-bg-gray10 .text-over-column__card-inner{background:#1c1c1c}
+.text-over-column--card-bg-neutral-pink .text-over-column__card-inner{background:#f6f0f5}
+.text-over-column--card-bg-neutral-blue .text-over-column__card-inner{background:#f5f7fe}
+.text-over-column--card-bg-neutral-orange .text-over-column__card-inner{background:#fef6f3}
+.text-over-column--card-bg-neutral-beige .text-over-column__card-inner{background:#f7f5f2}
+.text-over-column--card-bg-skyblue .text-over-column__card-inner{background:#2189ff}
+.text-over-column--card-bg-skyblue-dark .text-over-column__card-inner{background:#006ff2}
+.text-over-column--card-bg-coral .text-over-column__card-inner{background:#ef3434}
+.text-over-column--card-bg-orange .text-over-column__card-inner{background:#f66700}
+.text-over-column--card-bg-sea-blue .text-over-column__card-inner{background:#00b3e3}
+.text-over-column--card-bg-teal .text-over-column__card-inner{background:#00838f}
+.text-over-column--card-bg-yellow .text-over-column__card-inner{background:#f4e5d0}
+.text-over-column--card-bg-red .text-over-column__card-inner{background:#f3e3e2}
+.text-over-column--card-bg-toreabay .text-over-column__card-inner{background:#d9ddf0}
+.text-over-column--card-bg-green .text-over-column__card-inner{background:#dfead4}
+.text-over-column--card-bg-blue .text-over-column__card-inner{background:#d2e3f2}
+.text-over-column--type-fold .text-over-column__card-inner::before{position:absolute;top:0;left:0;bottom:0;right:0;opacity:0;-webkit-box-shadow:0 1.125em 2.25em 0 rgba(0,0,0,0.2);box-shadow:0 1.125em 2.25em 0 rgba(0,0,0,0.1);-webkit-transition:opacity .2s ease-in-out;transition:opacity .2s ease-in-out;content:'';z-index:0}
+.text-over-column--type-fold .text-over-column__card-inner:hover:before,.text-over-column--type-fold .text-over-column__card-inner:active:before,.text-over-column--type-fold .text-over-column__card-inner:focus:before{opacity:1}
+.text-over-column__figure{position:relative;height:0;padding-bottom:43.243%;z-index:1}
+.text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__figure,.text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__figure,.text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__figure{display:none}
+.text-over-column__figure .image{position:relative;padding-bottom:43.243%}
+.text-over-column__figure .image img{display:block;position:absolute;left:-50%;right:-50%;top:0;bottom:0;width:auto !important;min-width:100%;height:100% !important;margin:auto}
+.text-over-column__content{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;z-index:1;overflow:hidden;position:relative;width:100%;padding:17px 24px 24px;-webkit-box-sizing:border-box;box-sizing:border-box;color:#000}
+.text-over-column--card-bg-black .text-over-column__content,.text-over-column--card-bg-gray06 .text-over-column__content,.text-over-column--card-bg-gray07 .text-over-column__content,.text-over-column--card-bg-gray08 .text-over-column__content,.text-over-column--card-bg-gray09 .text-over-column__content,.text-over-column--card-bg-gray10 .text-over-column__content,.text-over-column--card-bg-teal .text-over-column__content,.text-over-column--card-bg-skyblue .text-over-column__content,.text-over-column--card-bg-skyblue-dark .text-over-column__content{color:#fff}
+a.text-over-column__card-inner .text-over-column__content{padding-bottom:68px}
+a:hover.text-over-column__card-inner .text-over-column__content,a:focus.text-over-column__card-inner .text-over-column__content,a:active.text-over-column__card-inner .text-over-column__content{padding-bottom:0}
+.text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content{padding-top:32px;padding-bottom:0}
+.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content{padding-top:12px}
+.text-over-column__headline{word-wrap:break-word;line-height:1.33;font-family:'SamsungSharpSans',arial,sans-serif}
+.text-over-column--headline-left .text-over-column__headline{text-align:left}
+.text-over-column--headline-center .text-over-column__headline{text-align:center}
+.text-over-column--headline-right .text-over-column__headline{text-align:right}
+.text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__headline,.text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__headline,.text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__headline{text-align:left}
+.text-over-column__description{margin-top:18px;font-size:18px;line-height:1.33;word-wrap:break-word}
+.text-over-column__description>ul{margin-left:20.23px}
+.text-over-column__description>ul>li{list-style-type:disc}
+.text-over-column--description-left .text-over-column__description{text-align:left}
+.text-over-column--description-center .text-over-column__description{text-align:center}
+.text-over-column--description-right .text-over-column__description{text-align:right}
+.text-over-column--type-fold .text-over-column__description{display:-webkit-box;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:calc(2.66em);line-height:1.33}
+@media screen and (-webkit-min-device-pixel-ratio:0){.text-over-column--type-fold .text-over-column__description{max-height:none}
+}
+.text-over-column--5columns.text-over-column--width-1200 .text-over-column__description,.text-over-column--5columns.text-over-column--width-860 .text-over-column__description{margin-top:10px}
+.text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description{-webkit-line-clamp:7;max-height:9.3em;text-align:left}
+.text-over-column--5columns.text-over-column--width-1440-edge .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--5columns.text-over-column--width-1440-edge .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--5columns.text-over-column--width-1440-edge .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description{margin-top:10px}
+.text-over-column__cta-wrap{text-align:center}
+.text-over-column__cta-wrap a.cta{position:relative;margin-top:80px}
+.text-over-column__cta-wrap a.cta:focus{outline:0}
+.text-over-column__cta-wrap a.cta:focus:before{content:' ';position:absolute;top:2px;bottom:2px;left:2px;right:2px;-webkit-box-shadow:0 0 0 2px #fff;box-shadow:0 0 0 2px #fff;outline:2px dotted black;pointer-events:none}
+.text-over-column--margin-top-normal{margin-top:88px}
+.text-over-column--margin-bottom-normal{margin-bottom:88px}
+.text-over-column--bg-light-gray{background-color:#f5f5f5}
+.text-over-column--bg-dark-gray{background-color:#3e4148}
+.text-over-column--bg-black{background-color:#000}
+.text-over-column--padding-top-normal{padding-top:48px}
+.text-over-column--padding-bottom-normal{padding-bottom:48px}
+.text-over-column--padding-top-wide{padding-top:96px}
+.text-over-column--padding-bottom-wide{padding-bottom:96px}
+.text-over-column--align-center{text-align:center}
+.text-over-column--align-center .swiper-wrapper{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.text-over-column.text-over-column--use-column-radius .text-over-column__card-inner{border-radius:20px}
+.text-over-column.text-over-column--use-column-radius .text-over-column__card-inner .text-over-column__figure{border-radius:20px 20px 0 0}
+.text-over-column.text-over-column--use-column-radius .text-over-column__card-inner:before{border-radius:20px}
+.text-over-column .indicator{display:none}
+@media screen and (max-width:1440px){.text-over-column--width-860 .text-over-column__inner{max-width:59.72222222vw}
+.text-over-column--width-1206-edge .text-over-column__inner{max-width:83.75vw}
+.text-over-column--width-1200 .text-over-column__inner{max-width:83.33333333vw}
+.text-over-column--space-normal .text-over-column__wrap{margin:0vw -0.41666667vw}
+.text-over-column--space-wide .text-over-column__wrap{margin:0vw -0.83333333vw}
+.text-over-column--width-1206-edge.text-over-column--space-normal .text-over-column__wrap,.text-over-column--width-1440-edge.text-over-column--space-normal .text-over-column__wrap{padding:0vw .83333333vw}
+.text-over-column--width-1206-edge.text-over-column--space-wide .text-over-column__wrap,.text-over-column--width-1440-edge.text-over-column--space-wide .text-over-column__wrap{padding:0vw 1.66666667vw}
+.text-over-column__item{font-size:1.11111111vw}
+.text-over-column--space-normal .text-over-column__item{padding:0vw .41666667vw}
+.text-over-column--space-wide .text-over-column__item{padding:0vw .83333333vw}
+.text-over-column__card{padding-top:1.66666667vw}
+.text-over-column__card-inner .cta{left:1.66666667vw;bottom:2.08333333vw}
+.text-over-column__content{padding:1.18055556vw 1.66666667vw 1.66666667vw 1.66666667vw}
+a.text-over-column__card-inner .text-over-column__content{padding-bottom:4.72222222vw}
+.text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content{padding-top:2.22222222vw}
+.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content{padding-top:.83333333vw}
+.text-over-column__content::after{left:1.04166667vw;bottom:2.08333333vw;width:3.33333333vw;height:3.33333333vw}
+.text-over-column__description{margin-top:1.25vw;font-size:1.25vw}
+.text-over-column__description>ul{margin-left:1.59722222vw}
+.text-over-column--5columns.text-over-column--width-1200 .text-over-column__description,.text-over-column--5columns.text-over-column--width-860 .text-over-column__description{margin-top:.69444444vw}
+.text-over-column--5columns.text-over-column--width-1440-edge .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--5columns.text-over-column--width-1440-edge .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--5columns.text-over-column--width-1440-edge .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description{margin-top:.69444444vw}
+.text-over-column__cta-wrap .cta{margin-top:5.55555556vw}
+.text-over-column--margin-top-normal{margin-top:6.11111111vw}
+.text-over-column--margin-bottom-normal{margin-bottom:6.11111111vw}
+.text-over-column--padding-top-normal{padding-top:3.33333333vw}
+.text-over-column--padding-bottom-normal{padding-bottom:3.33333333vw}
+.text-over-column--padding-top-wide{padding-top:6.66666667vw}
+.text-over-column--padding-bottom-wide{padding-bottom:6.66666667vw}
+.text-over-column.text-over-column--round-edge .text-over-column__card-inner{border-radius:1.38888889vw}
+.text-over-column.text-over-column--round-edge .text-over-column__card-inner .text-over-column__figure{border-radius:1.38888889vw 1.38888889vw 0vw 0vw}
+.text-over-column.text-over-column--round-edge .text-over-column__card-inner:before{border-radius:1.38888889vw}
+}
+@media only screen and (max-width:767px){.text-over-column{overflow:hidden}
+.text-over-column--bg-dark-gray .dot-indicator .indicator-wrap,.text-over-column--bg-black .dot-indicator .indicator-wrap{background-color:rgba(0,0,0,0.7)}
+.text-over-column--bg-dark-gray .indicator__controls svg,.text-over-column--bg-black .indicator__controls svg{fill:#fff}
+.text-over-column--bg-dark-gray .indicator__item--active .indicator__dot-inner,.text-over-column--bg-black .indicator__item--active .indicator__dot-inner{background-color:#fff}
+.text-over-column--width-1206-edge .text-over-column__inner{padding:0vw 4.44444444vw}
+.text-over-column--width-1440-edge .text-over-column__inner{padding:0vw 5.55555556vw}
+.text-over-column--space-normal .text-over-column__wrap{margin:0}
+.text-over-column--space-wide .text-over-column__wrap{margin:0}
+.text-over-column--space-mobile-narrow .text-over-column__wrap{margin:0vw -1.11111111vw}
+.text-over-column--space-mobile-normal .text-over-column__wrap{margin:0vw -1.38888889vw}
+.text-over-column--space-mobile-wide .text-over-column__wrap{margin:0vw -2.22222222vw}
+.text-over-column--width-1206-edge.text-over-column--space-normal .text-over-column__wrap,.text-over-column--width-1440-edge.text-over-column--space-normal .text-over-column__wrap{padding:0}
+.text-over-column--width-1206-edge.text-over-column--space-wide .text-over-column__wrap,.text-over-column--width-1440-edge.text-over-column--space-wide .text-over-column__wrap{padding:0}
+.text-over-column--space-mobile-desktop-columns-space.text-over-column--space-normal .text-over-column__wrap{margin:0vw -1.66666667vw}
+.text-over-column--space-mobile-desktop-columns-space.text-over-column--space-wide .text-over-column__wrap{margin:0vw -3.33333333vw}
+.text-over-column__wrap .indicator{display:block;width:100%;margin-top:6.66666667vw;z-index:2}
+.text-over-column__wrap .indicator-position-overlay .indicator{position:absolute;left:0;bottom:4.44444444vw;z-index:10;margin:0;padding:0}
+.text-over-column__item{font-size:2.22222222vw;margin:0;padding:0;width:auto;height:auto !important}
+.swiper-container .text-over-column__item{margin-top:0 !important}
+.text-over-column--space-normal .text-over-column__item{padding:0}
+.text-over-column--space-wide .text-over-column__item{padding:0}
+.text-over-column--space-mobile-narrow .text-over-column__item{margin-top:2.22222222vw;padding:0vw 1.11111111vw}
+.text-over-column--space-mobile-normal .text-over-column__item{margin-top:2.77777778vw;padding:0vw 1.38888889vw}
+.text-over-column--space-mobile-wide .text-over-column__item{margin-top:4.44444444vw;padding:0vw 2.22222222vw}
+.text-over-column--1columns-mobile .text-over-column__item{font-size:2.22222222vw;width:100%}
+.text-over-column--desktop-line .text-over-column__item{position:relative}
+.text-over-column--desktop-line .text-over-column__item:before{display:none}
+.text-over-column__item:first-child{margin-top:0 !important}
+.text-over-column--2columns-mobile .text-over-column__item{width:50%}
+.text-over-column--2columns-mobile .text-over-column__item:first-child{margin-top:0}
+.text-over-column--2columns-mobile .text-over-column__item:nth-child(2){margin-top:0 !important}
+.text-over-column--space-mobile-desktop-columns-space.text-over-column--space-normal .text-over-column__item{margin-top:3.33333333vw;padding:0vw 1.66666667vw}
+.text-over-column--space-mobile-desktop-columns-space.text-over-column--space-wide .text-over-column__item{margin-top:6.66666667vw;padding:0vw 3.33333333vw}
+.text-over-column__card{padding-top:0}
+.text-over-column__card-inner{min-height:83.33333333vw}
+.text-over-column__card-inner .cta{left:4.44444444vw;bottom:6.66666667vw}
+.text-over-column--type-fold .text-over-column__card-inner::before{display:block;opacity:1;-webkit-box-shadow:0 1.25vw 2.5vw 0 rgba(0,0,0,0.2);box-shadow:0 1.25vw 2.5vw 0 rgba(0,0,0,0.2)}
+.text-over-column__figure{padding-bottom:75.471%}
+.text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__figure,.text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__figure,.text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__figure{display:block}
+.text-over-column__figure .image{padding-bottom:75.471%}
+.text-over-column__content{min-height:51.38888889vw;padding:4.44444444vw}
+a.text-over-column__card-inner .text-over-column__content,a:hover.text-over-column__card-inner .text-over-column__content,a:focus.text-over-column__card-inner .text-over-column__content,a:active.text-over-column__card-inner .text-over-column__content{padding-bottom:18.88888889vw}
+.text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content{padding-top:4.44444444vw;padding-bottom:4.44444444vw}
+.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__content,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__content,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__content{padding-top:4.44444444vw}
+.text-over-column--headline-left .text-over-column__headline,.text-over-column--headline-center .text-over-column__headline,.text-over-column--headline-right .text-over-column__headline{text-align:left}
+.text-over-column__description{margin-top:5vw;font-size:3.88888889vw}
+.text-over-column__description>ul{margin-left:5.61944444vw}
+.text-over-column--headline-left .text-over-column__description,.text-over-column--headline-center .text-over-column__description,.text-over-column--headline-right .text-over-column__description{text-align:left}
+.text-over-column--type-fold .text-over-column__description{overflow:visible;display:block;max-height:none}
+.text-over-column--5columns.text-over-column--width-1200 .text-over-column__description,.text-over-column--5columns.text-over-column--width-860 .text-over-column__description{margin-top:5vw}
+.text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description p,.text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description p,.text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description p{-webkit-line-clamp:initial;max-height:none}
+.text-over-column--5columns.text-over-column--width-1440-edge .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--5columns.text-over-column--width-1440-edge .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--5columns.text-over-column--width-1440-edge .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--5columns.text-over-column--width-1206-edge .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--4columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--5columns.text-over-column--width-1200 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:hover .text-over-column__description,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:focus .text-over-column__description,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold .text-over-column__card-inner:active .text-over-column__description{margin-top:5vw}
+.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold div.text-over-column__card-inner:hover .text-over-column__description p,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold div.text-over-column__card-inner:focus .text-over-column__description p,.text-over-column--4columns.text-over-column--width-860 .text-over-column--type-fold div.text-over-column__card-inner:active .text-over-column__description p,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold div.text-over-column__card-inner:hover .text-over-column__description p,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold div.text-over-column__card-inner:focus .text-over-column__description p,.text-over-column--5columns.text-over-column--width-860 .text-over-column--type-fold div.text-over-column__card-inner:active .text-over-column__description p{-webkit-line-clamp:initial;max-height:none}
+.text-over-column__cta-wrap .cta{margin-top:16.66666667vw}
+.text-over-column--margin-top-normal{margin-top:24.44444444vw}
+.text-over-column--margin-bottom-normal{margin-bottom:24.44444444vw}
+.text-over-column--align-center.text-over-column--mobile-slide .swiper-wrapper{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.text-over-column--padding-top-normal{padding-top:13.33333333vw}
+.text-over-column--padding-bottom-normal{padding-bottom:13.33333333vw}
+.text-over-column--padding-top-wide{padding-top:26.66666667vw}
+.text-over-column--padding-bottom-wide{padding-bottom:26.66666667vw}
+.text-over-column.text-over-column--round-edge .text-over-column__card-inner{border-radius:5.55555556vw}
+.text-over-column.text-over-column--round-edge .text-over-column__card-inner .text-over-column__figure{border-radius:5.55555556vw 5.55555556vw 0vw 0vw}
+.text-over-column.text-over-column--round-edge .text-over-column__card-inner:before{border-radius:5.55555556vw}
+.text-over-column [data-font-size-mo="32"]{font-size:4.44444444vw}
+.text-over-column--mobile-slide .swiper-wrapper{-ms-flex-wrap:nowrap;flex-wrap:nowrap}
+.text-over-column .text-over-column--mobile-headline-left .text-over-column__headline{text-align:left !important}
+.text-over-column .text-over-column--type-fold.text-over-column--mobile-headline-left .text-over-column__card-inner:hover .text-over-column__headline{text-align:left !important}
+.text-over-column .text-over-column--mobile-headline-center .text-over-column__headline{text-align:center !important}
+.text-over-column .text-over-column--type-fold.text-over-column--mobile-headline-center .text-over-column__card-inner:hover .text-over-column__headline{text-align:center !important}
+.text-over-column .text-over-column--mobile-headline-right .text-over-column__headline{text-align:right !important}
+.text-over-column .text-over-column--type-fold.text-over-column--mobile-headline-right .text-over-column__card-inner:hover .text-over-column__headline{text-align:right !important}
+.text-over-column .text-over-column--mobile-description-left .text-over-column__description{text-align:left !important}
+.text-over-column .text-over-column--type-fold.text-over-column--mobile-description-left .text-over-column__card-inner:hover .text-over-column__description{text-align:left !important}
+.text-over-column .text-over-column--mobile-description-center .text-over-column__description{text-align:center !important}
+.text-over-column.text-over-column--type-fold.text-over-column--mobile-description-center .text-over-column__card-inner:hover .text-over-column__description{text-align:center !important}
+.text-over-column .text-over-column--mobile-description-right .text-over-column__description{text-align:right !important}
+.text-over-column .text-over-column--type-fold.text-over-column--mobile-description-right .text-over-column__card-inner:hover .text-over-column__description{text-align:right !important}
+}

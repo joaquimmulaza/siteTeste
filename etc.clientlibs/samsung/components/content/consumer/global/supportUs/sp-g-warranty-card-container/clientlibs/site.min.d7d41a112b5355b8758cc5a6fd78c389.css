@@ -1,0 +1,273 @@
+.warranty-card-info{max-width:1440px;margin:0 auto;padding:0 48px;text-align:center;-webkit-box-sizing:border-box;box-sizing:border-box}
+.warranty-card-info:after:before,.warranty-card-info:after:after{content:'';display:block;clear:both}
+.warranty-card-info__title{padding-top:73px;font-size:48px;font-weight:bold;color:#000}
+.warranty-card-info__sub-title{display:block;margin-top:27px;font-size:14px;line-height:23.8px;font-weight:bold;font-style:normal;color:#000;word-wrap:break-word}
+.warranty-card-info__sub-title:first-child{margin-top:0}
+.warranty-card-info__sub-title a{color:#1428a0;text-decoration:underline}
+.warranty-card-info__list-item{display:inline-block;width:25%;padding:32px 16px 0;text-align:center;letter-spacing:0;vertical-align:top;-webkit-box-sizing:border-box;box-sizing:border-box}
+.warranty-card-info__desc{padding-top:2px;font-size:14px;line-height:23.8px;color:#666;-webkit-box-sizing:border-box;box-sizing:border-box}
+.warranty-card-info__desc-wrap{margin-top:27px}
+.warranty-card-info__desc-wrap:first-of-type{margin-top:0}
+.warranty-card-info__desc .warranty-card-info__num{font-size:44px;font-weight:bold;vertical-align:baseline}
+.warranty-card-info__desc a{color:#1428a0;text-decoration:underline}
+.warranty-card-info__tab{margin-top:32px}
+.warranty-card-info__tab ul{display:table;width:100%;table-layout:fixed}
+.warranty-card-info__tab li{display:table-cell;height:64px;background:#333;color:#fff;vertical-align:middle}
+.warranty-card-info__tab li a{display:flex;justify-content:center;align-items:center;width:100%;height:100%;font-size:14px;line-height:1.33;font-weight:bold;color:inherit;text-align:center;text-transform:uppercase}
+.warranty-card-info__tab li a span{display:inline-block;padding:14px 16px;vertical-align:middle}
+.warranty-card-info__tab li.is-selected{background:#000;color:#68aeff}
+.warranty-card-info__tab li.is-selected span:after{content:'';display:block;border-bottom:2px solid #68aeff;transform:translateY(1px)}
+.warranty-card-info__tab-selected{display:none}
+.warranty-card-info .js-warranty-card-info__name-wrap:after{display:inline-block;height:100%;vertical-align:middle;content:''}
+.warranty-card-info__name{display:block;display:-webkit-box;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;text-overflow:ellipsis;max-height:50.4px;font-size:18px;line-height:25.2px;color:#000}
+.warranty-card-info__name-area{padding:15px 24px;background:#f2f2f2;font-size:0}
+.warranty-card-info__name-wrap{display:inline-block;vertical-align:middle}
+.warranty-card-info__sub-title+.warranty-card-info__desc-wrap{margin-top:0}
+.warranty-card-info.js-warranty-card-info .warranty-card-info__desc-wrap .warranty-card-info__js-ellipsis{display:none;font-size:14px;line-height:1.6;color:#666;text-align:center}
+.warranty-card-info__content{border:1px solid #ccc;padding-bottom:48px}
+.warranty-card-info__content li{margin:0 32px;padding:45px 6px 0}
+.warranty-card-info__content li:first-child{display:block;padding:33px 0 19px;border-bottom:1px solid #ccc}
+.warranty-card-info__content li:first-child .warranty-card-info__desc{display:block;margin-top:-5px;font-size:12px;line-height:1.6;color:#000}
+.warranty-card-info__content .warranty-card-info__downloads-layer-inner li{padding:0;margin:0;border:0}
+.warranty-card-info.js-warranty-card-info .warranty-card-info__downloads-layer{display:none;position:absolute;top:100%;z-index:2}
+.warranty-card-info__downloads{position:relative;margin-bottom:-3px;padding-top:12px;font-size:0}
+.warranty-card-info__downloads .s-btn-downlink{display:inline-block;padding-right:18px;font-size:14px;font-weight:bold;text-transform:uppercase;letter-spacing:.15em;vertical-align:top}
+.warranty-card-info__downloads .s-btn-downlink .s-ico-downlink{display:inline-block;width:11px;height:16px;margin:-2px -18px 0 8px;background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/svg-ico-mouse.svg");background-repeat:no-repeat;background-size:contain;vertical-align:middle}
+.warranty-card-info__downloads-title{display:block;margin-bottom:-1px;font-size:14px;color:#222}
+.warranty-card-info__downloads-layer{margin:0 -23px;padding-top:8px}
+.warranty-card-info__downloads-layer-inner{padding:25px 16px 27px;border:1px solid #ccc;background:#f7f7f7;text-align:left;-webkit-box-shadow:0 0 4px rgba(0,0,0,0.1);box-shadow:0 0 4px rgba(0,0,0,0.1)}
+.warranty-card-info__downloads-layer-inner li:first-child{padding:0;margin:0;border:0}
+.warranty-card-info__downloads-layer .s-ico{display:inline-block;margin-left:8px;background-repeat:no-repeat;background-size:contain;vertical-align:middle}
+.warranty-card-info__downloads-layer .s-ico.s-ico-down{width:14px;height:16px;margin-top:-4px;background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/svg-btn-download.svg")}
+.warranty-card-info__downloads-layer .s-ico.s-ico-link{width:24px;height:8px;margin-top:-2px;background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/svg-ico-link.svg")}
+.warranty-card-info__downloads-layer .s-btn-text{display:block;margin-top:4px;line-height:1.32;font-weight:normal;text-transform:none}
+.warranty-card-info__downloads-layer .s-btn-text:after{content:none}
+.warranty-card-info__downloads-layer .s-ico-new-window{padding-right:18px}
+.warranty-card-info__downloads-layer .s-ico-new-window:after{display:inline-block;margin-left:8px;margin-right:-18px;content:''}
+.warranty-card-info__downloads.is-hover .warranty-card-info__downloads-layer{display:block}
+.warranty-card-info__downloads.is-hover .s-btn-downlink{color:#1428a0;text-decoration:underline}
+.warranty-card-info__downloads.is-hover .s-btn-downlink .s-ico-downlink{background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/svg-ico-mouse-hover.svg")}
+.warranty-card-info.js-warranty-card-info .warranty-card-info__desc-wrap .warranty-card-info__desc{position:relative;line-height:23.8px;display:-webkit-box;overflow:hidden;word-wrap:break-word;word-break:break-word;text-overflow:ellipsis;white-space:normal;-webkit-line-clamp:4;-webkit-box-orient:vertical}
+.warranty-card-info.js-warranty-card-info .warranty-card-info__desc-wrap .warranty-card-info__desc.is-show{display:block;-webkit-line-clamp:unset}
+.warranty-card-info ul+.warranty-card-info__downloads-title{margin-top:15px;padding-top:24px;border-top:1px solid #ccc}
+.warranty-card-info__btn{padding-top:34px}
+.warranty-card-info__btn .s-btn-text{line-height:1.32}
+.warranty-card-info__btn-more{display:none;position:relative;z-index:1;margin-bottom:-3px;padding-top:7px;line-height:0;vertical-align:top}
+.warranty-card-info__btn-more .s-btn-text{line-height:1.32}
+.warranty-card-info__btn-more .s-ico-down,.warranty-card-info__btn-more .s-ico-up{padding-right:18px;vertical-align:top}
+.warranty-card-info__btn-more .s-ico-down:after,.warranty-card-info__btn-more .s-ico-up:after{width:11px;height:7px;margin-left:8px;margin-right:-18px}
+.warranty-card-info__list .s-slick>ul{text-align:left;letter-spacing:-10px}
+.warranty-card-info__list .s-slick>ul:after:before,.warranty-card-info__list .s-slick>ul:after:after{content:'';display:block;clear:both}
+.warranty-card-info .s-slick .slick-arrow{display:none}
+.no-svg .warranty-card-info__downloads .s-btn-downlink .s-ico-downlink,.no-svg .warranty-card-info__downloads-layer .s-ico.s-ico-down,.no-svg .warranty-card-info__downloads-layer .s-ico.s-ico-link,.no-svg .warranty-card-info__btn-more .s-ico-down:after,.no-svg .warranty-card-info__btn-more .s-ico-up:after{background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/sp-support-common-ie8.png")}
+.no-svg .warranty-card-info__downloads-layer .s-ico.s-ico-down{background-position:-52px -15px}
+.no-svg .warranty-card-info__downloads-layer .s-ico.s-ico-link{background-position:-88px -130px}
+.no-svg .warranty-card-info__downloads .s-btn-downlink .s-ico-downlink{background-position:-62px -130px}
+.no-svg .warranty-card-info__downloads.is-hover .s-btn-downlink .s-ico-downlink{background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/sp-support-common-ie8.png");background-position:-75px -130px}
+.no-svg .warranty-card-info__btn-more .s-ico-down:after{background-position:-206px -41px}
+.no-svg .warranty-card-info__btn-more .s-ico-down:hover:after,.no-svg .warranty-card-info__btn-more .s-ico-down:focus:after,.no-svg .warranty-card-info__btn-more .s-ico-down:active:after{background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/sp-support-common-ie8.png");background-position:-219px -41px}
+.no-svg .warranty-card-info__btn-more .s-ico-up:after{background-position:-206px -50px}
+.no-svg .warranty-card-info__btn-more .s-ico-down:after{background-position:-206px -41px}
+.no-svg .warranty-card-info__btn-more .s-ico-up:hover:after,.no-svg .warranty-card-info__btn-more .s-ico-up:focus:after,.no-svg .warranty-card-info__btn-more .s-ico-up:active:after{background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/sp-support-common-ie8.png");background-position:-219px -50px}
+.mac.safari .warranty-card-info__title{margin-top:-10px;padding-bottom:10px}
+.mac.safari .warranty-card-info__downloads .s-btn-downlink .s-ico-downlink{margin-top:0}
+@media only screen and (min-width:768px) and (max-width:1440px){.warranty-card-info{padding:0vw 3.33333333vw}
+.warranty-card-info__title{padding-top:5.06944444vw;font-size:3.33333333vw}
+.warranty-card-info__tab{margin-top:2.22222222vw}
+.warranty-card-info__tab li{height:4.44444444vw}
+.warranty-card-info__tab li a{font-size:.97222222vw}
+.warranty-card-info__tab li a span{padding:.97222222vw 1.11111111vw}
+.warranty-card-info__list-item{padding:2.22222222vw 1.11111111vw 0vw 1.11111111vw}
+.warranty-card-info__name{max-height:3.5vw;font-size:1.25vw;line-height:1.75vw}
+.warranty-card-info__name-area{padding:1.04166667vw 1.66666667vw}
+.warranty-card-info__sub-title{margin-top:1.875vw;font-size:.97222222vw;line-height:1.65277778vw}
+.warranty-card-info__desc{padding-top:.13888889vw;font-size:.97222222vw;line-height:1.65277778vw}
+.warranty-card-info__desc-wrap{margin-top:1.875vw}
+.warranty-card-info__desc .warranty-card-info__num{font-size:3.05555556vw}
+.warranty-card-info__content{padding-bottom:3.33333333vw}
+.warranty-card-info__content li{margin:0vw 2.22222222vw;padding:3.125vw .41666667vw 0vw .41666667vw}
+.warranty-card-info__content li:first-child{padding:2.29166667vw 0vw 1.31944444vw 0vw}
+.warranty-card-info__content li:first-child .warranty-card-info__desc{margin-top:-0.34722222vw;font-size:.83333333vw}
+.warranty-card-info.js-warranty-card-info .warranty-card-info__desc-wrap .warranty-card-info__js-ellipsis{font-size:.97222222vw}
+.warranty-card-info__downloads{margin-bottom:-0.20833333vw;padding-top:.83333333vw}
+.warranty-card-info__downloads .s-btn-downlink{margin-right:1.25vw;font-size:.97222222vw}
+.warranty-card-info__downloads .s-btn-downlink .s-ico-downlink{width:.76388889vw;height:1.11111111vw;margin:-0.13888889vw -1.25vw 0vw .55555556vw}
+.warranty-card-info__downloads-title{margin-bottom:-0.06944444vw;font-size:.97222222vw}
+.warranty-card-info__downloads-layer{margin:0vw -1.59722222vw;padding-top:.55555556vw}
+.warranty-card-info__downloads-layer-inner{padding:1.73611111vw 1.11111111vw 1.875vw 1.11111111vw}
+.warranty-card-info__downloads-layer .s-ico{margin-left:.55555556vw}
+.warranty-card-info__downloads-layer .s-ico.s-ico-down{width:.97222222vw;height:1.11111111vw;margin-top:-0.27777778vw}
+.warranty-card-info__downloads-layer .s-ico.s-ico-link{width:1.66666667vw;height:.55555556vw;margin-top:-0.13888889vw}
+.warranty-card-info__downloads-layer .s-btn-text{margin-top:.27777778vw}
+.warranty-card-info__downloads-layer .s-ico-new-window{padding-right:1.25vw}
+.warranty-card-info__downloads-layer .s-ico-new-window:after{margin-left:.55555556vw;margin-right:-1.25vw}
+.warranty-card-info__downloads__btn{padding-top:2.36111111vw}
+.warranty-card-info__downloads__btn-more{margin-bottom:-0.20833333vw;padding-top:.48611111vw}
+.warranty-card-info__downloads__btn-more .s-ico-down,.warranty-card-info__downloads__btn-more .s-ico-up{padding-right:1.25vw}
+.warranty-card-info__downloads__btn-more .s-ico-down:after,.warranty-card-info__downloads__btn-more .s-ico-up:after{width:.76388889vw;height:.48611111vw;margin-left:.55555556vw;margin-right:-1.25vw}
+.warranty-card-info ul+.warranty-card-info__downloads-title{margin-top:1.04166667vw;padding-top:1.66666667vw}
+.mac.safari .warranty-card-info__title{margin-top:-0.69444444vw;padding-bottom:.69444444vw}
+}
+@media(-webkit-min-device-pixel-ratio:2){.warranty-card-info__btn-more .s-ico-down,.warranty-card-info__btn-more .s-ico-up{padding-right:1.31944444vw;text-rendering:auto}
+.warranty-card-info__btn-more .s-ico-down:after,.warranty-card-info__btn-more .s-ico-up:after{margin-right:-1.31944444vw}
+.warranty-card-info__downloads-layer .s-ico-new-window{padding-right:1.52777778vw}
+.warranty-card-info__downloads-layer .s-ico-new-window:after{margin-right:-1.52777778vw}
+.warranty-card-info__downloads .s-btn-downlink{padding-right:1.31944444vw;text-rendering:auto}
+.warranty-card-info__downloads .s-btn-downlink .s-ico-downlink{margin-right:-1.31944444vw}
+}
+@media(-webkit-min-device-pixel-ratio:2) and only screen and (min-width:1440px){.warranty-card-info__btn-more .s-ico-down,.warranty-card-info__btn-more .s-ico-up{padding-right:19px}
+.warranty-card-info__btn-more .s-ico-down:after,.warranty-card-info__btn-more .s-ico-up:after{margin-right:-19px}
+.warranty-card-info__downloads-layer .s-ico-new-window{padding-right:22px}
+.warranty-card-info__downloads-layer .s-ico-new-window:after{margin-right:-22px}
+.warranty-card-info__downloads .s-btn-downlink{padding-right:19px}
+.warranty-card-info__downloads .s-btn-downlink .s-ico-downlink{margin-right:-19px}
+}
+@media only screen and (max-width:767px){.warranty-card-info{padding:0vw 0vw 9.72222222vw 0vw}
+.warranty-card-info__title{padding:12.77777778vw 8.33333333vw 7.5vw 8.33333333vw;font-size:9.72222222vw;line-height:1.16}
+.warranty-card-info__content li{margin:0vw 5.55555556vw;padding:10.27777778vw 5.55555556vw 0vw 5.55555556vw}
+.warranty-card-info__downloads-layer-inner li{padding:0;margin:0;border:0}
+.warranty-card-info__tab{display:block;position:relative;z-index:3;margin:0}
+.warranty-card-info__tab span{display:inline-block;color:#68aeff}
+.warranty-card-info__tab span:after{content:'';display:block;border-bottom:2px solid #68aeff;transform:translateY(-3px)}
+.warranty-card-info__tab-list span{color:#fff}
+.warranty-card-info__tab-list span:after{display:none}
+.warranty-card-info__tab ul{display:none}
+.warranty-card-info__tab li{display:block;width:100%;height:auto;border-top:1px solid #666;background:#444;color:#ccc}
+.warranty-card-info__tab li:first-child{border-top:0}
+.warranty-card-info__tab li a{display:block;width:auto;height:auto;padding:3.33333333vw 5vw;font-size:3.33333333vw;text-align:left}
+.warranty-card-info__tab li a:hover,.warranty-card-info__tab li a:focus,.warranty-card-info__tab li a:active{color:#fff}
+.warranty-card-info__tab li a span{display:block;padding:0}
+.warranty-card-info__tab li.is-selected{background:#444;color:#fff}
+.warranty-card-info__tab li.is-selected span:after{display:none}
+.warranty-card-info__tab.is-opened ul{display:block;position:absolute;top:100%;right:0;left:0}
+.warranty-card-info__tab-selected{display:block;position:relative;padding:3.33333333vw 13.33333333vw 3.33333333vw 5vw;background:#333;color:#fff;font-size:3.33333333vw;font-weight:bold;text-align:left;text-transform:uppercase}
+.warranty-card-info__tab-selected:after{position:absolute;top:50%;right:4.72222222vw;width:4.16666667vw;height:2.77777778vw;margin-top:-1.11111111vw;background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/svg-btn-arw-down-white.svg");background-size:100% 100%;background-repeat:no-repeat;-webkit-transition:.2s ease-in-out;transition:.2s ease-in-out;content:''}
+.warranty-card-info.is-opened .warranty-card-info__tab-selected:after{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.warranty-card-info__list{position:relative}
+.warranty-card-info__list:after:before,.warranty-card-info__list:after:after{content:'';display:block;clear:both}
+.warranty-card-info__list-item{width:100%;padding:6.66666667vw 8.33333333vw 0vw 8.33333333vw}
+.warranty-card-info__content{padding-bottom:10vw}
+.warranty-card-info__content li:first-child{padding:6.38888889vw 0vw 2.22222222vw 0vw;margin-bottom:-3.61111111vw}
+.warranty-card-info__content li:first-child .warranty-card-info__desc{font-size:3.33333333vw;margin-top:-3.61111111vw}
+.warranty-card-info__name{display:block;padding:4.16666667vw 0vw;max-height:none;border-bottom:1px solid #ccc;font-size:4.72222222vw;line-height:1.25}
+.warranty-card-info__name-area{padding:0vw 5.27777778vw;background:0}
+.warranty-card-info__name-area:after{content:none}
+.warranty-card-info__name-wrap{display:block;background:0}
+.warranty-card-info__sub-title{margin-top:6.38888889vw;font-size:3.88888889vw;line-height:6.61111111vw}
+.warranty-card-info__sub-title:first-child{margin-top:0}
+.warranty-card-info__desc{padding-top:.55555556vw;font-size:3.88888889vw;line-height:6.61111111vw}
+.warranty-card-info__desc-wrap{margin-top:5.83333333vw}
+.warranty-card-info__desc:first-of-type{margin-top:0}
+.warranty-card-info__desc .warranty-card-info__num{font-size:12.22222222vw}
+.warranty-card-info__sub-title+.warranty-card-info__desc-wrap{margin-top:0}
+.warranty-card-info.js-warranty-card-info .warranty-card-info__desc-wrap .warranty-card-info__js-ellipsis{font-size:3.88888889vw;line-height:1.6}
+.warranty-card-info__downloads{margin-bottom:-2.22222222vw;padding-top:4.44444444vw}
+.warranty-card-info__downloads .s-btn-downlink{padding-right:3.88888889vw;font-size:3.05555556vw}
+.warranty-card-info__downloads .s-btn-downlink .s-ico-downlink{width:2.77777778vw;height:1.66666667vw;margin:0vw -3.88888889vw 0vw 1.38888889vw;background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/svg-btn-arw-down-black.svg")}
+.warranty-card-info__downloads-layer{margin:0vw -5.55555556vw;padding-top:2.22222222vw}
+.warranty-card-info__downloads-layer-inner{padding:3.33333333vw 4.44444444vw;border:0;-webkit-box-shadow:none;box-shadow:none;text-align:center}
+.warranty-card-info__downloads-layer li:first-child{padding:0;margin:0;border:0}
+.warranty-card-info__downloads-layer .s-btn-text{margin-top:2.5vw;font-size:3.88888889vw}
+.warranty-card-info__downloads-layer .s-ico-new-window{padding-right:5.55555556vw}
+.warranty-card-info__downloads-layer .s-ico-new-window:after{width:3.61111111vw;height:3.33333333vw;margin:0vw -5.55555556vw 0vw 2.22222222vw;vertical-align:middle}
+.warranty-card-info__downloads-title{overflow:hidden;position:absolute;width:1px;height:1px;clip:rect(1px,1px,1px,1px)}
+.warranty-card-info__downloads-title:first-child+ul li:first-child .s-btn-text{margin:0}
+.warranty-card-info__downloads.is-active .s-btn-downlink .s-ico-downlink{background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/svg-btn-arw-up-blue.svg")}
+.warranty-card-info__downloads.is-active .warranty-card-info__downloads-layer{display:block}
+.warranty-card-info__downloads.is-active .s-btn-downlink{color:#1428a0;text-decoration:none}
+.warranty-card-info.js-warranty-card-info .warranty-card-info__downloads-layer{position:static}
+.warranty-card-info__btn{display:none}
+.warranty-card-info__btn-more{padding-top:2.22222222vw;margin-bottom:-2.22222222vw}
+.warranty-card-info__btn-more .s-ico-down,.warranty-card-info__btn-more .s-ico-up{padding-right:3.88888889vw;font-size:3.33333333vw}
+.warranty-card-info__btn-more .s-ico-down:after,.warranty-card-info__btn-more .s-ico-up:after{width:2.77777778vw;height:1.66666667vw;margin:0vw -3.88888889vw 0vw 1.38888889vw}
+.warranty-card-info .s-slick{position:static !important}
+.warranty-card-info .s-slick .slick-list{padding-bottom:1px}
+.warranty-card-info .s-slick .slick-arrow{display:block;width:7.22222222vw;padding:0vw 1.66666667vw;background:0}
+.warranty-card-info .s-slick .slick-arrow:after{width:5.55555556vw;height:10vw}
+.warranty-card-info .s-slick .slick-prev{padding:0vw 0vw 0vw 1.66666667vw}
+.warranty-card-info .s-slick .slick-prev:after{background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/svg-carousel-arw-left.svg");opacity:.7}
+.warranty-card-info .s-slick .slick-next{padding:0vw 1.66666667vw 0vw 0vw}
+.warranty-card-info .s-slick .slick-next:after{background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/svg-carousel-arw-right.svg");opacity:.7}
+.warranty-card-info .s-slick .slick-slide img{width:auto;height:100%}
+.warranty-card-info .s-slick .slick-dots{bottom:-6.66666667vw;text-align:center}
+.mac.safari .warranty-card-info__title{margin-top:-1.94444444vw;padding-bottom:9.44444444vw}
+}
+.warranty-card-policy{max-width:1440px;margin:0 auto;padding:0 64px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.warranty-card-policy:after:before,.warranty-card-policy:after:after{content:'';display:block;clear:both}
+.warranty-card-policy__title{padding:74px 0 31px;font-size:48px;font-weight:bold;color:#000;text-align:center}
+.warranty-card-policy__content_title a{color:#1428a0;text-decoration:underline}
+.warranty-card-policy__tab a{padding:16px;font-size:16px;font-weight:bold;color:#fff}
+.warranty-card-policy__tab-list{display:table;width:100%;table-layout:fixed}
+.warranty-card-policy__tab li{display:table-cell;height:64px;border-left:1px solid #f7f7f7;background:#333;text-align:center;vertical-align:middle}
+.warranty-card-policy__tab li:first-child{border-left:0}
+.warranty-card-policy__tab li a{display:table;width:100%;height:100%;padding:0;font-size:16px}
+.warranty-card-policy__tab li a span{display:table-cell;padding:14px 16px;vertical-align:middle}
+.warranty-card-policy__content p a{color:#1428a0;text-decoration:underline}
+.warranty-card-policy__tab li.is-active{background:#f7f7f7}
+.warranty-card-policy__tab li.is-active a{color:#000}
+.warranty-card-policy__content{padding:51px 57px 64px;background:#f7f7f7}
+.warranty-card-policy__content.is-visible{display:block !important}
+.warranty-card-policy__content-title{display:block;font-size:18px;line-height:1.5;font-weight:bold;color:#000}
+.warranty-card-policy__content-title-wrap{margin:40px 0 28px}
+.warranty-card-policy__content-title-wrap:first-child{margin-top:0}
+.warranty-card-policy__content p{font-size:14px;color:#666;line-height:1.5}
+.warranty-card-policy__content p:first-child{margin-top:0}
+.warranty-card-policy__cta{margin:13px 0 38px;font-size:14px;line-height:1.5}
+.warranty-card-policy__cta+.warranty-card-policy__cta{margin-top:-38px}
+.warranty-card-policy__cta .s-warranty-link{display:inline-block;font-size:inherit;font-weight:normal;line-height:inherit;color:#000;letter-spacing:0;text-transform:none;vertical-align:middle}
+.warranty-card-policy__cta .s-warranty-link:hover,.warranty-card-policy__cta .s-warranty-link:active,.warranty-card-policy__cta .s-warranty-link:focus{color:#1428a0;text-decoration:underline}
+.js-warranty-card-match .warranty-card-policy__tab,.warranty-card-policy__tab-placeholder{display:none}
+.js-warranty-card-policy .warranty-card-policy__content{display:none}
+html[lang^="th"] .warranty-card-policy__title{font-size:64.8px}
+html[lang^="th"] .warranty-card-policy__tab a,html[lang^="th"] .warranty-card-policy__tab li a{font-size:21.6px}
+html[lang^="th"] .warranty-card-policy__content-title{font-size:24.3px}
+html[lang^="th"] .warranty-card-policy__content p,html[lang^="th"] .warranty-card-policy__cta{font-size:18.9px}
+.warranty-card-policy .card-anchor+.warranty-card-policy__content-title-wrap,.warranty-card-policy .card-anchor+.warranty-card-policy__cta{margin-top:0}
+.mac.safari .warranty-card-policy__title{margin-top:-10px;padding-bottom:31px}
+@media only screen and (min-width:768px) and (max-width:1440px){.warranty-card-policy{padding:0vw 4.44444444vw}
+.warranty-card-policy__title{padding:5.13888889vw 0vw 2.15277778vw 0vw;font-size:3.33333333vw}
+.warranty-card-policy__tab a{padding:1.11111111vw;font-size:1.11111111vw}
+.warranty-card-policy__tab li{height:4.44444444vw}
+.warranty-card-policy__tab li a{font-size:1.11111111vw}
+.warranty-card-policy__tab li a span{padding:.97222222vw 1.11111111vw}
+.warranty-card-policy__content{padding:3.54166667vw 3.95833333vw 4.44444444vw 3.95833333vw}
+.warranty-card-policy__content-title{font-size:1.25vw}
+.warranty-card-policy__content-title-wrap{margin:2.77777778vw 0vw 1.94444444vw 0vw}
+.warranty-card-policy__content p{font-size:.97222222vw}
+.warranty-card-policy__cta{margin:.90277778vw 0vw 2.63888889vw 0vw;font-size:.97222222vw}
+.warranty-card-policy__cta+.warranty-card-policy__cta{margin-top:-2.63888889vw}
+.mac.safari .warranty-card-policy__title{margin-top:-0.69444444vw;padding-bottom:2.15277778vw}
+}
+@media only screen and (max-width:767px){.warranty-card-policy{padding:0}
+.warranty-card-policy__title{padding:10.27777778vw 0vw 6.66666667vw 0vw;font-size:9.72222222vw;word-wrap:break-word}
+.warranty-card-policy__list{display:block;position:relative}
+.warranty-card-policy__tab{position:relative}
+.warranty-card-policy__tab a{padding:3.33333333vw 13.33333333vw 3.33333333vw 5vw;font-size:3.33333333vw;text-align:left;text-transform:uppercase}
+.warranty-card-policy__tab-list{display:none;position:absolute;top:100%;z-index:10}
+.warranty-card-policy__tab-placeholder{display:block;background:#333;color:#fff}
+.warranty-card-policy__tab-placeholder:after{position:absolute;top:50%;right:4.72222222vw;width:4.16666667vw;height:2.77777778vw;margin-top:-1.11111111vw;background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/svg-btn-arw-down-white.svg");background-size:100% 100%;background-repeat:no-repeat;-webkit-transition:.2s ease-in-out;transition:.2s ease-in-out;content:''}
+.warranty-card-policy__tab li{display:block;height:auto;border-top:1px solid #666;border-left:0;background:#444}
+.warranty-card-policy__tab li:first-child{border-top:0}
+.warranty-card-policy__tab li a{display:block;padding:3.33333333vw 5vw;font-size:3.33333333vw;color:#ccc;-webkit-box-sizing:border-box;box-sizing:border-box}
+.warranty-card-policy__tab li a:hover,.warranty-card-policy__tab li a:active,.warranty-card-policy__tab li a:focus{color:#fff}
+.warranty-card-policy__tab li a span{display:block;padding:0}
+.warranty-card-policy__tab li.is-active{background:#444}
+.warranty-card-policy__tab li.is-active a{color:#fff}
+.warranty-card-policy__tab.is-opened .warranty-card-policy__tab-placeholder:after{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.warranty-card-policy__tab.is-opened .warranty-card-policy__tab-list{display:block}
+.warranty-card-policy__content{display:block;width:auto;padding:8.88888889vw 5vw;border:0}
+.warranty-card-policy__content:first-child{border:0}
+.warranty-card-policy__content-title{font-size:3.88888889vw}
+.warranty-card-policy__content-title-wrap{margin:7.22222222vw 0vw 5.83333333vw 0vw}
+.warranty-card-policy__content p{font-size:3.33333333vw;line-height:1.3}
+.warranty-card-policy__cta{font-size:3.33333333vw;line-height:1.3;margin:3.05555556vw 0vw 7.22222222vw 0vw}
+.warranty-card-policy__cta+.warranty-card-policy__cta{margin-top:-7.22222222vw}
+.mac.safari .warranty-card-policy__title{margin-top:-1.94444444vw;padding-bottom:8.61111111vw}
+}
+@media only screen and (min-width:768px) and (max-width:1440px){html[lang^="th"] .warranty-card-info__title{font-family:'Kittithada','SamsungSharpSans',arial,sans-serif}
+html[lang^="th"] .warranty-card-policy__title{font-family:'Kittithada','SamsungSharpSans',arial,sans-serif}
+html[lang^="th"] .warranty-card-policy__content-title{line-height:1.125}
+html[lang^="th"] .warranty-card-policy__content p,html[lang^="th"] .warranty-card-policy__cta{line-height:1.125}
+}
+@media only screen and (max-width:767px){html[lang^="th"] .warranty-card-policy__content p,html[lang^="th"] .warranty-card-policy__cta{line-height:.975}
+}

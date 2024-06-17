@@ -1,0 +1,158 @@
+.st-feature-benefit-tab-list{font-size:0}
+.st-feature-benefit-tab-list__anchor{display:inline-block;width:14.72222222vw;margin:0vw .83333333vw;font-size:0;vertical-align:top}
+.st-feature-benefit-tab-list__inner{display:block}
+.st-feature-benefit-tab-list__text{display:block;position:relative;width:11.38888889vw;margin:0 auto;margin-top:1.11111111vw;font-size:1.25vw;color:#555;font-weight:700;line-height:1.33;word-wrap:break-word}
+.st-feature-benefit-tab-list__anchor--active .st-feature-benefit-tab-list__text{color:#000}
+.st-feature-benefit-tab-list__icon{position:relative;width:6.80555556vw;margin:0 auto}
+.st-feature-benefit-tab-list__image{display:block;max-width:100%;margin:0 auto}
+.st-feature-benefit-tab-list__anchor .st-feature-benefit-tab-list__image--active{display:none}
+.st-feature-benefit-tab-list__anchor--active .st-feature-benefit-tab-list__image--active{display:block}
+.st-feature-benefit-tab-list__anchor--active .st-feature-benefit-tab-list__image--default{display:none}
+.st-feature-benefit-tab-panel{display:none;margin-top:2.22222222vw}
+.st-feature-benefit-tab-panel--active{display:block}
+.st-feature-benefit-tab-panel__content{width:68.05555556vw;margin:0 auto}
+.st-feature-benefit-tab-panel__title{margin-bottom:1.11111111vw;font-family:'SamsungSharpSans',arial,sans-serif;word-wrap:break-word}
+.st-feature-benefit-tab-panel__title.text-size-large{font-size:3.33333333vw;line-height:1.2}
+.st-feature-benefit-tab-panel__title.text-size-medium{font-size:2.63888889vw;line-height:1.2}
+.st-feature-benefit-tab-panel__title.text-size-small{font-size:2.22222222vw;line-height:1.33}
+.st-feature-benefit-tab-panel__description{line-height:1.33;word-wrap:break-word}
+.st-feature-benefit-tab-panel__description.text-size-large{font-size:1.25vw}
+.st-feature-benefit-tab-panel__description.text-size-medium{font-size:.97222222vw}
+.st-feature-benefit-tab-panel__cta{margin-top:2.77777778vw}
+.st-feature-benefit-tab-panel__figure{margin-top:2.22222222vw}
+.st-feature-benefit-tab-panel__figure img{width:100%}
+.st-feature-benefit-tab--image-radius .st-feature-benefit-tab-panel__figure img{border-radius:1.38888889vw}
+.st-feature-benefit-tab{max-width:1440px;margin:0 auto;text-align:center}
+.st-feature-benefit-tab__headline{padding:0vw 6.11111111vw;max-width:100vw;margin:0 auto}
+.st-feature-benefit-tab__title{font-family:'SamsungSharpSans',arial,sans-serif;margin-bottom:1.11111111vw;word-wrap:break-word}
+.st-feature-benefit-tab__title.text-size-large{font-size:3.33333333vw;line-height:1.2}
+.st-feature-benefit-tab__title.text-size-medium{font-size:2.63888889vw;line-height:1.2}
+.st-feature-benefit-tab__title.text-size-small{font-size:2.22222222vw;line-height:1.33}
+.st-feature-benefit-tab__sub-title{line-height:1.33;word-wrap:break-word}
+.st-feature-benefit-tab__sub-title.text-size-large{font-size:1.94444444vw}
+.st-feature-benefit-tab__sub-title.text-size-medium{font-size:1.52777778vw}
+.st-feature-benefit-tab__description{margin-top:1.11111111vw;line-height:1.33;word-wrap:break-word}
+.st-feature-benefit-tab__description.text-size-large{font-size:1.25vw}
+.st-feature-benefit-tab__description.text-size-medium{font-size:.97222222vw}
+.st-feature-benefit-tab__content{width:83.61111111vw;margin:0 auto;margin-top:3.33333333vw}
+.st-feature-benefit-tab__disclaimer{display:block;width:83.61111111vw;padding-top:1.11111111vw;margin:0 auto;font-size:.83333333vw;color:#313131;line-height:1.33;word-wrap:break-word}
+.st-feature-benefit-tab__disclaimer.text-black{color:#000}
+.st-feature-benefit-tab__disclaimers .st-feature-benefit-tab__disclaimer{display:none}
+.st-feature-benefit-tab__disclaimers .st-feature-benefit-tab__disclaimer--active{display:block}
+.st-feature-benefit-tab--disclaimer-inside .st-feature-benefit-tab-panel{position:relative}
+.st-feature-benefit-tab--disclaimer-inside .st-feature-benefit-tab__disclaimer{position:absolute;left:0;right:0;bottom:2.22222222vw;padding:1.11111111vw 1.66666667vw 0vw 1.66666667vw}
+.st-feature-benefit-tab--disclaimer-inside .st-feature-benefit-tab__disclaimer.text-white{color:#fff !important}
+.st-feature-benefit-tab--disclaimer-inside .st-feature-benefit-tab__disclaimer.text-black{color:#000 !important;text-shadow:none}
+.st-feature-benefit-tab--disclaimer-inside .st-feature-benefit-tab__disclaimer.text-left{text-align:left}
+.st-feature-benefit-tab--disclaimer-inside .st-feature-benefit-tab__disclaimer.text-right{text-align:right}
+.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__anchor{width:auto;margin:0vw .83333333vw}
+.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__text{position:relative;width:auto;margin-top:0;font-weight:bold;color:#000;padding:.27777778vw 0vw;-webkit-transition:color .2s cubic-bezier(0.4,0,0.2,1);transition:color .2s cubic-bezier(0.4,0,0.2,1)}
+.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__text:after{display:block;content:'';position:absolute;bottom:0;width:100%;height:2px;background-color:#000;-webkit-transform-origin:50% 50% 0;transform-origin:50% 50% 0;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transition:-webkit-transform .2s cubic-bezier(0.4,0,0.2,1);transition:-webkit-transform .2s cubic-bezier(0.4,0,0.2,1);transition:transform .2s cubic-bezier(0.4,0,0.2,1);transition:transform .2s cubic-bezier(0.4,0,0.2,1),-webkit-transform .2s cubic-bezier(0.4,0,0.2,1)}
+.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__anchor--active .st-feature-benefit-tab-list__text{color:#000}
+.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__anchor--active .st-feature-benefit-tab-list__text:after{-webkit-transform:scaleX(1);transform:scaleX(1)}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab__title{height:auto}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab__sub-title{display:none}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab__content{position:relative;overflow:hidden;margin-top:2.22222222vw;-webkit-transition:height .25s;transition:height .25s}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-list{position:absolute;left:0;right:0;bottom:2.22222222vw;z-index:10;text-align:center}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-panel{display:none;top:0;left:0;right:0;opacity:0;min-height:12.77777778vw;margin-top:0;-webkit-transition-property:all;transition-property:all;-webkit-transition-duration:0;transition-duration:0;-webkit-transition-timing-function:ease;transition-timing-function:ease}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-panel--active{display:block;opacity:1}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-panel__cta{margin:.55555556vw 0vw 2.22222222vw 0vw}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-list+.st-feature-benefit-tab-panel{position:static;opacity:1}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-list__icon{width:6.66666667vw;height:6.66666667vw;margin:0 auto}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-list__image{width:100%}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-list__inner .st-feature-benefit-tab-list__text{width:auto;margin-top:.76388889vw;color:#fff;text-shadow:0 0 6px rgba(0,0,0,0.35)}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-list__inner .st-feature-benefit-tab-list__text:after{background-color:#fff}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-panel__figure{margin:0}
+.st-feature-benefit-tab--inside.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list{background-position:50% 50%}
+.st-feature-benefit-tab--inside.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__anchor{margin:0vw 1.66666667vw}
+.st-feature-benefit-tab--inside.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__anchor--active .st-feature-benefit-tab-list__inner{position:relative}
+.st-feature-benefit-tab--inside.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__text{margin-top:0}
+.st-feature-benefit-tab--inside.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__text:after{-webkit-box-shadow:0 0 6px rgba(0,0,0,0.35);box-shadow:0 0 6px rgba(0,0,0,0.35)}
+.st-feature-benefit-tab.bg-black,.st-feature-benefit-tab.bg-dark-gray{color:#fff}
+.st-feature-benefit-tab.bg-black .st-feature-benefit-tab-list__title,.st-feature-benefit-tab.bg-dark-gray .st-feature-benefit-tab-list__title,.st-feature-benefit-tab.bg-black .st-feature-benefit-tab__disclaimer,.st-feature-benefit-tab.bg-dark-gray .st-feature-benefit-tab__disclaimer{color:#a6a6a6}
+.st-feature-benefit-tab.bg-black .st-feature-benefit-tab-list__text,.st-feature-benefit-tab.bg-dark-gray .st-feature-benefit-tab-list__text{color:#aaa}
+.st-feature-benefit-tab.bg-black .st-feature-benefit-tab-list__anchor--active .st-feature-benefit-tab-list__inner::after,.st-feature-benefit-tab.bg-dark-gray .st-feature-benefit-tab-list__anchor--active .st-feature-benefit-tab-list__inner::after{background-color:#fff}
+.st-feature-benefit-tab.bg-black .st-feature-benefit-tab-list__anchor--active .st-feature-benefit-tab-list__text,.st-feature-benefit-tab.bg-dark-gray .st-feature-benefit-tab-list__anchor--active .st-feature-benefit-tab-list__text{color:#fff}
+.st-feature-benefit-tab.bg-black.st-feature-benefit-tab--inside .st-feature-benefit-tab-list__title,.st-feature-benefit-tab.bg-dark-gray.st-feature-benefit-tab--inside .st-feature-benefit-tab-list__title,.st-feature-benefit-tab.bg-black.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__title,.st-feature-benefit-tab.bg-dark-gray.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__title,.st-feature-benefit-tab.bg-black.st-feature-benefit-tab--inside .st-feature-benefit-tab-list__text,.st-feature-benefit-tab.bg-dark-gray.st-feature-benefit-tab--inside .st-feature-benefit-tab-list__text,.st-feature-benefit-tab.bg-black.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__text,.st-feature-benefit-tab.bg-dark-gray.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__text{color:#fff}
+.st-feature-benefit-tab.bg-black .st-feature-benefit-tab-list__text:after,.st-feature-benefit-tab.bg-dark-gray .st-feature-benefit-tab-list__text:after{background-color:#fff}
+@media only screen and (min-width:1440px){.st-feature-benefit-tab-list__anchor{width:212px;margin:0 12px}
+.st-feature-benefit-tab-list__text{width:164px;margin:16px auto 0 auto;font-size:18px}
+.st-feature-benefit-tab-list__icon{width:98px}
+.st-feature-benefit-tab-panel{margin-top:32px}
+.st-feature-benefit-tab-panel__content{width:980px}
+.st-feature-benefit-tab-panel__title{margin-bottom:16px}
+.st-feature-benefit-tab-panel__title.text-size-large{font-size:48px}
+.st-feature-benefit-tab-panel__title.text-size-medium{font-size:38px}
+.st-feature-benefit-tab-panel__title.text-size-small{font-size:32px}
+.st-feature-benefit-tab-panel__description.text-size-large{font-size:18px}
+.st-feature-benefit-tab-panel__description.text-size-medium{font-size:14px}
+.st-feature-benefit-tab-panel__cta{margin-top:40px}
+.st-feature-benefit-tab-panel__figure{margin-top:32px}
+.st-feature-benefit-tab--image-radius .st-feature-benefit-tab-panel__figure img{border-radius:20px}
+.st-feature-benefit-tab__headline{max-width:1440px;padding:0 88px}
+.st-feature-benefit-tab__title{margin-bottom:16px}
+.st-feature-benefit-tab__title.text-size-large{font-size:48px}
+.st-feature-benefit-tab__title.text-size-medium{font-size:38px}
+.st-feature-benefit-tab__title.text-size-small{font-size:32px}
+.st-feature-benefit-tab__sub-title.text-size-large{font-size:28px}
+.st-feature-benefit-tab__sub-title.text-size-medium{font-size:22px}
+.st-feature-benefit-tab__description{margin-top:16px}
+.st-feature-benefit-tab__description.text-size-large{font-size:18px}
+.st-feature-benefit-tab__description.text-size-medium{font-size:14px}
+.st-feature-benefit-tab__content{width:1204px;margin:48px auto 0 auto}
+.st-feature-benefit-tab__disclaimer{width:1204px;padding-top:16px;font-size:12px}
+.st-feature-benefit-tab--disclaimer-inside .st-feature-benefit-tab__disclaimer{bottom:32px;padding:16px 24px 0 24px}
+.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__anchor{margin:0 12px}
+.st-feature-benefit-tab__title ~ .st-feature-benefit-tab--inside .st-feature-benefit-tab__sub-title{padding:24px}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab__content{margin-top:32px}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-list{bottom:32px}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-panel{min-height:184px}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-panel__cta{margin:8px 0 32px 0}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-list__icon{width:96px;height:96px}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-list__text{margin-top:11px}
+.st-feature-benefit-tab--inside.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__anchor{margin:0 24px}
+.st-feature-benefit-tab--inside.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list{margin:0}
+}
+@media only screen and (max-width:767px){.st-feature-benefit-tab-list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:0vw 5vw}
+.st-feature-benefit-tab-list__anchor{-webkit-box-flex:1;-ms-flex:1;flex:1;width:auto;max-width:41.11111111vw;margin:0vw 1.66666667vw}
+.st-feature-benefit-tab-list__icon{width:13.33333333vw}
+.st-feature-benefit-tab-list__text{width:auto;max-width:41.11111111vw;margin-top:2.22222222vw;font-size:3.88888889vw}
+.st-feature-benefit-tab-list.use-tab-3 .st-feature-benefit-tab-list__anchor{max-width:26.66666667vw}
+.st-feature-benefit-tab-panel{margin-top:6.66666667vw}
+.st-feature-benefit-tab-panel__content{width:86.66666667vw}
+.st-feature-benefit-tab-panel__title{padding:0;margin-bottom:3.33333333vw;line-height:1.33}
+.st-feature-benefit-tab-panel__title.text-size-large{font-size:8.88888889vw}
+.st-feature-benefit-tab-panel__title.text-size-medium{font-size:7.22222222vw}
+.st-feature-benefit-tab-panel__title.text-size-small{font-size:6.11111111vw}
+.st-feature-benefit-tab-panel__description{line-height:1.33}
+.st-feature-benefit-tab-panel__description.text-size-large{font-size:3.88888889vw}
+.st-feature-benefit-tab-panel__description.text-size-medium{font-size:3.33333333vw}
+.st-feature-benefit-tab-panel__cta{margin-top:6.66666667vw}
+.st-feature-benefit-tab-panel__figure{margin-top:6.66666667vw}
+.st-feature-benefit-tab--image-radius .st-feature-benefit-tab-panel__figure img{border-radius:5.55555556vw}
+.st-feature-benefit-tab__headline{padding:0vw 6.66666667vw}
+.st-feature-benefit-tab__title{padding:0;margin-bottom:3.33333333vw;line-height:1.33}
+.st-feature-benefit-tab__title.text-size-large{font-size:8.33333333vw}
+.st-feature-benefit-tab__title.text-size-medium{font-size:7.22222222vw}
+.st-feature-benefit-tab__title.text-size-small{font-size:6.11111111vw}
+.st-feature-benefit-tab__sub-title.text-size-large{font-size:5vw}
+.st-feature-benefit-tab__sub-title.text-size-medium{font-size:4.44444444vw}
+.st-feature-benefit-tab__description{margin-top:3.33333333vw}
+.st-feature-benefit-tab__description.text-size-large{font-size:3.88888889vw}
+.st-feature-benefit-tab__description.text-size-medium{font-size:3.33333333vw}
+.st-feature-benefit-tab__content{width:100%;margin:8.88888889vw 0vw 0vw 0vw}
+.st-feature-benefit-tab__disclaimer{width:100%;padding:3.33333333vw 6.66666667vw 0vw 6.66666667vw;font-size:2.77777778vw}
+.st-feature-benefit-tab--disclaimer-inside .st-feature-benefit-tab__disclaimer{bottom:4.44444444vw;padding:0vw 6.66666667vw}
+.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__anchor{margin:0vw 2.77777778vw;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-preferred-size:auto;flex-basis:auto}
+.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__text{padding-top:1.11111111vw;padding-bottom:1.11111111vw;font-size:3.88888889vw}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab__content{margin-top:6.66666667vw}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-list{width:100%;bottom:7.22222222vw}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-panel__cta{margin:0vw 0vw 6.66666667vw 0vw}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-list__anchor{-webkit-box-flex:0;-ms-flex:none;flex:none;width:26.66666667vw;margin:0vw 1.66666667vw}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-list__icon{width:13.33333333vw;height:13.33333333vw}
+.st-feature-benefit-tab--inside .st-feature-benefit-tab-list__text{margin-top:2.22222222vw;font-size:3.88888889vw}
+.st-feature-benefit-tab--inside.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list{bottom:6.66666667vw}
+.st-feature-benefit-tab--inside.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__anchor{width:auto;margin:0vw 4.44444444vw}
+.st-feature-benefit-tab--inside.st-feature-benefit-tab--text-only .st-feature-benefit-tab-list__text:after{background-color:#fff}
+.st-feature-benefit-tab--inside.st-feature-benefit-tab--text-only .st-feature-benefit-tab-panel{margin-top:0}
+}

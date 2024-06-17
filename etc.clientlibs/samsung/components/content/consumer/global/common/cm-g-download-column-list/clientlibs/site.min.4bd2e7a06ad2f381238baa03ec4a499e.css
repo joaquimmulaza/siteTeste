@@ -1,0 +1,49 @@
+.download-column-list{margin:0 auto;max-width:1440px;text-align:center}
+.download-column-list__inner{padding:0 24px 72px 24px}
+.download-column-list__body{border-top:2px solid #000;width:100%}
+.download-column-list__list li{display:none}
+.download-column-list__download-list{position:relative;display:table;width:100%;height:100%;padding:32px 24px;border-bottom:1px solid #ddd}
+.download-column-list__title{text-align:left;padding-right:40px;display:table-cell;vertical-align:middle;width:1109px;font-size:18px;font-weight:700}
+.download-column-list__title-inner{display:-webkit-box;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:calc(2.66em);line-height:1.33;word-wrap:break-word}
+@media screen and (-webkit-min-device-pixel-ratio:0){.download-column-list__title-inner{max-height:none}
+}
+.download-column-list__right-box{display:table-cell;vertical-align:middle;text-align:right}
+.download-column-list__desktop-file-size-text{position:absolute;top:50%;right:196px;transform:translateY(-50%);-ms-transform:translateY(-50%);-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);white-space:nowrap}
+.download-column-list__use-button,.download-column-list__desktop-file-size-text{font-size:18px;display:inline-block;vertical-align:middle;text-align:right}
+.download-column-list__use-button .cta{color:#2664e3}
+.download-column-list__use-button .cta--underline[target^="_blank"]{margin:-10px 0 -11px 0}
+.download-column-list__use-button .cta--underline{margin:-10px 0 -8px 0}
+.download-column-list__cta-wrap{margin-top:40px}
+.download-column-list__body--two-column .download-column-list__list::after{content:'';clear:both;display:block}
+.download-column-list__cta-view{display:none}
+.download-column-list__cta-close{display:none}
+.download-column-list__body--two-column .download-column-list__list{margin-left:-24px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-lines:multiple;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.download-column-list__body--two-column .download-column-list__list li{padding-left:24px;width:50%}
+.download-column-list__list li.is-active{display:block}
+.download-column-list__body--two-column .download-column-list__list li .download-column-list__desktop-file-size-text{display:none}
+.download-column-list__body--two-column .download-column-list__list li .download-column-list__download-list .download-column-list__title{width:546px;padding-right:40px}
+@media only screen and (min-width:768px) and (max-width:1440px){.download-column-list__inner{padding:0vw 1.66666667vw 5vw 1.66666667vw}
+.download-column-list__body--two-column .download-column-list__list{margin-left:-1.66666667vw}
+.download-column-list__body--two-column .download-column-list__list li{padding-left:1.66666667vw}
+.download-column-list__download-list{padding:2.22222222vw 1.66666667vw}
+.download-column-list__title{width:77.01388889vw;font-size:1.25vw;padding-right:2.77777778vw}
+.download-column-list__body--two-column .download-column-list__list li .download-column-list__download-list .download-column-list__title{width:37.91666667vw;padding-right:40px;padding-right:2.77777778vw}
+.download-column-list__use-button .cta--underline[target^="_blank"]{margin:-0.69444444vw 0vw -0.76388889vw 0vw}
+.download-column-list__use-button .cta--underline{margin:-0.69444444vw 0vw -0.55555556vw 0vw}
+.download-column-list__use-button,.download-column-list__desktop-file-size-text{font-size:1.25vw}
+.download-column-list__desktop-file-size-text{right:13.61111111vw}
+.download-column-list__use-button{font-size:.97222222vw}
+.download-column-list__cta-wrap{margin-top:2.77777778vw}
+}
+@media only screen and (max-width:767px){.download-column-list__inner{padding:0vw 6.66666667vw 8.88888889vw 6.66666667vw}
+.download-column-list__download-list{display:block;padding:4.44444444vw}
+.download-column-list__right-box{display:block}
+.download-column-list__title{font-size:3.88888889vw;line-height:5.27777778vw}
+.download-column-list__list li .download-column-list__desktop-file-size-text{display:none}
+.download-column-list__use-button{display:block;text-align:left;margin-top:2.22222222vw;font-size:3.33333333vw}
+.download-column-list__use-button .cta--underline[target^="_blank"]{margin:-2.77777778vw 0vw -3.05555556vw 0vw}
+.download-column-list__use-button .cta--underline{margin:-2.77777778vw 0vw -2.22222222vw 0vw}
+.download-column-list__body--two-column .download-column-list__list{margin-left:0vw}
+.download-column-list .download-column-list__list li{padding-left:0vw;width:100%;height:auto}
+.download-column-list__cta-wrap{margin-top:6.66666667vw}
+}

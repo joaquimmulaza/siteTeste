@@ -1,0 +1,2 @@
+(function(){var c=function(b){this.$element=$(b);this.init()};c.prototype.init=function(){this.setEvent()};c.prototype.setEvent=function(){this.$element.on("click",".contact-banner__cta-button button",this.clickCtaButton.bind(this))};c.prototype.clickCtaButton=function(b){var a=$(b.currentTarget);b=a.attr("data-url");a=a.attr("id");void 0!==b&&exitPopup.showPopup(b);void 0!==a&&("salesEnquiries"===a?mailformPopup.showPopup():"contactUsOption"===a&&contactUsPopup.showPopup())};var d=$(".contact-banner");
+0<d.length&&d.each(function(b,a){new c(a)})})();

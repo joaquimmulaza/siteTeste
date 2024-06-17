@@ -1,0 +1,51 @@
+.ex-author-bio{text-align:left;margin:0 auto;max-width:1440px;line-height:1.63}
+.ex-author-bio__container{z-index:2;position:relative;margin:0 auto;width:684px}
+.ex-author-bio__thumbnail{position:relative;overflow:hidden;display:inline-block;vertical-align:middle;width:153px;height:153px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-border-radius:50%;border-radius:50%;background:#fff}
+.ex-author-bio__thumbnail:after{position:absolute;left:0;right:0;top:0;bottom:0;display:block;border:1px solid rgba(0,0,0,0.05);-webkit-border-radius:50%;border-radius:50%;content:''}
+.ex-author-bio__thumbnail img{position:absolute;min-width:100%;min-height:100%;margin:auto;z-index:1}
+.ex-author-bio__content{position:relative;display:inline-block;vertical-align:middle;max-width:448px;padding-left:55px;margin-right:-50px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.ex-author-bio__title{font-size:14px;line-height:1.32;text-transform:uppercase;letter-spacing:2.4px;font-weight:bold}
+.ex-author-bio_name{padding-top:18px;font-weight:bold;margin-top:16px;line-height:24px}
+.ex-author-bio__description{margin-top:24px;font-size:18px}
+.ex-author-bio__sns{font-size:14px;margin-top:24px}
+.ex-author-bio__sns a{display:inline-block;text-decoration:underline;font-weight:bold;color:inherit}
+.ex-author-bio.s-bg-black{color:#fff}
+html[lang^="th"] .ex-author-bio .ex-author-bio__title{font-size:20px}
+html[lang^="th"] .ex-author-bio .ex-author-bio__description{font-size:22px}
+html[lang^="th"] .ex-author-bio .ex-author-bio__sns{font-size:16px}
+@media only screen and (min-width:768px) and (max-width:1440px){.ex-author-bio__container{width:47.5vw;margin:100px auto}
+.ex-author-bio__thumbnail{width:10.625vw;height:10.625vw}
+.ex-author-bio__content{max-width:39.58333333vw;padding-left:4.86111111vw;margin-right:-3.47222222vw}
+.ex-author-bio__title{font-size:.97222222vw;letter-spacing:.16666667vw}
+.ex-author-bio__name{margin-top:1.11111111vw}
+.ex-author-bio__description{margin-top:1.66666667vw;font-size:1.25vw;padding-bottom:1.66666667vw}
+.ex-author-bio__sns{font-size:.97222222vw;padding-top:0}
+html[lang^="th"] .ex-author-bio .ex-author-bio__title{font-size:1.38888889vw}
+html[lang^="th"] .ex-author-bio .ex-author-bio__description{font-size:1.52777778vw}
+html[lang^="th"] .ex-author-bio .ex-author-bio__sns{font-size:1.11111111vw}
+}
+@media only screen and (max-width:767px){.ex-author-bio{text-align:center}
+.ex-author-bio__container{margin:40px auto;width:auto}
+.ex-author-bio__thumbnail{display:block;margin:0 auto;right:auto;top:auto;z-index:1;width:40.55555556vw;height:40.55555556vw}
+.ex-author-bio__content{display:block;max-width:none;padding:0vw 5.55555556vw;margin:0}
+.ex-author-bio__title{font-size:3.33333333vw;letter-spacing:.66667vw;font-weight:166.66666667vw;padding-bottom:0;margin-top:8.88888889vw}
+.ex-author-bio__name{margin-top:2.22222222vw;line-height:1.25}
+.ex-author-bio__description{margin-top:6.66666667vw;line-height:1.56;font-size:3.33333333vw}
+.ex-author-bio__sns{margin-top:6.66666667vw;font-size:3.33333333vw;line-height:1.25}
+html[lang^="th"] .ex-author-bio .ex-author-bio__title{font-size:5.55555556vw}
+html[lang^="th"] .ex-author-bio .ex-author-bio__description{font-size:6.11111111vw}
+html[lang^="th"] .ex-author-bio .ex-author-bio__sns{font-size:4.44444444vw}
+}
+@media only screen and (min-width:768px) and (max-width:1440px){}
+@media only screen and (max-width:767px){}
+html[lang^="th"] .ex-author-bio .ex-author-bio__title{font-size:20px}
+html[lang^="th"] .ex-author-bio .ex-author-bio__description{font-size:22px}
+html[lang^="th"] .ex-author-bio .ex-author-bio__sns{font-size:16px}
+@media only screen and (min-width:768px) and (max-width:1440px){html[lang^="th"] .ex-author-bio .ex-author-bio__title{font-size:1.38888889vw}
+html[lang^="th"] .ex-author-bio .ex-author-bio__description{font-size:1.52777778vw}
+html[lang^="th"] .ex-author-bio .ex-author-bio__sns{font-size:1.11111111vw}
+}
+@media only screen and (max-width:767px){html[lang^="th"] .ex-author-bio .ex-author-bio__title{font-size:5.55555556vw}
+html[lang^="th"] .ex-author-bio .ex-author-bio__description{font-size:6.11111111vw}
+html[lang^="th"] .ex-author-bio .ex-author-bio__sns{font-size:4.44444444vw}
+}

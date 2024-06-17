@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <circle id="Oval" cx="9.75" cy="9.75" r="9.75" transform="translate(2.25 2.25)" fill="#888"/>
+  <g id="Symbols" transform="translate(-4.169 -4.17)">
+    <g id="_Icon-_-Bold-_-Action-_-Delete" data-name="*Icon-/-Bold-/-Action-/-Delete" transform="translate(11.17 11.17)">
+      <path id="Icon-_-Bold-_-Action-_-Delete" data-name="Icon-/-Bold-/-Action-/-Delete" d="M20.4,11.17,16.17,15.4,11.938,11.17l-.768.768L15.4,16.17,11.17,20.4l.768.768,4.232-4.232L20.4,21.17l.768-.768L16.938,16.17l4.232-4.232Z" transform="translate(-11.17 -11.17)" fill="#f1f0ef"/>
+    </g>
+  </g>
+  <circle id="Oval2" data-name="Oval2" cx="12" cy="12" r="12" fill="none"/>
+</svg>

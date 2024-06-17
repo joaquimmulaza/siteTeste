@@ -1,0 +1,97 @@
+.apps-carousel-container{background:#fff;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0 auto;overflow:hidden}
+.apps-carousel-container__feature{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding-bottom:36px}
+.apps-carousel-container__feature>div:first-child{width:100%}
+.apps-carousel-container__item{overflow:hidden;position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;text-align:left;padding:0}
+.apps-carousel-container__item--align-center{text-align:center}
+.apps-carousel-container__item--align-right{text-align:right}
+.apps-carousel-container__carousel.desktop-next-slide-to-show .image__preview+.image__main{top:0}
+.apps-carousel-container.bg-black,.apps-carousel-container.bg-dark-gray{color:#fff}
+.apps-carousel-container.bg-white,.apps-carousel-container.bg-light-gray{color:#000}
+.apps-carousel-container [class^="swiper-button"]{z-index:9}
+.apps-carousel-container__carousel{overflow:hidden}
+.apps-carousel-container__carousel [class^="swiper-button"]{opacity:0}
+.apps-carousel-container__carousel.use-desktop-arrow [class^="swiper-button"]{opacity:1}
+.apps-carousel-container__carousel.desktop-next-slide-to-show .swiper-button-prev{left:-28px}
+.apps-carousel-container__carousel.desktop-next-slide-to-show .swiper-button-next{right:-28px}
+.apps-carousel-container__carousel .indicator{display:none}
+.apps-carousel-container .indicator{position:relative;width:100%;margin-top:24px;padding:0 66px 48px;z-index:1}
+.apps-carousel-container .indicator-position-overlay .indicator{position:absolute;left:0;bottom:48px;z-index:10;margin:0;padding:0}
+.apps-carousel-container__carousel.use-desktop-back-button .indicator{left:100px}
+.apps-carousel-container__carousel.use-desktop-indicator .indicator{display:block}
+.apps-carousel-container .apps-carousel-container__carousel .swiper-button-prev,.apps-carousel-container .apps-carousel-container__carousel .swiper-button-next{background-color:rgba(0,0,0,0.45);border:1px solid rgba(255,255,255,0.15);width:40px;height:40px}
+.apps-carousel-container .apps-carousel-container__carousel .swiper-button-prev:hover,.apps-carousel-container .apps-carousel-container__carousel .swiper-button-next:hover,.apps-carousel-container .apps-carousel-container__carousel .swiper-button-prev:focus,.apps-carousel-container .apps-carousel-container__carousel .swiper-button-next:focus{background-color:#1c1c1c}
+.apps-carousel-container .apps-carousel-container__carousel .swiper-button-prev .icon,.apps-carousel-container .apps-carousel-container__carousel .swiper-button-next .icon{fill:#fff;width:24px;height:24px}
+.apps-carousel-container .apps-carousel-container__carousel .swiper-button-disabled{background-color:rgba(0,0,0,0.45);border:1px solid rgba(255,255,255,0.15);width:40px;height:40px}
+.apps-carousel-container .apps-carousel-container__carousel .swiper-button-disabled .icon{fill:rgba(255,255,255,0.3) !important;width:24px;height:24px}
+.apps-carousel-container__back-button{position:relative}
+.apps-carousel-container__quick-button{display:block;position:absolute;right:-160px;top:50%;width:120px;height:120px;-webkit-transform:translateY(-50%);transform:translateY(-50%);border:2px solid #333;border-radius:50%;background-color:#fff;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:background;transition-property:background;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out}
+.apps-carousel-container__quick-button svg.icon{display:inline-block;position:absolute;left:50%;top:50%;width:70px;height:56px;margin:-28px 0 0 -35px;fill:#333;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out}
+.apps-carousel-container__quick-button:hover,.apps-carousel-container__quick-button:focus{background-color:#333}
+.apps-carousel-container__quick-button:hover svg,.apps-carousel-container__quick-button:focus svg{fill:#fff}
+.apps-carousel-container.bg-black .apps-carousel-container__quick-button,.apps-carousel-container.bg-dark-gray .apps-carousel-container__quick-button{border-color:#fff;background-color:transparent}
+.apps-carousel-container.bg-black .apps-carousel-container__quick-button svg,.apps-carousel-container.bg-dark-gray .apps-carousel-container__quick-button svg{fill:#fff}
+.apps-carousel-container.bg-black .apps-carousel-container__quick-button:hover,.apps-carousel-container.bg-dark-gray .apps-carousel-container__quick-button:hover,.apps-carousel-container.bg-black .apps-carousel-container__quick-button:focus,.apps-carousel-container.bg-dark-gray .apps-carousel-container__quick-button:focus{background-color:#fff}
+.apps-carousel-container.bg-black .apps-carousel-container__quick-button:hover svg,.apps-carousel-container.bg-dark-gray .apps-carousel-container__quick-button:hover svg,.apps-carousel-container.bg-black .apps-carousel-container__quick-button:focus svg,.apps-carousel-container.bg-dark-gray .apps-carousel-container__quick-button:focus svg{fill:#333}
+.apps-carousel-container .use-desktop-back-button{padding-right:200px}
+.apps-carousel-container__carousel.desktop-next-slide-to-show .image,.apps-carousel-container__carousel.desktop-next-slide-to-show .video{display:block}
+.apps-carousel-container__carousel.desktop-next-slide-to-show .apps-carousel-container__figure:after{display:none}
+.apps-carousel-container--margin-top-normal{margin-top:88px}
+.apps-carousel-container--margin-bottom-normal{margin-bottom:88px}
+.apps-carousel-container--width-1920{max-width:1920px}
+.apps-carousel-container--width-1440{max-width:1440px}
+.apps-carousel-container--desktop-columns-space-normal .apps-carousel-container__inner{margin:0 -6px}
+.apps-carousel-container--desktop-columns-space-normal .apps-carousel-container__item{padding:0 6px}
+.apps-carousel-container__carousel.carousel-infinite-rolling .apps-carousel-container__item{padding:0}
+.apps-carousel-container--desktop-columns-space-normal .apps-carousel-container__carousel .apps-carousel-container__inner{margin:0}
+.apps-carousel-container--desktop-columns-space-normal .apps-carousel-container__carousel .apps-carousel-container__item{padding:12px 12px 0}
+.apps-carousel-container__carousel.desktop-next-slide-to-show{overflow:visible;width:1144px}
+.apps-carousel-container__carousel.desktop-next-slide-to-show .apps-carousel-container__item{width:1074px !important;margin:0 35px}
+.indicator-position-overlay .apps-carousel-container__feature{padding-bottom:0}
+@media only screen and (min-width:768px) and (max-width:1440px){.apps-carousel-container__feature{padding-bottom:2.5vw}
+.apps-carousel-container .indicator{margin-top:1.66666667vw;padding:0vw 4.58333333vw 3.33333333vw 4.58333333vw}
+.apps-carousel-container__carousel.desktop-next-slide-to-show .swiper-button-prev{left:-1.94444444vw}
+.apps-carousel-container__carousel.desktop-next-slide-to-show .swiper-button-next{right:-1.94444444vw}
+.apps-carousel-container__carousel.use-desktop-back-button .indicator{left:6.94444444vw}
+.apps-carousel-container .apps-carousel-container__carousel .swiper-button-prev,.apps-carousel-container .apps-carousel-container__carousel .swiper-button-next{width:2.77777778vw;height:2.77777778vw}
+.apps-carousel-container .apps-carousel-container__carousel .swiper-button-prev .icon,.apps-carousel-container .apps-carousel-container__carousel .swiper-button-next .icon{width:1.66666667vw;height:1.66666667vw}
+.apps-carousel-container .apps-carousel-container__carousel .swiper-button-disabled{width:2.77777778vw;height:2.77777778vw}
+.apps-carousel-container .apps-carousel-container__carousel .swiper-button-disabled .icon{width:1.66666667vw;height:1.66666667vw}
+.apps-carousel-container .indicator-position-overlay .indicator{bottom:3.33333333vw}
+.apps-carousel-container__quick-button{right:-11.11111111vw;width:8.33333333vw;height:8.33333333vw}
+.apps-carousel-container__quick-button svg.icon{width:4.86111111vw;height:3.88888889vw;margin:-1.94444444vw 0vw 0vw -2.43055556vw}
+.apps-carousel-container .use-desktop-back-button{padding-right:13.88888889vw}
+.apps-carousel-container--margin-top-normal{margin-top:6.11111111vw}
+.apps-carousel-container--margin-bottom-normal{margin-bottom:6.11111111vw}
+.apps-carousel-container--width-1920{max-width:133.33333333vw}
+.apps-carousel-container--width-1440{max-width:100vw}
+.apps-carousel-container--desktop-columns-space-normal .apps-carousel-container__inner{margin:0vw -0.41666667vw}
+.apps-carousel-container--desktop-columns-space-normal .apps-carousel-container__item{padding:0vw .41666667vw}
+.apps-carousel-container--desktop-columns-space-normal .apps-carousel-container__carousel .apps-carousel-container__item{padding:.83333333vw .83333333vw 0vw .83333333vw}
+.apps-carousel-container__carousel.desktop-next-slide-to-show{width:79.44444444vw}
+.apps-carousel-container__carousel.desktop-next-slide-to-show .apps-carousel-container__item{width:74.58333333vw !important;margin:0vw 2.43055556vw}
+.indicator-position-overlay .apps-carousel-container__feature{padding-bottom:0}
+}
+@media only screen and (max-width:767px){.apps-carousel-container__feature{padding-bottom:11.11111111vw}
+.apps-carousel-container__carousel .apps-carousel-container__inner{-ms-flex-wrap:nowrap;flex-wrap:nowrap;padding:0 !important;margin:0 !important}
+.use-mobile-carousel .apps-carousel-container__inner{-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.apps-carousel-container .indicator{margin-top:3.33333333vw;padding:0vw 3.33333333vw 6.66666667vw 3.33333333vw}
+.apps-carousel-container__column.use-mobile-arrow [class^="swiper-button"],.apps-carousel-container__column.use-mobile-indicator .indicator{display:block}
+.apps-carousel-container__column.use-mobile-carousel .apps-carousel-container__more-button{display:none}
+.apps-carousel-container__carousel.use-desktop-arrow [class^="swiper-button"]{opacity:0}
+.apps-carousel-container__carousel.use-mobile-arrow [class^="swiper-button"]{opacity:1}
+.apps-carousel-container__carousel.desktop-next-slide-to-show .swiper-button-prev{left:3.33333333vw}
+.apps-carousel-container__carousel.desktop-next-slide-to-show .swiper-button-next{right:3.33333333vw}
+.apps-carousel-container__carousel.use-desktop-indicator .indicator{display:none}
+.apps-carousel-container__carousel.use-mobile-indicator .indicator{display:block}
+.apps-carousel-container__carousel.use-desktop-back-button .indicator{left:0}
+.apps-carousel-container .indicator-position-overlay .indicator{bottom:13.33333333vw}
+.apps-carousel-container .use-desktop-back-button{padding:0}
+.apps-carousel-container__quick-button{display:none}
+.apps-carousel-container--margin-top-normal{margin-top:24.44444444vw}
+.apps-carousel-container--margin-bottom-normal{margin-bottom:24.44444444vw}
+.apps-carousel-container--desktop-columns-space-normal .apps-carousel-container__inner{margin-top:-2.22222222vw}
+.apps-carousel-container--desktop-columns-space-normal .apps-carousel-container__item{margin-top:2.22222222vw;padding:0vw 1.11111111vw}
+.apps-carousel-container__carousel.desktop-next-slide-to-show{overflow:hidden;width:100%}
+.apps-carousel-container__carousel.desktop-next-slide-to-show .apps-carousel-container__item{width:100% !important}
+.indicator-position-overlay .apps-carousel-container__feature{padding-bottom:0}
+}

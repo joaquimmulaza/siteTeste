@@ -1,0 +1,13 @@
+.co28-video{position:relative;width:100%;max-width:1156px;margin:0 auto;padding:0}
+.co28-video--margin-top-normal{margin-top:24px}
+.co28-video--margin-top-wide{margin-top:40px}
+.co28-video--no-default-image .video{position:relative;height:0;padding-bottom:56.25%;overflow:hidden}
+.co28-video--no-default-image .video figure{position:absolute}
+@media screen and (max-width:1440px){.co28-video{max-width:80.27777778vw}
+.co28-video--margin-top-normal{margin-top:1.66666667vw}
+.co28-video--margin-top-wide{margin-top:2.77777778vw}
+}
+@media only screen and (max-width:767px){.co28-video{max-width:90vw}
+.co28-video--margin-top-normal{margin-top:6.66666667vw}
+.co28-video--margin-top-wide{margin-top:11.11111111vw}
+}

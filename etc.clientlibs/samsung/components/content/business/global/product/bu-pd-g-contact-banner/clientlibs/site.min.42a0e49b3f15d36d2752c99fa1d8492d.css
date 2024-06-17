@@ -1,0 +1,49 @@
+.contact-banner{margin:0 auto;max-width:1440px;text-align:center}
+.contact-banner__wrap{max-width:1440px;margin:0 auto}
+.contact-banner__inner-wrap{text-align:center}
+.contact-banner__headline{width:572px;margin:0 auto;font-size:24px;line-height:1.33;font-family:'SamsungSharpSans',arial,sans-serif;word-wrap:break-word}
+.contact-banner__description{width:572px;margin:0 auto;font-size:14px;line-height:1.33;font-weight:normal;word-wrap:break-word}
+.contact-banner__headline+.contact-banner__description{margin-top:16px}
+.contact-banner__cta-button{display:inline-block}
+.contact-banner--two-column .contact-banner__cta-button:before{display:none}
+.contact-banner__cta-button+.contact-banner__cta-button{position:relative;margin-left:24px;padding-left:24px}
+.contact-banner__cta-button+.contact-banner__cta-button:before{content:'';position:absolute;top:50%;width:1px;height:20px;margin-top:-10px;background-color:rgba(255,255,255,0.3);left:0}
+.contact-banner.bg-light-gray .contact-banner__cta-button+.contact-banner__cta-button:before,.contact-banner.bg-white .contact-banner__cta-button+.contact-banner__cta-button:before{background-color:rgba(0,0,0,0.2)}
+.contact-banner__description+.contact-banner__cta,.contact-banner__headline+.contact-banner__cta{margin-top:24px}
+.contact-banner--two-column .contact-banner__wrap{display:table;width:100%;padding:0 24px}
+.contact-banner--two-column .contact-banner__inner-wrap{display:table-cell;width:50%}
+.contact-banner--two-column .contact-banner__inner-wrap+.contact-banner__inner-wrap{padding-left:24px;border-left:1px solid rgba(255,255,255,0.3)}
+.contact-banner--two-column .contact-banner__inner-wrap .contact-banner__inner{padding:0 48px 0 64px;text-align:left}
+.contact-banner--two-column .contact-banner__headline{width:100%;margin:0}
+.contact-banner--two-column .contact-banner__description{width:100%;margin:0}
+.contact-banner--two-column .contact-banner__headline+.contact-banner__description{margin-top:16px}
+.contact-banner--two-column .contact-banner__cta-button{display:block;margin-top:9px;margin-left:0;padding-left:0}
+.contact-banner.bg-light-gray .contact-banner__inner-wrap+.contact-banner__inner-wrap,.contact-banner.bg-white .contact-banner__inner-wrap+.contact-banner__inner-wrap{border-color:rgba(0,0,0,0.2)}
+@media only screen and (min-width:768px) and (max-width:1440px){.contact-banner__headline{width:39.72222222vw;font-size:1.66666667vw}
+.contact-banner__description{width:39.72222222vw;font-size:.97222222vw}
+.contact-banner__headline+.contact-banner__description{margin-top:1.11111111vw}
+.contact-banner__cta-button+.contact-banner__cta-button{margin-left:1.66666667vw;padding-left:1.66666667vw}
+.contact-banner__cta-button+.contact-banner__cta-button:before{width:.06944444vw;height:1.38888889vw;margin-top:-0.69444444vw}
+.contact-banner__description+.contact-banner__cta,.contact-banner__headline+.contact-banner__cta{margin-top:1.66666667vw}
+.contact-banner--two-column .contact-banner__wrap{padding:0vw 1.66666667vw}
+.contact-banner--two-column .contact-banner__inner-wrap+.contact-banner__inner-wrap{padding-left:1.66666667vw}
+.contact-banner--two-column .contact-banner__inner-wrap .contact-banner__inner{padding:0vw 3.33333333vw 0vw 4.44444444vw}
+.contact-banner--two-column .contact-banner__headline+.contact-banner__description{margin-top:1.11111111vw}
+.contact-banner--two-column .contact-banner__cta-button{margin-top:.625vw;margin-left:0;padding-left:0}
+}
+@media only screen and (max-width:767px){.contact-banner__wrap{padding:0vw 6.66666667vw}
+.contact-banner__inner-wrap{text-align:left}
+.contact-banner__headline{width:100%;font-size:4.44444444vw}
+.contact-banner__description{width:100%;font-size:3.33333333vw}
+.contact-banner__headline+.contact-banner__description{margin-top:3.33333333vw}
+.contact-banner__cta-button+.contact-banner__cta-button{display:block;margin-left:0;padding-left:0;margin-top:2.5vw}
+.contact-banner__cta-button+.contact-banner__cta-button:before{display:none}
+.contact-banner__description+.contact-banner__cta,.contact-banner__headline+.contact-banner__cta{margin-top:6.94444444vw}
+.contact-banner--two-column{display:block}
+.contact-banner--two-column .contact-banner__wrap{display:block;padding:0vw 6.66666667vw}
+.contact-banner--two-column .contact-banner__inner-wrap{display:block;width:100%}
+.contact-banner--two-column .contact-banner__inner-wrap+.contact-banner__inner-wrap{padding:0;border:0;border-top:1px solid rgba(255,255,255,0.3);margin-top:8.88888889vw;padding-top:8.88888889vw}
+.contact-banner--two-column .contact-banner__inner-wrap .contact-banner__inner{padding:0}
+.contact-banner--two-column .contact-banner__headline+.contact-banner__description{margin-top:3.33333333vw}
+.contact-banner--two-column .contact-banner__cta-button{margin-top:2.5vw}
+}

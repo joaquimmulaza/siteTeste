@@ -1,0 +1,140 @@
+.my-recommended-product{max-width:1440px;margin:0 auto;position:relative}
+.my-recommended-product__headline-text{padding:0 24px 16px 24px;font-size:38px;font-family:'SamsungSharpSans',arial,sans-serif;line-height:1.2;color:#000;text-align:center;font-weight:700;word-wrap:break-word}
+.my-recommended-product__card{max-width:1440px;margin:0 auto;padding:32px 0;text-align:center;background:transparent;position:relative}
+.my-recommended-product__card .indicator{display:none}
+.my-recommended-product__card .swiper-container{max-width:1152px;margin:0 auto}
+.my-recommended-product__card .swiper-container.is-align-center .swiper-wrapper{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.my-recommended-product__card .swiper-container.is-align-center .card-image .swiper-wrapper{-webkit-box-pack:normal;-ms-flex-pack:normal;justify-content:normal}
+.my-recommended-product__card [class*='swiper-button'].swiper-button-disabled{visibility:visible}
+.my-recommended-product__card-item{width:264px;background-color:#f7f7f7;position:relative;padding:48px 0 24px 0;border-radius:20px}
+.my-recommended-product__card-item .option-selector__button-prev:after{background-image:-webkit-gradient(linear,right top,left top,from(rgba(247,247,247,0)),to(#f7f7f7));background-image:linear-gradient(to left,rgba(247,247,247,0),#f7f7f7)}
+.my-recommended-product__card-item .option-selector__button-next:after{background-image:-webkit-gradient(linear,left top,right top,from(rgba(247,247,247,0)),to(#f7f7f7));background-image:linear-gradient(to right,rgba(247,247,247,0),#f7f7f7)}
+.bg-light-gray .my-recommended-product__card-item{background-color:#fff}
+.bg-light-gray .my-recommended-product__card-item .option-selector__button-prev:after{background-image:-webkit-gradient(linear,right top,left top,from(rgba(255,255,255,0)),to(#fff));background-image:linear-gradient(to left,rgba(255,255,255,0),#fff)}
+.bg-light-gray .my-recommended-product__card-item .option-selector__button-next:after{background-image:-webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),to(#fff));background-image:linear-gradient(to right,rgba(255,255,255,0),#fff)}
+.my-recommended-product__card-item-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;padding:0 12px;width:288px;height:auto}
+.my-recommended-product__card-badge{position:absolute;top:16px;left:16px}
+.my-recommended-product__card-wishlist{position:absolute;top:16px;right:16px}
+.my-recommended-product__card-wishlist .pd-wishlist-cta{font-size:0}
+.my-recommended-product__card-wishlist .pd-wishlist-cta::after{width:-webkit-max-content !important;width:-moz-max-content !important;width:max-content !important;max-width:216px;left:auto;right:0;-webkit-transform:none;transform:none;text-align:center;-webkit-box-sizing:border-box;box-sizing:border-box;white-space:normal}
+.my-recommended-product__card-wishlist .pd-wishlist-cta:hover:before,.my-recommended-product__card-wishlist .pd-wishlist-cta:focus:before{display:block}
+.my-recommended-product__card-wishlist .icon.select{fill:#2189ff}
+.my-recommended-product__card-image-wrap{padding:0 24px}
+.my-recommended-product__card-image{position:relative;width:216px;height:216px;margin:0 auto}
+.my-recommended-product__card-image .image{padding-top:100%}
+.my-recommended-product__card-image .image img{position:absolute;max-height:100%;max-width:100%;margin:auto;top:0;bottom:0;left:0;right:0}
+.my-recommended-product__card-name{min-height:44px;margin:8px 16px 16px 16px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.my-recommended-product__card-name-text{display:-webkit-box;width:234px;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-family:'SamsungSharpSans',arial,sans-serif;font-size:16px;font-weight:bold;line-height:1.33;color:#000}
+.my-recommended-product__card-info .option-selector{padding:0 16px}
+.my-recommended-product__card-info .option-selector .option-selector__swiper-container{font-size:0}
+.my-recommended-product__card-info .option-selector .option-selector__swiper--min .option-selector__swiper-container{text-align:center}
+.my-recommended-product__card-info .option-selector__color-text .option-selector__color-name{text-align:center;padding:0;line-height:1.33}
+.my-recommended-product__card-info .option-selector__color-text .option-selector__color-name .option-selector__color-tooltip{left:16px}
+.my-recommended-product__card-fiche{margin:12px 16px 0 16px}
+.my-recommended-product__card .badge-energy-label{padding-bottom:8px}
+.my-recommended-product__card .badge-energy-label__text{max-width:184px;word-wrap:break-word}
+.my-recommended-product__card .badge-repairability{display:block}
+.my-recommended-product__card .badge-repairability__image{width:58px;height:38px}
+.my-recommended-product__card-price{margin:12px 16px;text-align:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
+.my-recommended-product__card-price-current{font-size:18px;line-height:1.33;font-weight:bold}
+.my-recommended-product__card-price-current:first-child{margin-bottom:4px}
+.my-recommended-product__card-price-current-normal{display:inline-block;font-size:12px;line-height:2;font-weight:normal}
+.my-recommended-product__card-price-save{font-size:12px;line-height:1.33;color:#006bea;font-weight:bold;margin-bottom:4px}
+.my-recommended-product__card-price-save-normal{display:inline-block;color:#000;font-weight:normal}
+.my-recommended-product__card-price-save del{color:#000;font-weight:normal}
+.my-recommended-product__card-price-installment{text-align:center;font-size:12px;line-height:1.33}
+.my-recommended-product__card-price-installment-text{display:inline-block;vertical-align:baseline}
+.my-recommended-product__card-price-calculate{display:inline-block;color:#006bea;text-decoration:underline;vertical-align:baseline}
+.my-recommended-product__card-price--current-first{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.my-recommended-product__card-price--samcol{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.my-recommended-product__card-price-excluding-vat,.my-recommended-product__card-price-special,.my-recommended-product__card-price-rrp{display:block;line-height:1.33;text-align:center}
+.my-recommended-product__card-price-excluding-vat{margin-bottom:4px;font-size:18px}
+.my-recommended-product__card-price-special,.my-recommended-product__card-price-rrp{font-size:12px}
+.my-recommended-product__card-price-rrp{margin-top:2px}
+.my-recommended-product__card-cta-wrap{margin-top:24px}
+.my-recommended-product__card-cta .cta{width:232px}
+.my-recommended-product__card-cta .cta--outlined{background-color:#fff !important}
+.my-recommended-product__card-price--samcol ~ .my-recommended-product__card-cta-wrap{margin-top:16px}
+.my-recommended-product.bg-black,.my-recommended-product.bg-dark-gray{color:#000}
+.my-recommended-product.bg-black .my-recommended-product__headline-text,.my-recommended-product.bg-dark-gray .my-recommended-product__headline-text{color:#fff}
+.my-recommended-product.bg-black .badge-energy-label__text,.my-recommended-product.bg-dark-gray .badge-energy-label__text{color:#000}
+@media screen and (max-width:1440px){.my-recommended-product{max-width:100vw}
+.my-recommended-product__headline-text{padding:0vw 1.66666667vw 1.11111111vw 1.66666667vw;font-size:2.63888889vw}
+.my-recommended-product__card{padding:2.22222222vw 0vw}
+.my-recommended-product__card .swiper-button-prev{left:1.66666667vw}
+.my-recommended-product__card .swiper-button-next{right:1.66666667vw}
+.my-recommended-product__card .swiper-container{max-width:80vw}
+.my-recommended-product__card-item{width:18.33333333vw;padding:3.33333333vw 0vw 1.66666667vw 0vw;border-radius:1.38888889vw}
+.my-recommended-product__card-item-wrap{width:20vw;padding:0vw .83333333vw}
+.my-recommended-product__card-info .option-selector{padding:0vw 1.11111111vw 0vw 1.11111111vw}
+.my-recommended-product__card-info .option-selector__color-text .option-selector__color-name .option-selector__color-tooltip{left:1.11111111vw}
+.my-recommended-product__card-badge{top:1.11111111vw;left:1.11111111vw}
+.my-recommended-product__card-wishlist{top:1.11111111vw;right:1.11111111vw}
+.my-recommended-product__card-wishlist .pd-wishlist-cta::after{width:15vw;max-width:15vw}
+.my-recommended-product__card-image-wrap{padding:0vw 1.66666667vw}
+.my-recommended-product__card-image{width:15vw;height:15vw}
+.my-recommended-product__card-name{margin:.55555556vw 1.11111111vw 1.11111111vw 1.11111111vw;min-height:3.05555556vw}
+.my-recommended-product__card-name-text{width:16.25vw;font-size:1.11111111vw}
+.my-recommended-product__card-fiche{margin:.83333333vw 1.11111111vw 0vw 1.11111111vw}
+.my-recommended-product__card .badge-energy-label{padding-bottom:.55555556vw}
+.my-recommended-product__card .badge-energy-label__text{max-width:12.77777778vw}
+.my-recommended-product__card .badge-repairability__image{width:4.02777778vw;height:2.63888889vw}
+.my-recommended-product__card-price{margin:.83333333vw 1.11111111vw}
+.my-recommended-product__card-price-current{font-size:1.25vw}
+.my-recommended-product__card-price-current:first-child{margin-bottom:.27777778vw}
+.my-recommended-product__card-price-current-normal{font-size:.83333333vw}
+.my-recommended-product__card-price-save{font-size:.83333333vw}
+.my-recommended-product__card-price-installment{font-size:.83333333vw}
+.my-recommended-product__card-price-excluding-vat{margin-bottom:.27777778vw;font-size:1.25vw}
+.my-recommended-product__card-price-special,.my-recommended-product__card-price-rrp{font-size:.83333333vw}
+.my-recommended-product__card-price-rrp{margin-top:.13888889vw}
+.my-recommended-product__card-cta-wrap{margin-top:1.66666667vw}
+.my-recommended-product__card-cta ~ .card-cta{margin-top:.55555556vw}
+.my-recommended-product__card-cta .cta{width:16.11111111vw}
+.my-recommended-product__card-price--samcol ~ .my-recommended-product__card-cta-wrap{margin-top:1.11111111vw}
+}
+@media only screen and (max-width:767px){.my-recommended-product{max-width:none;margin:0}
+.my-recommended-product__headline-text{padding:0vw 6.66666667vw 4.44444444vw 6.66666667vw;font-size:7.22222222vw;line-height:1.33}
+.my-recommended-product__card{max-width:100%;padding:2.22222222vw 4.44444444vw 6.66666667vw 4.44444444vw}
+.my-recommended-product__card [class*="swiper-button"]{display:none}
+.my-recommended-product__card .indicator{display:block;margin-top:6.66666667vw}
+.my-recommended-product__card .swiper-container{max-width:none}
+.my-recommended-product__card .swiper-container.is-align-center .swiper-wrapper{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:start}
+.my-recommended-product__card .swiper-container.is-align-center .card-image .swiper-wrapper{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:start}
+.my-recommended-product__card-item{width:100%;margin:0;padding:12.22222222vw 0vw 4.44444444vw 0vw;border-radius:5.55555556vw}
+.my-recommended-product__card-item-wrap{width:50%;padding:0vw 2.22222222vw;height:auto;margin:4.44444444vw 0vw 0vw 0vw}
+.my-recommended-product__card-badge{top:4.44444444vw;left:3.33333333vw}
+.my-recommended-product__card-wishlist{top:4.44444444vw;right:3.33333333vw}
+.my-recommended-product__card-wishlist .pd-wishlist-cta{width:4.44444444vw;height:4.44444444vw}
+.my-recommended-product__card-wishlist .pd-wishlist-cta::after{width:36.66666667vw;max-width:36.66666667vw;top:5.55555556vw}
+.my-recommended-product__card-image-wrap{padding:0vw 2.22222222vw;margin-bottom:4.44444444vw}
+.my-recommended-product__card-image{width:36.66666667vw;height:36.66666667vw}
+.my-recommended-product__card-image div.swiper-wrapper{-ms-flex-wrap:nowrap;flex-wrap:nowrap;padding:0 !important}
+.my-recommended-product__card-name{margin:4.44444444vw 3.33333333vw 3.33333333vw 3.33333333vw;height:8.88888889vw;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}
+.my-recommended-product__card-name-text{width:34.44444444vw;max-height:8.88888889vw;font-size:3.33333333vw}
+.my-recommended-product__card-info .option-selector{padding:0vw}
+.my-recommended-product__card-info .option-selector__color{width:4.44444444vw;height:4.44444444vw;padding:1.11111111vw}
+.my-recommended-product__card-info .option-selector__color-name{font-size:2.77777778vw;margin-bottom:2.22222222vw}
+.my-recommended-product__card-info .option-selector__color-text .option-selector__color-name{padding:0vw 3.33333333vw}
+.my-recommended-product__card-info .option-selector__color-text .option-selector__color-name .option-selector__color-tooltip{left:1.11111111vw;right:3.33333333vw;top:5.27777778vw}
+.my-recommended-product__card-fiche{margin:3.33333333vw 3.33333333vw 2.22222222vw 3.33333333vw}
+.my-recommended-product__card .badge-energy-label{padding-bottom:2.22222222vw}
+.my-recommended-product__card .badge-energy-label__text{font-size:2.77777778vw;max-width:25vw;text-align:left}
+.my-recommended-product__card .badge-energy-label__badge{vertical-align:middle;width:6.11111111vw;height:3.33333333vw}
+.my-recommended-product__card .badge-repairability__image{width:13.33333333vw;height:8.88888889vw}
+.my-recommended-product__card-price{margin:3.33333333vw 3.33333333vw 2.22222222vw 3.33333333vw}
+.my-recommended-product__card-price-current{font-size:3.88888889vw}
+.my-recommended-product__card-price-current:first-child{margin-bottom:1.11111111vw}
+.my-recommended-product__card-price-current-normal{font-size:2.77777778vw}
+.my-recommended-product__card-price-save{font-size:2.77777778vw}
+.my-recommended-product__card-price-current:first-child+.my-recommended-product__card-price-save{margin-bottom:0}
+.my-recommended-product__card-price-installment{margin-top:1.38888889vw;font-size:2.77777778vw}
+.my-recommended-product__card-price-installment-text{display:inline}
+.my-recommended-product__card-price-excluding-vat{margin-bottom:1.11111111vw;font-size:3.88888889vw}
+.my-recommended-product__card-price-special,.my-recommended-product__card-price-rrp{font-size:2.77777778vw}
+.my-recommended-product__card-price-rrp{margin-top:.55555556vw}
+.my-recommended-product__card-cta-wrap{margin-top:4.44444444vw}
+.my-recommended-product__card-cta ~ .card-cta{margin-top:2.22222222vw}
+.my-recommended-product__card-cta .cta{width:34.44444444vw;height:8.88888889vw;padding:1.94444444vw 4.16666667vw;border-radius:4.44444444vw;font-size:3.33333333vw;line-height:4.44444444vw}
+.my-recommended-product__card-price--samcol ~ .my-recommended-product__card-cta-wrap{margin-top:4.44444444vw}
+}

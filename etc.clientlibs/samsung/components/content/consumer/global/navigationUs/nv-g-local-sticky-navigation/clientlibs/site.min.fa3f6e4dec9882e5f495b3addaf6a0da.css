@@ -1,0 +1,62 @@
+.sh-g-faq-tab-menu{float:left}
+.cm-shop-tab-side{position:relative;float:left;width:270px}
+.cm-shop-tab-side__inner{width:270px;background:#fff}
+.cm-shop-tab-side__inner.is-fixed{position:fixed;z-index:99999;top:0}
+.shop-faq-title-wrap{margin-bottom:30px;overflow:hidden;padding-left:80px}
+.shop-faq-title-wrap .s-txt-title{font-family:'SamsungSharpSans',arial,sans-serif;font-size:48px;padding-bottom:4px}
+.aem-AuthorLayer-Edit .shop-faq-title-wrap{margin-bottom:6.083333vw}
+.help-container{max-width:1150px;margin:0 auto;padding:100px 0 90px}
+.help-container:before,.help-container::after{content:"";display:block;clear:both}
+.cm-shop-tab-side__inner.sticky-over{position:absolute;z-index:10}
+.cm-shop-tab-side__select{display:none}
+.cm-shop-tab-side__nav{margin-top:1px}
+.cm-shop-tab-side__nav a.cm-shop-tab-side__item.notAnchor-class[target="_blank"]>span{position:relative}
+.cm-shop-tab-side__nav a.cm-shop-tab-side__item.notAnchor-class[target="_blank"]>span:after{width:14px;height:14px;right:-20px;content:" ";position:absolute;bottom:-6px;-webkit-transform:translateY(-50%);background-image:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/icon-new-window-black.svg");transform:translateY(-50%);background-repeat:no-repeat;background-size:100% 100%}
+.cm-shop-tab-side__nav .cm-shop-tab-side__item{margin-top:-1px;text-align:center}
+.cm-shop-tab-side__nav .cm-shop-tab-side__item a{display:block;position:relative;padding:20px 10px;font-size:12px;color:#363636;font-weight:bold;text-transform:uppercase;letter-spacing:.12em}
+.cm-shop-tab-side__nav .cm-shop-tab-side__item a:before{position:absolute;top:0;left:0;bottom:0;right:0;border:1px solid #dadada;content:""}
+.cm-shop-tab-side__nav .cm-shop-tab-side__item a.cm-shop-tab-side__item.notAnchor-class[target="_blank"]{padding:20px 24px 20px 10px}
+.cm-shop-tab-side__nav .cm-shop-tab-side__item a.s-ico-new-window{text-decoration:none;white-space:normal;line-height:1.32;letter-spacing:0}
+.cm-shop-tab-side__item.is-active a{font-weight:bold;pointer-events:none !important}
+.cm-shop-tab-side__item.is-active a:before{z-index:10;border-color:#363636}
+.cm-shop-tab-side__item.is-hover a{font-weight:bold}
+.cm-shop-tab-side__item.is-hover a:before{z-index:10;border-color:#363636}
+.shop-faq-content{overflow:hidden;padding-left:80px}
+@media only screen and (min-width:768px) and (max-width:1440px){.help-container{max-width:79.86111111vw}
+.cm-shop-tab-side__item::before{content:none}
+.cm-shop-tab-side__nav a.cm-shop-tab-side__item.notAnchor-class[target="_blank"]>span:after{width:.97222222vw;height:.97222222vw;right:-1.38888889vw;bottom:-0.41666667vw}
+.cm-shop-tab-side__nav .cm-shop-tab-side__item a{font-size:.83333333vw;padding:1.38888889vw .69444444vw}
+.cm-shop-tab-side__nav .cm-shop-tab-side__item a.cm-shop-tab-side__item.notAnchor-class[target="_blank"]{padding:1.38888889vw 1.66666667vw 1.38888889vw .69444444vw}
+.cm-shop-tab-side{width:18.75vw}
+.cm-shop-tab-side__inner{width:18.75vw}
+.shop-faq-content,.shop-faq-title-wrap{padding-left:5.55555556vw}
+.shop-faq-title-wrap{padding-left:5.55555556vw;margin-bottom:2.08333333vw}
+.shop-faq-title-wrap .s-txt-title{font-size:3.33333333vw;padding-bottom:.27777778vw}
+html[lang^="th"] .cm-shop-tab-side__item a{font-size:16.2px}
+html[lang^="th"] .shop-faq-title-wrap .s-txt-title{font-size:4.5vw}
+}
+@media only screen and (max-width:767px){.help-container{max-width:100%;padding:0 0 14.72222vw}
+.shop-faq-content,.shop-faq-title-wrap{padding:0 4.44444vw}
+.shop-faq-title-wrap{margin-bottom:0;padding:16.66667vw 0 7.77778vw;text-align:center}
+.shop-faq-title-wrap .s-txt-title{font-size:8.33333vw;padding-bottom:1.11111111vw}
+.cm-shop-tab-side__nav{display:block;padding:0 4.44444vw;background:#fff;-webkit-box-sizing:border-box;box-sizing:border-box}
+.cm-shop-tab-side__nav .cm-shop-tab-side__item{float:none;width:100%;padding:0;border-top:1px solid #dadada;text-align:left}
+.cm-shop-tab-side__nav .cm-shop-tab-side__item:first-child{border-top:0}
+.cm-shop-tab-side__nav .cm-shop-tab-side__item a{font-weight:bold;padding:5.27778vw 2.22222vw;font-size:4.44444vw;letter-spacing:0;color:#000}
+.cm-shop-tab-side__nav a.cm-shop-tab-side__item.notAnchor-class[target="_blank"]>span:after{width:3.88888889vw;height:3.88888889vw;right:-5.55555556vw;bottom:-1.38888889vw}
+html[lang^="th"] .shop-faq-title-wrap .s-txt-title{font-size:12.08333vw}
+.cm-shop-tab-side__select{display:block;position:relative;padding:4.44444vw 11.94444vw 4.44444vw 6.66667vw;border:1px solid #dadada;border-width:1px 0;background:#f7f7f7;font-size:4.44444vw;font-weight:bold;color:#000;text-transform:uppercase;text-align:left;letter-spacing:.05em}
+.cm-shop-tab-side__select::after{position:absolute;top:50%;right:4.44444vw;width:4.72222vw;height:4.72222vw;margin-top:-2.66667vw;background:url("../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/next-wh.svg");background-size:cover;transform:rotate(90deg);content:""}
+.sh-g-faq-tab-menu{float:none;width:100%}
+.cm-shop-tab-side__nav-wrap{display:none;height:100vh;background:#fff;overflow-y:scroll;z-index:10;border-bottom:1px solid #dadada;position:absolute;width:100%}
+.cm-shop-tab-side{float:none;position:relative;max-width:100%;width:100%;padding:0}
+.cm-shop-tab-side .cm-shop-tab-side__inner{width:100% !important}
+.cm-shop-tab-side .cm-shop-tab-side__inner.is-opened .cm-shop-tab-side__select:after{transform:rotate(-90deg)}
+.cm-shop-tab-side .cm-shop-tab-side__inner.is-opened .cm-shop-tab-side__nav-wrap{display:block}
+.cm-shop-tab-side__item a:before{content:none !important}
+.shop-faq-content{padding:0 4.44444vw}
+}
+html[lang^="th"] .cm-shop-tab-side__item a{font-size:16.2px;font-size:1.125vw}
+html[lang^="th"] .shop-faq-title-wrap .s-txt-title{font-size:64.8px;font-size:4.5vw}
+@media screen and (max-width:768px) and (max-width:361px){html[lang^="th"] .shop-faq-title-wrap .s-txt-title{font-size:43.5px;font-size:12.08333vw}
+}

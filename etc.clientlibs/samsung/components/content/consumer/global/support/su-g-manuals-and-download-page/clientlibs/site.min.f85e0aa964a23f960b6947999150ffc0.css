@@ -1,0 +1,330 @@
+.sud14-how-to-find-model-code__popup{display:none}
+.sud14-how-to-find-model-code__popup .layer-popup{overflow-y:auto;position:fixed;left:0;top:0;right:0;bottom:0;letter-spacing:-4px;text-align:center;background:rgba(0,0,0,0.68);z-index:3100}
+.sud14-how-to-find-model-code__popup .layer-popup:before{content:'';display:inline-block;height:100%;vertical-align:middle}
+.sud14-how-to-find-model-code__popup .layer-popup__looping--first{display:inline-block}
+.sud14-how-to-find-model-code__popup .layer-popup__inner{display:inline-block;position:relative;width:1156px;padding:24px;border-radius:20px;background:#fff;line-height:1.33;vertical-align:middle;letter-spacing:0}
+.sud14-how-to-find-model-code__popup .layer-popup__contents::after{display:block;content:'';clear:both}
+.sud14-how-to-find-model-code__popup .layer-popup__select-wrap{margin-right:24px;float:left;width:732px}
+.sud14-how-to-find-model-code__popup .layer-popup__title{font-size:24px;font-family:'SamsungSharpSans',arial,sans-serif;color:#000;text-align:left;word-wrap:break-word}
+.sud14-how-to-find-model-code__popup .layer-popup__desc{max-width:732px;margin-top:16px;font-size:14px;line-height:1.33;word-break:break-word;color:#000;text-align:left}
+.sud14-how-to-find-model-code__popup .layer-popup__select{margin-top:16px;padding:24px;width:732px}
+.sud14-how-to-find-model-code__popup .layer-popup__select-list{display:table;width:100%}
+.sud14-how-to-find-model-code__popup .layer-popup__select-item{display:table-row;font-size:0;vertical-align:top}
+.sud14-how-to-find-model-code__popup .layer-popup__select-title{width:132px;display:table-cell;padding-top:24px;padding-right:12px;text-align:left;font-size:14px;font-weight:bold;color:#000;vertical-align:middle}
+.sud14-how-to-find-model-code__popup .layer-popup__select-menu{display:table-cell;padding-top:24px;vertical-align:top}
+.sud14-how-to-find-model-code__popup .layer-popup__select-menu .menu{width:100%;max-width:100%}
+.sud14-how-to-find-model-code__popup .layer-popup__select-item:first-child .layer-popup__select-title,.sud14-how-to-find-model-code__popup .layer-popup__select-item:first-child .layer-popup__select-menu{padding-top:0}
+.sud14-how-to-find-model-code__popup .layer-popup__info-wrap{position:relative;min-height:350px;padding-top:48px;text-align:center;overflow:hidden}
+.sud14-how-to-find-model-code__popup .layer-popup__swiper-list [class*="swiper-button"]{background:0;top:0;width:36px;margin-top:102px;padding:0;-webkit-transform:none;transform:none}
+.sud14-how-to-find-model-code__popup .layer-popup__swiper-list .swiper-button-prev{display:none}
+.sud14-how-to-find-model-code__popup .layer-popup__swiper-list .swiper-button-next{display:none}
+.sud14-how-to-find-model-code__popup .layer-popup__item-image{height:240px;padding:0 16px}
+.sud14-how-to-find-model-code__popup .layer-popup__item-image img{height:240px;width:auto}
+.sud14-how-to-find-model-code__popup .layer-popup__item-image img.image__main{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+.sud14-how-to-find-model-code__popup .layer-popup__item-text{margin:16px;font-size:14px;color:#000;word-wrap:break-word}
+.sud14-how-to-find-model-code__popup .layer-popup .layer-popup__item .layer-popup__item-text:first-child{margin-top:250px}
+.sud14-how-to-find-model-code__popup .layer-popup .indicator{padding-bottom:16px}
+.sud14-how-to-find-model-code__popup .layer-popup__close{display:block;overflow:hidden;position:absolute;right:24px;top:24px;width:24px;height:24px}
+.sud14-how-to-find-model-code__popup .layer-popup__close .icon{width:100%;height:100%}
+@media only screen and (min-width:768px) and (max-width:1440px){.sud14-how-to-find-model-code__popup .layer-popup__inner{width:80.27777778vw;padding:1.66666667vw;border-radius:1.38888889vw}
+.sud14-how-to-find-model-code__popup .layer-popup__select-wrap{margin-right:1.66666667vw;width:50.83333333vw}
+.sud14-how-to-find-model-code__popup .layer-popup__title{font-size:1.66666667vw}
+.sud14-how-to-find-model-code__popup .layer-popup__desc{max-width:50.83333333vw;margin-top:1.11111111vw;font-size:.97222222vw}
+.sud14-how-to-find-model-code__popup .layer-popup__select{margin-top:1.11111111vw;padding:1.66666667vw;width:50.83333333vw}
+.sud14-how-to-find-model-code__popup .layer-popup__select-title{width:9.16666667vw;padding-top:1.66666667vw;padding-right:.83333333vw;font-size:.97222222vw}
+.sud14-how-to-find-model-code__popup .layer-popup__select-menu{padding-top:1.66666667vw}
+.sud14-how-to-find-model-code__popup .layer-popup__info-wrap{min-height:24.30555556vw;padding-top:3.33333333vw}
+.sud14-how-to-find-model-code__popup .layer-popup__swiper-list [class*="swiper-button"]{display:none}
+.sud14-how-to-find-model-code__popup .layer-popup__item-image{height:16.66666667vw;padding:0vw 1.11111111vw}
+.sud14-how-to-find-model-code__popup .layer-popup__item-image img{height:16.66666667vw}
+.sud14-how-to-find-model-code__popup .layer-popup__item-text{margin:1.11111111vw;font-size:.97222222vw}
+.sud14-how-to-find-model-code__popup .layer-popup .layer-popup__item .layer-popup__item-text:first-child{margin-top:17.36111111vw}
+.sud14-how-to-find-model-code__popup .layer-popup .indicator{padding-bottom:1.11111111vw}
+.sud14-how-to-find-model-code__popup .layer-popup__close{right:1.66666667vw;top:1.66666667vw;width:1.66666667vw;height:1.66666667vw}
+}
+@media only screen and (max-width:767px){.sud14-how-to-find-model-code__popup .layer-popup__inner{width:100%;max-width:none;padding:6.66666667vw;border-radius:0;vertical-align:top}
+.sud14-how-to-find-model-code__popup .layer-popup:before{display:none}
+.sud14-how-to-find-model-code__popup .layer-popup__select-wrap{margin-right:0;float:none;width:100%}
+.sud14-how-to-find-model-code__popup .layer-popup__title{font-size:4.44444444vw;padding-right:8.88888889vw;display:-webkit-box;overflow:hidden;word-wrap:break-word;word-break:break-word;text-overflow:ellipsis;white-space:normal;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.sud14-how-to-find-model-code__popup .layer-popup__desc{max-width:100%;margin-top:4.44444444vw;font-size:3.33333333vw}
+.sud14-how-to-find-model-code__popup .layer-popup__select{margin-top:4.44444444vw;padding:4.44444444vw 0vw 4.44444444vw 0vw;width:100%}
+.sud14-how-to-find-model-code__popup .layer-popup__select-title{width:20vw;padding-top:2.22222222vw;padding-right:2.22222222vw;font-size:3.33333333vw}
+.sud14-how-to-find-model-code__popup .layer-popup__select-menu{padding-top:2.22222222vw}
+.sud14-how-to-find-model-code__popup .layer-popup__select-menu .menu__select{min-height:10vw}
+.sud14-how-to-find-model-code__popup .layer-popup__select-menu .filled .menu__select-field-icon{right:0}
+.sud14-how-to-find-model-code__popup .layer-popup__select-item{font-size:100%}
+.sud14-how-to-find-model-code__popup .layer-popup__select-item .menu{outline-offset:-2px}
+.sud14-how-to-find-model-code__popup .layer-popup__info-wrap{min-height:85.55555556vw;padding-top:4.44444444vw}
+.sud14-how-to-find-model-code__popup .layer-popup__swiper-list [class*="swiper-button"]{display:none}
+.sud14-how-to-find-model-code__popup .layer-popup .indicator{padding-bottom:4.44444444vw}
+.sud14-how-to-find-model-code__popup .layer-popup__item-image{height:56.66666667vw;padding:0vw 4.72222222vw}
+.sud14-how-to-find-model-code__popup .layer-popup__item-image img{height:56.66666667vw}
+.sud14-how-to-find-model-code__popup .layer-popup__item-text{margin:4.44444444vw;font-size:3.33333333vw}
+.sud14-how-to-find-model-code__popup .layer-popup .layer-popup__item .layer-popup__item-text:first-child{margin-top:59.44444444vw}
+.sud14-how-to-find-model-code__popup .layer-popup__close{right:6.66666667vw;top:6.66666667vw;width:6.66666667vw;height:6.66666667vw}
+}
+.sud13-manuals-and-download-page{width:100%;max-width:1440px;margin:0 auto;font-size:14px;line-height:1.33}
+.sud13-manuals-and-download-page__search-section{padding:16px 254px}
+.sud13-manuals-and-download-page__result-section{padding:24px 254px}
+.sud13-manuals-and-download-page .icon{width:100%;height:100%}
+.sud13-manuals-and-download-page .is-hide{display:none}
+.sud13-manuals-and-download-page .is-show{display:block}
+.sud13-manuals-and-download-page .sud13-select-option{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:-8px}
+.sud13-manuals-and-download-page .sud13-select-option__item{position:relative;width:20%;padding:8px}
+.sud13-manuals-and-download-page .sud13-select-option__item-input{position:absolute;top:8px;right:8px;bottom:8px;left:8px}
+.sud13-manuals-and-download-page .sud13-select-option__item-label{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative;height:100%;padding:16px 24px;border-radius:6px;text-align:center;cursor:pointer}
+.sud13-manuals-and-download-page .sud13-select-option__item-label:before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;border-radius:6px;border:1px solid #ddd}
+.sud13-manuals-and-download-page .sud13-select-option__item-label .image{width:84px;height:84px;margin:0 auto 4px}
+.sud13-manuals-and-download-page .sud13-select-option__item-text{display:block;width:100%;text-align:center}
+.sud13-manuals-and-download-page .sud13-select-option__item input:checked+label:before{border-width:2px;border-color:#2189ff}
+.sud13-manuals-and-download-page .sud13-select-option__item input:checked+label .sud13-select-option__item-text{font-weight:bold}
+.sud13-manuals-and-download-page .sud13-search{border-bottom:1px solid #ddd}
+.sud13-manuals-and-download-page .sud13-search__section{position:relative;padding:16px 0;border-top:1px solid #ddd}
+.sud13-manuals-and-download-page .sud13-search__section-title{padding:16px 48px 16px 0;color:#000;font-size:38px;line-height:1.2;font-family:'SamsungSharpSans',arial,sans-serif}
+.sud13-manuals-and-download-page .sud13-search__section-expand-cta{display:none;position:absolute;right:0;top:50%;width:40px;height:40px;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.sud13-manuals-and-download-page .sud13-search__section-contents{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:24px 0}
+.sud13-manuals-and-download-page .sud13-search__section.is-collapse .sud13-search__section-contents{display:none !important}
+.sud13-manuals-and-download-page .sud13-search__section.is-collapse .sud13-search__section-expand-cta{display:block}
+.sud13-manuals-and-download-page .sud13-search__code-search{position:relative;width:100%;height:48px}
+.sud13-manuals-and-download-page .sud13-search__input{position:relative;width:100%;height:48px}
+.sud13-manuals-and-download-page .sud13-search__input-btn--close{display:none}
+.sud13-manuals-and-download-page .sud13-search__input-btn--search{position:absolute;right:16px;top:50%;width:40px;height:40px;padding:8px;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.sud13-manuals-and-download-page .sud13-search__input .text-field-v2__hint{overflow:hidden;text-overflow:ellipsis;width:100%;height:48px;padding:0 122px 0 24px;line-height:48px;white-space:nowrap;z-index:10}
+.sud13-manuals-and-download-page .sud13-search__input .text-field-v2__input{position:relative;height:48px;padding:0 122px 0 24px;line-height:48px;border-radius:48px;background:#f7f7f7}
+.sud13-manuals-and-download-page .sud13-search__input .text-field-v2__input-wrap:after{height:48px;border:1px solid #757575;border-radius:48px;-webkit-box-sizing:border-box;box-sizing:border-box;background:transparent;pointer-events:none;-webkit-transition:none;transition:none}
+.sud13-manuals-and-download-page .sud13-search__input .text-field-v2__input-icon.delete{bottom:50%;right:56px;height:32px;padding:8px;-webkit-transform:translateY(50%);transform:translateY(50%)}
+.sud13-manuals-and-download-page .sud13-search__input .text-field-v2__input-icon.delete .icon{position:static}
+.sud13-manuals-and-download-page .sud13-search__suggested-wrap{display:none}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__code-search-inner{position:absolute;top:0;right:0;left:0;height:408px;border-radius:24px;-webkit-box-shadow:0 4px 10px 0 rgba(0,0,0,0.2);box-shadow:0 4px 10px 0 rgba(0,0,0,0.2);background-color:#fff;z-index:100}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__input .text-field-v2__input{background:#fff}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__input .text-field-v2__input-wrap:after{content:none}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested-wrap{display:block}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested.scrollbar{border-radius:0 0 24px 24px}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested .scrollbar__wrap{height:360px}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested .scrollbar__contents{padding:16px 0}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested .scrollbar-vertical__track-content{bottom:16px}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested-title{font-size:18px}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested-title-wrap{padding:12px 24px}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested-item a{display:block;padding:10px 24px;color:#000}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested-item a:hover,.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested-item a:focus{background:#f7f7f7}
+.sud13-manuals-and-download-page .sud13-search__info-cta{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-negative:0;flex-shrink:0;padding-left:16px}
+.sud13-manuals-and-download-page .sud13-search__info-cta-icon{margin-left:4px;width:24px;height:24px;padding:3px}
+.sud13-manuals-and-download-page .sud13-search .sud13-search__section--category .sud13-search__section-contents{display:block}
+.sud13-manuals-and-download-page .sud13-search__category-step-title{margin-bottom:16px;font-weight:bold;font-size:22px}
+.sud13-manuals-and-download-page .sud13-search__category-step.is-step2,.sud13-manuals-and-download-page .sud13-search__category-step.is-step3{margin-top:24px}
+.sud13-manuals-and-download-page .sud13-search__category-step.is-step1 .sud13-select-option__item-label{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.sud13-manuals-and-download-page .sud13-search__category-step--jp .sud13-select-option__item-label{-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important}
+.sud13-manuals-and-download-page .sud13-search__category-step--jp .sud13-select-option__item-label .image{width:100%;height:24px;margin-bottom:0}
+.sud13-manuals-and-download-page .sud13-search__category-step--jp .sud13-select-option__item-text{font-size:18px;font-weight:700}
+.sud13-manuals-and-download-page .sud13-select-model{display:block}
+.sud13-manuals-and-download-page .sud13-select-model__contents .swiper-container{margin:0 -12px}
+.sud13-manuals-and-download-page .sud13-select-model__contents .swiper-slide{padding:0 12px}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option{margin:-12px}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item{width:25%;padding:12px}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-input{top:12px;right:12px;bottom:12px;left:12px}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-label{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;padding:24px 16px;border-radius:20px;background:#f4f4f4}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-label:before{border-radius:20px;border-color:#f4f4f4}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-label .image{margin-bottom:24px}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-text{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-size:18px;min-height:2.66em}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-text-inner{display:-webkit-box;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:calc(2.66em);line-height:1.33;font-weight:700;font-size:18px}
+@media screen and (-webkit-min-device-pixel-ratio:0){.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-text-inner{max-height:none}
+}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-tooltip-text{position:absolute;right:0;bottom:0;left:0;z-index:100;margin-top:4px;padding:8px;border:1px solid rgba(0,0,0,0.15);border-radius:6px;background:#eee;font-size:12px;text-align:left}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item input:checked+label{background:#fff}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item input:checked+label:before{border-width:2px;border-color:#2189ff}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item input:checked+label .sud13-select-option__item-text{font-weight:bold}
+.sud13-manuals-and-download-page .sud13-select-model-code{margin-top:24px;padding-top:24px}
+.sud13-manuals-and-download-page .sud13-select-model-code__title{display:block;font-size:22px;margin-bottom:16px}
+.sud13-manuals-and-download-page .sud13-select-model-code__contents .swiper-container{overflow:visible}
+.sud13-manuals-and-download-page .sud13-select-model-code__contents .swiper-wrapper{display:block}
+.sud13-manuals-and-download-page .sud13-select-model-code__contents .swiper-slide+.swiper-slide{margin-top:8px}
+.sud13-manuals-and-download-page .sud13-select-model-code__contents .indicator{display:none}
+.sud13-manuals-and-download-page .sud13-select-model .indicator,.sud13-manuals-and-download-page .sud13-select-model-code .indicator{margin-top:24px}
+.sud13-manuals-and-download-page .sud13-no-result{padding:64px 0 128px;text-align:center}
+.sud13-manuals-and-download-page .sud13-no-result svg.icon{width:48px;height:48px;fill:#8f8f8f}
+.sud13-manuals-and-download-page .sud13-no-result__text{margin-top:16px;color:#8f8f8f;font-weight:700;font-size:24px}
+.sud13-manuals-and-download-page .sud13-download-list{max-width:1440px;margin:0 auto;padding:40px 24px}
+.sud13-manuals-and-download-page .sud13-download-list__contents{margin:-16px 0}
+.sud13-manuals-and-download-page .sud13-download-list__filter{margin-bottom:4px;text-align:right;font-size:0}
+.sud13-manuals-and-download-page .sud13-download-list__filter .menu__select-field{text-align:left}
+.sud13-manuals-and-download-page .sud13-download-list__card-list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;border-top:2px solid #000}
+.sud13-manuals-and-download-page .sud13-download-list__card-item{width:50%;padding:0 12px}
+.sud13-manuals-and-download-page .sud13-download-list__card-item-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;height:100%;padding:32px 24px;border-bottom:1px solid #ddd}
+.sud13-manuals-and-download-page .sud13-download-list__card-item:nth-child(odd) .sud13-download-list__card-item-inner{margin-left:-12px}
+.sud13-manuals-and-download-page .sud13-download-list__card-item:nth-child(even) .sud13-download-list__card-item-inner{margin-right:-12px}
+.sud13-manuals-and-download-page .sud13-download-list__card-text{max-width:506px}
+.sud13-manuals-and-download-page .sud13-download-list__card-title{display:block;font-size:22px;font-weight:700}
+.sud13-manuals-and-download-page .sud13-download-list__description{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:8px}
+.sud13-manuals-and-download-page .sud13-download-list__description-item{display:inline;position:relative;margin-right:4px}
+.sud13-manuals-and-download-page .sud13-download-list__description-item:not(:first-child):before{content:'|';margin-right:4px}
+.sud13-manuals-and-download-page .sud13-download-list__tooltip-wrap{display:none;position:absolute;left:0;top:100%;z-index:100;min-width:312px;padding:8px;border:1px solid rgba(0,0,0,0.15);border-radius:6px;background:#eee;font-size:12px}
+.sud13-manuals-and-download-page .sud13-download-list__tooltip-wrap.is-opened{display:block}
+.sud13-manuals-and-download-page .sud13-download-list__multi-language{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-left:-4px;text-decoration:underline}
+.sud13-manuals-and-download-page .sud13-download-list__multi-language svg.icon{width:16px;height:16px;margin-left:4px}
+.sud13-manuals-and-download-page .sud13-download-list__multi-language:hover ~ .sud13-download-list__tooltip-wrap,.sud13-manuals-and-download-page .sud13-download-list__multi-language:focus ~ .sud13-download-list__tooltip-wrap{display:block}
+.sud13-manuals-and-download-page .sud13-download-list__tooltip-close{display:none}
+.sud13-manuals-and-download-page .sud13-download-list__download-cta{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:30px}
+.sud13-manuals-and-download-page .sud13-download-list__download-cta .cta{font-weight:700;color:#006bea}
+.sud13-manuals-and-download-page .sud13-download-list__download-cta .cta svg.icon{fill:#006bea}
+.sud13-manuals-and-download-page .sud13-download-list .sud13-no-result{padding:80px 0 180px;border-top:2px solid #000;text-align:center}
+@media only screen and (min-width:768px) and (max-width:1440px){.sud13-manuals-and-download-page{max-width:100%;font-size:.97222222vw}
+.sud13-manuals-and-download-page__search-section{padding:1.11111111vw 17.63888889vw}
+.sud13-manuals-and-download-page__result-section{padding:1.66666667vw 17.63888889vw}
+.sud13-manuals-and-download-page .sud13-select-option{margin:-0.55555556vw}
+.sud13-manuals-and-download-page .sud13-select-option__item{padding:.55555556vw}
+.sud13-manuals-and-download-page .sud13-select-option__item-input{top:.55555556vw;right:.55555556vw;bottom:.55555556vw;left:.55555556vw}
+.sud13-manuals-and-download-page .sud13-select-option__item-label{padding:1.11111111vw 1.66666667vw;border-radius:.41666667vw}
+.sud13-manuals-and-download-page .sud13-select-option__item-label:before{border-radius:.41666667vw}
+.sud13-manuals-and-download-page .sud13-select-option__item-label .image{width:5.83333333vw;height:5.83333333vw;margin-bottom:.27777778vw}
+.sud13-manuals-and-download-page .sud13-select-option__item input:checked+label:before{border-width:.13888889vw}
+.sud13-manuals-and-download-page .sud13-search__section{padding:1.11111111vw 0vw}
+.sud13-manuals-and-download-page .sud13-search__section-title{padding:1.11111111vw 3.33333333vw 1.11111111vw 0vw;font-size:2.63888889vw}
+.sud13-manuals-and-download-page .sud13-search__section-expand-cta{width:2.77777778vw;height:2.77777778vw}
+.sud13-manuals-and-download-page .sud13-search__section-contents{padding:1.66666667vw 0vw}
+.sud13-manuals-and-download-page .sud13-search__code-search{height:3.33333333vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__code-search-inner{height:28.33333333vw;border-radius:1.66666667vw}
+.sud13-manuals-and-download-page .sud13-search__input{height:3.33333333vw}
+.sud13-manuals-and-download-page .sud13-search__input-btn--search{right:1.11111111vw;width:2.77777778vw;height:2.77777778vw;padding:.55555556vw}
+.sud13-manuals-and-download-page .sud13-search__input .text-field-v2__hint{height:3.33333333vw;padding:0vw 8.47222222vw 0vw 1.66666667vw;line-height:3.33333333vw}
+.sud13-manuals-and-download-page .sud13-search__input .text-field-v2__input{height:3.33333333vw;padding:0vw 8.47222222vw 0vw 1.66666667vw;line-height:3.33333333vw;border-radius:3.33333333vw}
+.sud13-manuals-and-download-page .sud13-search__input .text-field-v2__input-wrap:after{height:3.33333333vw;border-radius:3.33333333vw}
+.sud13-manuals-and-download-page .sud13-search__input .text-field-v2__input-icon.delete{right:3.88888889vw;height:2.22222222vw;padding:.55555556vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested.scrollbar{border-radius:0vw 0vw 1.66666667vw 1.66666667vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested .scrollbar__wrap{height:25vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested .scrollbar__contents{padding:1.11111111vw 0vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested .scrollbar-vertical__track-content{bottom:1.11111111vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested-title{font-size:1.25vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested-title-wrap{padding:.83333333vw 1.66666667vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested-item a{padding:.69444444vw 1.66666667vw}
+.sud13-manuals-and-download-page .sud13-search__info-cta{padding-left:1.11111111vw}
+.sud13-manuals-and-download-page .sud13-search__info-cta-icon{margin-left:.27777778vw;width:1.66666667vw;height:1.66666667vw;padding:.20833333vw}
+.sud13-manuals-and-download-page .sud13-search__category-step-title{margin-bottom:1.11111111vw;font-size:1.52777778vw}
+.sud13-manuals-and-download-page .sud13-search__category-step.is-step2,.sud13-manuals-and-download-page .sud13-search__category-step.is-step3{margin-top:1.66666667vw}
+.sud13-manuals-and-download-page .sud13-search__category-step--jp .sud13-select-option__item-label .image{height:1.66666667vw}
+.sud13-manuals-and-download-page .sud13-search__category-step--jp .sud13-select-option__item-text{font-size:1.25vw}
+.sud13-manuals-and-download-page .sud13-select-model__contents .swiper-container{margin:0vw -0.83333333vw}
+.sud13-manuals-and-download-page .sud13-select-model__contents .swiper-slide{padding:0vw .83333333vw}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option{margin:-0.83333333vw}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item{padding:.83333333vw}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-input{top:.83333333vw;right:.83333333vw;bottom:.83333333vw;left:.83333333vw}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-label{padding:1.66666667vw 1.11111111vw;border-radius:1.38888889vw}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-label:before{border-radius:1.38888889vw}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-label .image{margin-bottom:1.66666667vw}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-text,.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-text-inner{font-size:1.25vw}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-tooltip-text{margin-top:.27777778vw;padding:.55555556vw;border-radius:.41666667vw;font-size:.83333333vw}
+.sud13-manuals-and-download-page .sud13-select-model-code{margin-top:1.66666667vw;padding-top:1.66666667vw}
+.sud13-manuals-and-download-page .sud13-select-model-code__title{font-size:1.52777778vw;margin-bottom:1.11111111vw}
+.sud13-manuals-and-download-page .sud13-select-model-code__contents .swiper-slide+.swiper-slide{margin-top:.55555556vw}
+.sud13-manuals-and-download-page .sud13-select-model .indicator,.sud13-manuals-and-download-page .sud13-select-model-code .indicator{margin-top:1.66666667vw}
+.sud13-manuals-and-download-page .sud13-no-result{padding:4.44444444vw 0vw 8.88888889vw 0vw}
+.sud13-manuals-and-download-page .sud13-no-result svg.icon{width:3.33333333vw;height:3.33333333vw}
+.sud13-manuals-and-download-page .sud13-no-result__text{margin-top:1.11111111vw;font-size:1.66666667vw}
+.sud13-manuals-and-download-page .sud13-download-list{max-width:100%;padding:2.77777778vw 1.66666667vw}
+.sud13-manuals-and-download-page .sud13-download-list__contents{margin:-1.11111111vw 0vw}
+.sud13-manuals-and-download-page .sud13-download-list__filter{margin-bottom:.27777778vw}
+.sud13-manuals-and-download-page .sud13-download-list__card-item{padding:0vw .83333333vw}
+.sud13-manuals-and-download-page .sud13-download-list__card-item-inner{padding:2.22222222vw 1.66666667vw}
+.sud13-manuals-and-download-page .sud13-download-list__card-item:nth-child(odd) .sud13-download-list__card-item-inner{margin-left:-0.83333333vw}
+.sud13-manuals-and-download-page .sud13-download-list__card-item:nth-child(even) .sud13-download-list__card-item-inner{margin-right:-0.83333333vw}
+.sud13-manuals-and-download-page .sud13-download-list__card-text{max-width:35.13888889vw}
+.sud13-manuals-and-download-page .sud13-download-list__card-title{font-size:1.52777778vw}
+.sud13-manuals-and-download-page .sud13-download-list__description{margin-top:.55555556vw}
+.sud13-manuals-and-download-page .sud13-download-list__description-item{margin-right:.27777778vw}
+.sud13-manuals-and-download-page .sud13-download-list__description-item:not(:first-child):before{margin-right:.27777778vw}
+.sud13-manuals-and-download-page .sud13-download-list__tooltip-wrap{min-width:21.66666667vw;padding:.55555556vw;border-radius:.41666667vw;font-size:.83333333vw}
+.sud13-manuals-and-download-page .sud13-download-list__multi-language{margin-left:-0.27777778vw}
+.sud13-manuals-and-download-page .sud13-download-list__multi-language svg.icon{width:1.11111111vw;height:1.11111111vw;margin-left:.27777778vw}
+.sud13-manuals-and-download-page .sud13-download-list__download-cta{height:2.08333333vw}
+.sud13-manuals-and-download-page .sud13-download-list .sud13-no-result{padding:5.55555556vw 0vw 12.5vw 0vw}
+}
+@media only screen and (max-width:767px){.sud13-manuals-and-download-page{font-size:3.33333333vw}
+.sud13-manuals-and-download-page__search-section,.sud13-manuals-and-download-page__result-section{padding:4.44444444vw 6.66666667vw}
+.sud13-manuals-and-download-page .sud13-select-option{margin:-2.22222222vw}
+.sud13-manuals-and-download-page .sud13-select-option__item{width:50%;padding:2.22222222vw}
+.sud13-manuals-and-download-page .sud13-select-option__item-input{top:2.22222222vw;right:2.22222222vw;bottom:2.22222222vw;left:2.22222222vw}
+.sud13-manuals-and-download-page .sud13-select-option__item-label{padding:4.44444444vw;border-radius:1.66666667vw}
+.sud13-manuals-and-download-page .sud13-select-option__item-label:before{border-radius:1.66666667vw}
+.sud13-manuals-and-download-page .sud13-select-option__item-label .image{width:20vw;height:20vw;margin-bottom:1.11111111vw}
+.sud13-manuals-and-download-page .sud13-search__section{padding:4.44444444vw 0vw}
+.sud13-manuals-and-download-page .sud13-search__section-title{padding:2.22222222vw 8.88888889vw 2.22222222vw 0vw;font-size:6.11111111vw;line-height:1.33}
+.sud13-manuals-and-download-page .sud13-search__section-expand-cta{width:6.66666667vw;height:6.66666667vw}
+.sud13-manuals-and-download-page .sud13-search__section-contents{display:block;padding:4.44444444vw 0vw}
+.sud13-manuals-and-download-page .sud13-search .sud13-search__section--code .sud13-search__section-contents{padding:4.44444444vw}
+.sud13-manuals-and-download-page .sud13-search__code-search{height:11.11111111vw}
+.sud13-manuals-and-download-page .sud13-search__input{position:relative;width:100%;height:11.11111111vw}
+.sud13-manuals-and-download-page .sud13-search__input-btn--close{width:11.11111111vw;height:11.11111111vw;padding:2.22222222vw;margin-left:-2.22222222vw}
+.sud13-manuals-and-download-page .sud13-search__input-btn--search{position:absolute;right:2.22222222vw;width:8.88888889vw;height:8.88888889vw;padding:2.22222222vw}
+.sud13-manuals-and-download-page .sud13-search__input .text-field-v2__hint{height:11.11111111vw;padding:0vw 13.33333333vw 0vw 4.44444444vw;line-height:11.11111111vw}
+.sud13-manuals-and-download-page .sud13-search__input .text-field-v2__input{position:relative;height:11.11111111vw;padding:0vw 13.33333333vw 0vw 4.44444444vw;line-height:11.11111111vw;border-radius:11.11111111vw}
+.sud13-manuals-and-download-page .sud13-search__input .text-field-v2__input-wrap:after{height:11.11111111vw;border-radius:11.11111111vw}
+.sud13-manuals-and-download-page .sud13-search__input .text-field-v2__input-icon.delete{right:10vw;height:8.88888889vw;padding:2.22222222vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__code-search-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;position:fixed;bottom:0;height:auto;border-radius:0;-webkit-box-shadow:none;box-shadow:none;z-index:2999}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__code-search-form{display:block;-ms-flex-negative:0;flex-shrink:0;height:15.55555556vw;padding:2.22222222vw 6.66666667vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__input{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__input-btn--close{display:block;-ms-flex-negative:0;flex-shrink:0}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__input .text-field-v2{width:100%}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__input .text-field-v2__input{background:#fff}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__input .text-field-v2__input-wrap:after{content:''}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested-wrap{-webkit-box-flex:1;-ms-flex:1;flex:1;height:100%;padding-top:15.55555556vw;margin-top:-15.55555556vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested.scrollbar{height:100%;border-radius:0}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested .scrollbar__wrap{height:100%}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested .scrollbar__contents{padding:2.22222222vw 0vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested .scrollbar-vertical__track-content{bottom:1.11111111vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested-title{font-size:4.44444444vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested-title-wrap{padding:3.33333333vw 6.66666667vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested-list{padding-right:6.66666667vw}
+.sud13-manuals-and-download-page .sud13-search__code-search.is-opened .sud13-search__suggested-item a{padding:2.77777778vw 6.66666667vw}
+.sud13-manuals-and-download-page .sud13-search__info-cta{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:0;margin-top:1.11111111vw}
+.sud13-manuals-and-download-page .sud13-search__info-cta-icon{margin-left:1.11111111vw;width:6.66666667vw;height:6.66666667vw;padding:.83333333vw}
+.sud13-manuals-and-download-page .sud13-search__category-step-title{margin-bottom:4.44444444vw;font-size:5vw}
+.sud13-manuals-and-download-page .sud13-search__category-step.is-step2,.sud13-manuals-and-download-page .sud13-search__category-step.is-step3{margin-top:8.88888889vw}
+.sud13-manuals-and-download-page .sud13-search__category-step--jp .sud13-select-option__item-label .image{height:6.66666667vw}
+.sud13-manuals-and-download-page .sud13-search__category-step--jp .sud13-select-option__item-text{font-size:5vw}
+.sud13-manuals-and-download-page .sud13-select-model__contents .swiper-container{margin:0vw -2.22222222vw}
+.sud13-manuals-and-download-page .sud13-select-model__contents .swiper-slide{padding:0vw 2.22222222vw}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option{display:block;margin:0}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item{width:100%;padding:0}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item:not(:first-child){margin-top:4.44444444vw}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-input{top:0;right:0;bottom:0;left:0}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-label{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;padding:4.44444444vw;border-radius:5.55555556vw}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-label:before{border-radius:5.55555556vw}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-label .image{-ms-flex-negative:0;flex-shrink:0;width:15.55555556vw;height:15.55555556vw;margin-bottom:0}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-text{display:block;min-height:3.99em;margin-left:3.33333333vw;text-align:left}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item-text-inner{display:block;max-height:none;font-size:3.88888889vw}
+.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item input:hover+label .sud13-select-option__item-tooltip-text,.sud13-manuals-and-download-page .sud13-select-model .sud13-select-option__item input:focus+label .sud13-select-option__item-tooltip-text{display:none}
+.sud13-manuals-and-download-page .sud13-select-model-code{margin-top:6.66666667vw;padding-top:6.66666667vw}
+.sud13-manuals-and-download-page .sud13-select-model-code__title{display:block;font-size:6.11111111vw;margin-bottom:4.44444444vw}
+.sud13-manuals-and-download-page .sud13-select-model-code__contents .swiper-container{overflow:hidden;margin:0vw -2.22222222vw}
+.sud13-manuals-and-download-page .sud13-select-model-code__contents .swiper-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex}
+.sud13-manuals-and-download-page .sud13-select-model-code__contents .swiper-slide{padding:0vw 2.22222222vw}
+.sud13-manuals-and-download-page .sud13-select-model-code__contents .swiper-slide+.swiper-slide{margin-top:0}
+.sud13-manuals-and-download-page .sud13-select-model-code__contents .indicator{display:block}
+.sud13-manuals-and-download-page .sud13-select-model .indicator,.sud13-manuals-and-download-page .sud13-select-model-code .indicator{margin-top:6.66666667vw}
+.sud13-manuals-and-download-page .sud13-no-result{padding:11.11111111vw 0vw 28.88888889vw 0vw}
+.sud13-manuals-and-download-page .sud13-no-result svg.icon{width:13.33333333vw;height:13.33333333vw}
+.sud13-manuals-and-download-page .sud13-no-result__text{margin-top:4.44444444vw;font-size:3.88888889vw}
+.sud13-manuals-and-download-page .sud13-download-list{max-width:100%;padding:4.44444444vw 6.66666667vw}
+.sud13-manuals-and-download-page .sud13-download-list__contents{margin:0}
+.sud13-manuals-and-download-page .sud13-download-list__filter{margin:0vw -6.66666667vw 1.11111111vw -6.66666667vw}
+.sud13-manuals-and-download-page .sud13-download-list__filter .menu{min-width:39.44444444vw;max-width:49.44444444vw}
+.sud13-manuals-and-download-page .sud13-download-list__filter .menu:last-child{max-width:39.44444444vw}
+.sud13-manuals-and-download-page .sud13-download-list__filter .menu:not(:first-child){margin-left:1.11111111vw}
+.sud13-manuals-and-download-page .sud13-download-list__filter .menu select{font-size:3.33333333vw}
+.sud13-manuals-and-download-page .sud13-download-list__card-item{width:100%;padding:0}
+.sud13-manuals-and-download-page .sud13-download-list__card-item-inner{display:block;padding:4.44444444vw}
+.sud13-manuals-and-download-page .sud13-download-list__card-item:nth-child(odd) .sud13-download-list__card-item-inner{margin:0}
+.sud13-manuals-and-download-page .sud13-download-list__card-item:nth-child(even) .sud13-download-list__card-item-inner{margin:0}
+.sud13-manuals-and-download-page .sud13-download-list__card-text{max-width:none}
+.sud13-manuals-and-download-page .sud13-download-list__card-title{font-size:3.88888889vw}
+.sud13-manuals-and-download-page .sud13-download-list__description{position:relative;width:100%;font-size:2.77777778vw;margin-top:1.11111111vw}
+.sud13-manuals-and-download-page .sud13-download-list__description-item{position:static;margin-right:.55555556vw}
+.sud13-manuals-and-download-page .sud13-download-list__description-item:not(:first-child):before{margin-right:.55555556vw}
+.sud13-manuals-and-download-page .sud13-download-list__tooltip-wrap{left:-4.44444444vw;padding:2.22222222vw 8.88888889vw 2.22222222vw 2.22222222vw;min-width:0;min-height:9.44444444vw;width:86.66666667vw;border-radius:1.66666667vw;font-size:3.33333333vw}
+.sud13-manuals-and-download-page .sud13-download-list__multi-language{white-space:nowrap;margin-left:-0.55555556vw}
+.sud13-manuals-and-download-page .sud13-download-list__multi-language svg.icon{width:3.33333333vw;height:3.33333333vw;margin-left:.55555556vw}
+.sud13-manuals-and-download-page .sud13-download-list__tooltip-close{display:block;position:absolute;top:0;right:0;width:8.88888889vw;height:8.88888889vw;padding:2.22222222vw}
+.sud13-manuals-and-download-page .sud13-download-list__download-cta{height:auto;margin-top:2.22222222vw}
+.sud13-manuals-and-download-page .sud13-download-list__download-cta .cta{font-size:3.33333333vw;line-height:1.33}
+.sud13-manuals-and-download-page .sud13-download-list__download-cta .cta .icon{width:3.33333333vw;height:3.33333333vw}
+.sud13-manuals-and-download-page .sud13-download-list .sud13-no-result{margin-top:8.88888889vw;padding:22.22222222vw 6.66666667vw 35.55555556vw 6.66666667vw}
+}

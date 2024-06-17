@@ -1,0 +1,1280 @@
+.find-my-tv{clear:both;max-width:1440px;width:100%;margin:0 auto;position:relative;background-color:#f1f0ef}
+.find-my-tv input[type='checkbox']:focus ~ .checkbox-radio__label .checkbox-radio__label-text:before,.find-my-tv input[type='radio']:focus ~ .checkbox-radio__label .checkbox-radio__label-text:before{background-image:url(../../clientlib-common/resources/images/form_check_radio_hover.svg);outline:2px dotted #000;outline-offset:-2px}
+.find-my-tv input[type='checkbox']:checked ~ .checkbox-radio__label .checkbox-radio__label-text:before,.find-my-tv input[type='radio']:checked ~ .checkbox-radio__label .checkbox-radio__label-text:before{background-image:url(../../clientlib-common/resources/images/form_check_b.svg)}
+.find-my-tv input[type='checkbox']:disabled ~ .checkbox-radio__label:hover .checkbox-radio__label-text:before,.find-my-tv input[type='radio']:disabled ~ .checkbox-radio__label:hover .checkbox-radio__label-text:before{background-image:url(../../clientlib-common/resources/images/form_check_radio_disabled.svg);outline:2px dotted #000;outline-offset:-2px}
+.find-my-tv__header{position:absolute;top:0;left:0;height:46px;width:100%;padding:0 24px;background:#fff;z-index:30;font-weight:700}
+.find-my-tv__header-title{font-size:18px;display:inline-block;line-height:46px;font-family:'SamsungSharpSans',arial,sans-serif;margin-right:78px}
+.find-my-tv__header-title .link{color:#000}
+.find-my-tv__header-list-wrap{display:inline-block}
+.find-my-tv__header-list{display:inline-block;font-size:0;position:relative;z-index:1}
+.find-my-tv__header-item{display:inline-block;font-size:0;position:relative}
+.find-my-tv__header-item .link{display:inline-block;font-size:14px;color:#000;padding:0 12px;line-height:46px;position:relative}
+.find-my-tv__header-item .link:focus{position:relative;outline:0;-webkit-box-shadow:none;box-shadow:none}
+.find-my-tv__header-item .link:focus:after{content:'';position:absolute;top:0;left:0;right:0;bottom:4px;border:2px dotted #000}
+.find-my-tv__header-item.is-disabled .link{cursor:default;color:rgba(0,0,0,0.55)}
+.find-my-tv__header--fixed{position:fixed;width:1440px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+.find-my-tv__header-tooltip{position:absolute;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;background-color:#fff;border-radius:7px;-webkit-box-shadow:0 0 20px 2px rgba(0,0,0,0.2);box-shadow:0 0 20px 2px rgba(0,0,0,0.2);display:none;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;opacity:0;padding:10px 15px;-webkit-transition:opacity .3s ease-in-out;transition:opacity .3s ease-in-out;width:230px;z-index:2}
+.find-my-tv__header-tooltip .icon{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;height:19px;margin-right:10px;width:19px}
+.find-my-tv__header-tooltip .close-btn .icon{margin:0}
+.find-my-tv__header-tooltip--text{font-size:14px;line-height:1.5}
+.find-my-tv__header-tooltip-focus{opacity:1;top:30px;left:0}
+.find-my-tv__header::after{content:'';display:block;clear:both}
+.find-my-tv__progress-bar{position:absolute;bottom:0;left:0;width:100%;font-size:0}
+.find-my-tv__progress-bar span{display:inline-block;min-width:218px;height:4px;background-color:#2189ff;-webkit-transition:width .3s;transition:width .3s}
+.find-my-tv__room{position:relative;width:100%;text-align:center;min-height:730px;display:none}
+.find-my-tv__room.is-active{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.find-my-tv__room-panel{display:none;overflow:hidden;position:relative;padding-top:46px;width:100%}
+.find-my-tv__room-panel.is-active{display:block}
+.find-my-tv__room-panel .tv-image{left:31.5%;position:absolute;top:34.5%;width:35.2%;z-index:1}
+.find-my-tv__room-panel .tv-image.show-motion-tvdie .image{-webkit-animation:show-motion .6s both .9s;animation:show-motion .6s both .9s}
+.find-my-tv__room-panel div[class^="living"],.find-my-tv__room-panel div[class^="bedroom"],.find-my-tv__room-panel div[class^="kitchen"],.find-my-tv__room-panel div[class^="outdoors"],.find-my-tv__room-panel div[class^="entertainment"]{position:absolute;z-index:2}
+.find-my-tv__room-panel.panel-living .living-plant{width:49.1%;bottom:4.5%;right:4.7%}
+.find-my-tv__room-panel.panel-living .living-plant .image{-webkit-animation-delay:.6s;animation-delay:.6s}
+.find-my-tv__room-panel.panel-living .living-lamp{width:30.3%;bottom:2%;left:0}
+.find-my-tv__room-panel.panel-living .living-lamp .image{-webkit-animation-delay:.3s;animation-delay:.3s}
+.find-my-tv__room-panel.panel-living .living-credenza{width:68.2%;bottom:5%;left:6.5%}
+.find-my-tv__room-panel.panel-living .living-credenza .image{-webkit-animation-delay:0;animation-delay:0}
+.find-my-tv__room-panel.panel-bedroom .bedroom-plant{width:39.1%;bottom:6.1%;left:14.9%}
+.find-my-tv__room-panel.panel-bedroom .bedroom-plant .image{-webkit-animation-delay:.6s;animation-delay:.6s}
+.find-my-tv__room-panel.panel-bedroom .bedroom-dresser{width:43.2%;bottom:1%;right:17.7%}
+.find-my-tv__room-panel.panel-bedroom .bedroom-dresser .image{-webkit-animation-delay:.3s;animation-delay:.3s}
+.find-my-tv__room-panel.panel-bedroom .bedroom-bed{width:77.4%;bottom:0;right:5.5%}
+.find-my-tv__room-panel.panel-bedroom .bedroom-bed .image{-webkit-animation-delay:0;animation-delay:0}
+.find-my-tv__room-panel.panel-kitchen .kitchen-plant{width:30.4%;bottom:0;left:9.2%}
+.find-my-tv__room-panel.panel-kitchen .kitchen-plant .image{-webkit-animation-delay:1.2s;animation-delay:1.2s}
+.find-my-tv__room-panel.panel-kitchen .kitchen-sink{width:44.8%;bottom:0;right:0}
+.find-my-tv__room-panel.panel-kitchen .kitchen-sink .image{-webkit-animation-delay:.6s;animation-delay:.6s}
+.find-my-tv__room-panel.panel-kitchen .kitchen-chairs{width:74.6%;bottom:0;right:12.7%}
+.find-my-tv__room-panel.panel-kitchen .kitchen-chairs .image{-webkit-animation-delay:.3s;animation-delay:.3s}
+.find-my-tv__room-panel.panel-kitchen .kitchen-table{width:50.2%;bottom:0;left:24.8%}
+.find-my-tv__room-panel.panel-kitchen .kitchen-table .image{-webkit-animation-delay:0;animation-delay:0}
+.find-my-tv__room-panel.panel-outdoors .outdoors-plant{width:18.7%;bottom:8.2%;left:0}
+.find-my-tv__room-panel.panel-outdoors .outdoors-plant .image{-webkit-animation-delay:.9s;animation-delay:.9s}
+.find-my-tv__room-panel.panel-outdoors .outdoors-chairs{width:62.7%;bottom:0;left:19.5%}
+.find-my-tv__room-panel.panel-outdoors .outdoors-chairs .image{-webkit-animation-delay:.3s;animation-delay:.3s}
+.find-my-tv__room-panel.panel-outdoors .outdoors-table{-webkit-transform:translateX(-50%);transform:translateX(-50%);width:41.5%;bottom:0;left:50%}
+.find-my-tv__room-panel.panel-outdoors .outdoors-table .image{-webkit-animation-delay:0;animation-delay:0}
+.find-my-tv__room-panel.panel-entertainment .entertainment-chair-left{width:48%;bottom:0;left:4.5%}
+.find-my-tv__room-panel.panel-entertainment .entertainment-chair-left .image{-webkit-animation-delay:0;animation-delay:0}
+.find-my-tv__room-panel.panel-entertainment .entertainment-chair-right{width:58.8%;bottom:0;right:5.6%}
+.find-my-tv__room-panel.panel-entertainment .entertainment-chair-right .image{-webkit-animation-delay:.3s;animation-delay:.3s}
+.find-my-tv__room-tab{padding-top:46px;position:absolute;top:0;width:100%;z-index:2;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;left:0}
+.find-my-tv__room-tab--title{margin:62px 0 44px;font-size:38px;line-height:1.2;font-family:'SamsungSharpSans',arial,sans-serif}
+.find-my-tv__room-tab--list li{display:inline-block;font-size:0;margin:0 12px}
+.find-my-tv__room-tab--list li .cta:focus{-webkit-box-shadow:none;box-shadow:none}
+.find-my-tv__room-tab--list li .cta--outlined.cta--black:focus,.find-my-tv__room-tab--list li .cta--outlined.cta--black:hover{color:#000 !important;background-color:rgba(255,255,255,0.4) !important;border-color:#000 !important}
+.find-my-tv__room-tab--list li .cta--outlined.cta--white:focus,.find-my-tv__room-tab--list li .cta--outlined.cta--white:hover{color:#fff !important;border-color:#fff !important}
+.find-my-tv__room-tab--list li .cta--contained.cta--black:focus,.find-my-tv__room-tab--list li .cta--contained.cta--black:hover{background-color:#000 !important}
+.find-my-tv__room-tab--list li .cta--contained.cta--white:focus,.find-my-tv__room-tab--list li .cta--contained.cta--white:hover{background-color:#fff !important}
+.find-my-tv__room-tab.tab-white .find-my-tv__room-tab--title{color:#fff}
+.find-my-tv__passion{min-height:850px;position:relative;display:none}
+.find-my-tv__passion-inner{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;text-align:center}
+.find-my-tv__passion-title{font-size:38px;margin-top:112px;margin-bottom:50px;position:relative;font-weight:400;font-family:'SamsungSharpSans',arial,sans-serif;letter-spacing:-1px}
+.find-my-tv__passion-cont{width:960px;margin:0 auto;font-size:0}
+.find-my-tv__passion-cont .radio-v2{padding:0 20px;margin-bottom:52px}
+.find-my-tv__passion-cont .radio-v2__input{width:100%;height:100%}
+.find-my-tv__passion-cont .radio-v2__label{position:relative}
+.find-my-tv__passion-cont .radio-v2__label span.image{width:280px;height:197px;overflow:hidden;border-radius:22px;display:block}
+.find-my-tv__passion-cont .radio-v2__label span.image img{-webkit-transition:-webkit-transform .3s cubic-bezier(0.4,0,0.2,1);transition:-webkit-transform .3s cubic-bezier(0.4,0,0.2,1);transition:transform .3s cubic-bezier(0.4,0,0.2,1);transition:transform .3s cubic-bezier(0.4,0,0.2,1),-webkit-transform .3s cubic-bezier(0.4,0,0.2,1);top:50%;left:50%;width:100%;height:100%}
+.find-my-tv__passion-cont .radio-v2__label span.image:hover img{-webkit-transform:scale(1.1);transform:scale(1.1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}
+.find-my-tv__passion-cont .radio-v2__label-box{top:15px;width:28px;height:28px;right:15px}
+.find-my-tv__passion-cont .radio-v2__label-box-wrap{position:absolute;top:15px;width:28px;height:28px;right:15px}
+.find-my-tv__passion-cont .radio-v2__label-box-icon{display:none}
+.find-my-tv__passion-cont .radio-v2__label-text{font-size:20px;margin-top:20px;font-weight:700;max-width:280px}
+.find-my-tv__passion-cont .radio-v2 input[type='radio']:focus ~ .radio-v2__label .radio-v2__label-box-wrap{-webkit-box-shadow:none;box-shadow:none;outline:0}
+.find-my-tv__passion-cont .radio-v2 input[type='radio']:focus ~ .radio-v2__label{-webkit-box-shadow:0 0 0 2px #fff;box-shadow:0 0 0 2px #fff;outline:2px dotted #000}
+.find-my-tv__passion-cont .radio-v2 input[type='radio']:checked ~ .radio-v2__label .radio-v2__label-box{background-color:#2189ff}
+.find-my-tv__passion-cont .radio-v2 input[type='radio']:checked ~ .radio-v2__label .radio-v2__label-box-icon{display:block;fill:#fff;width:100%;height:100%}
+.find-my-tv__size{min-height:920px;position:relative;overflow:hidden;display:none}
+.find-my-tv__size-title{font-size:38px;padding:113px 0 0;text-align:center;position:relative;font-family:'SamsungSharpSans',arial,sans-serif}
+.find-my-tv__size-cont{position:relative;padding:0 120px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;min-height:548px}
+.find-my-tv__size-cont.is-serif{position:static}
+.find-my-tv__size-image{width:100%;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;margin-bottom:160px;margin-left:140px;margin-right:10px;position:relative}
+.find-my-tv__size-image-screen{position:absolute;bottom:0;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);text-align:center}
+.find-my-tv__size-image-screen .image-frame{width:220%;position:absolute;left:50%;bottom:0;-webkit-transform:translate(-50%,2.8%);transform:translate(-50%,2.8%);border:1px solid #000}
+.find-my-tv__size-image-screen .image-frame:before{content:"";float:left;height:0;width:1px;margin-left:-1px;padding-top:57%}
+.find-my-tv__size-image-screen .image-frame:after{content:"";clear:both;display:table}
+.find-my-tv__size-image-screen .image-background{position:absolute;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);bottom:0;background-position:50%;background-size:cover;background-repeat:no-repeat;width:213%;border:1px solid #000;-webkit-box-shadow:-15px 10px 25px 3px rgba(0,0,0,0.2);box-shadow:-15px 10px 25px 3px rgba(0,0,0,0.2)}
+.find-my-tv__size-image-screen .image-background:before{content:"";float:left;height:0;margin-left:-1px;padding-top:55.6%;width:1px}
+.find-my-tv__size-image-screen .image-background:after{clear:both;content:"";display:table}
+.find-my-tv__size-image-width{position:absolute;left:0;top:-33px;width:100%;height:7px;border-left:1px solid #555;border-right:1px solid #555;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.find-my-tv__size-image-width:after,.find-my-tv__size-image-width:before,.find-my-tv__size-image-width span{display:block;width:auto}
+.find-my-tv__size-image-width:after,.find-my-tv__size-image-width:before{content:"";-webkit-box-flex:1;-ms-flex:1;flex:1;background-color:#555;height:1px}
+.find-my-tv__size-image-width span{padding:0 5px}
+.find-my-tv__size-image-height{position:absolute;right:-33px;top:0;width:7px;height:100%;border-top:1px solid #555;border-bottom:1px solid #555;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.find-my-tv__size-image-height:after,.find-my-tv__size-image-height:before,.find-my-tv__size-image-height span{display:block;width:auto}
+.find-my-tv__size-image-height:after,.find-my-tv__size-image-height:before{content:"";-webkit-box-flex:1;-ms-flex:1;flex:1;background-color:#555;width:1px}
+.find-my-tv__size-image-height span{-ms-flex-item-align:start;align-self:flex-start;padding:5px 0;margin-left:-2px}
+.find-my-tv__size-image-width span,.find-my-tv__size-image-height span{font-size:16px;color:#555;white-space:nowrap}
+.find-my-tv__size-image-serif{width:98.5%;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:absolute;bottom:7.7%;z-index:1;margin-left:165px}
+.find-my-tv__size-image-serif .image-serif-frame{position:absolute;top:8.8%;width:81%;height:51%;left:10.3%}
+.find-my-tv__size-background{position:absolute;top:46.4%;width:124.4%;left:0}
+.find-my-tv__size-background.bedroom.is-serif{z-index:1}
+.find-my-tv__size-background>div[class^="room"]{display:none;position:relative;left:55%;-webkit-transform:translateX(-55%);transform:translateX(-55%)}
+.find-my-tv__size-background.max-over{top:61.4%}
+.is-serif .find-my-tv__size-background.max-over{top:revert;bottom:0}
+.find-my-tv.room-living .room-living,.find-my-tv.room-bedroom .room-bedroom,.find-my-tv.room-kitchen .room-kitchen,.find-my-tv.room-outdoors .room-outdoors,.find-my-tv.room-entertainment .room-entertainment{display:block}
+.find-my-tv__picture{min-height:880px;position:relative;overflow:hidden;display:none;padding-bottom:50px}
+.find-my-tv__picture-title{font-size:38px;padding:110px 0 0;text-align:center;position:relative;font-family:'SamsungSharpSans',arial,sans-serif}
+.find-my-tv__picture-cont{position:relative;padding:0 71px 0 118px;display:-webkit-box;display:-ms-flexbox;display:flex}
+.find-my-tv__picture-cont:after{content:"";display:block;height:0;clear:both}
+.find-my-tv__picture-cont span.find-my-tv__controll--bar-line{width:326px}
+.find-my-tv__picture-cont p.find-my-tv__controll--text{display:none}
+.find-my-tv__picture-cont p.find-my-tv__controll--text.is-active{display:block}
+.find-my-tv__picture-cont p.find-my-tv__controll--text ~ h3.find-my-tv__controll--title{margin-top:51px;font-family:'SamsungSharpSans',arial,sans-serif}
+.find-my-tv__picture-cont .find-my-tv__controll--bar--one{position:relative;height:30px;margin-top:30px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.find-my-tv__picture-cont .find-my-tv__controll--bar--one .find-my-tv__controll--bar-line{background:0;height:auto;width:auto}
+.find-my-tv__picture-cont .find-my-tv__controll--bar--one .find-my-tv__controll--bar-line input{width:100%;height:100%;position:absolute;top:0;opacity:0;z-index:-1}
+.find-my-tv__picture-cont .find-my-tv__controll--bar--one .find-my-tv__controll--bar-line .radio-pointer{position:relative;font-size:24px;padding:0;margin-top:-6px;overflow:visible;font-weight:700;float:left}
+.find-my-tv__picture-cont .find-my-tv__controll--bar--one .find-my-tv__controll--bar-line .radio-pointer .select-icon{position:absolute;top:-6px;height:25px;right:-16px}
+.find-my-tv__picture-image{width:66%;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;padding-top:62px;padding-left:92px}
+.find-my-tv__picture-image .picture-image-fhd,.find-my-tv__picture-image .picture-image-4k,.find-my-tv__picture-image .picture-image-8k{display:none}
+.find-my-tv__picture-image .picture-image-fhd.is-active,.find-my-tv__picture-image .picture-image-4k.is-active,.find-my-tv__picture-image .picture-image-8k.is-active{display:block}
+.find-my-tv__picture .find-my-tv__disclamer{background-color:transparent;padding:18px 29px}
+.find-my-tv__style{min-height:806px;position:relative;overflow:hidden;display:none}
+.find-my-tv__style-title{font-size:38px;padding:110px 0 0;text-align:center;position:relative;font-family:'SamsungSharpSans',arial,sans-serif}
+.find-my-tv__style-cont{position:relative;padding:0 80px 0 120px;display:-webkit-box;display:-ms-flexbox;display:flex}
+.find-my-tv__style-image{width:52.5%;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;padding-top:90px}
+.find-my-tv__style-image--item{display:none;position:relative;width:650px;height:470px;border-radius:20px;overflow:hidden;background-color:#fff}
+.find-my-tv__style-image--item.is-active{display:block}
+.find-my-tv__style-select{width:47.5%;margin-top:150px}
+.find-my-tv__style-select--title{font-family:'SamsungSharpSans',arial,sans-serif;font-size:16px;margin-bottom:20px}
+.find-my-tv__style-radio{width:450px;font-size:0}
+.find-my-tv__style-radio--item{width:140px;height:110px;border-radius:6px;overflow:hidden;display:inline-block;background-color:#fff;margin:0 15px 15px 0}
+.find-my-tv__style-radio--item:nth-child(3n){margin-right:0}
+.find-my-tv__style-radio--item input[type='radio']{position:absolute;opacity:0}
+.find-my-tv__style-radio--item input[type='radio']:focus ~ .radio-label{outline:2px dotted #000;width:140px;height:110px;position:absolute;position:relative;outline:0}
+.find-my-tv__style-radio--item input[type='radio']:focus ~ .radio-label:before{content:'';position:absolute;top:2px;left:2px;right:2px;bottom:2px;border:2px dotted #000}
+.find-my-tv__style-radio--item .radio-item{width:140px;height:110px;position:absolute;top:0;opacity:0;z-index:-1;left:0}
+.find-my-tv__style-radio--item .radio-label{width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;cursor:pointer;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.find-my-tv__style-radio--item .radio-label:after{content:"";position:absolute;left:0;top:0;width:100%;height:100%;border-radius:6px;border:1px solid #aaa;-webkit-box-sizing:border-box;box-sizing:border-box}
+.find-my-tv__style-radio--item .radio-label .style-icon{width:42px;height:42px;margin-bottom:10px}
+.find-my-tv__style-radio--item .radio-label .radio-text{font-size:14px;display:block;position:relative;text-align:center}
+.find-my-tv__style-radio--item .radio-label .radio-text .style-wish-icon{top:-3px;height:15px;position:absolute;right:-11px}
+.find-my-tv__style-radio--item .radio-item:checked ~ .radio-label .radio-text{font-weight:bold}
+.find-my-tv__style-radio--item .radio-item:checked ~ .radio-label:after{border:2px solid #2189ff}
+.find-my-tv__style-radio--text{font-size:14px;line-height:1.33;display:none}
+.find-my-tv__style-radio--text strong{display:block}
+.find-my-tv__style-radio--text.is-active{display:block}
+.find-my-tv__style__play{position:absolute;left:50%;top:50%;height:96px;width:96px;background:url('../../clientlib-common/resources/images/find-my-tv__style__play.svg') no-repeat center;background-size:100% auto;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+.find-my-tv__style .find-my-tv__disclamer{background-color:transparent;padding:18px 29px}
+.find-my-tv__color{min-height:853px;position:relative;overflow:hidden;display:none}
+.find-my-tv__color-title{font-size:38px;padding:110px 0 0;text-align:center;position:relative;font-family:'SamsungSharpSans',arial,sans-serif}
+.find-my-tv__color-cont{position:relative;padding:0 120px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:600px}
+.find-my-tv__color-image{width:70%;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;padding-left:98px;padding-top:102px;text-align:center}
+.find-my-tv__color-image--item{display:none;width:100%}
+.find-my-tv__color-image--item *.image{width:590px;margin:0 auto}
+.find-my-tv__color-image--item .image-text{margin-top:30px;font-size:18px;font-family:'SamsungSharpSans',arial,sans-serif;line-height:1.33;color:#999}
+.find-my-tv__color-image--item .image-text *span{display:block;color:#000}
+.find-my-tv__color-image--item.is-active{display:block}
+.find-my-tv__color-select{width:47.5%;margin-top:70px}
+.find-my-tv__color-select--title{font-family:'SamsungSharpSans',arial,sans-serif;font-size:16px;margin-bottom:20px}
+.find-my-tv__color-select--text{font-size:14px;line-height:1.33;margin-bottom:10px}
+.find-my-tv__color-select--text strong{display:block}
+.find-my-tv__color-radio{width:450px;font-size:0}
+.find-my-tv__color-radio--item{width:186px;height:110px;border-radius:6px;overflow:hidden;display:inline-block;background-color:#fff;margin:0 15px 8px 0;position:relative}
+.find-my-tv__color-radio--item input[type='radio']{position:absolute;opacity:0}
+.find-my-tv__color-radio--item input[type='radio']:focus ~ .radio-label{outline:2px dotted #000;position:relative;outline:0;width:186px;height:110px;position:absolute}
+.find-my-tv__color-radio--item input[type='radio']:focus ~ .radio-label:before{content:'';position:absolute;top:2px;left:2px;right:2px;bottom:2px;border:2px dotted #000}
+.find-my-tv__color-radio--item .radio-item{width:100%;height:100%;position:absolute;top:0;opacity:0;z-index:-1;left:0}
+.find-my-tv__color-radio--item label.radio-label{width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;cursor:pointer;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.find-my-tv__color-radio--item label.radio-label:after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;border-radius:6px;border:1px solid #aaa;-webkit-box-sizing:border-box;box-sizing:border-box}
+.find-my-tv__color-radio--item label.radio-label .radio-color{width:24px;height:24px;margin-bottom:10px;border-radius:50%;border:1px solid rgba(0,0,0,0.2);-webkit-box-sizing:border-box;box-sizing:border-box}
+.find-my-tv__color-radio--item label.radio-label .radio-color.cotton-white{background:#fff}
+.find-my-tv__color-radio--item label.radio-label .radio-color.cotton-blue{background:#98adc0}
+.find-my-tv__color-radio--item label.radio-label .radio-color.blossom-pink{background:#f2dad8}
+.find-my-tv__color-radio--item label.radio-label .radio-color.navy-blue{background:#041e42}
+.find-my-tv__color-radio--item label.radio-label .radio-color.space-white{background:#dee2e1}
+.find-my-tv__color-radio--item label.radio-label span.radio-text{font-size:14px;display:block;position:relative}
+.find-my-tv__color-radio--item label.radio-label span.radio-text .color-wish-icon{top:-3px;height:15px;position:absolute;right:-11px}
+.find-my-tv__color-radio--item .radio-item:checked ~ .radio-label .radio-text{font-weight:bold}
+.find-my-tv__color-radio--item .radio-item:checked ~ .radio-label:after{border:2px solid #2189ff}
+.find-my-tv__sound{min-height:950px;position:relative;overflow:hidden;display:none}
+.find-my-tv__sound-title{font-size:38px;padding:105px 0 0;width:740px;margin:0 auto;line-height:1.2;text-align:center;position:relative;font-family:'SamsungSharpSans',arial,sans-serif}
+.find-my-tv__sound-cont{position:relative;display:block;margin-top:50px}
+.find-my-tv__sound-cont .swiper-container{padding:0 100px}
+.find-my-tv__sound-cont .find-my-tv__wish-disclaimer{margin-top:25px;padding-left:100px}
+.find-my-tv__sound-item{width:330px;height:460px;margin-right:40px;border-radius:20px;background-color:#fff;overflow:hidden}
+.find-my-tv__sound-item .image{width:330px;height:189px;overflow:hidden}
+.find-my-tv__sound-item:last-child{margin-right:0}
+.find-my-tv__sound-item--wrap{padding-top:20px;height:214px}
+.find-my-tv__sound-item--wrap .cta{color:#0a05aa;font-size:12px;font-weight:normal;padding:0;margin:18px 24px 0}
+.find-my-tv__sound-item--wrap .cta.cta--underline:after{bottom:0;height:1px}
+.find-my-tv__sound-item--wrap .cta:focus{color:#005ced}
+.find-my-tv__sound-item--wrap .cta:hover{color:#005ced}
+.find-my-tv__sound-item--title{font-family:'SamsungSharpSans',arial,sans-serif;font-size:16px;display:block;padding:0 24px 12px}
+.find-my-tv__sound-item--title .wish-icon{height:15px;width:15px;display:inline-block;margin-top:-4px}
+.find-my-tv__sound-item--text{height:97px;line-height:19px;font-size:14px;padding:0 24px}
+.find-my-tv__sound-item--checked{display:-webkit-box;display:-ms-flexbox;display:flex;height:57px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 24px;border-top:1px solid #d8d8d8}
+.find-my-tv__sound-item--checked .checkbox-v2__label-box{width:24px;height:24px}
+.find-my-tv__sound-item--checked .checkbox-v2__label-text{position:relative;font-weight:700;padding-left:8px}
+.find-my-tv__sound-item--checked.is-disabled-select .checkbox-v2__label-box{border-color:#757575 !important}
+.find-my-tv__sound-item--checked.is-disabled-select .checkbox-v2__label-text{color:#757575}
+.find-my-tv__sound .indicator{margin-top:30px}
+.find-my-tv__smarttv{min-height:950px;position:relative;overflow:hidden;display:none}
+.find-my-tv__smarttv-title{font-size:38px;padding:105px 0 0;width:750px;margin:0 auto;line-height:1.2;text-align:center;position:relative;font-family:'SamsungSharpSans',arial,sans-serif}
+.find-my-tv__smarttv-cont{position:relative;display:block;margin-top:50px}
+.find-my-tv__smarttv-cont .swiper-container{padding:0 100px}
+.find-my-tv__smarttv-cont .find-my-tv__wish-disclaimer{margin-top:25px;padding-left:100px}
+.find-my-tv__smarttv-item{width:330px;height:460px;margin-right:40px;border-radius:20px;background-color:#fff;overflow:hidden}
+.find-my-tv__smarttv-item .image{width:330px;height:189px;overflow:hidden}
+.find-my-tv__smarttv-item:last-child{margin-right:0}
+.find-my-tv__smarttv-item--wrap{padding-top:20px;height:214px}
+.find-my-tv__smarttv-item--wrap .cta{color:#0a05aa;font-size:12px;font-weight:normal;padding:0;margin:18px 24px 0}
+.find-my-tv__smarttv-item--wrap .cta.cta--underline:after{bottom:0;height:1px}
+.find-my-tv__smarttv-item--wrap .cta:focus{color:#005ced}
+.find-my-tv__smarttv-item--wrap .cta:hover{color:#005ced}
+.find-my-tv__smarttv-item--title{font-family:'SamsungSharpSans',arial,sans-serif;font-size:16px;display:block;padding:0 24px 12px}
+.find-my-tv__smarttv-item--title .wish-icon{height:15px;width:15px;display:inline-block;margin-top:-4px}
+.find-my-tv__smarttv-item--text{height:97px;line-height:19px;font-size:14px;padding:0 24px}
+.find-my-tv__smarttv-item--checked{display:-webkit-box;display:-ms-flexbox;display:flex;height:57px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 24px;border-top:1px solid #d8d8d8}
+.find-my-tv__smarttv-item--checked .checkbox-v2__label-box{width:24px;height:24px}
+.find-my-tv__smarttv-item--checked .checkbox-v2__label-text{position:relative;font-weight:700;padding-left:8px}
+.find-my-tv__smarttv-item--checked.is-disabled-select .checkbox-v2__label-box{border-color:#757575 !important}
+.find-my-tv__smarttv-item--checked.is-disabled-select .checkbox-v2__label-text{color:#757575}
+.find-my-tv__smarttv .indicator{margin-top:30px}
+.find-my-tv__mytv{min-height:770px;position:relative;overflow:hidden;display:none}
+.find-my-tv__mytv-title{font-size:38px;padding:110px 0 15px;text-align:center;position:relative;font-family:'SamsungSharpSans',arial,sans-serif}
+.find-my-tv__mytv-discription{text-align:center;font-size:14px}
+.find-my-tv__mytv-cont{position:relative;padding:50px 122px 66px;display:-webkit-box;display:-ms-flexbox;display:flex}
+.find-my-tv__mytv-gallery{width:49%;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;border-radius:20px;overflow:hidden;background-color:#fff}
+.find-my-tv__mytv-gallery-thumbnail{margin:0 30px 24px}
+.find-my-tv__mytv-gallery-tab .tab{height:auto;text-align:left}
+.find-my-tv__mytv-gallery-tab .tab__item{margin-left:34px}
+.find-my-tv__mytv-gallery-tab .tab__item:first-child{margin:0}
+.find-my-tv__mytv-gallery-tab .tab__item-title{font-size:14px;font-weight:400;line-height:1.14}
+.find-my-tv__mytv-gallery-tab .tab__item--active .tab__item-title{font-weight:700}
+.find-my-tv__mytv-gallery-tab .tab__item-line{margin-top:2px;height:1px}
+.find-my-tv__mytv-gallery .swiper-box{display:none;position:relative;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:10px;height:50px}
+.find-my-tv__mytv-gallery .swiper-box.swiper-active{display:-webkit-box;display:-ms-flexbox;display:flex}
+.find-my-tv__mytv-gallery .swiper-box .swiper-wrapper{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.find-my-tv__mytv-gallery .swiper-box .find-my-tv__swiper-arrow{background:0;border:0;width:26px;height:100%;margin:0;-ms-flex-negative:0;flex-shrink:0;position:static}
+.find-my-tv__mytv-gallery .swiper-box .find-my-tv__swiper-arrow[style*='none']+.swiper-container{width:100%;margin:0 26px}
+.find-my-tv__mytv-gallery .swiper-box .find-my-tv__swiper-arrow .icon{width:16px;height:16px;fill:#000}
+.find-my-tv__mytv-gallery .swiper-box .find-my-tv__swiper-arrow.swiper-button-prev{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.find-my-tv__mytv-gallery .swiper-box .find-my-tv__swiper-arrow.swiper-button-next{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
+.find-my-tv__mytv-gallery .swiper-box .find-my-tv__swiper-arrow:after{display:none}
+.find-my-tv__mytv-gallery .swiper-box .find-my-tv__swiper-arrow:hover,.find-my-tv__mytv-gallery .swiper-box .find-my-tv__swiper-arrow:focus{background:0}
+.find-my-tv__mytv-gallery .swiper-box .find-my-tv__swiper-arrow:hover *.icon,.find-my-tv__mytv-gallery .swiper-box .find-my-tv__swiper-arrow:focus *.icon{fill:#000}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item{width:79px;height:50px;padding:3px 6px;margin-left:0;margin-right:0}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item a{display:table;width:100%;height:100%;overflow:hidden;position:relative;border-radius:6px;-webkit-box-shadow:1px 2px 5px 0 rgba(0,0,0,0.1);box-shadow:1px 2px 5px 0 rgba(0,0,0,0.1)}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item a .image{display:table-cell;vertical-align:middle;height:44px}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item a .image img{height:44px}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item a .icon{position:absolute;left:50%;top:50%;width:24px;height:24px;fill:#fff;border-radius:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item.is-active a::before{content:'';z-index:1;display:block;position:absolute;top:0;left:0;right:0;bottom:0;border:1px solid #006bea;border-radius:6px}
+.find-my-tv__mytv-image--big,.find-my-tv__mytv-video--big{display:none;overflow:hidden}
+.find-my-tv__mytv-image--big.is-active,.find-my-tv__mytv-video--big.is-active{display:block}
+.find-my-tv__mytv-image--item{display:none;width:560px;height:422px;margin:0 auto}
+.find-my-tv__mytv-image--item.is-active{display:block}
+.find-my-tv__mytv-image--item .image{height:100%}
+.find-my-tv__mytv-image--item .image img{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+.find-my-tv__mytv-video{position:absolute;top:0;right:0;bottom:0;left:0;background-color:#fff}
+.find-my-tv__mytv-video--big{padding:72px 0}
+.find-my-tv__mytv-video--item{display:none;width:520px;height:278px;border-radius:15px;overflow:hidden;position:relative;margin:0 auto}
+.find-my-tv__mytv-video--item.is-active{display:block}
+.find-my-tv__mytv-video--btn-play{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width:90px;height:90px;border-radius:50%;fill:#fff}
+.find-my-tv__mytv-video .video{width:100%;height:100%}
+.find-my-tv__mytv-video .video video{-o-object-fit:cover;object-fit:cover}
+.find-my-tv__mytv .find-my-tv__mytv-video--btn-play+.find-my-tv__mytv-video{display:none}
+.find-my-tv__mytv-info{width:51%;margin-top:83px}
+.find-my-tv__mytv-info--title{font-family:'SamsungSharpSans',arial,sans-serif;font-size:18px;margin-bottom:9px}
+.find-my-tv__mytv-info--text{min-width:210px;display:inline-block;font-size:18px;color:#555;font-weight:700}
+.find-my-tv__mytv-info--list{margin-top:40px;line-height:1.33;font-size:14px}
+.find-my-tv__mytv-info--list li{position:relative;width:424px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-left:10px}
+.find-my-tv__mytv-info--list li::before{display:inline-block;position:absolute;top:0;content:"• ";left:0}
+.find-my-tv__mytv-info .cta{color:#0a05aa;font-size:12px;font-weight:normal;padding:0;margin-top:18px}
+.find-my-tv__mytv-info .cta.cta--underline{padding-right:0}
+.find-my-tv__mytv-info .cta.cta--underline:after{bottom:0;height:1px;display:block !important;content:" ";position:absolute;background-color:currentColor;left:0}
+.find-my-tv__mytv-info .cta.cta--underline:before{display:none}
+.find-my-tv__mytv-info .cta:focus{color:#005ced}
+.find-my-tv__mytv-info .cta:hover{color:#005ced}
+.find-my-tv__mytv-info--icon{margin-top:41px;display:-webkit-box;display:-ms-flexbox;display:flex;width:476px}
+.find-my-tv__mytv-info--icon li{text-align:center;width:119px;padding:0 10px}
+.find-my-tv__mytv-info--icon li .info-icon{width:64px;height:64px}
+.find-my-tv__mytv-info--icon li .icon-text{display:block;margin-top:8px;font-size:12px}
+.find-my-tv__mytv-info .rating__star-empty{background-image:url(../../clientlib-common/resources/images/icon-star-rating2-base.svg)}
+.find-my-tv__mytv-info .rating__star-filled{background-image:url(../../clientlib-common/resources/images/icon-star-rating2-active.svg)}
+.find-my-tv__mytv-disclamer{font-size:10px}
+.find-my-tv__mytv-disclamer.is-blind{display:none}
+.find-my-tv__mytv-disclamer-wrap{position:absolute;padding:35px 24px 20px;bottom:0;width:100%;left:0}
+.find-my-tv__mytv-disclamer-wrap>p{position:relative !important;padding:0;text-align:left}
+.find-my-tv__more-ways-card{width:330px;height:440px;margin:0 13px;border-radius:20px;overflow:hidden;position:relative}
+.find-my-tv__more-ways-card-wrap{width:100%;min-height:610px;padding:20px 0 28px 0;background-color:#fff}
+.find-my-tv__more-ways-card-headline{margin:48px auto 31px auto;max-width:914px;text-align:center}
+.find-my-tv__more-ways-card-headline-text{font-family:'SamsungSharpSans',arial,sans-serif;font-size:38px;line-height:1.34}
+.find-my-tv__more-ways-card-list{margin:0 8px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
+.find-my-tv__more-ways-card-cont{position:absolute;top:56px;right:32px;left:32px;z-index:1}
+.find-my-tv__more-ways-card-title{font-family:'SamsungSharpSans',arial,sans-serif;font-size:24px;white-space:nowrap}
+.find-my-tv__more-ways-card-description{font-size:14px;line-height:1.33;margin:10px 0 20px 0}
+.find-my-tv__more-ways-card-img{width:100%;height:100%;position:absolute;top:0;right:0;bottom:0;left:0}
+.find-my-tv .breadcrumb.hmc-tv{width:100%;max-width:1440px;margin:0 auto;font-size:0}
+.find-my-tv .breadcrumb.hmc-tv .icon{width:16px;height:16px;margin:0 4px;fill:#8f8f8f;cursor:default}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb__inner{width:100%;padding:0 24px;border-top:1px solid rgba(0,0,0,0.2)}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb__path>li{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb__path>li>a{display:inline-block}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb__path>li>a>span{color:#000}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb__path>li>a:hover>span,.find-my-tv .breadcrumb.hmc-tv .breadcrumb__path>li>a:focus>span{text-decoration:underline}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb__path>li>a:hover+.icon,.find-my-tv .breadcrumb.hmc-tv .breadcrumb__path>li>a:focus+.icon{fill:#555}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb__text-desktop,.find-my-tv .breadcrumb.hmc-tv .breadcrumb__text-mobile{display:inline-block;font-size:14px;line-height:56px;font-weight:normal;color:#757575}
+.high-contrast .find-my-tv .breadcrumb.hmc-tv .breadcrumb__text-desktop,.high-contrast .find-my-tv .breadcrumb.hmc-tv .breadcrumb__text-mobile{background:#000 !important;color:#fff01f !important}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb__text-mobile{display:none}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-top-narrow{margin-top:16px}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-top-normal{margin-top:32px}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-top-wide{margin-top:56px}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-bottom-narrow{margin-bottom:16px}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-bottom-normal{margin-bottom:32px}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-bottom-wide{margin-bottom:56px}
+.find-my-tv__card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:80px 0 82px;background-color:#ddd}
+.find-my-tv__card-item{width:330px;min-height:543px;margin:0 20px}
+.find-my-tv__card-item--title{font-size:24px;text-align:center;display:block;margin-bottom:26px;font-family:'SamsungSharpSans',arial,sans-serif}
+.find-my-tv__card-item--box{padding:24px 24px 23px;border-radius:20px;background-color:#fff}
+.find-my-tv__card-item--box *.image{width:282px;height:282px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.find-my-tv__card-item--box .cta{color:#0a05aa;font-size:12px;font-weight:normal;padding:0;margin-top:18px}
+.find-my-tv__card-item--box .cta.cta--underline{padding-right:0}
+.find-my-tv__card-item--box .cta.cta--underline:after{bottom:0;height:1px;display:block !important;content:" ";position:absolute;left:0;background-color:currentColor}
+.find-my-tv__card-item--box .cta.cta--underline:before{display:none}
+.find-my-tv__card-item--box .cta:focus{color:#005ced}
+.find-my-tv__card-item--box .cta:hover{color:#005ced}
+.find-my-tv__card-item--image-wrap{min-height:282px}
+.find-my-tv__card-item--image-wrap a{display:block}
+.find-my-tv__card-item--name{display:block;font-size:18px;margin-bottom:23px;line-height:1.33;color:#000;font-weight:700}
+.find-my-tv__card-item--name-wrap{min-height:70px}
+.find-my-tv__card-item--price{font-size:16px;line-height:1.33}
+.find-my-tv__card-item--price-wrap{min-height:37px}
+.find-my-tv__card-item--save{font-size:12px}
+.find-my-tv__card-item--save span{color:#006eeb;margin-left:4px}
+.find-my-tv__card-item--cta-wrap{min-height:37px}
+.find-my-tv__card-item--icon{margin-bottom:30px}
+.find-my-tv__card-item--icon-wrap{min-height:156px}
+.find-my-tv__card-item--icon-list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:10px}
+.find-my-tv__card-item--icon-list:last-child{margin-bottom:0}
+.find-my-tv__card-item--icon-list .list-icon{width:24px;height:24px;margin-right:15px}
+.find-my-tv__card-item--icon-list .list-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:12px;font-weight:700}
+.find-my-tv__passion.is-active,.find-my-tv__size.is-active,.find-my-tv__picture.is-active,.find-my-tv__style.is-active,.find-my-tv__color.is-active,.find-my-tv__smarttv.is-active,.find-my-tv__sound.is-active,.find-my-tv__mytv.is-active{display:block}
+.find-my-tv__indicator{display:block;text-align:center;margin-top:30px}
+.find-my-tv__indicator .dot-indicator{display:inline-block;height:24px;padding:0 8px;border-radius:12px;font-size:0;background-color:#fff}
+.find-my-tv__indicator-item{width:24px;height:24px;padding:8px}
+.find-my-tv__indicator-item .indicator__dot-wrap,.find-my-tv__indicator-item .indicator__dot{width:100%;height:100%}
+.find-my-tv__indicator-item:focus{position:relative;outline:0;-webkit-box-shadow:none;box-shadow:none}
+.find-my-tv__indicator-item:focus:after{content:'';position:absolute;top:1px;left:1px;right:1px;bottom:1px;border:2px dotted #000}
+.find-my-tv__controll{padding-top:182px;width:40%;min-width:424px;min-height:600px;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;vertical-align:top;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}
+.find-my-tv__controll--title{font-size:16px}
+.find-my-tv__controll--bar{position:relative;height:30px;margin-top:30px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%}
+.find-my-tv__controll--bar-text{font-size:20px;white-space:nowrap;padding-right:10px}
+.find-my-tv__controll--bar-text ~ .find-my-tv__controll--bar-text{padding-left:10px}
+.find-my-tv__controll--bar-line{margin:13px 0;height:4px;background:#757575;display:inline-block;width:336px;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border-radius:2px}
+.find-my-tv__controll--bar-line.mobile-only{display:none}
+.find-my-tv__controll--bar-line span{position:absolute;top:-36px;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+.find-my-tv__controll--bar-line span:first-child label:after,.find-my-tv__controll--bar-line span:last-child label:after{visibility:hidden}
+.find-my-tv__controll--bar-line span:first-child input[type='radio']:checked ~ label:after,.find-my-tv__controll--bar-line span:last-child input[type='radio']:checked ~ label:after{visibility:visible}
+.find-my-tv__controll--bar-line span input[type='radio']{position:absolute;opacity:0}
+.find-my-tv__controll--bar-line span input[type='radio']:focus ~ .radio-pointer{-webkit-box-shadow:0 0 0 2px #fff;box-shadow:0 0 0 2px #fff;outline:2px dotted #000}
+.find-my-tv__controll--bar-line span label.radio-pointer{font-size:0;font-weight:bold;line-height:1.5;cursor:pointer;padding:0 35px;display:block;position:relative;overflow:hidden}
+.find-my-tv__controll--bar-line span label.radio-pointer:after{content:"";background-color:#2c2c2c;border-radius:12px;height:4px;width:4px;-webkit-box-sizing:border-box;box-sizing:border-box;display:block;margin:36px auto 0}
+.find-my-tv__controll--bar-line span label.radio-pointer .select-icon{position:absolute;top:-3px;height:25px;right:-16px}
+.find-my-tv__controll--bar-line span input[type='radio']:checked ~ .radio-pointer{font-size:24px;padding:0;margin-top:-6px;overflow:visible;white-space:nowrap}
+.find-my-tv__controll--bar-line span input[type='radio']:checked ~ .radio-pointer:after{content:"";background-color:#fff;border:2px solid #979797;border-radius:50%;-webkit-box-shadow:-2px 2px 6px rgba(0,0,0,0.3);box-shadow:-2px 2px 6px rgba(0,0,0,0.3);height:22px;width:22px;-webkit-transform:translate(-50%,-35%);transform:translate(-50%,-35%);margin:5px 0 0 50%}
+.find-my-tv__controll--one{position:relative;height:30px;margin-top:30px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.find-my-tv__controll--one .find-my-tv__controll--bar-line{background:0;height:auto;width:auto}
+.find-my-tv__controll--one .find-my-tv__controll--bar-line input{width:100%;height:100%;position:absolute;top:0;opacity:0;z-index:-1}
+.find-my-tv__controll--one .find-my-tv__controll--bar-line .radio-pointer{position:relative;font-size:24px;padding:0;margin-top:-6px;overflow:visible;font-weight:700}
+.find-my-tv__controll--one .find-my-tv__controll--bar-line .radio-pointer .select-icon{position:absolute;top:-3px;height:25px;right:-16px}
+.find-my-tv__controll--ar{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;margin:48px 0 42px;width:100%}
+.find-my-tv__controll--ar .cta{position:relative;min-width:80px;z-index:3}
+.find-my-tv__controll--ar strong{font-size:16px;display:inline-block;line-height:1.33;margin-left:20px}
+.find-my-tv__controll--text{font-size:14px;line-height:19px;width:67%;margin-top:12px}
+.find-my-tv__picture-cont .find-my-tv__controll--text{width:100%}
+.find-my-tv__controll .controll-select-btn{display:none}
+.find-my-tv__option{width:406px}
+.find-my-tv__option li{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin-top:25px;padding-left:34px}
+.find-my-tv__option li .checkbox-radio{overflow:visible}
+.find-my-tv__option li .checkbox-radio__label{font-size:12px}
+.find-my-tv__option li .checkbox-radio__label .wish-icon{height:15px;width:15px;margin:-3px 0 0 -3px;display:inline-block}
+.find-my-tv__option li .checkbox-radio__label-text{line-height:1.33;width:290px;font-size:12px;color:#000}
+.find-my-tv__option li .checkbox-radio__label-text:before{position:absolute;top:-6px;width:28px;height:28px;margin-right:5px;margin-left:-34px}
+.find-my-tv__option li .checkbox-radio.is-disabled-select input[type='checkbox']:focus ~ .checkbox-radio__label .checkbox-radio__label-text:before{background-image:url(../../clientlib-common/resources/images/form_check_d.svg)}
+.find-my-tv__option li .checkbox-radio.is-disabled-select .checkbox-radio__label-text::before{background-image:url(../../clientlib-common/resources/images/form_check_d.svg)}
+.find-my-tv__option li .checkbox-radio.is-disabled-select .checkbox-radio__label-text strong{font-weight:400}
+.find-my-tv__option li input[type='checkbox']:checked ~ .checkbox-radio__label .checkbox-radio__label-text,.find-my-tv__option li input[type='radio']:checked ~ .checkbox-radio__label .checkbox-radio__label-text{font-weight:normal}
+.find-my-tv__option li .cta{height:28px;margin-top:-3px;font-size:12px;font-weight:normal;padding:2px 0 7px;color:#0a05aa}
+.find-my-tv__option li .cta:after{height:1px}
+.find-my-tv__option li .cta:hover,.find-my-tv__option li .cta:focus{color:#005ced}
+.find-my-tv__option-disclaimer{font-size:12px;margin-top:20px;font-weight:bold}
+.find-my-tv__option-disclaimer svg.wish-icon{fill:#ef3434;width:9px;height:9px;top:-4px;position:relative;display:inline-block}
+.find-my-tv .find-my-tv__option+.find-my-tv__wish-disclaimer{margin-top:20px}
+.find-my-tv__picture .find-my-tv__controll{padding-top:11%;width:34%}
+.find-my-tv__picture .find-my-tv__controll label.radio-pointer{white-space:normal;padding:0 90px;text-transform:uppercase}
+.find-my-tv__disclamer{padding:13px 24px 20px;color:#000;font-size:10px;line-height:1.33;position:absolute;bottom:0;width:100%;z-index:2;left:0;text-align:left}
+.find-my-tv__room .find-my-tv__disclamer{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}
+.find-my-tv__disclamer.bg-white{padding:13px 24px;background:#fff;opacity:.8}
+.find-my-tv__disclamer .find-my-tv__disclamer-decs{font-size:10px;padding:57px 0 0 24px}
+.find-my-tv__wish-disclaimer{font-size:12px;margin-top:8px;font-weight:bold;max-width:100%}
+.find-my-tv__wish-disclaimer .wish-icon{height:15px;width:15px;top:-6px;position:relative;display:inline-block}
+.find-my-tv__bottom{position:relative;width:100%;z-index:29}
+.find-my-tv__bottom::before{content:'';display:block;position:absolute;top:-5px;left:0;right:0;height:5px;background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,0.2)),color-stop(80%,rgba(255,255,255,0)));background:linear-gradient(0,rgba(0,0,0,0.2) 0,rgba(255,255,255,0) 80%)}
+.find-my-tv__bottom-tray{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+.find-my-tv__bottom-tray-wrap{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;padding:18px 24px;width:100%;min-height:70px;background:#fff}
+.find-my-tv__bottom-tray--title{font-size:20px;font-weight:700;font-family:'SamsungSharpSans',arial,sans-serif;width:255px;letter-spacing:-0.75px}
+.find-my-tv__bottom-tray--title.mobile-only{-webkit-box-flex:0;-ms-flex:none;flex:none}
+.find-my-tv__bottom-tray--title-btn:active span{position:relative;top:0;left:0}
+.find-my-tv__bottom-tray--title-btn:focus span{position:relative;top:0;left:0}
+.find-my-tv__bottom-tray--title-btn span{position:relative}
+.find-my-tv__bottom-tray--title-btn .icon{display:none}
+.find-my-tv__bottom-tray--title-btn:focus{outline:0}
+.find-my-tv__bottom-tray--title-btn:active,.find-my-tv__bottom-tray--title-btn:hover,.find-my-tv__bottom-tray--title-btn:focus{cursor:default}
+.find-my-tv__bottom-tray--title button.find-my-tv__bottom-tray--title-btn{display:none}
+.find-my-tv__bottom-tray--price{text-align:right}
+.find-my-tv__bottom-tray--price .bottom-price{font-size:24px;line-height:1.33;display:block}
+.find-my-tv__bottom-tray--price .bottom-price strong{display:inline-block}
+.find-my-tv__bottom-tray--price .bottom-price span{word-break:keep-all;word-wrap:break-word;display:inline-block}
+.find-my-tv__bottom-tray--price .bottom-price+.bottom-save{margin-top:10px}
+.find-my-tv__bottom-tray--price .bottom-save{display:inline-block;font-size:18px;line-height:1.33}
+.find-my-tv__bottom-tray--price .bottom-save span{color:#006eeb}
+.find-my-tv__bottom-tray--price-btn{display:none}
+.find-my-tv__bottom-tray--item{font-size:16px;line-height:1.33;width:400px;margin:0 40px}
+.find-my-tv__bottom-tray--item-link{color:#000}
+.find-my-tv__bottom-tray--item-link strong{text-decoration:underline}
+.find-my-tv__bottom-tray--available{margin-right:40px}
+.find-my-tv__bottom-tray--available *.cta{font-size:16px;font-weight:normal}
+.find-my-tv__bottom-tray--available *.cta strong{margin-right:5px}
+.find-my-tv__bottom-tray--available *.cta:after{display:block !important;content:" ";position:absolute;left:0;right:19px;bottom:11px;height:1px;background-color:currentColor}
+.find-my-tv__bottom-cta.cta-desktop{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;height:46px;float:right}
+.find-my-tv__bottom-cta.cta-desktop .cta--outlined{color:#0972ea !important;border-color:#0972ea !important;padding:5px 18px 6px 12px}
+.find-my-tv__bottom-cta.cta-desktop .cta--outlined .icon{margin-right:4px;margin-left:0}
+.find-my-tv__bottom-cta.cta-desktop .cta--outlined.step-again{padding:5px 18px 6px 18px}
+.find-my-tv__bottom-cta.cta-desktop .cta--outlined:hover,.find-my-tv__bottom-cta.cta-desktop .cta--outlined:focus{color:#004eac !important;background-color:rgba(0,0,0,0.05) !important;border-color:#004eac !important}
+.find-my-tv__bottom-cta.cta-desktop .cta--contained{margin-left:16px;padding:6px 12px 7px 18px}
+.find-my-tv__bottom-cta.cta-desktop .cta--contained.step-meettv,.find-my-tv__bottom-cta.cta-desktop .cta--contained.step-buynow{padding:6px 18px 7px 18px}
+.find-my-tv__bottom-cta.cta-mobile{display:none}
+.find-my-tv__bottom-cta .cta--emphasis{background-color:#0972ea !important;text-shadow:none !important}
+.find-my-tv__bottom-cta .cta--emphasis:hover,.find-my-tv__bottom-cta .cta--emphasis:focus{background-color:#004eac !important}
+.find-my-tv__bottom-available{display:none}
+.find-my-tv__bottom--fixed{position:fixed;width:1440px;left:50%;bottom:0;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+.find-my-tv__bottom__dummy{display:none}
+.find-my-tv__bottom--fixed ~ .find-my-tv__bottom__dummy{display:block}
+.find-my-tv .tit-black{color:#000}
+.find-my-tv .tit-white{color:#fff}
+.find-my-tv .motion-img div.image{-webkit-transform:scale(0);transform:scale(0)}
+.find-my-tv .show-motion div.image{-webkit-transform:scale(1);transform:scale(1);-webkit-animation:show-motion .6s both;animation:show-motion .6s both}
+.find-my-tv [class*='swiper-button']{background-color:rgba(0,0,0,0.45);border:1px solid rgba(255,255,255,0.15)}
+.find-my-tv [class*='swiper-button'] svg.icon{fill:#fff}
+.find-my-tv [class*='swiper-button']:hover,.find-my-tv [class*='swiper-button']:focus,.find-my-tv [class*='swiper-button']:active{background-color:#1c1c1c}
+.find-my-tv [class*='swiper-button']:hover .icon,.find-my-tv [class*='swiper-button']:focus .icon,.find-my-tv [class*='swiper-button']:active .icon{fill:#fff}
+.find-my-tv .radio-v2__label-box{background:#fff;border-color:#8c8c8c}
+.find-my-tv .radio-v2__label:hover .radio-v2__label-box{background-color:#8c8c8c;border-color:#006ff2}
+.find-my-tv .cta:focus{-webkit-box-shadow:none;box-shadow:none}
+.find-my-tv .checkbox-radio__label:hover .checkbox-radio__label-text:before{background-image:url(../../clientlib-common/resources/images/form_check_radio_hover.svg);outline:2px dotted #000;outline-offset:-2px}
+.find-my-tv__layer-popup{display:none;position:absolute;z-index:9999}
+.find-my-tv__layer-popup .popup-close{position:absolute;top:20px;right:20px;z-index:1;font-size:0}
+.find-my-tv__layer-popup .popup-close svg.icon{fill:#fff}
+.find-my-tv__layer-popup.type-ar{width:324px;height:285px;top:250px;z-index:28;left:282px;padding:0;background:transparent}
+.find-my-tv__layer-popup.type-ar .ar-popup-inner{position:absolute;bottom:0;padding:56px 24px 24px;width:100%;background:#fff;border-radius:8px;-webkit-box-shadow:0 4px 10px -2px rgba(0,0,0,0.2);box-shadow:0 4px 10px -2px rgba(0,0,0,0.2)}
+.find-my-tv__layer-popup.type-ar .ar-popup-title{font-size:16px}
+.find-my-tv__layer-popup.type-ar .ar-popup-text{font-size:14px;margin:10px 0 26px}
+.find-my-tv__layer-popup.type-ar .qr-code{display:block;width:118px;height:118px;margin:0 auto}
+.find-my-tv__layer-popup.type-ar .qr-code svg{width:100%;height:100%}
+.find-my-tv__layer-popup.type-ar .popup-close{width:34px;height:34px;top:24px;right:24px}
+.find-my-tv__layer-popup.type-ar .popup-close svg.icon{fill:#000}
+.find-my-tv__layer-popup.type-video{position:fixed;top:0;left:0;width:100%;height:100%}
+.find-my-tv__layer-popup.type-video .video-contents{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);max-width:100%}
+.find-my-tv__layer-popup.type-video .video-contents .video{width:1124px;height:632px}
+.find-my-tv__layer-popup.type-video .video-contents .inset{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse;max-width:100%}
+.find-my-tv__layer-popup.type-video .video-contents .inset .image{max-width:100vw}
+.find-my-tv__layer-popup.type-video .video-contents .inset .image img{max-width:100vw}
+.find-my-tv__layer-popup.type-video .video-contents.video-cont .video-contents__text{width:1124px}
+.find-my-tv__layer-popup.type-video .video-contents__text{display:-webkit-box;display:-ms-flexbox;display:flex;padding:30px 20px;background:#fff;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.find-my-tv__layer-popup.type-video .video-contents__text--title{display:-webkit-box;display:-ms-flexbox;display:flex;width:400px;font-size:20px;line-height:1.33;margin:0 40px;font-family:'SamsungSharpSans',arial,sans-serif}
+.find-my-tv__layer-popup.type-video .video-contents__text--text{overflow-y:auto;max-height:125px;width:100%;padding-right:0;padding-left:40px;border-left:1px solid #d8d8d8}
+.find-my-tv__layer-popup.type-video .video-contents__text--text p{font-size:14px;line-height:1.33}
+.find-my-tv__layer-popup.type-video .video-contents__text--text span{display:block;margin-top:10px;font-size:12px;line-height:1.33}
+.find-my-tv__layer-popup.type-video .video-contents__text--text ul{margin-top:10px;font-size:12px;line-height:1.33}
+.find-my-tv__layer-popup.type-video .popup-close{overflow:hidden;position:absolute;width:26px;height:26px;padding:10px;top:30px;-webkit-box-sizing:content-box;box-sizing:content-box;z-index:100;right:30px}
+.find-my-tv__layer-popup.type-video .popup-close svg.icon{display:block;position:relative;margin:auto;width:26px;height:26px;fill:#fff}
+.find-my-tv__layer-popup.open{display:block}
+.find-my-tv__layer-popup.open.scroll{overflow-y:auto;text-align:center}
+.find-my-tv__layer-popup.open.scroll .video-contents{text-align:left;position:static;top:0;-webkit-transform:translate(0,0);transform:translate(0,0)}
+.find-my-tv__layer-dimmed{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.7);z-index:3100}
+.find-my-tv .find-my-tv__layer-popup.type-video.open ~ .find-my-tv__layer-dimmed{display:block}
+.find-my-tv__alert-tooltip{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;background-color:#fff;border-radius:7px;-webkit-box-shadow:0 0 20px 2px rgba(0,0,0,0.2);box-shadow:0 0 20px 2px rgba(0,0,0,0.2);display:none;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;font-size:14px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;opacity:0;padding:10px 15px;position:fixed;-webkit-transition:opacity .3s ease-in-out;transition:opacity .3s ease-in-out;width:230px;z-index:200;top:0}
+.find-my-tv__alert-tooltip .tooltip-image{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;height:19px;width:19px;margin-right:10px}
+.find-my-tv__alert-tooltip .close-btn{color:#000}
+.find-my-tv__alert-tooltip .close-btn .icon{width:19px;height:19px}
+.find-my-tv__alert-tooltip.visible{opacity:1}
+.find-my-tv__popup{display:none}
+.find-my-tv__popup .layer-popup{overflow-y:auto;position:fixed;left:0;top:0;right:0;bottom:0;letter-spacing:-4px;text-align:center;background:rgba(0,0,0,0.6);z-index:3100}
+.find-my-tv__popup .layer-popup:before{content:'';display:inline-block;height:100%;vertical-align:middle}
+.find-my-tv__popup .layer-popup__looping--first{display:inline-block}
+.find-my-tv__popup .layer-popup__inner{display:inline-block;position:relative;width:580px;padding:25px 20px 24px 26px;text-align:left;border-radius:20px;background:#fff;color:#000;line-height:1.33;vertical-align:middle;letter-spacing:0}
+.find-my-tv__popup .layer-popup__title{padding-right:32px;font-family:'SamsungSharpSans',arial,sans-serif;font-size:24px;font-weight:bold;line-height:1.33;word-break:break-all}
+.find-my-tv__popup .layer-popup__title+.layer-popup__contents{padding-top:16px}
+.find-my-tv__popup .layer-popup__contents{padding-top:47px}
+.find-my-tv__popup .layer-popup__close{display:block;overflow:hidden;position:absolute;right:12px;top:12px;width:48px;height:48px;color:transparent;text-indent:-9999px}
+.find-my-tv__popup .layer-popup__close .icon{display:inline-block;position:absolute;left:50%;top:50%;width:24px;height:24px;margin:-12px 0 0 -12px}
+.find-my-tv__popup__subscrption{font-weight:bold;font-size:18px;line-height:1.4}
+.find-my-tv__popup__description{font-size:18px;line-height:1.4}
+.find-my-tv__popup__cta{text-align:center;margin:58px 0 -10px 0}
+.find-my-tv__popup__cta-wrap{font-size:0}
+.find-my-tv__popup__cta .cta{min-width:120px;margin:0 10px 10px;text-align:center;display:inline-block;float:none;vertical-align:top;white-space:normal}
+.find-my-tv__popup__cta .cta:last-child{margin-bottom:0}
+.find-my-tv img.is-disabled-select{opacity:1}
+.find-my-tv-model__popup .layer-popup{overflow-y:auto;position:fixed;left:0;top:0;right:0;bottom:0;letter-spacing:-4px;text-align:center;background:rgba(0,0,0,0.68);z-index:3100}
+.find-my-tv-model__popup .layer-popup:before{content:'';display:inline-block;height:100%;vertical-align:middle}
+.find-my-tv-model__popup .layer-popup__inner{display:inline-block;position:relative;width:auto;max-width:852px;padding:43px 0 23px;border-radius:20px;background:#fff;line-height:1.33;text-align:center;vertical-align:middle;letter-spacing:0;background-color:#fff}
+.find-my-tv-model__popup .layer-popup .scrollbar-horizontal__track{display:none}
+.find-my-tv-model__popup .layer-popup__title{margin-bottom:10px;font-weight:bold;font-size:40px;font-family:'SamsungSharpSans',arial,sans-serif;line-height:1.4;letter-spacing:-0.02em}
+.find-my-tv-model__popup .layer-popup__desc{margin-bottom:24px;font-size:14px;line-height:1.4}
+.find-my-tv-model__popup .layer-popup__contents{padding:0 56px 0;width:852px}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card{-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;padding:0;margin-left:-1.7%;background-color:#fff}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item{min-height:auto;width:31.6%;margin:0 0 1.7% 1.7%}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--box{min-height:357px;border:1px solid #dadada;background-color:#fff;-webkit-box-shadow:1px 2px 4px 0 #eee;box-shadow:1px 2px 4px 0 #eee;text-align:left}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--box *.image{width:100%;height:auto}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--image-wrap{min-height:126px}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--name{margin-bottom:30px}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--name-wrap{min-height:102px}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--icon{margin-bottom:20px}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--icon-wrap{min-height:146px}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--price-wrap{min-height:57px}
+.find-my-tv-model__popup .layer-popup__close{display:block;overflow:hidden;position:absolute;right:12px;top:12px;width:48px;height:48px;color:transparent;text-indent:-9999px}
+.find-my-tv-model__popup .layer-popup__close .icon{display:inline-block;position:absolute;left:50%;margin:-12px 0 0 -12px;top:50%;width:24px;height:24px}
+.find-my-tv .swiper-button-next.swiper-button-disabled,.find-my-tv .swiper-button-prev.swiper-button-disabled{opacity:1}
+.find-my-tv .swiper-button-next.swiper-button-disabled svg,.find-my-tv .swiper-button-prev.swiper-button-disabled svg{opacity:.35}
+.find-my-tv .scrollbar-horizontal__bar:after{background:#343434}
+.find-my-tv .scrollbar-horizontal__track-content:before{background:#838383}
+@media only screen and (min-width:768px) and (max-width:1440px){.find-my-tv{max-width:100vw}
+.find-my-tv__header{height:3.19444444vw;padding:0vw 1.66666667vw}
+.find-my-tv__header-title{font-size:1.25vw;line-height:3.19444444vw;margin-right:5.41666667vw}
+.find-my-tv__header-item .link{font-size:.97222222vw;padding:0vw .83333333vw;line-height:3.19444444vw}
+.find-my-tv__header--fixed{width:100vw;padding-left:1.66666667vw}
+.find-my-tv__header-tooltip{border-radius:.48611111vw;padding:.69444444vw 1.04166667vw;width:15.97222222vw}
+.find-my-tv__header-tooltip .icon{height:1.31944444vw;margin-right:.69444444vw;width:1.31944444vw}
+.find-my-tv__header-tooltip--text{font-size:.97222222vw}
+.find-my-tv__progress-bar span{min-width:15.13888889vw;height:.27777778vw}
+.find-my-tv__room{min-height:50.69444444vw}
+.find-my-tv__room-panel{padding-top:3.19444444vw}
+.find-my-tv__room-tab{padding-top:3.19444444vw}
+.find-my-tv__room-tab--title{margin:4.30555556vw 0vw 3.05555556vw 0vw;font-size:2.63888889vw}
+.find-my-tv__room-tab--list li{margin:0vw .83333333vw}
+.find-my-tv__passion{min-height:59.02777778vw}
+.find-my-tv__passion-inner{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;text-align:center}
+.find-my-tv__passion-title{font-size:2.63888889vw;margin-top:7.77777778vw;margin-bottom:3.47222222vw}
+.find-my-tv__passion-cont{width:66.66666667vw}
+.find-my-tv__passion-cont .radio-v2{padding:0vw 1.38888889vw;margin-bottom:3.61111111vw}
+.find-my-tv__passion-cont .radio-v2__label span.image{width:19.44444444vw;height:13.68055556vw;border-radius:1.52777778vw}
+.find-my-tv__passion-cont .radio-v2__label-box{top:1.04166667vw;width:1.94444444vw;height:1.94444444vw;right:1.04166667vw}
+.find-my-tv__passion-cont .radio-v2__label-box-wrap{top:1.04166667vw;width:1.94444444vw;height:1.94444444vw;right:1.04166667vw}
+.find-my-tv__passion-cont .radio-v2__label-text{font-size:1.38888889vw;margin-top:1.38888889vw;max-width:19.44444444vw}
+.find-my-tv__size{min-height:63.88888889vw}
+.find-my-tv__size-title{font-size:2.63888889vw;padding:7.84722222vw 0vw 0vw 0vw}
+.find-my-tv__size-cont{padding:0vw 8.33333333vw;min-height:38.05555556vw}
+.find-my-tv__size-image{margin-bottom:11.11111111vw;margin-right:.69444444vw;margin-left:9.72222222vw}
+.find-my-tv__size-image-width{top:-2.29166667vw;height:.48611111vw}
+.find-my-tv__size-image-width span{padding:0vw .34722222vw}
+.find-my-tv__size-image-height{width:.48611111vw;right:-2.29166667vw}
+.find-my-tv__size-image-height span{padding:.34722222vw 0vw;margin-left:-0.13888889vw}
+.find-my-tv__size-image-width span,.find-my-tv__size-image-height span{font-size:1.11111111vw}
+.find-my-tv__size-image-serif{margin-left:11.45833333vw}
+.find-my-tv__picture{min-height:61.11111111vw;padding-bottom:3.47222222vw}
+.find-my-tv__picture-title{font-size:2.63888889vw;padding:7.63888889vw 0vw 0vw 0vw}
+.find-my-tv__picture-cont{padding:0vw 4.93055556vw 0vw 8.19444444vw}
+.find-my-tv__picture-cont span.find-my-tv__controll--bar-line{width:22.63888889vw}
+.find-my-tv__picture-cont p.find-my-tv__controll--text ~ h3.find-my-tv__controll--title{margin-top:4.16666667vw}
+.find-my-tv__picture-cont .find-my-tv__controll--bar--one{height:2.08333333vw;margin-top:2.08333333vw}
+.find-my-tv__picture-cont .find-my-tv__controll--bar--one .find-my-tv__controll--bar-line .radio-pointer{font-size:1.66666667vw;margin-top:-0.41666667vw}
+.find-my-tv__picture-cont .find-my-tv__controll--bar--one .find-my-tv__controll--bar-line .radio-pointer .select-icon{top:-0.41666667vw;height:1.73611111vw;right:-1.11111111vw}
+.find-my-tv__picture-image{padding-top:4.30555556vw;padding-left:6.38888889vw}
+.find-my-tv__style{min-height:55.97222222vw}
+.find-my-tv__style-title{font-size:2.63888889vw;padding:7.63888889vw 0vw 0vw 0vw}
+.find-my-tv__style-cont{padding:0vw 5.55555556vw 0vw 8.33333333vw}
+.find-my-tv__style-image{padding-top:6.25vw}
+.find-my-tv__style-image--item{width:45.13888889vw;height:32.63888889vw;border-radius:1.38888889vw}
+.find-my-tv__style-select{margin-top:10.41666667vw}
+.find-my-tv__style-select--title{font-size:1.11111111vw;margin-bottom:1.38888889vw}
+.find-my-tv__style-radio{width:31.25vw}
+.find-my-tv__style-radio--item{width:9.72222222vw;height:7.63888889vw;border-radius:.41666667vw;margin:0vw 1.04166667vw 1.04166667vw 0vw}
+.find-my-tv__style-radio--item input[type='radio']:focus ~ .radio-label{width:9.72222222vw;height:7.63888889vw}
+.find-my-tv__style-radio--item .radio-label:after{border-radius:.41666667vw}
+.find-my-tv__style-radio--item .radio-label .style-icon{width:2.91666667vw;height:2.91666667vw;margin-bottom:.69444444vw}
+.find-my-tv__style-radio--item .radio-label .radio-text{font-size:.97222222vw}
+.find-my-tv__style-radio--item .radio-label .radio-text .style-wish-icon{top:-0.20833333vw;height:1.04166667vw;right:-0.76388889vw}
+.find-my-tv__style-radio--text{font-size:.97222222vw}
+.find-my-tv__style__play{width:6.66666667vw;height:6.66666667vw}
+.find-my-tv__style .find-my-tv__disclamer{padding:1.25vw 2.01388889vw}
+.find-my-tv__color{min-height:59.23611111vw}
+.find-my-tv__color-title{font-size:2.63888889vw;padding:7.63888889vw 0vw 0vw 0vw}
+.find-my-tv__color-cont{padding:0vw 8.33333333vw;height:41.66666667vw}
+.find-my-tv__color-image{padding-top:7.08333333vw;padding-left:6.80555556vw}
+.find-my-tv__color-image--item *.image{width:40.97222222vw}
+.find-my-tv__color-image--item .image-text{margin-top:2.08333333vw;font-size:1.25vw}
+.find-my-tv__color-select{margin-top:4.86111111vw}
+.find-my-tv__color-select--title{font-size:1.11111111vw;margin-bottom:1.38888889vw}
+.find-my-tv__color-select--text{font-size:.97222222vw;margin-bottom:.69444444vw}
+.find-my-tv__color-radio{width:31.25vw}
+.find-my-tv__color-radio--item{width:12.91666667vw;height:7.63888889vw;border-radius:.41666667vw;margin:0vw 1.04166667vw .55555556vw 0vw}
+.find-my-tv__color-radio--item input[type='radio']:focus ~ .radio-label{width:12.91666667vw;height:7.63888889vw}
+.find-my-tv__color-radio--item label.radio-label:after{border-radius:.41666667vw}
+.find-my-tv__color-radio--item label.radio-label .radio-color{width:1.66666667vw;height:1.66666667vw;margin-bottom:.69444444vw}
+.find-my-tv__color-radio--item label.radio-label span.radio-text{font-size:.97222222vw}
+.find-my-tv__color-radio--item label.radio-label span.radio-text .color-wish-icon{top:-0.20833333vw;height:1.04166667vw;right:-0.76388889vw}
+.find-my-tv__sound{min-height:65.97222222vw}
+.find-my-tv__sound-title{font-size:2.63888889vw;padding-top:7.29166667vw;width:51.38888889vw}
+.find-my-tv__sound-cont{margin-top:3.47222222vw}
+.find-my-tv__sound-cont .swiper-container{padding:0vw 6.94444444vw}
+.find-my-tv__sound-cont .find-my-tv__wish-disclaimer{margin-top:1.73611111vw;padding-left:6.94444444vw}
+.find-my-tv__sound-item{width:22.91666667vw;height:31.94444444vw;border-radius:1.38888889vw;margin-right:2.77777778vw}
+.find-my-tv__sound-item .image{width:22.91666667vw;height:13.125vw}
+.find-my-tv__sound-item--wrap{padding-top:1.38888889vw;height:14.86111111vw}
+.find-my-tv__sound-item--wrap .cta{font-size:.83333333vw;margin:1.25vw 1.66666667vw 0vw 1.66666667vw}
+.find-my-tv__sound-item--title{font-size:1.11111111vw;padding:0vw 1.66666667vw .83333333vw 1.66666667vw}
+.find-my-tv__sound-item--title .wish-icon{height:1.04166667vw;width:1.04166667vw;margin-top:-0.27777778vw}
+.find-my-tv__sound-item--text{height:6.73611111vw;line-height:1.31944444vw;font-size:.97222222vw;padding:0vw 1.66666667vw}
+.find-my-tv__sound-item--checked{height:3.95833333vw;padding:0vw 1.66666667vw}
+.find-my-tv__sound-item--checked .checkbox-radio__label-text{line-height:1.94444444vw;padding-left:2.22222222vw}
+.find-my-tv__sound-item--checked .checkbox-radio__label-text:before{margin:-0.83333333vw 0vw 0vw 0vw}
+.find-my-tv__sound .indicator{margin-top:2.08333333vw}
+.find-my-tv__smarttv{min-height:65.97222222vw}
+.find-my-tv__smarttv-title{font-size:2.63888889vw;padding-top:7.29166667vw;width:52.08333333vw}
+.find-my-tv__smarttv-cont{margin-top:6.59722222vw}
+.find-my-tv__smarttv-cont .swiper-container{padding:0vw 6.94444444vw}
+.find-my-tv__smarttv-cont .find-my-tv__wish-disclaimer{margin-top:1.73611111vw;padding-left:6.94444444vw}
+.find-my-tv__smarttv-item{width:22.91666667vw;height:31.94444444vw;border-radius:1.38888889vw;margin-right:2.77777778vw}
+.find-my-tv__smarttv-item .image{width:22.91666667vw;height:13.125vw}
+.find-my-tv__smarttv-item--wrap{padding-top:1.38888889vw;height:14.86111111vw}
+.find-my-tv__smarttv-item--wrap .cta{font-size:.83333333vw;margin:1.25vw 1.66666667vw 0vw 1.66666667vw}
+.find-my-tv__smarttv-item--title{font-size:1.11111111vw;padding:0vw 1.66666667vw .83333333vw 1.66666667vw}
+.find-my-tv__smarttv-item--title .wish-icon{height:1.04166667vw;width:1.04166667vw;margin-top:-0.27777778vw}
+.find-my-tv__smarttv-item--text{height:6.73611111vw;line-height:1.31944444vw;font-size:.97222222vw;padding:0vw 1.66666667vw}
+.find-my-tv__smarttv-item--checked{height:3.95833333vw;padding:0vw 1.66666667vw}
+.find-my-tv__smarttv-item--checked .checkbox-radio__label-text{line-height:1.94444444vw;padding-left:2.22222222vw}
+.find-my-tv__smarttv-item--checked .checkbox-radio__label-text:before{width:1.66666667vw;height:1.66666667vw;margin:-0.83333333vw 0vw 0vw 0vw}
+.find-my-tv__smarttv .indicator{margin-top:2.08333333vw}
+.find-my-tv__mytv{min-height:53.47222222vw}
+.find-my-tv__mytv-title{font-size:2.63888889vw;padding:7.63888889vw 0vw .83333333vw 0vw}
+.find-my-tv__mytv-discription{font-size:.97222222vw}
+.find-my-tv__mytv-cont{padding:3.47222222vw 8.47222222vw 4.58333333vw 8.47222222vw}
+.find-my-tv__mytv-gallery{border-radius:1.38888889vw}
+.find-my-tv__mytv-gallery-thumbnail{margin:0vw 2.08333333vw 1.66666667vw 2.08333333vw}
+.find-my-tv__mytv-gallery-tab .tab__item{margin-left:2.36111111vw}
+.find-my-tv__mytv-gallery-tab .tab__item:first-child{margin:0}
+.find-my-tv__mytv-gallery-tab .tab__item-title{font-size:.97222222vw}
+.find-my-tv__mytv-gallery-tab .tab__item-line{margin-top:.13888889vw;height:.06944444vw}
+.find-my-tv__mytv-gallery .swiper-box{margin-top:.69444444vw;height:3.47222222vw}
+.find-my-tv__mytv-gallery .swiper-box .find-my-tv__swiper-arrow{width:1.80555556vw}
+.find-my-tv__mytv-gallery .swiper-box .find-my-tv__swiper-arrow[style*='none']+.swiper-container{margin:0vw 1.80555556vw}
+.find-my-tv__mytv-gallery .swiper-box .find-my-tv__swiper-arrow .icon{width:1.11111111vw;height:1.11111111vw}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item{width:5.48611111vw;height:3.47222222vw;padding:.20833333vw .41666667vw}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item a{border-radius:.41666667vw}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item a .image{height:3.05555556vw}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item a .image img{height:3.05555556vw}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item a .icon{width:1.66666667vw;height:1.66666667vw}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item.is-active a::before{border-radius:.41666667vw}
+.find-my-tv__mytv-image--item{width:38.88888889vw;height:29.16666667vw}
+.find-my-tv__mytv-video--big{padding:5vw 0vw}
+.find-my-tv__mytv-video--item{width:36.11111111vw;height:19.30555556vw;border-radius:1.04166667vw}
+.find-my-tv__mytv-video--btn-play{width:6.25vw;height:6.25vw}
+.find-my-tv__mytv-info{margin-top:5.76388889vw}
+.find-my-tv__mytv-info--title{font-size:1.25vw;margin-bottom:.625vw}
+.find-my-tv__mytv-info--text{min-width:14.58333333vw;font-size:1.25vw}
+.find-my-tv__mytv-info--list{margin-top:2.77777778vw;font-size:.97222222vw}
+.find-my-tv__mytv-info--list li{width:29.44444444vw;padding-left:.69444444vw}
+.find-my-tv__mytv-info .cta{font-size:.83333333vw;margin-top:1.25vw}
+.find-my-tv__mytv-info--icon{margin-top:2.84722222vw;width:33.05555556vw}
+.find-my-tv__mytv-info--icon li{width:8.26388889vw;padding:0vw .69444444vw}
+.find-my-tv__mytv-info--icon li .info-icon{width:4.44444444vw;height:4.44444444vw}
+.find-my-tv__mytv-info--icon li .icon-text{margin-top:.55555556vw;font-size:.83333333vw}
+.find-my-tv__mytv-disclamer{font-size:.69444444vw}
+.find-my-tv__mytv-disclamer-wrap{padding:2.43055556vw 1.66666667vw 1.38888889vw 1.66666667vw}
+.find-my-tv__more-ways-card{width:22.91666667vw;height:30.55555556vw;margin:0vw .90277778vw;border-radius:1.38888889vw}
+.find-my-tv__more-ways-card-wrap{min-height:42.36111111vw;padding:1.38888889vw 0vw 1.94444444vw 0vw}
+.find-my-tv__more-ways-card-headline{margin-top:3.33333333vw;margin-bottom:2.15277778vw;max-width:63.47222222vw}
+.find-my-tv__more-ways-card-headline-text{font-size:2.63888889vw}
+.find-my-tv__more-ways-card-list{margin:0vw .55555556vw}
+.find-my-tv__more-ways-card-cont{top:3.88888889vw;right:2.22222222vw;left:2.22222222vw}
+.find-my-tv__more-ways-card-title{font-size:1.66666667vw}
+.find-my-tv__more-ways-card-description{font-size:.97222222vw;margin:.69444444vw 0vw 1.38888889vw 0vw}
+.find-my-tv .breadcrumb.hmc-tv .icon{width:1.11111111vw;height:1.11111111vw;margin:0vw .27777778vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb__inner{padding:0vw 1.66666667vw;border-top-width:.06944444vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb__text-desktop,.find-my-tv .breadcrumb.hmc-tv .breadcrumb__text-mobile{font-size:.97222222vw;line-height:3.88888889vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-top-narrow{margin-top:1.11111111vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-top-normal{margin-top:2.22222222vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-top-wide{margin-top:3.88888889vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-bottom-narrow{margin-bottom:1.11111111vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-bottom-normal{margin-bottom:2.22222222vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-bottom-wide{margin-bottom:3.88888889vw}
+.find-my-tv__card{padding:5.55555556vw 0vw 5.69444444vw 0vw}
+.find-my-tv__card-item{width:22.91666667vw;min-height:37.70833333vw;margin:0vw 1.38888889vw}
+.find-my-tv__card-item--title{font-size:1.66666667vw;margin-bottom:1.66666667vw}
+.find-my-tv__card-item--title-wrap{min-height:5.41666667vw}
+.find-my-tv__card-item--box{min-height:32.29166667vw;padding:1.66666667vw 1.66666667vw 1.59722222vw 1.66666667vw;border-radius:1.38888889vw}
+.find-my-tv__card-item--box *.image{width:19.58333333vw;height:19.58333333vw}
+.find-my-tv__card-item--box .cta{font-size:.83333333vw;margin-top:1.25vw}
+.find-my-tv__card-item--image-wrap{min-height:19.58333333vw}
+.find-my-tv__card-item--name{font-size:1.25vw;margin-bottom:1.59722222vw}
+.find-my-tv__card-item--name-wrap{min-height:4.86111111vw}
+.find-my-tv__card-item--price{font-size:1.11111111vw}
+.find-my-tv__card-item--price-wrap{min-height:2.56944444vw}
+.find-my-tv__card-item--save{font-size:.83333333vw}
+.find-my-tv__card-item--save span{margin-left:.27777778vw}
+.find-my-tv__card-item--cta-wrap{min-height:2.56944444vw}
+.find-my-tv__card-item--icon{margin-bottom:2.08333333vw}
+.find-my-tv__card-item--icon-wrap{min-height:10.83333333vw}
+.find-my-tv__card-item--icon-list{margin-bottom:.69444444vw}
+.find-my-tv__card-item--icon-list .list-icon{width:1.66666667vw;height:1.66666667vw;margin-right:1.04166667vw}
+.find-my-tv__card-item--icon-list .list-text{font-size:.83333333vw}
+.find-my-tv__indicator{margin-top:2.08333333vw}
+.find-my-tv__indicator .dot-indicator{height:1.66666667vw;padding:0vw .55555556vw;border-radius:.83333333vw}
+.find-my-tv__indicator-item{width:1.66666667vw;height:1.66666667vw;padding:.55555556vw}
+.find-my-tv__controll{padding-top:12.63888889vw;min-width:29.44444444vw;min-height:42.36111111vw}
+.find-my-tv__controll--title{font-size:1.11111111vw}
+.find-my-tv__controll--bar{height:2.08333333vw;margin-top:2.08333333vw}
+.find-my-tv__controll--bar-text{font-size:1.38888889vw;padding-right:.69444444vw}
+.find-my-tv__controll--bar-text ~ .find-my-tv__controll--bar-text{padding:0vw 0vw 0vw .69444444vw}
+.find-my-tv__controll--bar-line{margin:.90277778vw 0vw;height:.27777778vw;width:23.33333333vw}
+.find-my-tv__controll--bar-line span{top:-2.5vw}
+.find-my-tv__controll--bar-line span label.radio-pointer{padding:0vw 2.43055556vw}
+.find-my-tv__controll--bar-line span label.radio-pointer:after{border-radius:.83333333vw;height:.27777778vw;margin-top:2.5vw}
+.find-my-tv__controll--bar-line span label.radio-pointer .select-icon{height:1.73611111vw;top:-0.20833333vw;right:-1.11111111vw}
+.find-my-tv__controll--bar-line span input[type='radio']:checked ~ .radio-pointer{font-size:1.66666667vw;margin-top:-0.41666667vw}
+.find-my-tv__controll--bar-line span input[type='radio']:checked ~ .radio-pointer:after{border-width:.13888889vw;height:1.38888889vw;width:1.38888889vw;margin-top:.34722222vw}
+.find-my-tv__controll--one{height:2.08333333vw;margin-top:2.08333333vw}
+.find-my-tv__controll--one .find-my-tv__controll--bar-line .radio-pointer{font-size:1.66666667vw;margin-top:-0.41666667vw}
+.find-my-tv__controll--one .find-my-tv__controll--bar-line .radio-pointer .select-icon{right:-1.11111111vw;top:-0.20833333vw;height:1.73611111vw}
+.find-my-tv__controll--ar{margin:3.33333333vw 0vw 2.91666667vw 0vw}
+.find-my-tv__controll--ar .cta{min-width:5.55555556vw}
+.find-my-tv__controll--ar strong{font-size:1.11111111vw;margin-left:1.38888889vw}
+.find-my-tv__controll--text{font-size:.97222222vw;line-height:1.31944444vw;margin-top:.83333333vw}
+.find-my-tv__option{width:28.19444444vw}
+.find-my-tv__option li{margin-top:1.73611111vw;padding-left:2.36111111vw}
+.find-my-tv__option li .checkbox-radio__label{font-size:.83333333vw}
+.find-my-tv__option li .checkbox-radio__label .wish-icon{height:1.04166667vw;width:1.04166667vw;margin:-0.20833333vw 0vw 0vw -0.20833333vw}
+.find-my-tv__option li .checkbox-radio__label-text{width:20.13888889vw;font-size:.83333333vw}
+.find-my-tv__option li .checkbox-radio__label-text:before{top:-0.41666667vw;width:1.94444444vw;height:1.94444444vw;margin-right:.34722222vw;margin-left:-2.36111111vw}
+.find-my-tv__option li .cta{height:1.94444444vw;margin-top:-0.20833333vw;font-size:.83333333vw}
+.find-my-tv__option-disclaimer{font-size:.83333333vw;margin-top:1.38888889vw}
+.find-my-tv__option-disclaimer svg.wish-icon{width:.625vw;height:.625vw;top:-0.27777778vw}
+.find-my-tv .find-my-tv__option+.find-my-tv__wish-disclaimer{margin-top:1.38888889vw}
+.find-my-tv__picture .find-my-tv__controll label.radio-pointer{padding:0vw 6.25vw}
+.find-my-tv__disclamer{padding:.90277778vw 1.66666667vw 1.38888889vw 1.66666667vw;font-size:.69444444vw}
+.find-my-tv__disclamer.bg-white{padding:.90277778vw 1.66666667vw}
+.find-my-tv__disclamer .find-my-tv__disclamer-decs{font-size:.69444444vw;padding:3.95833333vw 0vw 0vw 1.66666667vw}
+.find-my-tv__wish-disclaimer{font-size:.83333333vw;margin-top:.55555556vw}
+.find-my-tv__wish-disclaimer .wish-icon{height:1.04166667vw;width:1.04166667vw;top:-0.41666667vw}
+.find-my-tv__bottom-tray-wrap{padding:1.25vw 1.66666667vw;min-height:4.86111111vw}
+.find-my-tv__bottom-tray--title{font-size:1.38888889vw;width:17.70833333vw}
+.find-my-tv__bottom-tray--price .bottom-price{font-size:1.66666667vw}
+.find-my-tv__bottom-tray--price .bottom-price+.bottom-save{margin-top:.69444444vw}
+.find-my-tv__bottom-tray--price .bottom-save{font-size:1.25vw}
+.find-my-tv__bottom-tray--item{margin:0vw 2.77777778vw;font-size:1.11111111vw;width:27.77777778vw}
+.find-my-tv__bottom-tray--available{margin-right:2.77777778vw}
+.find-my-tv__bottom-tray--available strong{margin-right:.34722222vw}
+.find-my-tv__bottom-tray--available *.cta{font-size:1.11111111vw}
+.find-my-tv__bottom-tray--available *.cta:after{bottom:.76388889vw;height:.06944444vw;right:1.31944444vw}
+.find-my-tv__bottom-cta.cta-desktop{height:3.19444444vw}
+.find-my-tv__bottom-cta.cta-desktop .cta--outlined{padding:.34722222vw 1.25vw .41666667vw .83333333vw}
+.find-my-tv__bottom-cta.cta-desktop .cta--outlined .icon{margin-right:.27777778vw}
+.find-my-tv__bottom-cta.cta-desktop .cta--outlined.step-again{padding:.34722222vw 1.25vw .41666667vw 1.25vw}
+.find-my-tv__bottom-cta.cta-desktop .cta--contained{margin-left:1.11111111vw;padding:.41666667vw .83333333vw .48611111vw 1.25vw}
+.find-my-tv__bottom-cta.cta-desktop .cta--contained.step-meettv,.find-my-tv__bottom-cta.cta-desktop .cta--contained.step-buynow{padding:.41666667vw 1.25vw .48611111vw 1.25vw}
+.find-my-tv__bottom--fixed{width:100vw}
+.find-my-tv__layer-popup .popup-close{top:1.38888889vw;right:1.38888889vw}
+.find-my-tv__layer-popup.type-ar{width:22.5vw;height:19.79166667vw;top:17.36111111vw;left:19.58333333vw}
+.find-my-tv__layer-popup.type-ar .ar-popup-inner{padding:3.88888889vw 1.66666667vw 1.66666667vw 1.66666667vw;border-radius:.55555556vw}
+.find-my-tv__layer-popup.type-ar .ar-popup-title{font-size:1.11111111vw}
+.find-my-tv__layer-popup.type-ar .ar-popup-text{font-size:.97222222vw;margin:.69444444vw 0vw 1.80555556vw 0vw}
+.find-my-tv__layer-popup.type-ar .qr-code{width:8.19444444vw;height:8.19444444vw}
+.find-my-tv__layer-popup.type-ar .popup-close{width:2.36111111vw;height:2.36111111vw;top:1.66666667vw;right:1.66666667vw}
+.find-my-tv__layer-popup.type-video .video-contents .video{width:78.05555556vw;height:43.88888889vw}
+.find-my-tv__layer-popup.type-video .video-contents .image img{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;width:78.05555556vw}
+.find-my-tv__layer-popup.type-video .video-contents.video-cont .video-contents__text{width:78.05555556vw}
+.find-my-tv__layer-popup.type-video .video-contents__text{padding:2.08333333vw 1.38888889vw;width:78.05555556vw}
+.find-my-tv__layer-popup.type-video .video-contents__text--title{width:27.77777778vw;font-size:1.38888889vw;margin:0vw 2.77777778vw}
+.find-my-tv__layer-popup.type-video .video-contents__text--text{padding-left:2.77777778vw}
+.find-my-tv__layer-popup.type-video .video-contents__text--text p{font-size:.97222222vw}
+.find-my-tv__layer-popup.type-video .video-contents__text--text span{margin-top:.69444444vw;font-size:.83333333vw}
+.find-my-tv__layer-popup.type-video .video-contents__text--text ul{margin-top:.69444444vw;font-size:.83333333vw}
+.find-my-tv__layer-popup.type-video .popup-close{top:2.08333333vw;padding:.69444444vw;width:1.80555556vw;height:1.80555556vw;right:2.08333333vw}
+.find-my-tv__layer-popup.type-video .popup-close svg.icon{width:1.80555556vw;height:1.80555556vw}
+.find-my-tv__alert-tooltip{border-radius:.48611111vw;font-size:.97222222vw;padding:.69444444vw 1.04166667vw;width:15.97222222vw}
+.find-my-tv__alert-tooltip .tooltip-image{height:1.31944444vw;width:1.31944444vw;margin-right:.69444444vw}
+.find-my-tv__alert-tooltip .close-btn .icon{width:1.31944444vw;height:1.31944444vw}
+.find-my-tv__popup .layer-popup__inner{width:40.27777778vw;border-radius:1.38888889vw;padding:1.73611111vw 1.38888889vw 1.66666667vw 1.80555556vw}
+.find-my-tv__popup .layer-popup__title{padding-right:2.22222222vw;font-size:1.66666667vw}
+.find-my-tv__popup .layer-popup__title+.layer-popup__contents{padding-top:1.11111111vw}
+.find-my-tv__popup .layer-popup__contents{padding-top:3.26388889vw}
+.find-my-tv__popup .layer-popup__close{right:.83333333vw;top:.83333333vw;width:3.33333333vw;height:3.33333333vw}
+.find-my-tv__popup .layer-popup__close .icon{width:1.66666667vw;height:1.66666667vw;margin:-0.83333333vw 0vw 0vw -0.83333333vw}
+.find-my-tv__popup__subscrption{font-size:1.25vw}
+.find-my-tv__popup__description{font-size:1.25vw}
+.find-my-tv__popup__cta{margin:4.02777778vw 0vw -0.69444444vw 0vw}
+.find-my-tv__popup__cta .cta{margin:.69444444vw;min-width:8.33333333vw}
+.find-my-tv-model__popup .layer-popup__inner{max-width:59.16666667vw;padding:2.98611111vw 0vw 1.59722222vw 0vw;border-radius:1.38888889vw}
+.find-my-tv-model__popup .layer-popup__title{margin-bottom:.69444444vw;font-size:2.77777778vw}
+.find-my-tv-model__popup .layer-popup__desc{margin-bottom:1.66666667vw;font-size:.97222222vw}
+.find-my-tv-model__popup .layer-popup__contents{padding:0vw 3.88888889vw 0vw 3.88888889vw;width:59.16666667vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--box{min-height:24.79166667vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--image-wrap{min-height:8.75vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--name{margin-bottom:2.08333333vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--name-wrap{min-height:7.08333333vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--icon{margin-bottom:1.38888889vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--icon-wrap{min-height:10.13888889vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--price-wrap{min-height:3.95833333vw}
+.find-my-tv-model__popup .layer-popup__close{right:.83333333vw;top:.83333333vw;width:3.33333333vw;height:3.33333333vw}
+.find-my-tv-model__popup .layer-popup__close .icon{margin:-0.83333333vw 0vw 0vw -0.83333333vw;width:1.66666667vw;height:1.66666667vw}
+}
+@media only screen and (min-width:768px) and (max-height:780px){.find-my-tv__layer-popup.type-video .video-contents__text--text{max-height:94px;padding-right:20px}
+}
+@media only screen and (max-width:1279px){.find-my-tv__header{padding:0 24px}
+}
+@media only screen and (max-width:767px){.find-my-tv__header{height:auto;padding:0}
+.find-my-tv__header-title{display:block;padding:0vw 6.66666667vw;font-size:4.44444444vw;line-height:10vw;margin-right:0;padding-left:24px}
+.find-my-tv__header-list-wrap{overflow:hidden;width:100%}
+.find-my-tv__header-list{height:9.16666667vw;min-width:auto;overflow:hidden;white-space:nowrap}
+.find-my-tv__header-item .link{font-size:3.33333333vw;padding:0vw 5.83333333vw;line-height:9.16666667vw}
+.find-my-tv__header-item .link:focus{position:relative;outline:0}
+.find-my-tv__header-item .link:focus:after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;border:2px dotted #000}
+.find-my-tv__header-item:first-child .link{padding-left:24px}
+.find-my-tv__header-item:last-child .link{padding-right:24px}
+.find-my-tv__header--fixed{width:100%}
+.find-my-tv__header-tooltip{border-radius:1.94444444vw;padding:2.77777778vw 4.16666667vw;width:63.88888889vw}
+.find-my-tv__header-tooltip .icon{height:5.27777778vw;width:5.27777778vw;margin-right:2.77777778vw}
+.find-my-tv__header-tooltip--text{font-size:3.88888889vw}
+.find-my-tv__progress-bar{position:relative}
+.find-my-tv__progress-bar span{min-width:0;height:1.11111111vw}
+.find-my-tv__room{overflow:hidden;min-height:auto;background:#fff;margin-bottom:-8.33333333vw;padding-bottom:8.33333333vw}
+.find-my-tv__room-panel{display:none;position:relative;overflow:hidden;width:100vw;padding-top:18.33333333vw;height:93.05555556vw}
+.find-my-tv__room-panel .tv-image{left:21.8%;position:absolute;top:30.9%;width:55.5%}
+.find-my-tv__room-panel.panel-living .living-plant{width:73.5%;bottom:5%;right:0}
+.find-my-tv__room-panel.panel-living .living-lamp{width:24%;bottom:2%;left:0}
+.find-my-tv__room-panel.panel-living .living-credenza{width:89%;bottom:5%;left:0}
+.find-my-tv__room-panel.panel-bedroom .bedroom-plant{width:70.5%;bottom:5%;left:0}
+.find-my-tv__room-panel.panel-bedroom .bedroom-dresser{width:75%;bottom:0;right:0}
+.find-my-tv__room-panel.panel-bedroom .bedroom-bed{width:98%;bottom:0;right:1%}
+.find-my-tv__room-panel.panel-kitchen .kitchen-plant{width:44%;bottom:4%;left:0}
+.find-my-tv__room-panel.panel-kitchen .kitchen-sink{width:36.6%;bottom:0;right:0}
+.find-my-tv__room-panel.panel-kitchen .kitchen-chairs{width:100%;bottom:0;right:0}
+.find-my-tv__room-panel.panel-kitchen .kitchen-table{-webkit-transform:translateX(0);transform:translateX(0);width:100%;bottom:0;left:0}
+.find-my-tv__room-panel.panel-outdoors .outdoors-plant{bottom:18%;left:0;width:12.2%}
+.find-my-tv__room-panel.panel-outdoors .outdoors-chairs{bottom:0;width:100%;left:0}
+.find-my-tv__room-panel.panel-outdoors .outdoors-table{bottom:0;width:85%;left:51%}
+.find-my-tv__room-panel.panel-entertainment .entertainment-chair-left{bottom:0;width:57%;left:0}
+.find-my-tv__room-panel.panel-entertainment .entertainment-chair-right{bottom:0;width:80%;right:0}
+.find-my-tv__room-tab{padding-top:0;position:relative}
+.find-my-tv__room-tab--title{margin:8.33333333vw 7.22222222vw 5.83333333vw 7.22222222vw;font-size:5.55555556vw;line-height:1.33}
+.find-my-tv__room-tab--list li{margin:0vw 2.22222222vw 5.27777778vw 2.22222222vw}
+.find-my-tv__room-tab--list li .cta--outlined.cta--white{color:#000 !important;background-color:transparent !important;border-color:#000 !important}
+.find-my-tv__room-tab--list li .cta--contained.cta--white{color:#fff !important;background-color:#000 !important;border-color:#000 !important}
+.is-active .find-my-tv__room-tab--list li .cta--contained.cta--white{color:#fff !important}
+.find-my-tv__room-tab--list li .cta--contained.cta--white:hover,.find-my-tv__room-tab--list li .cta--contained.cta--white:focus{color:#000 !important;background-color:#000 !important;border-color:#000 !important}
+.is-active .find-my-tv__room-tab--list li .cta--contained.cta--white:hover,.is-active .find-my-tv__room-tab--list li .cta--contained.cta--white:focus{color:#fff !important}
+.find-my-tv__room-tab.tab-white .find-my-tv__room-tab--title{color:#000 !important}
+.find-my-tv__passion{min-height:auto;padding-top:19.44444444vw;padding-bottom:7.77777778vw;margin-bottom:-7.77777778vw}
+.find-my-tv__passion-inner{height:auto}
+.find-my-tv__passion-title{font-size:5.55555556vw;margin-top:9.72222222vw;margin-bottom:5.55555556vw}
+.find-my-tv__passion-cont{width:100%}
+.find-my-tv__passion-cont .radio-v2{padding:0vw 2.77777778vw;margin-bottom:6.11111111vw}
+.find-my-tv__passion-cont .radio-v2__label span.image{width:36.11111111vw;height:25vw;border-radius:5.55555556vw !important}
+.find-my-tv__passion-cont .radio-v2__label span.image img{border-radius:5.55555556vw}
+.find-my-tv__passion-cont .radio-v2__label-box{width:6.66666667vw;height:6.66666667vw;top:3.33333333vw;right:3.33333333vw}
+.find-my-tv__passion-cont .radio-v2__label-box-wrap{width:6.66666667vw;height:6.66666667vw;top:3.33333333vw;right:3.33333333vw}
+.find-my-tv__passion-cont .radio-v2__label-text{font-size:4.44444444vw;margin-top:3.33333333vw;max-width:36.11111111vw}
+.find-my-tv__size{min-height:auto;background-color:#fff;margin-bottom:-8.33333333vw;padding-bottom:11.11111111vw}
+.find-my-tv__size:before{display:block;position:absolute;top:0;width:100%;height:113.88888889vw;content:'';background:#f1f0ef}
+.find-my-tv__size.is-serif:before{height:112.77777778vw}
+.find-my-tv__size-title{font-size:5.55555556vw;padding:24.16666667vw 7.22222222vw 0vw 7.22222222vw;min-height:37.22222222vw}
+.find-my-tv__size-cont{padding:0vw 7.22222222vw 6.66666667vw 7.22222222vw;display:block}
+.find-my-tv__size-image{width:100%;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;margin-bottom:33.88888889vw;height:48.33333333vw;margin-left:0}
+.find-my-tv__size-image-screen .image-frame{width:133%}
+.find-my-tv__size-image-screen .image-background{width:128%}
+.find-my-tv__size-image-width{top:-5.55555556vw;height:1.94444444vw}
+.find-my-tv__size-image-width span{padding:0vw 1.38888889vw}
+.find-my-tv__size-image-height{width:1.94444444vw;right:-5.55555556vw}
+.find-my-tv__size-image-height span{padding:1.38888889vw 0vw;margin-left:-0.55555556vw}
+.find-my-tv__size-image-width span,.find-my-tv__size-image-height span{font-size:3.33333333vw}
+.find-my-tv__size-image-serif{width:125%;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;bottom:0;position:relative;height:75vw;padding-top:5.55555556vw;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);margin-left:0}
+.find-my-tv__size-image-serif .find-my-tv__size-image-screen{bottom:5%}
+.find-my-tv__size-controll{padding-top:38.88888889vw;width:100%;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}
+.find-my-tv__size-controll--title{font-size:4.44444444vw}
+.find-my-tv__size-controll--bar{height:8.33333333vw;margin-top:6.66666667vw}
+.find-my-tv__size-controll--bar-text{font-size:8.88888889vw;padding-right:2.77777778vw}
+.find-my-tv__size-controll--bar-text ~ .find-my-tv__size-controll--bar-text{padding:0vw 0vw 0vw 2.77777778vw}
+.find-my-tv__size-controll--bar-line{margin:3.61111111vw 0vw;height:1.11111111vw;width:66.66666667vw}
+.find-my-tv__size-controll--bar-line span{top:-10vw}
+.find-my-tv__size-controll--bar-line span label.radio-pointer{padding:0vw 9.72222222vw}
+.find-my-tv__size-controll--bar-line span label.radio-pointer:after{border-radius:3.33333333vw;height:1.11111111vw;width:.55555556vw;margin-top:10vw}
+.find-my-tv__size-controll--bar-line span input[type='radio']:checked ~ .radio-pointer{font-size:6.66666667vw}
+.find-my-tv__size-controll--bar-line span input[type='radio']:checked ~ .radio-pointer:after{height:4.16666667vw;width:4.16666667vw;border-width:.55555556vw;border-radius:2.5vw}
+.find-my-tv__size-controll--ar{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;margin:11.11111111vw 0vw 13.05555556vw 0vw;width:100%}
+.find-my-tv__size-controll--ar .cta{min-width:22.77777778vw}
+.find-my-tv__size-controll--ar strong{font-size:4.44444444vw;margin-left:5.55555556vw}
+.find-my-tv__size-controll--text{font-size:3.88888889vw;width:100%;margin-top:3.88888889vw}
+.find-my-tv__size-background{width:140%;top:18.33333333vw;height:102.22222222vw;overflow:hidden;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+.find-my-tv__size-background>div[class^="room"]{position:absolute;width:100%;top:21.3%;left:50% !important;-webkit-transform:translateX(-50%) !important;transform:translateX(-50%) !important}
+.is-serif .find-my-tv__size-background>div[class^="room"]{top:16.3%}
+.find-my-tv__size-background.max-over{width:154%;top:18.33333333vw}
+.find-my-tv__size-background.max-over .room-living,.find-my-tv__size-background.max-over .room-bedroom,.find-my-tv__size-background.max-over .room-kitchen,.find-my-tv__size-background.max-over .room-outdoors,.find-my-tv__size-background.max-over .room-entertainment{top:35.5%}
+.is-serif .find-my-tv__size-background.max-over{top:18.33333333vw;bottom:0}
+.is-serif .find-my-tv__size-background.max-over>div[class^="room"]{top:revert;bottom:0}
+.find-my-tv__size-background.is-serif{height:95.55555556vw}
+.find-my-tv__picture{min-height:auto;background-color:transparent;padding-bottom:0}
+.find-my-tv__picture-title{font-size:5.55555556vw;padding:24.16666667vw 7.22222222vw 0vw 7.22222222vw}
+.find-my-tv__picture-cont{padding:0vw 7.22222222vw 6.66666667vw 7.22222222vw;display:block}
+.find-my-tv__picture-cont span.find-my-tv__controll--bar-line{width:100%}
+.find-my-tv__picture-cont p.find-my-tv__controll--text{display:none;font-size:3.33333333vw;margin-top:3.33333333vw}
+.find-my-tv__picture-cont p.find-my-tv__controll--text.is-active{display:block}
+.find-my-tv__picture-cont p.find-my-tv__controll--text ~ h3.find-my-tv__controll--title{margin-top:14.16666667vw}
+.find-my-tv__picture-cont .find-my-tv__controll--bar--one{height:8.33333333vw;margin-top:5.55555556vw}
+.find-my-tv__picture-cont .find-my-tv__controll--bar--one .find-my-tv__controll--bar-line{display:block;width:100%;margin:0}
+.find-my-tv__picture-cont .find-my-tv__controll--bar--one .find-my-tv__controll--bar-line .radio-pointer{font-size:3.88888889vw;margin-top:-1.66666667vw}
+.find-my-tv__picture-cont .find-my-tv__controll--bar--one .find-my-tv__controll--bar-line .radio-pointer .select-icon{right:-2.77777778vw;top:-0.83333333vw;height:4.16666667vw}
+.find-my-tv__picture-image{width:100%;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;padding-top:8.61111111vw;padding-left:0}
+.find-my-tv__picture .find-my-tv__wish-disclaimer{margin-top:0vw}
+.find-my-tv__style{min-height:auto}
+.find-my-tv__style-title{font-size:5.55555556vw;padding:24.16666667vw 7.22222222vw 0vw 7.22222222vw}
+.find-my-tv__style-cont{display:block;padding:0vw 6.66666667vw}
+.find-my-tv__style-image{width:100%;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;padding-top:8.33333333vw}
+.find-my-tv__style-image--item{width:86.66666667vw;height:62.77777778vw;border-radius:5.55555556vw}
+.find-my-tv__style-select{width:100%;margin-top:8.33333333vw}
+.find-my-tv__style-select--title{font-size:4.44444444vw;margin-bottom:5.55555556vw}
+.find-my-tv__style-radio{width:86.66666667vw}
+.find-my-tv__style-radio--item{position:relative;text-align:center;width:38.88888889vw;height:27.77777778vw;border-radius:1.66666667vw;margin:0vw 2.5vw 2.5vw 0vw}
+.find-my-tv__style-radio--item:nth-child(3n){margin-right:2.5vw}
+.find-my-tv__style-radio--item input[type='radio']:focus ~ .radio-label{width:38.88888889vw;height:27.77777778vw}
+.find-my-tv__style-radio--item .radio-label:after{border-radius:1.66666667vw}
+.find-my-tv__style-radio--item .radio-label .style-icon{width:11.66666667vw;height:11.66666667vw;margin-bottom:2.77777778vw}
+.find-my-tv__style-radio--item .radio-label .radio-text{font-size:3.88888889vw;padding:0vw 3.88888889vw}
+.find-my-tv__style-radio--item .radio-label .radio-text .style-wish-icon{top:-0.83333333vw;height:4.16666667vw;right:1.11111111vw}
+.find-my-tv__style-radio--text{margin:3.05555556vw 0vw 6.94444444vw 0vw;font-size:3.88888889vw}
+.find-my-tv__style-radio .scrollbar{padding-bottom:2.5vw}
+.find-my-tv__style-radio .scrollbar__contents{font-size:0;white-space:nowrap}
+.find-my-tv__style-radio .scrollbar-horizontal__track{width:100%}
+.find-my-tv__style-radio .scrollbar-horizontal__track-content{left:0;right:0}
+.find-my-tv__style-radio .scrollbar-vertical__track{display:none}
+.find-my-tv__style-radio .scrollbar-horizontal__track{overflow:hidden;height:4.44444444vw}
+.find-my-tv__style__play{width:17.77777778vw;height:17.77777778vw}
+.find-my-tv__style .find-my-tv__disclamer{padding:7.22222222vw 8.05555556vw}
+.find-my-tv__color{min-height:auto}
+.find-my-tv__color-title{font-size:5.55555556vw;padding:24.16666667vw 7.22222222vw 0vw 7.22222222vw}
+.find-my-tv__color-cont{height:auto;padding:0vw 6.66666667vw;display:block;margin-bottom:11.11111111vw}
+.find-my-tv__color-image{width:100%;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;padding-top:8.33333333vw;padding-left:0}
+.find-my-tv__color-image--item *.image{width:63.33333333vw}
+.find-my-tv__color-image--item .image-text{margin-top:5.55555556vw;font-size:3.33333333vw}
+.find-my-tv__color-select{width:100%;margin-top:8.33333333vw}
+.find-my-tv__color-select--title{font-size:4.44444444vw;margin-bottom:2.77777778vw}
+.find-my-tv__color-select--text{font-size:3.33333333vw;margin-bottom:2.22222222vw}
+.find-my-tv__color-radio{width:86.66666667vw}
+.find-my-tv__color-radio--item{width:38.88888889vw;height:20.27777778vw;border-radius:1.66666667vw;margin:0vw 2.77777778vw 0vw 0vw}
+.find-my-tv__color-radio--item input[type='radio']:focus ~ .radio-label{width:38.88888889vw;height:20.27777778vw}
+.find-my-tv__color-radio--item label.radio-label:after{border-radius:1.66666667vw}
+.find-my-tv__color-radio--item label.radio-label .radio-color{width:5vw;height:5vw;margin-bottom:2.77777778vw}
+.find-my-tv__color-radio--item label.radio-label span.radio-text{font-size:3.33333333vw}
+.find-my-tv__color-radio--item label.radio-label span.radio-text .color-wish-icon{top:-1.38888889vw;height:4.16666667vw;right:-3.33333333vw}
+.find-my-tv__color-radio .scrollbar__contents{white-space:nowrap}
+.find-my-tv__color-radio .scrollbar .scrollbar-horizontal__track{-ms-overflow-style:none;scrollbar-width:none;display:none}
+.find-my-tv__color-radio .scrollbar .scrollbar-horizontal__track::-webkit-scrollbar{display:none}
+.find-my-tv__color .find-my-tv__option-disclaimer{padding-top:5.55555556vw}
+.find-my-tv__sound{min-height:auto}
+.find-my-tv__sound-title{font-size:5.55555556vw;padding:24.16666667vw 7.22222222vw 0vw 7.22222222vw;width:100%}
+.find-my-tv__sound-cont{width:100vw;margin-top:5.55555556vw}
+.find-my-tv__sound-cont .swiper-container{padding:0vw 12.5vw}
+.find-my-tv__sound-cont .find-my-tv__wish-disclaimer{margin-top:6.94444444vw;margin-bottom:6.94444444vw;padding-left:6.94444444vw}
+.find-my-tv__sound-item{width:75vw;height:111.11111111vw;border-radius:5.55555556vw;margin-right:4.44444444vw}
+.find-my-tv__sound-item .image{width:75vw;height:43.05555556vw}
+.find-my-tv__sound-item--wrap{padding-top:5.55555556vw;height:50vw}
+.find-my-tv__sound-item--wrap .cta{font-size:3.33333333vw;margin:5vw 6.66666667vw 0vw 6.66666667vw}
+.find-my-tv__sound-item--title{font-size:3.88888889vw;padding:0vw 6.66666667vw 2.5vw 6.66666667vw}
+.find-my-tv__sound-item--title .wish-icon{height:4.16666667vw;width:4.16666667vw;margin-top:-1.11111111vw}
+.find-my-tv__sound-item--text{height:18.88888889vw;line-height:4.44444444vw;font-size:3.33333333vw;padding:0vw 6.66666667vw}
+.find-my-tv__sound-item--checked{height:17.77777778vw;padding:0vw 6.66666667vw}
+.find-my-tv__sound-item--checked .checkbox-radio__label-text{line-height:7.77777778vw;padding-left:8.88888889vw}
+.find-my-tv__sound-item--checked .checkbox-radio__label-text:before{margin:-3.33333333vw 0vw 0vw 0vw}
+.find-my-tv__sound .indicator{margin-top:8.33333333vw}
+.find-my-tv__smarttv{min-height:auto}
+.find-my-tv__smarttv-title{font-size:5.55555556vw;padding:24.16666667vw 7.22222222vw 0vw 7.22222222vw;width:100%}
+.find-my-tv__smarttv-cont{width:100vw;margin-top:5.55555556vw}
+.find-my-tv__smarttv-cont .swiper-container{padding:0vw 12.5vw}
+.find-my-tv__smarttv-cont .find-my-tv__wish-disclaimer{margin-top:6.94444444vw;margin-bottom:6.94444444vw;padding-left:6.94444444vw}
+.find-my-tv__smarttv-item{width:75vw;height:116.66666667vw;border-radius:5.55555556vw;margin-right:4.44444444vw}
+.find-my-tv__smarttv-item .image{width:75vw;height:43.05555556vw}
+.find-my-tv__smarttv-item--wrap{padding-top:6.11111111vw;height:55.55555556vw}
+.find-my-tv__smarttv-item--wrap .cta{font-size:3.33333333vw;margin:10.55555556vw 6.66666667vw 0vw 6.66666667vw}
+.find-my-tv__smarttv-item--title{font-size:3.88888889vw;padding:0vw 6.66666667vw 2.5vw 6.66666667vw}
+.find-my-tv__smarttv-item--title .wish-icon{height:4.16666667vw;width:4.16666667vw;margin-top:-1.11111111vw}
+.find-my-tv__smarttv-item--text{height:18.88888889vw;line-height:4.44444444vw;font-size:3.33333333vw;padding:0vw 6.66666667vw}
+.find-my-tv__smarttv-item--checked{height:17.77777778vw;padding:0vw 6.11111111vw}
+.find-my-tv__smarttv-item--checked .checkbox-radio__label-text{line-height:7.77777778vw;padding-left:8.88888889vw}
+.find-my-tv__smarttv-item--checked .checkbox-radio__label-text:before{width:6.66666667vw;height:6.66666667vw;margin:-3.33333333vw 0vw 0vw 0vw}
+.find-my-tv__smarttv .indicator{margin-top:8.33333333vw}
+.find-my-tv__mytv{min-height:auto;margin-bottom:-8.33333333vw}
+.find-my-tv__mytv-title{font-size:5.55555556vw;padding:24.16666667vw 7.22222222vw 3.61111111vw 7.22222222vw}
+.find-my-tv__mytv-discription{font-size:3.33333333vw;padding:0vw 5.55555556vw}
+.find-my-tv__mytv-cont{padding:6.11111111vw 6.66666667vw 8.33333333vw 6.66666667vw;display:block}
+.find-my-tv__mytv-gallery{width:100%;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;border-radius:5.55555556vw}
+.find-my-tv__mytv-gallery-thumbnail{margin:0vw 0vw 5.83333333vw 0vw}
+.find-my-tv__mytv-gallery-tab{margin:0vw 4.44444444vw}
+.find-my-tv__mytv-gallery-tab .tab__item{margin-left:6.66666667vw}
+.find-my-tv__mytv-gallery-tab .tab__item:first-child{margin:0}
+.find-my-tv__mytv-gallery-tab .tab__item-title{font-size:3.33333333vw}
+.find-my-tv__mytv-gallery-tab .tab__item-line{margin-top:.55555556vw;height:.27777778vw}
+.find-my-tv__mytv-gallery .swiper-box{position:relative;margin-top:2.77777778vw;height:13.88888889vw}
+.find-my-tv__mytv-gallery .swiper-box .find-my-tv__swiper-arrow[style*='none']+.swiper-container{margin:0}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container{padding:0vw 2.77777778vw}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item{width:21.94444444vw;height:13.88888889vw;padding:.83333333vw 1.66666667vw}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item a{border-radius:1.66666667vw}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item a .image{height:12.22222222vw}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item a .image img{height:12.22222222vw}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item a .icon{width:6.66666667vw;height:6.66666667vw}
+.find-my-tv__mytv-gallery .swiper-box .swiper-container .swiper-wrapper .find-my-tv__mytv-item.is-active a::before{border-radius:1.66666667vw}
+.find-my-tv__mytv-image--item{width:83.33333333vw;height:63.88888889vw}
+.find-my-tv__mytv-video--big{padding:11.66666667vw 0vw}
+.find-my-tv__mytv-video--item{width:77.77777778vw;height:40.55555556vw;border-radius:4.16666667vw}
+.find-my-tv__mytv-video--btn-play{width:13.33333333vw;height:13.33333333vw}
+.find-my-tv__mytv-info{width:100%;margin-top:11.11111111vw}
+.find-my-tv__mytv-info--title{font-size:4.44444444vw;line-height:6.11111111vw;margin-bottom:2.22222222vw}
+.find-my-tv__mytv-info--text{min-width:47%;font-size:3.88888889vw}
+.find-my-tv__mytv-info .rating{width:50%}
+.find-my-tv__mytv-info--list{margin-top:8.33333333vw;font-size:3.33333333vw}
+.find-my-tv__mytv-info--list li{width:100%;padding-left:2.77777778vw}
+.find-my-tv__mytv-info .cta{font-size:3.33333333vw;margin-top:4.44444444vw}
+.find-my-tv__mytv-info--icon{margin-top:11.11111111vw;width:100%;display:block;font-size:0}
+.find-my-tv__mytv-info--icon li{display:inline-block;text-align:center;width:50%;padding:0;margin-bottom:9.72222222vw}
+.find-my-tv__mytv-info--icon li .info-icon{width:17.77777778vw;height:17.77777778vw}
+.find-my-tv__mytv-info--icon li .icon-text{margin:0 auto;width:26.11111111vw;margin-top:5.55555556vw;font-size:3.33333333vw}
+.find-my-tv__mytv-disclamer{font-size:2.77777778vw}
+.find-my-tv__mytv-disclamer-wrap{position:relative;padding:5.55555556vw 6.66666667vw 5.55555556vw 6.66666667vw}
+.find-my-tv__mytv-disclamer-wrap>p{background-color:#f1f0ef !important}
+.find-my-tv__more-ways-card{width:86.66666667vw;height:123.88888889vw;margin-left:auto;margin-right:auto;border-radius:4.44444444vw;margin-bottom:6.11111111vw}
+.find-my-tv__more-ways-card:last-child{margin-bottom:0}
+.find-my-tv__more-ways-card-wrap{min-height:auto;padding:3.33333333vw 0vw 8.33333333vw 0vw}
+.find-my-tv__more-ways-card-headline{margin-top:8.88888889vw;margin-bottom:5.83333333vw;max-width:93.33333333vw}
+.find-my-tv__more-ways-card-headline-text{font-size:5.55555556vw}
+.find-my-tv__more-ways-card-list{margin:0 auto;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.find-my-tv__more-ways-card-cont{top:14.44444444vw;right:6.94444444vw;left:6.94444444vw}
+.find-my-tv__more-ways-card-title{font-size:6.66666667vw}
+.find-my-tv__more-ways-card-description{font-size:3.33333333vw;margin:2.77777778vw 0vw 5vw 0vw}
+.find-my-tv .breadcrumb.hmc-tv .icon{width:4.44444444vw;height:4.44444444vw;margin:0vw 1.11111111vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb__inner{padding:3.33333333vw 6.66666667vw;border-top-width:.27777778vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb__text-desktop{display:none}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb__text-mobile{display:inline-block;font-size:3.88888889vw;line-height:6.66666667vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-top-narrow{margin-top:4.44444444vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-top-normal{margin-top:6.66666667vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-top-wide{margin-top:8.88888889vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-bottom-narrow{margin-bottom:4.44444444vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-bottom-normal{margin-bottom:6.66666667vw}
+.find-my-tv .breadcrumb.hmc-tv .breadcrumb--margin-bottom-wide{margin-bottom:8.88888889vw}
+.find-my-tv__card{display:block;padding:0vw 4.16666667vw;padding-bottom:8.33333333vw}
+.find-my-tv__card-item{width:100%;min-height:123.61111111vw;margin:0;padding-top:11.11111111vw}
+.find-my-tv__card-item--title{font-size:6.11111111vw;line-height:8.33333333vw;padding:0vw 2.5vw;margin-bottom:3.33333333vw}
+.find-my-tv__card-item--title-wrap{min-height:16.38888889vw}
+.find-my-tv__card-item--box{min-height:96.11111111vw;padding:6.66666667vw 6.66666667vw 6.38888889vw 6.66666667vw;border-radius:5.55555556vw}
+.find-my-tv__card-item--box *.image{width:100%;height:auto}
+.find-my-tv__card-item--box .cta{font-size:3.33333333vw;margin-top:5vw}
+.find-my-tv__card-item--image-wrap{min-height:78.33333333vw;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.find-my-tv__card-item--name{font-size:5vw;margin-bottom:6.38888889vw}
+.find-my-tv__card-item--name-wrap{min-height:19.44444444vw}
+.find-my-tv__card-item--price{font-size:4.44444444vw}
+.find-my-tv__card-item--price-wrap{min-height:10.27777778vw}
+.find-my-tv__card-item--save{font-size:3.33333333vw}
+.find-my-tv__card-item--save span{margin-left:1.11111111vw}
+.find-my-tv__card-item--cta-wrap{min-height:10.27777778vw}
+.find-my-tv__card-item--icon{margin-bottom:8.33333333vw}
+.find-my-tv__card-item--icon-wrap{min-height:43.33333333vw}
+.find-my-tv__card-item--icon-list{margin-bottom:2.77777778vw}
+.find-my-tv__card-item--icon-list .list-icon{width:6.66666667vw;height:6.66666667vw;margin-right:4.16666667vw}
+.find-my-tv__card-item--icon-list .list-text{font-size:3.33333333vw}
+.find-my-tv .find-my-tv__swiper-arrow{display:none}
+.find-my-tv__indicator{margin-top:8.33333333vw}
+.find-my-tv__indicator .dot-indicator{height:6.66666667vw;padding:0vw 2.22222222vw;border-radius:3.33333333vw}
+.find-my-tv__indicator-item{width:6.66666667vw;height:6.66666667vw;padding:2.22222222vw}
+.find-my-tv__controll{padding-top:6.38888889vw;width:100%;min-width:100%;min-height:100%;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}
+.find-my-tv__controll--title{font-family:'SamsungSharpSans',arial,sans-serif;font-size:4.44444444vw}
+.find-my-tv__controll--bar{display:block;height:auto;width:100%;margin-top:2.77777778vw}
+.find-my-tv__controll--bar-text{display:none}
+.find-my-tv__controll--bar-line{display:none}
+.find-my-tv__controll--bar .controll-select-btn{display:block;position:relative;width:100%;padding:3.33333333vw 4.44444444vw 2.22222222vw 4.44444444vw;font-size:3.33333333vw;color:#000;font-weight:bold;border:1px solid transparent}
+.find-my-tv__controll--bar .controll-select-btn--text{display:inline-block;vertical-align:middle;text-transform:uppercase;position:relative}
+.find-my-tv__controll--bar .controll-select-btn .select-icon{position:absolute;height:4.44444444vw;vertical-align:middle;top:-1.94444444vw}
+.find-my-tv__controll--bar .controll-select-btn svg.icon{position:absolute;top:50%;bottom:0;-webkit-transform:translateY(-50%);transform:translateY(-50%);width:5.83333333vw;height:5.83333333vw;right:4.44444444vw}
+.find-my-tv__controll--bar .controll-select-btn svg.icon--close{display:none}
+.find-my-tv__controll--bar .controll-select-btn:before{content:"";position:absolute;left:-0.27777778vw;top:-0.27777778vw;width:100%;height:100%;border-radius:1.66666667vw;border:2px solid #2189ff}
+.find-my-tv__controll--bar.open .controll-select-btn{border:1px solid #000;border-radius:1.66666667vw 1.66666667vw 0vw 0vw}
+.find-my-tv__controll--bar.open .controll-select-btn svg.icon--close{display:inline-block}
+.find-my-tv__controll--bar.open .controll-select-btn svg.icon--open{display:none}
+.find-my-tv__controll--bar.open .controll-select-btn:before{display:none}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line{margin:0;height:auto;width:100%;background-color:#fff;border:1px solid #000;border-radius:0vw 0vw 1.66666667vw 1.66666667vw;position:absolute;top:9.16666667vw;z-index:5;left:0;display:block}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line.pc-only{display:none}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line.mobile-only{display:block;overflow:auto;max-height:83.33333333vw}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line--select{position:relative;-webkit-transform:none;transform:none;top:0;display:block;height:10vw;padding:3.05555556vw 4.16666667vw 2.77777778vw 4.16666667vw;left:0 !important;width:100%}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line--select .inch{font-size:3.33333333vw;position:relative;display:block;font-weight:bold;text-transform:uppercase}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line--select .inch:before{content:"";position:absolute;top:-3.05555556vw;height:1px;width:100%;background-color:#ddd;left:0}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line--select .inch .select-icon{width:3.33333333vw;height:3.33333333vw;position:relative;top:-7px;vertical-align:middle;margin-top:0;right:0}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line--select label.radio-pointer{font-size:3.33333333vw;padding:0;position:relative;overflow:visible;margin-top:0}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line--select label.radio-pointer:after{display:none}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line--select label.radio-pointer:before{content:"";position:absolute;top:-3.05555556vw;height:1px;width:100%;background-color:#ddd;left:0}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line--select label.radio-pointer .select-icon{width:3.33333333vw;height:3.33333333vw;position:relative;top:-7px;vertical-align:middle;margin-top:0;right:0}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line--select input[type='radio']:checked ~ .radio-pointer{font-size:3.33333333vw;padding:0;margin-top:0}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line--select:first-child .radio-pointer:before{display:none}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line--select:focus{position:relative;outline:0}
+.find-my-tv__controll--bar.open .find-my-tv__controll--bar-line--select:focus:before{content:'';position:absolute;top:2px;left:4px;right:4px;bottom:2px;border:2px dotted #000}
+.find-my-tv__controll--one{height:8.33333333vw;margin-top:5.55555556vw}
+.find-my-tv__controll--one .find-my-tv__controll--bar-line{display:block;width:100%;margin:0}
+.find-my-tv__controll--one .find-my-tv__controll--bar-line .radio-pointer{font-size:3.88888889vw;margin-top:-1.66666667vw}
+.find-my-tv__controll--one .find-my-tv__controll--bar-line .radio-pointer .select-icon{right:-2.77777778vw;top:-0.83333333vw;height:4.16666667vw}
+.find-my-tv__controll--ar{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;margin:7.5vw 0vw 8.88888889vw 0vw;width:100%}
+.find-my-tv__controll--ar .cta{min-width:22.77777778vw}
+.find-my-tv__controll--ar strong{font-size:3.33333333vw;margin-left:2.77777778vw}
+.find-my-tv__controll--text{font-size:3.33333333vw;width:100%;margin-top:2.77777778vw;line-height:1.4}
+.is-serif .find-my-tv__controll{padding-top:13.61111111vw}
+.find-my-tv__option{width:auto;margin-top:3.05555556vw}
+.find-my-tv__option li{display:block;margin-top:4.44444444vw;padding-right:0;padding-left:9.44444444vw}
+.find-my-tv__option li .checkbox-radio{display:block}
+.find-my-tv__option li .checkbox-radio__label{font-size:3.33333333vw}
+.find-my-tv__option li .checkbox-radio__label .wish-icon{height:4.16666667vw;width:4.16666667vw;margin:-0.83333333vw 0vw 0vw -0.83333333vw}
+.find-my-tv__option li .checkbox-radio__label-text{width:77.77777778vw;font-size:3.33333333vw}
+.find-my-tv__option li .checkbox-radio__label-text:before{top:-1.66666667vw;width:7.77777778vw;height:7.77777778vw;margin-right:1.38888889vw;margin-left:-9.44444444vw}
+.find-my-tv__option li .cta{position:relative;font-size:3.33333333vw;padding:0vw 0vw 1.66666667vw 0vw;top:0vw;height:6.94444444vw}
+.find-my-tv__option-disclaimer{font-size:2.77777778vw;margin-top:.83333333vw}
+.find-my-tv__option-disclaimer svg.wish-icon{width:2.5vw;height:2.5vw;top:-1.11111111vw}
+.find-my-tv .find-my-tv__option+.find-my-tv__wish-disclaimer{margin-top:5.55555556vw}
+.find-my-tv__picture .find-my-tv__controll{width:100%;padding-top:8.88888889vw}
+.find-my-tv__picture .find-my-tv__controll label{padding:0}
+.find-my-tv__disclamer{position:relative;padding:4.16666667vw 6.66666667vw 7.22222222vw 6.66666667vw;font-size:2.77777778vw}
+.find-my-tv__disclamer.bg-white{padding:3.61111111vw 6.66666667vw}
+.find-my-tv__disclamer .find-my-tv__disclamer-decs{font-size:2.77777778vw;padding:15.83333333vw 0vw 0vw 6.66666667vw}
+.find-my-tv__wish-disclaimer{font-size:2.77777778vw;margin-top:5.55555556vw}
+.find-my-tv__wish-disclaimer .wish-icon{height:3.33333333vw;height:3.88888889vw;top:-1.66666667vw}
+.find-my-tv__bottom{position:relative;width:100%;background:#fff;border-radius:7.77777778vw 7.77777778vw 0vw 0vw;overflow:hidden;-webkit-box-shadow:0 -4px 6px -2px rgba(0,0,0,0.2);box-shadow:0 -4px 6px -2px rgba(0,0,0,0.2)}
+.find-my-tv__bottom::before{display:none}
+.find-my-tv__bottom-tray{text-align:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.find-my-tv__bottom-tray-wrap{display:block;padding:5vw 6.66666667vw;width:100%;min-height:19.44444444vw}
+.find-my-tv__bottom-tray-wrap span.find-my-tv__bottom-tray--title-btn{display:none}
+.find-my-tv__bottom-tray-wrap button.find-my-tv__bottom-tray--title-btn{display:inline-block}
+.find-my-tv__bottom-tray-wrap.is-disabled button.find-my-tv__bottom-tray--title-btn{display:none}
+.find-my-tv__bottom-tray-wrap.is-disabled span.find-my-tv__bottom-tray--title-btn{display:block}
+.find-my-tv__bottom-tray-wrap.open .find-my-tv__bottom-tray--title,.find-my-tv__bottom-tray-wrap.open .find-my-tv__bottom-tray--item{display:block}
+.find-my-tv__bottom-tray-wrap.open .find-my-tv__bottom-tray--price-btn{display:inline-block}
+.find-my-tv__bottom-tray-wrap.open .find-my-tv__bottom-available{display:block}
+.find-my-tv__bottom-tray--price{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;position:relative;width:100%;text-align:center}
+.find-my-tv__bottom-tray--price .bottom-price,.find-my-tv__bottom-tray--price .bottom-save{display:none}
+.find-my-tv__bottom-tray--price-btn{display:none;width:75.55555556vw;padding:1.38888889vw;margin-bottom:2.77777778vw;text-align:center}
+.find-my-tv__bottom-tray--price-btn .bottom-price{display:block;font-size:5vw}
+.find-my-tv__bottom-tray--price-btn .bottom-price+.bottom-save{margin-top:1.38888889vw}
+.find-my-tv__bottom-tray--price-btn .bottom-save{display:block;font-size:3.88888889vw}
+.open .find-my-tv__bottom-tray--price:after{content:"";display:block;background-color:#d8d8d8;height:1px;margin-bottom:4.16666667vw;margin-left:auto;margin-right:auto;width:50vw}
+.find-my-tv__bottom-tray--title{display:none;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;font-family:'SamsungOne',arial,sans-serif;font-size:4.44444444vw;width:auto;text-align:center}
+.find-my-tv__bottom-tray--title.mobile-only{display:block;margin:1.66666667vw 0vw 3.88888889vw 0vw;padding:0vw 5.55555556vw;position:relative}
+.find-my-tv__bottom-tray--title-btn:focus{outline:2px dotted #000}
+.find-my-tv__bottom-tray--title-btn:active,.find-my-tv__bottom-tray--title-btn:hover,.find-my-tv__bottom-tray--title-btn:focus{cursor:pointer}
+.find-my-tv__bottom-tray--title-btn .icon{position:absolute;vertical-align:middle;top:0;width:5.83333333vw;height:5.83333333vw;right:0}
+.find-my-tv__bottom-tray--title-btn .icon--open{display:none}
+.open .find-my-tv__bottom-tray--title-btn .icon--open{display:block}
+.find-my-tv__bottom-tray--title-btn .icon--close{display:block}
+.open .find-my-tv__bottom-tray--title-btn .icon--close{display:none}
+.find-my-tv__bottom-tray--title-btn .hidden .open-text{display:inline}
+.open .find-my-tv__bottom-tray--title-btn .hidden .open-text{display:none}
+.find-my-tv__bottom-tray--title-btn .hidden .close-text{display:none}
+.open .find-my-tv__bottom-tray--title-btn .hidden .close-text{display:inline}
+.find-my-tv__bottom-tray--item{display:none;-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3;font-size:3.88888889vw;margin:4.16666667vw 0vw 5.55555556vw 0vw;width:auto}
+.find-my-tv__bottom-tray--available{display:none}
+.find-my-tv__bottom-cta.cta-desktop{display:none}
+.find-my-tv__bottom-cta.cta-mobile{display:block;text-align:center}
+.find-my-tv__bottom-cta.cta-mobile .cta--underline{margin-bottom:2.22222222vw}
+.find-my-tv__bottom-cta.cta-mobile .cta--contained{margin:0vw 2.22222222vw}
+.find-my-tv__bottom-available{display:none}
+.find-my-tv__bottom-available *.cta{padding:5.55555556vw 0vw 8.33333333vw 0vw;font-size:4.44444444vw;font-weight:normal;margin:0}
+.find-my-tv__bottom-available *.cta:after{display:block !important;content:" ";position:absolute;bottom:8.61111111vw;height:.27777778vw;background-color:currentColor;left:0;right:5.27777778vw}
+.find-my-tv__bottom-available *.cta strong{margin-right:1.38888889vw}
+.find-my-tv__bottom-available:before{content:"";display:block;background-color:#d8d8d8;height:1px;margin:0 auto;width:50vw}
+.find-my-tv__bottom--fixed{position:fixed;width:100%;left:0;-webkit-transform:none;transform:none}
+.find-my-tv .tit-white{color:#000 !important}
+.find-my-tv__layer-popup .popup-close{top:5.55555556vw;right:5.55555556vw}
+.find-my-tv__layer-popup.type-ar{display:none}
+.find-my-tv__layer-popup.type-video .video-contents{padding:11.11111111vw 0vw}
+.find-my-tv__layer-popup.type-video .video-contents .video{width:100vw;height:56.38888889vw}
+.find-my-tv__layer-popup.type-video .video-contents.video-cont .video-contents__text{width:100%}
+.find-my-tv__layer-popup.type-video .video-contents__text{display:block;padding:8.33333333vw 6.94444444vw}
+.find-my-tv__layer-popup.type-video .video-contents__text--title{width:100%;display:block;font-size:5.55555556vw;margin:0vw 0vw 3.33333333vw 0vw}
+.find-my-tv__layer-popup.type-video .video-contents__text--text{max-height:29.16666667vw;padding-left:0;border:0;padding-right:5.55555556vw}
+.find-my-tv__layer-popup.type-video .video-contents__text--text p{font-size:3.88888889vw}
+.find-my-tv__layer-popup.type-video .video-contents__text--text span{margin-top:2.77777778vw;font-size:3.33333333vw}
+.find-my-tv__layer-popup.type-video .video-contents__text--text ul{margin-top:2.77777778vw;font-size:3.33333333vw}
+.find-my-tv__layer-popup.type-video .video-contents.image-cont{width:100%}
+.find-my-tv__layer-popup.type-video .popup-close{top:0;padding:2.77777778vw;width:5vw;height:5vw;right:0}
+.find-my-tv__layer-popup.type-video .popup-close svg.icon{width:5vw;height:5vw}
+.find-my-tv__alert-tooltip{border-radius:1.94444444vw;font-size:3.88888889vw;padding:2.77777778vw 4.16666667vw;width:63.88888889vw}
+.find-my-tv__alert-tooltip .tooltip-image{height:5.27777778vw;width:5.27777778vw;margin-right:2.77777778vw}
+.find-my-tv__alert-tooltip .close-btn .icon{width:5.27777778vw;height:5.27777778vw}
+.find-my-tv__popup .layer-popup{padding:0vw 6.66666667vw}
+.find-my-tv__popup .layer-popup__inner{width:100%;padding:6.66666667vw;border-radius:5.55555556vw}
+.find-my-tv__popup .layer-popup__title{padding-right:8.88888889vw;font-size:6.11111111vw}
+.find-my-tv__popup .layer-popup__title+.layer-popup__contents{padding-top:4.44444444vw}
+.find-my-tv__popup .layer-popup__contents{padding-top:13.05555556vw}
+.find-my-tv__popup .layer-popup__close{right:2.22222222vw;top:2.22222222vw;width:15.55555556vw;height:15.55555556vw}
+.find-my-tv__popup .layer-popup__close .icon{width:6.66666667vw;height:6.66666667vw;margin:-3.33333333vw 0vw 0vw -3.33333333vw}
+.find-my-tv__popup__subscrption{font-size:3.88888889vw;line-height:1.4}
+.find-my-tv__popup__description{font-size:3.88888889vw}
+.find-my-tv__popup__cta{margin:9.72222222vw -2.77777778vw 0vw -2.77777778vw}
+.find-my-tv__popup__cta .cta{margin:0vw 1.38888889vw 2.77777778vw 1.38888889vw;min-width:33.33333333vw}
+.find-my-tv-model__popup .layer-popup{padding:2.77777778vw}
+.find-my-tv-model__popup .layer-popup__inner{width:100%;max-width:100%;padding:11.94444444vw 0vw 6.38888889vw 0vw;border-radius:5.55555556vw}
+.find-my-tv-model__popup .layer-popup__title{padding:0vw 2.77777778vw;margin-bottom:2.77777778vw;font-size:7.77777778vw}
+.find-my-tv-model__popup .layer-popup__desc{margin-bottom:8.61111111vw;font-size:3.33333333vw}
+.find-my-tv-model__popup .layer-popup__contents{padding:0vw 5vw;font-size:3.33333333vw;width:auto}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card{display:block;padding:0vw 6.66666667vw;padding:0;margin-left:0;margin-top:-5vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item{width:100%;padding:0;margin:5vw 0vw 0vw 0vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--box{min-height:99.16666667vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--image-wrap{min-height:49.44444444vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--name{margin-bottom:8.33333333vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--name-wrap{min-height:21.38888889vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--icon{margin-bottom:5.55555556vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--icon-wrap{min-height:40.55555556vw}
+.find-my-tv-model__popup .layer-popup__contents .find-my-tv__card-item--price-wrap{min-height:8.61111111vw}
+.find-my-tv-model__popup .layer-popup__close{right:0vw;top:0vw;width:15.55555556vw;height:15.55555556vw}
+.find-my-tv-model__popup .layer-popup__close .icon{width:6.66666667vw;height:6.66666667vw;margin:-3.33333333vw 0vw 0vw -3.33333333vw}
+}
+@-webkit-keyframes show-motion{from{-webkit-transform:scale(0);transform:scale(0)}
+35%{-webkit-transform:scale(1.15);transform:scale(1.15)}
+70%{-webkit-transform:scale(0.95);transform:scale(0.95)}
+100%{-webkit-transform:scale(1);transform:scale(1)}
+}
+@keyframes show-motion{from{-webkit-transform:scale(0);transform:scale(0)}
+35%{-webkit-transform:scale(1.15);transform:scale(1.15)}
+70%{-webkit-transform:scale(0.95);transform:scale(0.95)}
+100%{-webkit-transform:scale(1);transform:scale(1)}
+}
+.breadcrumb{width:100%;max-width:1440px;margin:0 auto;font-size:0}
+.breadcrumb__inner{width:100%;padding:0 24px;border-top:1px solid rgba(0,0,0,0.2)}
+.breadcrumb__path>li{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.breadcrumb__path>li>a{display:inline-block}
+.breadcrumb__path>li>a>span{color:#000}
+.breadcrumb__path>li>a:hover>span,.breadcrumb__path>li>a:focus>span{text-decoration:underline}
+.breadcrumb__path>li>a:hover+.icon,.breadcrumb__path>li>a:focus+.icon{fill:#555}
+.breadcrumb__text-desktop,.breadcrumb__text-mobile{display:inline-block;font-size:14px;line-height:56px;font-weight:normal;color:#757575}
+.high-contrast .breadcrumb__text-desktop,.high-contrast .breadcrumb__text-mobile{background:#000 !important;color:#fff01f !important}
+.breadcrumb__text-mobile{display:none}
+.breadcrumb .icon{width:16px;height:16px;margin:0 4px;fill:#8f8f8f;cursor:default}
+.breadcrumb--margin-top-narrow{margin-top:16px}
+.breadcrumb--margin-top-normal{margin-top:32px}
+.breadcrumb--margin-top-wide{margin-top:56px}
+.breadcrumb--margin-bottom-narrow{margin-bottom:16px}
+.breadcrumb--margin-bottom-normal{margin-bottom:32px}
+.breadcrumb--margin-bottom-wide{margin-bottom:56px}
+@media only screen and (min-width:768px) and (max-width:1440px){.breadcrumb__inner{padding:0vw 1.66666667vw;border-top-width:.06944444vw}
+.breadcrumb__text-desktop,.breadcrumb__text-mobile{font-size:.97222222vw;line-height:3.88888889vw}
+.breadcrumb .icon{width:1.11111111vw;height:1.11111111vw;margin:0vw .27777778vw}
+.breadcrumb--margin-top-narrow{margin-top:1.11111111vw}
+.breadcrumb--margin-top-normal{margin-top:2.22222222vw}
+.breadcrumb--margin-top-wide{margin-top:3.88888889vw}
+.breadcrumb--margin-bottom-narrow{margin-bottom:1.11111111vw}
+.breadcrumb--margin-bottom-normal{margin-bottom:2.22222222vw}
+.breadcrumb--margin-bottom-wide{margin-bottom:3.88888889vw}
+}
+@media only screen and (max-width:767px){.breadcrumb__inner{padding:3.33333333vw 6.66666667vw;border-top-width:.27777778vw}
+.breadcrumb__text-desktop{display:none}
+.breadcrumb__text-mobile{display:inline-block;font-size:3.88888889vw;line-height:6.66666667vw}
+.breadcrumb .icon{width:4.44444444vw;height:4.44444444vw;margin:0vw 1.11111111vw}
+.breadcrumb--margin-top-narrow{margin-top:4.44444444vw}
+.breadcrumb--margin-top-normal{margin-top:6.66666667vw}
+.breadcrumb--margin-top-wide{margin-top:8.88888889vw}
+.breadcrumb--margin-bottom-narrow{margin-bottom:4.44444444vw}
+.breadcrumb--margin-bottom-normal{margin-bottom:6.66666667vw}
+.breadcrumb--margin-bottom-wide{margin-bottom:8.88888889vw}
+}

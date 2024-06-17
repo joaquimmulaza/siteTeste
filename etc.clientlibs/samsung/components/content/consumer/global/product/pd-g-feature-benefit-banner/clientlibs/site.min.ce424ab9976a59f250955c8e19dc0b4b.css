@@ -1,0 +1,186 @@
+.st-feature-benefit-banner{overflow:hidden;letter-spacing:-4px}
+.st-feature-benefit-banner [data-font-size-pc='60']{font-size:60px;line-height:1.2}
+.st-feature-benefit-banner [data-font-size-pc='48']{font-size:48px;line-height:1.2}
+.st-feature-benefit-banner [data-font-size-pc='38']{font-size:38px;line-height:1.2}
+.st-feature-benefit-banner [data-font-size-pc='32']{font-size:32px;line-height:1.33}
+.st-feature-benefit-banner [data-font-size-pc='28']{font-size:28px;line-height:1.33}
+.st-feature-benefit-banner [data-font-size-pc='22']{font-size:22px;line-height:1.33}
+.st-feature-benefit-banner [data-font-size-pc='18']{font-size:18px;line-height:1.33}
+.st-feature-benefit-banner [data-font-size-pc='14']{font-size:14px;line-height:1.33}
+.st-feature-benefit-banner--full.bg-black,.st-feature-benefit-banner--full.bg-white,.st-feature-benefit-banner--full.bg-gray{background:none !important}
+.st-feature-benefit-banner--half{max-width:1440px;margin:0 auto}
+.st-feature-benefit-banner--half.st-feature-benefit-banner--width-1920{max-width:1920px}
+.st-feature-benefit-banner--half.st-feature-benefit-banner--bg-black{background:#000}
+.st-feature-benefit-banner--half.st-feature-benefit-banner--bg-white{background:#fff}
+.st-feature-benefit-banner--half.st-feature-benefit-banner--bg-light-gray{background:#f7f7f7}
+.st-feature-benefit-banner--half.st-feature-benefit-banner--bg-dark-gray{background:#313131}
+.st-feature-benefit-banner__wrap{max-width:1440px;margin:0 auto;font-size:0;text-align:left}
+.st-feature-benefit-banner--bg-black .st-feature-benefit-banner__wrap{background:#000}
+.st-feature-benefit-banner--bg-white .st-feature-benefit-banner__wrap{background:#fff}
+.st-feature-benefit-banner--bg-light-gray .st-feature-benefit-banner__wrap{background:#f7f7f7}
+.st-feature-benefit-banner--bg-dark-gray .st-feature-benefit-banner__wrap{background:#313131}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__wrap{position:relative}
+.flexible-layout .st-feature-benefit-banner__wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.flexible-layout.st-feature-benefit-banner--half .st-feature-benefit-banner__wrap{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.flexible-layout.st-feature-benefit-banner--full .st-feature-benefit-banner__wrap{position:static;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
+.st-feature-benefit-banner.bg-black .st-feature-benefit-banner__wrap{background:#000}
+.st-feature-benefit-banner.bg-white .st-feature-benefit-banner__wrap{background:#fff}
+.st-feature-benefit-banner.bg-gray .st-feature-benefit-banner__wrap{background:#f7f7f7}
+.st-feature-benefit-banner--full.st-feature-benefit-banner--width-1920 .st-feature-benefit-banner__wrap{max-width:1920px}
+.st-feature-benefit-banner__title{display:block;margin-bottom:16px;font-family:'SamsungSharpSans',arial,sans-serif}
+.s-text-shadow .st-feature-benefit-banner__title{text-shadow:0 0 10px #555,0 0 5px #333}
+.st-feature-benefit-banner__title:nth-last-child(2){margin-bottom:0}
+.st-feature-benefit-banner__title.mobile-only{display:none}
+.st-feature-benefit-banner__sub-title{margin-bottom:16px}
+.s-text-shadow .st-feature-benefit-banner__sub-title{text-shadow:0 0 10px #555,0 0 5px #333}
+.st-feature-benefit-banner__desc{margin-bottom:16px}
+.s-text-shadow .st-feature-benefit-banner__desc{text-shadow:0 0 10px #555,0 0 5px #333}
+.st-feature-benefit-banner__disclaimer{margin-top:16px;font-size:12px;color:#eee;line-height:1.33}
+.st-feature-benefit-banner--black .st-feature-benefit-banner__disclaimer{color:#313131}
+.st-feature-benefit-banner__figure,.st-feature-benefit-banner__content{max-width:100%;letter-spacing:normal}
+.st-feature-benefit-banner--width-1920 .st-feature-benefit-banner__figure{text-align:center}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__figure{width:496px;padding:0 12px 0 0}
+.st-feature-benefit-banner--full .st-feature-benefit-banner__figure{position:relative}
+.st-feature-benefit-banner--full .st-feature-benefit-banner__figure .s-video{position:absolute;top:0;left:0;right:0;width:100%;height:100%;background:#000}
+.flexible-layout .st-feature-benefit-banner__figure{-webkit-box-flex:1;-ms-flex:1;flex:1;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}
+.st-feature-benefit-banner--image-right .st-feature-benefit-banner__figure{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;padding:0 0 0 12px}
+.st-feature-benefit-banner__video{display:none;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;width:100%;z-index:100}
+.st-feature-benefit-banner__video:before{content:'';position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;background:rgba(0,0,0,0.8)}
+.st-feature-benefit-banner__video iframe,.st-feature-benefit-banner__video object{position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;border:0}
+.st-feature-benefit-banner__video .blind{font-size:12px}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__video{width:100%;height:100%}
+.video-layer-open .js-layer-type-video.st-feature-benefit-banner__video{position:fixed;top:0;left:0;right:0;bottom:0;max-height:none;height:100%;z-index:999996}
+.video-layer-open .js-layer-type-video.st-feature-benefit-banner__video.js-video-to-header{z-index:100;position:absolute;top:auto;bottom:100%;margin:0 auto;height:810px;max-width:1440px}
+.st-feature-benefit-banner__video-wrap,.st-feature-benefit-banner__video .video{position:absolute;top:0;left:0;bottom:0;right:0}
+.js-video-to-header .st-feature-benefit-banner__video-wrap{z-index:100;position:absolute;top:auto;bottom:100%;margin:0 auto;height:810px;max-width:1440px}
+.video-layer-open .js-layer-type-video .st-feature-benefit-banner__video-wrap{width:1440px;height:810px;max-width:100%;margin:auto}
+.st-feature-benefit-banner__video .video{z-index:10}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__video.js-video-auto{display:block;position:inherit}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__video.js-video-auto:before{display:none}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__video.js-video-auto ~ .image{display:none}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__video.js-video-auto .st-feature-benefit-banner__video-wrap,.st-feature-benefit-banner--half .st-feature-benefit-banner__video.js-video-auto .video{position:static}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__video.js-video-auto .st-feature-benefit-banner__video-wrap>div,.st-feature-benefit-banner--half .st-feature-benefit-banner__video.js-video-auto .video>div{position:relative}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__video.js-video-auto .st-feature-benefit-banner__video-wrap figure,.st-feature-benefit-banner--half .st-feature-benefit-banner__video.js-video-auto .video figure{bottom:0;right:0}
+.st-feature-benefit-banner__close{overflow:hidden;position:absolute;top:15px;width:42px;height:42px;z-index:100;cursor:pointer;-webkit-transition:top .2s ease-in-out;transition:top .2s ease-in-out;right:30px}
+.st-feature-benefit-banner__close .icon{display:block;width:100%;height:100%;fill:#fff}
+.st-feature-benefit-banner--half .js-video-auto .st-feature-benefit-banner__close{display:none}
+[data-video-type="youtube"]:hover ~ .st-feature-benefit-banner__close,[data-video-type="youtube"]:focus ~ .st-feature-benefit-banner__close,[data-video-type="youtube"] ~ .st-feature-benefit-banner__close:hover,[data-video-type="youtube"] ~ .st-feature-benefit-banner__close:focus{top:72px}
+.st-feature-benefit-banner__content{position:absolute;top:0;right:0;bottom:0;width:100%;padding:0 88px;text-align:left}
+.st-feature-benefit-banner__content:after{content:'';display:inline-block;height:100%;vertical-align:middle}
+.st-feature-benefit-banner--left .st-feature-benefit-banner__content{text-align:right;padding-right:50%}
+.st-feature-benefit-banner--right .st-feature-benefit-banner__content{text-align:left;padding-left:50%}
+.st-feature-benefit-banner--center .st-feature-benefit-banner__content{text-align:center}
+.st-feature-benefit-banner--black .st-feature-benefit-banner__content{color:#000}
+.st-feature-benefit-banner--white .st-feature-benefit-banner__content{color:#fff}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__content{width:944px;padding:0 88px 0 48px}
+.st-feature-benefit-banner--image-right .st-feature-benefit-banner__content{padding-left:88px;padding-right:48px}
+.st-feature-benefit-banner--full .st-feature-benefit-banner__content{z-index:1}
+.flexible-layout .st-feature-benefit-banner__content{-webkit-box-flex:1;-ms-flex:1;flex:1;position:relative;margin-left:-100%}
+.flexible-layout.st-feature-benefit-banner--half .st-feature-benefit-banner__content{position:static;margin:0}
+.flexible-layout.st-feature-benefit-banner--full .st-feature-benefit-banner__content{position:relative;margin-top:39px;margin-bottom:39px;margin-left:-100%}
+.st-feature-benefit-banner--half.st-feature-benefit-banner--bg-black .st-feature-benefit-banner__content,.st-feature-benefit-banner--half.st-feature-benefit-banner--bg-dark-gray .st-feature-benefit-banner__content,.bg-black.st-feature-benefit-banner--half .st-feature-benefit-banner__content{color:#fff}
+.st-feature-benefit-banner__content-wrap{display:inline-block;width:632px;max-width:100%;vertical-align:middle}
+.st-feature-benefit-banner--full .st-feature-benefit-banner__content-wrap{text-align:left}
+.st-feature-benefit-banner__content-wrap>*:last-child{margin-bottom:0}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__content-wrap{width:808px}
+.st-feature-benefit-banner--center .st-feature-benefit-banner__content-wrap{width:572px;text-align:center}
+.st-feature-benefit-banner--left .st-feature-benefit-banner__content-wrap{padding-right:60px}
+.st-feature-benefit-banner--right .st-feature-benefit-banner__content-wrap{padding-left:60px}
+.st-feature-benefit-banner--cta-aside .st-feature-benefit-banner__content-wrap>*:nth-last-child(2){margin-bottom:0}
+.st-feature-benefit-banner--cta-only.st-feature-benefit-banner--left .st-feature-benefit-banner__content-wrap,.st-feature-benefit-banner--cta-only.st-feature-benefit-banner--right .st-feature-benefit-banner__content-wrap{text-align:center}
+.st-feature-benefit-banner__cta{display:inline-block;margin:0 10px}
+.st-feature-benefit-banner__cta-wrap{margin:40px -10px 0}
+.st-feature-benefit-banner--cta-aside .st-feature-benefit-banner__cta-wrap{position:absolute;top:50%;width:642px;margin-top:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.st-feature-benefit-banner--cta-only .st-feature-benefit-banner__cta-wrap{margin-top:168px}
+.st-feature-benefit-banner--left.st-feature-benefit-banner--cta-aside .st-feature-benefit-banner__cta-wrap{left:50%;text-align:right}
+.st-feature-benefit-banner--right.st-feature-benefit-banner--cta-aside .st-feature-benefit-banner__cta-wrap{right:50%;text-align:left}
+.st-feature-benefit-banner--center.st-feature-benefit-banner--cta-aside .st-feature-benefit-banner__cta-wrap{position:static;top:auto;width:auto;margin-top:24px;padding:0;-webkit-transform:none;transform:none}
+.st-feature-benefit-banner--cta-only.st-feature-benefit-banner--cta-aside .st-feature-benefit-banner__cta-wrap{margin-top:0}
+@media only screen and (min-width:768px) and (max-width:1440px){.st-feature-benefit-banner [data-font-size-pc='60']{font-size:4.16666667vw}
+.st-feature-benefit-banner [data-font-size-pc='48']{font-size:3.33333333vw}
+.st-feature-benefit-banner [data-font-size-pc='38']{font-size:2.63888889vw}
+.st-feature-benefit-banner [data-font-size-pc='32']{font-size:2.22222222vw}
+.st-feature-benefit-banner [data-font-size-pc='28']{font-size:1.94444444vw}
+.st-feature-benefit-banner [data-font-size-pc='22']{font-size:1.52777778vw}
+.st-feature-benefit-banner [data-font-size-pc='18']{font-size:1.25vw}
+.st-feature-benefit-banner [data-font-size-pc='14']{font-size:.97222222vw}
+.st-feature-benefit-banner__title{margin-bottom:1.11111111vw}
+.st-feature-benefit-banner__sub-title{margin-bottom:1.11111111vw}
+.st-feature-benefit-banner__desc{margin-bottom:1.11111111vw}
+.st-feature-benefit-banner__disclaimer{margin-top:1.11111111vw;font-size:.83333333vw}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__figure{width:34.44444444vw;padding:0vw .83333333vw 0vw 0vw}
+.st-feature-benefit-banner--image-right .st-feature-benefit-banner__figure{padding:0vw 0vw 0vw .83333333vw}
+.video-layer-open .js-layer-type-video.st-feature-benefit-banner__video.js-video-to-header{height:56.25vw}
+.js-video-to-header .st-feature-benefit-banner__video-wrap{height:56.25vw}
+.video-layer-open .js-layer-type-video .st-feature-benefit-banner__video-wrap{width:100vw;height:56.25vw}
+.st-feature-benefit-banner__close{top:1.04166667vw;width:2.91666667vw;height:2.91666667vw;right:2.08333333vw}
+.st-feature-benefit-banner__content{padding:0vw 6.11111111vw}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__content{width:65.55555556vw;padding:0vw 6.11111111vw 0vw 3.33333333vw}
+.st-feature-benefit-banner--image-right .st-feature-benefit-banner__content{padding-left:6.11111111vw;padding-right:3.33333333vw}
+.flexible-layout.st-feature-benefit-banner--full .st-feature-benefit-banner__content{margin-top:2.70833333vw;margin-bottom:2.70833333vw}
+.st-feature-benefit-banner__content-wrap{width:43.88888889vw}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__content-wrap{width:56.11111111vw}
+.st-feature-benefit-banner--center .st-feature-benefit-banner__content-wrap{width:39.72222222vw}
+.st-feature-benefit-banner--left .st-feature-benefit-banner__content-wrap{padding-right:4.16666667vw}
+.st-feature-benefit-banner--right .st-feature-benefit-banner__content-wrap{padding-left:4.16666667vw}
+.st-feature-benefit-banner__cta{margin:0vw .69444444vw}
+.st-feature-benefit-banner__cta-wrap{margin:2.77777778vw -0.69444444vw 0vw -0.69444444vw}
+.st-feature-benefit-banner--cta-aside .st-feature-benefit-banner__cta-wrap{width:44.58333333vw}
+.st-feature-benefit-banner--cta-only .st-feature-benefit-banner__cta-wrap{margin-top:11.66666667vw}
+.st-feature-benefit-banner--center.st-feature-benefit-banner--cta-aside .st-feature-benefit-banner__cta-wrap{margin-top:1.66666667vw}
+.st-feature-benefit-banner--width-1920.st-feature-benefit-banner--left.st-feature-benefit-banner--cta-aside .st-feature-benefit-banner__cta-wrap{right:6.11111111vw}
+.st-feature-benefit-banner--width-1920.st-feature-benefit-banner--right.st-feature-benefit-banner--cta-aside .st-feature-benefit-banner__cta-wrap{left:6.11111111vw}
+}
+@media screen and (orientation:landscape) and (max-height:810px){.st-feature-benefit-banner.video-layer-open .js-layer-type-video .st-feature-benefit-banner__video-wrap{height:auto}
+}
+@media only screen and (max-width:767px){.st-feature-benefit-banner [data-font-size-mo='36']{font-size:10vw}
+.st-feature-benefit-banner [data-font-size-mo='30']{font-size:8.33333333vw}
+.st-feature-benefit-banner [data-font-size-mo='26']{font-size:7.22222222vw}
+.st-feature-benefit-banner [data-font-size-mo='22']{font-size:6.11111111vw}
+.st-feature-benefit-banner [data-font-size-mo='18']{font-size:5vw}
+.st-feature-benefit-banner [data-font-size-mo='16']{font-size:4.44444444vw}
+.st-feature-benefit-banner [data-font-size-mo='14']{font-size:3.88888889vw}
+.st-feature-benefit-banner [data-font-size-mo='12']{font-size:3.33333333vw}
+.st-feature-benefit-banner__title{margin-bottom:3.33333333vw}
+.st-feature-benefit-banner__title.desktop-only{display:none}
+.st-feature-benefit-banner__title.mobile-only{display:block}
+.st-feature-benefit-banner__sub-title{margin-bottom:3.33333333vw;line-height:1.33}
+.st-feature-benefit-banner__desc{margin-bottom:3.33333333vw}
+.st-feature-benefit-banner__disclaimer{margin-top:3.33333333vw;font-size:2.77777778vw}
+.st-feature-benefit-banner__figure,.st-feature-benefit-banner__content{width:auto;padding:0 !important}
+.st-feature-benefit-banner__wrap{max-width:100% !important;height:100%;min-height:0;padding:0}
+.st-feature-benefit-banner--full .st-feature-benefit-banner__wrap{position:static}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__wrap{padding:0}
+.flexible-layout.st-feature-benefit-banner--half .st-feature-benefit-banner__wrap{display:block;max-width:none}
+.st-feature-benefit-banner__content{text-align:center !important}
+.st-feature-benefit-banner--mo-text-top .st-feature-benefit-banner__content:after{vertical-align:top}
+.st-feature-benefit-banner--left .st-feature-benefit-banner__content{right:0}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__content{position:static;width:100%;padding:0vw 4.44444444vw}
+.st-feature-benefit-banner--bg-light-gray.st-feature-benefit-banner--half .st-feature-benefit-banner__content,.st-feature-benefit-banner--bg-white.st-feature-benefit-banner--half .st-feature-benefit-banner__content{color:#000}
+.st-feature-benefit-banner--bg-dark-gray.st-feature-benefit-banner--half .st-feature-benefit-banner__content,.st-feature-benefit-banner--bg-black.st-feature-benefit-banner--half .st-feature-benefit-banner__content{color:#fff}
+.flexible-layout.st-feature-benefit-banner--half .st-feature-benefit-banner__content{max-width:100%}
+.flexible-layout.st-feature-benefit-banner--full .st-feature-benefit-banner__content{margin-top:0vw;margin-bottom:0vw}
+.st-feature-benefit-banner__content-wrap{width:auto !important;padding:0vw 6.66666667vw}
+.st-feature-benefit-banner--left .st-feature-benefit-banner__content-wrap,.st-feature-benefit-banner--right .st-feature-benefit-banner__content-wrap,.st-feature-benefit-banner--center .st-feature-benefit-banner__content-wrap{text-align:center;padding:0vw 6.66666667vw;position:static;-webkit-transform:none;transform:none}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__content-wrap{padding-top:8.88888889vw}
+.st-feature-benefit-banner--mo-text-top .st-feature-benefit-banner__content-wrap{padding-top:8.88888889vw;padding-bottom:8.88888889vw;vertical-align:top}
+.st-feature-benefit-banner--width-1920 .st-feature-benefit-banner__content-wrap,.st-feature-benefit-banner--width-1920.st-feature-benefit-banner--center .st-feature-benefit-banner__content-wrap{max-width:none;margin:0 auto}
+.st-feature-benefit-banner__cta{display:block;margin:0}
+.st-feature-benefit-banner__cta+.st-feature-benefit-banner__cta{margin-top:2.22222222vw}
+.st-feature-benefit-banner__cta-wrap{margin:6.66666667vw 0vw 0vw 0vw !important;text-align:center !important}
+.st-feature-benefit-banner--cta-aside .st-feature-benefit-banner__cta-wrap{position:static;top:auto;width:auto;-webkit-transform:none !important;transform:none !important}
+.st-feature-benefit-banner--cta-only .st-feature-benefit-banner__cta-wrap{margin-top:51.38888889vw !important}
+.st-feature-benefit-banner__figure{padding:0}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__figure{width:auto;margin-top:11.11111111vw;padding:0}
+.st-feature-benefit-banner--half .st-feature-benefit-banner__figure>img{display:block}
+.js-video-auto .st-feature-benefit-banner--half .st-feature-benefit-banner__figure{display:none}
+.flexible-layout.st-feature-benefit-banner--half .st-feature-benefit-banner__figure{display:block;margin-top:8.88888889vw;max-width:none}
+.video-layer-open .st-feature-benefit-banner__video.js-layer-type-video .st-feature-benefit-banner__video-wrap,.video-layer-open .st-feature-benefit-banner__video.js-layer-type-video .js-video-to-header .st-feature-benefit-banner__video-wrap{width:auto;height:0;margin:auto;padding-bottom:56.25%}
+.st-feature-benefit-banner__close{top:4.44444444vw;width:11.66666667vw;height:11.66666667vw;right:4.44444444vw}
+[data-video-type="youtube"] ~ .st-feature-benefit-banner__close{top:72px}
+.video-layer-open .js-layer-type-video .st-feature-benefit-banner__close,.video-layer-open .js-layer-type-video .js-video-to-header .st-feature-benefit-banner__close{position:fixed;top:2.5vw !important;right:2.5vw !important;padding:0;margin:0}
+}
+@media only screen and (max-width:767px) and (orientation:landscape){.video-layer-open .js-layer-type-video .st-feature-benefit-banner__video-wrap{height:auto;padding:0}
+[data-video-type="youtube"] ~ .st-feature-benefit-banner__close{top:72px !important}
+.video-layer-open .js-layer-type-video .st-feature-benefit-banner__close{top:4.44444444vw;bottom:auto}
+}

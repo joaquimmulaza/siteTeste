@@ -1,0 +1,9 @@
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="btn-playline-on" transform="translate(11.000000, 11.000000)" stroke="#FFFFFF" stroke-width="2">
+            <circle id="Oval" fill-opacity="0.5" fill="#000000" fill-rule="nonzero" cx="59" cy="59" r="59"></circle>
+            <path d="M81.047828,60.5617376 L51.2493901,84.4004879 C50.3868662,85.090507 49.1282815,84.9506643 48.4382624,84.0881404 C48.1545615,83.7335143 48,83.2928933 48,82.8387503 L48,35.1612497 C48,34.0566802 48.8954305,33.1612497 50,33.1612497 C50.454143,33.1612497 50.894764,33.3158112 51.2493901,33.5995121 L81.047828,57.4382624 C81.9103518,58.1282815 82.0501946,59.3868662 81.3601755,60.2493901 C81.267912,60.3647195 81.1631574,60.4694741 81.047828,60.5617376 Z" id="Triangle-3"></path>
+        </g>
+    </g>
+</svg>

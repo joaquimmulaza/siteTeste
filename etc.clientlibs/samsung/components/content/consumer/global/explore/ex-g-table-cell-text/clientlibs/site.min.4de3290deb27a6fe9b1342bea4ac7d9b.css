@@ -1,0 +1,49 @@
+.ex-table__wrap{overflow:auto;margin:0 auto;max-width:1440px;width:100%;padding:0 24px}
+.ex-table__wrap--width-small{padding:0 142px}
+.ex-table-cell-text{width:100%;border-collapse:collapse;color:#000;word-wrap:break-word}
+.ex-table-cell-text th,.ex-table-cell-text td{padding:8px 16px;border:1px solid #ddd;background:#fff;vertical-align:middle;height:40px;font-size:18px}
+.ex-table-cell-text th a,.ex-table-cell-text td a{color:#006bea;text-decoration:underline}
+.ex-table-cell-text th a[target="_blank"]:after,.ex-table-cell-text td a[target="_blank"]:after{content:' ';background-image:url('../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/icon-new-window-blue-link.svg');width:16px;height:16px;margin-left:5px;background-size:100% 100%;display:inline-block;background-position:0 18px}
+.ex-table-cell-text th li,.ex-table-cell-text td li,.ex-table-cell-text th ol,.ex-table-cell-text td ol,.ex-table-cell-text th ul,.ex-table-cell-text td ul{list-style:revert;margin-left:10px}
+.ex-table-cell-text th em,.ex-table-cell-text td em{font-style:italic}
+.ex-table-cell-text th{font-size:18px;background:#eee}
+.ex-table-cell-text--layout-fixed{table-layout:fixed}
+.ex-table-cell-text--align-th-left th{text-align:left}
+.ex-table-cell-text--align-th-center th{text-align:center}
+.ex-table-cell-text--align-th-right th{text-align:right}
+.ex-table-cell-text--align-td-left td{text-align:left}
+.ex-table-cell-text--align-td-center td{text-align:center}
+.ex-table-cell-text--align-td-right td{text-align:right}
+.ex-table-cell-text thead th{border-bottom-width:0}
+.ex-table-cell-text.theme-bold{border-top:1px solid #000;border-bottom:1px solid #000}
+.ex-table-cell-text.theme-bold th{border:0}
+.ex-table-cell-text.theme-bold td{border:0;border-left:1px solid #ddd}
+.ex-table-cell-text.theme-bold td:last-child{border-right:0}
+.ex-table-cell-text thead:last-child th{border-bottom-width:1px}
+.ex-table-cell-text--layout-flexible{table-layout:auto}
+.ex-table__wrap.bg-light-gray .ex-table-cell-text th{background-color:#ddd;border-color:#bbb}
+.ex-table__wrap.bg-light-gray .ex-table-cell-text td{background-color:#f7f7f7;border-color:#bbb}
+.ex-table__wrap.bg-dark-gray .ex-table-cell-text{color:#fff}
+.ex-table__wrap.bg-dark-gray .ex-table-cell-text th{background-color:#757575;border-color:#8f8f8f}
+.ex-table__wrap.bg-dark-gray .ex-table-cell-text td{background-color:#313131;border-color:#8f8f8f}
+.ex-table__wrap.bg-black .ex-table-cell-text{color:#fff}
+.ex-table__wrap.bg-black .ex-table-cell-text th{background-color:#555;border-color:#757575}
+.ex-table__wrap.bg-black .ex-table-cell-text td{background-color:#000;border-color:#757575}
+@media only screen and (min-width:768px) and (max-width:1440px){.ex-table__wrap{padding:0vw 1.66666667vw}
+.ex-table__wrap--width-small{padding:0vw 9.86111111vw}
+.ex-table-cell-text th,.ex-table-cell-text td{padding:.55555556vw 1.11111111vw;height:2.77777778vw}
+.ex-table-cell-text th a[target="_blank"]:before,.ex-table-cell-text td a[target="_blank"]:before{width:1.11111111vw;height:1.11111111vw;margin-left:.34722222vw}
+.ex-table-cell-text th li,.ex-table-cell-text td li,.ex-table-cell-text th ol,.ex-table-cell-text td ol,.ex-table-cell-text th ul,.ex-table-cell-text td ul{margin-left:.69444444vw}
+.ex-table-cell-text th{font-size:1.25vw}
+.ex-table-cell-text td{font-size:1.25vw;vertical-align:middle}
+}
+@media only screen and (max-width:767px){.ex-table__wrap{padding:0vw 6.66666667vw}
+.ex-table-cell-text{display:block;overflow-x:auto;width:auto}
+.ex-table-cell-text th,.ex-table-cell-text td{padding:2.22222222vw 4.44444444vw;height:11.11111111vw}
+.ex-table-cell-text th a[target="_blank"]:before,.ex-table-cell-text td a[target="_blank"]:before{width:4.44444444vw;height:4.44444444vw;margin-left:1.38888889vw}
+.ex-table-cell-text th li,.ex-table-cell-text td li,.ex-table-cell-text th ol,.ex-table-cell-text td ol,.ex-table-cell-text th ul,.ex-table-cell-text td ul{margin-left:2.77777778vw}
+.ex-table-cell-text th{font-size:3.88888889vw}
+.ex-table-cell-text td{font-size:3.88888889vw}
+}
+@media only screen and (min-width:768px) and (max-width:1440px){}
+@media only screen and (max-width:767px){}

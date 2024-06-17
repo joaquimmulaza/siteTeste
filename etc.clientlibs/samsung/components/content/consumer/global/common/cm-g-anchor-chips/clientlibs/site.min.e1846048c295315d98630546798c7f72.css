@@ -1,0 +1,13 @@
+.co64-anchor-chips{width:100%;max-width:1440px;margin:0 auto;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-size:0}
+.co64-anchor-chips.bg-black .co64-anchor-chips__list-item,.co64-anchor-chips.bg-dark-gray .co64-anchor-chips__list-item{border:1px solid rgba(255,255,255,0.3);background:rgba(0,0,0,0.3)}
+.co64-anchor-chips.bg-white .co64-anchor-chips__list-item,.co64-anchor-chips.bg-light-gray .co64-anchor-chips__list-item{border:1px solid rgba(0,0,0,0.15);background:rgba(255,255,255,0.3)}
+.co64-anchor-chips__list{margin-top:-8px;width:1152px;text-align:center}
+.co64-anchor-chips__list-item{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;position:relative;font-size:14px;padding:10px 15px 9px 15px;line-height:19px;border-radius:20px;color:inherit;margin:8px 4px 0 4px}
+@media only screen and (min-width:768px) and (max-width:1440px){.co64-anchor-chips{max-width:100vw}
+.co64-anchor-chips__list{margin-top:-0.55555556vw;width:80vw}
+.co64-anchor-chips__list-item{font-size:.97222222vw;padding:.69444444vw 1.04166667vw .625vw 1.04166667vw;border-radius:1.38888889vw;margin:.55555556vw .27777778vw 0vw .27777778vw;line-height:1.31944444vw}
+}
+@media only screen and (max-width:767px){.co64-anchor-chips{max-width:100vw}
+.co64-anchor-chips__list{margin-top:-2.22222222vw;width:86.66666667vw}
+.co64-anchor-chips__list-item{font-size:2.77777778vw;line-height:3.88888889vw;padding:1.94444444vw 4.16666667vw;border-radius:4.16666667vw;margin:2.22222222vw 1.11111111vw 0vw 1.11111111vw}
+}

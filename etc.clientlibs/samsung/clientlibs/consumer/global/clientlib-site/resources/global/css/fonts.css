@@ -1,0 +1,31 @@
+@font-face {
+  font-display: swap;
+  font-family: 'SamsungOne';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SamsungOne'), url('https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/fonts/SamsungOne-400.woff2') format('woff2'), url('https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/fonts/SamsungOne-400.woff') format('woff'), url('https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/fonts/SamsungOne-400.ttf') format('truetype'), url('https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/fonts/SamsungOne-400.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'SamsungOne';
+  font-style: normal;
+  font-weight: bold;
+  src: local('SamsungOne'), url('https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/fonts/SamsungOne-700.woff2') format('woff2'), url('https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/fonts/SamsungOne-700.woff') format('woff'), url('https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/fonts/SamsungOne-700.ttf') format('truetype'), url('https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/fonts/SamsungOne-700.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'SamsungSharpSans';
+  font-style: normal;
+  font-weight: bold;
+  src: local('SamsungSharpSans'), url('https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/fonts/SamsungSharpSansBd.woff2') format('woff2'), url('https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/fonts/SamsungSharpSansBd.woff') format('woff'), url('https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/fonts/SamsungSharpSansBd.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'SamsungSharpSans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SamsungSharpSans'), url('https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/fonts/SamsungSharpSansBd.woff2') format('woff2'), url('https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/fonts/SamsungSharpSansBd.woff') format('woff'), url('https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/fonts/SamsungSharpSansBd.eot?#iefix') format('embedded-opentype');
+}

@@ -1,0 +1,53 @@
+.tvplus-channels{max-width:1440px;margin:0 auto}
+.tvplus-channels__inner{padding:97px 0 96px 0}
+.tvplus-channels__headline{font-family:'SamsungSharpSans',arial,sans-serif;font-size:38px;line-height:1.34;text-align:center}
+.tvplus-channels__chip{display:inline-block;color:#000;font-size:12px;line-height:32px;font-weight:700;padding:0 15px;border:1px solid #000;border-radius:16px;-webkit-transition:all .2s cubic-bezier(0.33,0,0.3,1);transition:all .2s cubic-bezier(0.33,0,0.3,1)}
+.bg-black .tvplus-channels__chip,.bg-dark-gray .tvplus-channels__chip{color:#fff;border-color:#fff}
+.tvplus-channels__chip:hover,.tvplus-channels__chip:focus{background-color:rgba(0,0,0,0.05);border-color:rgba(0,0,0,0.15)}
+.bg-black .tvplus-channels__chip:hover,.bg-black .tvplus-channels__chip:focus,.bg-dark-gray .tvplus-channels__chip:hover,.bg-dark-gray .tvplus-channels__chip:focus{background-color:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0.3)}
+.tvplus-channels__chip-wrap{max-width:890px;margin:0 auto;margin-top:14px}
+.tvplus-channels__chip-list{font-size:0;text-align:center}
+.tvplus-channels__chip-item{display:inline-block;margin:8px 10px 0 10px}
+.tvplus-channels__list{padding-top:32px}
+.tvplus-channels__list:first-child{margin-top:0}
+.tvplus-channels__list-wrap{max-width:1156px;margin:0 auto;margin-top:56px}
+.tvplus-channels__list-title{font-size:22px;line-height:1.36;margin-bottom:-6px}
+.tvplus-channels__icon{cursor:default}
+.tvplus-channels__icon-box{font-size:0;margin:0 -12px}
+.tvplus-channels__icon-list{display:inline-block;text-align:center;width:10%;margin-top:26px;padding:0 12px}
+.tvplus-channels__icon-list .s-box{border-radius:14px;overflow:hidden;display:block;margin-bottom:11px}
+.tvplus-channels__icon-list .icon-name{display:-webkit-box;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:calc(2.66em);line-height:1.33;word-break:break-word}
+@media screen and (-webkit-min-device-pixel-ratio:0){.tvplus-channels__icon-list .icon-name{max-height:none}
+}
+.tvplus-channels__icon-list .icon-name-box{font-size:12px;line-height:1.33;position:relative;display:inline-block}
+.tvplus-channels__icon-list .icon-name--tooltip{position:absolute;left:50%;bottom:15px;padding:5px 8px 3px 8px;border-radius:6px;font-size:12px;line-height:1.33;white-space:nowrap;background-color:#fff;-webkit-box-shadow:0 4px 10px 0 rgba(0,0,0,0.2);box-shadow:0 4px 10px 0 rgba(0,0,0,0.2);z-index:1;color:#000}
+@media only screen and (min-width:768px) and (max-width:1440px){.tvplus-channels{max-width:100vw}
+.tvplus-channels__inner{padding:6.73611111vw 0vw 6.66666667vw 0vw}
+.tvplus-channels__headline{font-size:2.63888889vw}
+.tvplus-channels__chip{font-size:.83333333vw;line-height:2.22222222vw;padding:0vw 1.04166667vw;border-radius:1.11111111vw}
+.tvplus-channels__chip-wrap{max-width:60.41666667vw;margin-top:.97222222vw}
+.tvplus-channels__chip-item{margin-top:.55555556vw;margin-left:1.38888889vw}
+.tvplus-channels__list{padding-top:2.22222222vw}
+.tvplus-channels__list-wrap{max-width:80.27777778vw;margin-top:3.88888889vw}
+.tvplus-channels__list-title{font-size:1.52777778vw;margin-bottom:-0.41666667vw}
+.tvplus-channels__icon-box{margin:0vw -0.83333333vw}
+.tvplus-channels__icon-list{margin-top:1.80555556vw;padding:0vw .83333333vw}
+.tvplus-channels__icon-list .s-box{border-radius:.97222222vw;margin-bottom:.76388889vw}
+.tvplus-channels__icon-list .icon-name-box{font-size:.83333333vw}
+.tvplus-channels__icon-list .icon-name--tooltip{bottom:1.04166667vw;padding:.34722222vw .55555556vw .20833333vw .55555556vw;font-size:.83333333vw}
+}
+@media only screen and (max-width:767px){.tvplus-channels{max-width:none;width:100%}
+.tvplus-channels__inner{padding:16.11111111vw 6.66666667vw 5.55555556vw 6.66666667vw}
+.tvplus-channels__headline{font-size:7.22222222vw}
+.tvplus-channels__chip{font-size:3.33333333vw;line-height:8.88888889vw;padding:0vw 4.16666667vw;border-radius:4.44444444vw}
+.tvplus-channels__chip-wrap{max-width:none;margin:3.05555556vw 0vw 0vw 0vw}
+.tvplus-channels__chip-item{margin:2.77777778vw 2.77777778vw 0vw 2.77777778vw}
+.tvplus-channels__list{padding-top:10vw}
+.tvplus-channels__list-wrap{max-width:none;margin:.55555556vw 0vw 0vw 0vw}
+.tvplus-channels__list-title{font-size:4.44444444vw;margin-bottom:-2.22222222vw}
+.tvplus-channels__icon-box{margin:0vw -2.22222222vw}
+.tvplus-channels__icon-list{width:25%;margin-top:5vw;padding:0vw 2.22222222vw}
+.tvplus-channels__icon-list .s-box{border-radius:3.88888889vw;margin-bottom:2.77777778vw}
+.tvplus-channels__icon-list .icon-name{max-height:13.33333333vw}
+.tvplus-channels__icon-list .icon-name-box{font-size:3.33333333vw}
+}

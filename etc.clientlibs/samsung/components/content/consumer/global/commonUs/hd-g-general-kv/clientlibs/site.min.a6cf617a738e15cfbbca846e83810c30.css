@@ -1,0 +1,101 @@
+.hd-general-kv{overflow:hidden}
+.hd-general-kv--bg-white{background-color:#fff}
+.hd-general-kv--bg-black{background-color:#000}
+.hd-general-kv--bg-grey{background-color:gray}
+.hd-general-kv--bg-grey-1{background-color:#555}
+.hd-general-kv--bg-trans{background-color:transparent}
+.hd-general-kv--theme-black{color:#000}
+.hd-general-kv *{-webkit-box-sizing:border-box;box-sizing:border-box}
+.hd-general-kv__wrap{position:relative;margin:0 auto;max-width:1440px;width:100%;overflow:hidden;min-height:280px}
+.hd-general-kv--large .hd-general-kv__inner{padding-bottom:calc(56.25%)}
+.hd-general-kv--medium .hd-general-kv__inner{padding-bottom:calc(44.44444444%)}
+.hd-general-kv--small .hd-general-kv__inner{padding-bottom:calc(22.22222222%)}
+.hd-general-kv__content-area{position:absolute;z-index:1;width:620px}
+.hd-general-kv--middle .hd-general-kv__content-area{top:50%;transform:translateY(-50%);-webkit-transform:translateY(-50%);margin-left:88px}
+.hd-general-kv--top .hd-general-kv__content-area{margin:100px 0 0 88px;top:0}
+.hd-general-kv--bottom .hd-general-kv__content-area{bottom:112px;margin-left:88px}
+.hd-general-kv--left .hd-general-kv__content-area{text-align:left}
+.hd-general-kv--center .hd-general-kv__content-area{text-align:center;margin-left:410px}
+.hd-general-kv--right .hd-general-kv__content-area{right:0;margin-left:0;margin-right:88px}
+.hd-general-kv__title{font-family:'SamsungSharpSans',arial,sans-serif;line-height:1.2;font-weight:bold;font-stretch:normal;font-style:normal;letter-spacing:normal;color:#fff;margin-bottom:24px}
+.hd-general-kv--theme-black .hd-general-kv__title{color:#000}
+.hd-general-kv--small .hd-general-kv__title{font-size:38px;margin-bottom:14px}
+.hd-general-kv--large.font-large .hd-general-kv__title,.hd-general-kv--medium.font-large .hd-general-kv__title{font-size:80px}
+.hd-general-kv--large.font-medium .hd-general-kv__title,.hd-general-kv--medium.font-medium .hd-general-kv__title{font-size:60px}
+.hd-general-kv__sub-title{font-family:'SamsungOne',arial,sans-serif;font-weight:bold;font-stretch:normal;font-style:normal;line-height:1.33;letter-spacing:normal;color:#fff}
+.hd-general-kv--large .hd-general-kv__sub-title{font-size:24px}
+.hd-general-kv--theme-black .hd-general-kv__sub-title{color:#000}
+.hd-general-kv--medium .hd-general-kv__sub-title{font-size:18px}
+.hd-general-kv--small .hd-general-kv__sub-title{font-size:18px}
+.hd-general-kv__desc{font-family:'SamsungOne',arial,sans-serif;font-weight:normal;line-height:1.33;color:#fff;font-size:18px;margin-bottom:40px}
+.hd-general-kv--theme-black .hd-general-kv__desc{color:#000}
+.hd-general-kv--small .hd-general-kv__desc{margin-bottom:16px}
+.hd-general-kv__desc.mobile-only{display:none}
+.hd-general-kv__desc.desktop-only{display:block}
+.hd-general-kv.hd-general-kv--small.hd-general-kv--top .hd-general-kv__content-area{margin-top:12px;top:0}
+.hd-general-kv.hd-general-kv--small.hd-general-kv--bottom .hd-general-kv__content-area{bottom:0}
+.hd-general-kv__cta .cta{vertical-align:middle}
+.hd-general-kv__cta .cta.right{margin-left:40px}
+.hd-general-kv__cta br{display:none}
+.hd-general-kv__figure{position:absolute;top:0;bottom:0;left:0;right:0;z-index:0}
+.hd-general-kv__figure img{height:100%;width:100%;object-fit:cover;object-position:50% 50%}
+.hd-general-kv__icon-down{position:absolute;bottom:2%;left:50%;border:solid #fff;display:inline-block;transform:rotate(45deg) translateX(-50%);-webkit-transform:rotate(45deg) translateX(-50%);border-width:0 2px 2px 0;padding:8px}
+.hd-general-kv .hd-general-kv__ctas a.cta{margin:10px}
+@media only screen and (min-width:768px) and (max-width:1440px){.hd-general-kv__content-area{width:43.05555556vw}
+.hd-general-kv--middle .hd-general-kv__content-area{margin-left:6.11111111vw}
+.hd-general-kv--top .hd-general-kv__content-area{margin:6.94444444vw 0vw 0vw 6.11111111vw}
+.hd-general-kv--bottom .hd-general-kv__content-area{bottom:7.77777778vw;margin-left:6.11111111vw}
+.hd-general-kv--center .hd-general-kv__content-area{margin-left:28.47222222vw}
+.hd-general-kv--right .hd-general-kv__content-area{margin-right:6.11111111vw}
+.hd-general-kv__title{margin-bottom:1.66666667vw}
+.hd-general-kv--small .hd-general-kv__title{font-size:2.63888889vw;margin-bottom:1.11111111vw}
+.hd-general-kv--large.font-large .hd-general-kv__title,.hd-general-kv--medium.font-large .hd-general-kv__title{font-size:5.55555556vw}
+.hd-general-kv--large.font-medium .hd-general-kv__title,.hd-general-kv--medium.font-medium .hd-general-kv__title{font-size:4.16666667vw}
+.hd-general-kv--large .hd-general-kv__sub-title{font-size:1.66666667vw}
+.hd-general-kv--medium .hd-general-kv__sub-title{font-size:1.25vw}
+.hd-general-kv--small .hd-general-kv__sub-title{font-size:1.25vw}
+.hd-general-kv__desc{font-size:1.25vw;margin-bottom:1.11111111vw}
+.hd-general-kv__cta .cta.right{margin-left:1.66666667vw}
+.hd-general-kv__icon-down{border-width:0vw .13888889vw .13888889vw 0vw;padding:.55555556vw}
+}
+@media only screen and (max-width:767px){.hd-general-kv{margin:0 auto}
+.hd-general-kv--m-large .hd-general-kv__inner{padding-bottom:calc(205.55555556%)}
+.hd-general-kv--m-medium .hd-general-kv__inner{padding-bottom:calc(138.88888889%)}
+.hd-general-kv--m-small .hd-general-kv__inner{padding-bottom:calc(69.44444444%)}
+.hd-general-kv__title{margin-bottom:4.44444444vw}
+.hd-general-kv__content-area .hd-general-kv__title{margin-bottom:4.44444444vw}
+.hd-general-kv--m-small .hd-general-kv__title{font-size:7.22222222vw}
+.hd-general-kv--large.font-large .hd-general-kv__title,.hd-general-kv--medium.font-large .hd-general-kv__title{font-size:8.33333333vw}
+.hd-general-kv--large.font-medium .hd-general-kv__title,.hd-general-kv--medium.font-medium .hd-general-kv__title{font-size:8.33333333vw}
+.hd-general-kv__desc{font-size:3.33333333vw;margin-bottom:6.66666667vw}
+.hd-general-kv__desc.mobile-only{display:block;padding:0}
+.hd-general-kv__desc.desktop-only{display:none}
+.hd-general-kv__cta{font-size:3.33333333vw}
+.hd-general-kv__cta .cta{display:table}
+.hd-general-kv__cta br{display:block}
+.hd-general-kv__content-area{width:100%;margin-top:11.11111111vw;padding:0vw 6.66666667vw;transform:none}
+.hd-general-kv__content-area .hd-general-kv__cta .cta{font-size:3.88888889vw}
+.hd-general-kv__content-area .hd-general-kv__desc.mobile-only{margin-bottom:5vw}
+.hd-general-kv-mo--middle .hd-general-kv__content-area{top:50%;transform:translateY(-50%);-webkit-transform:translateY(-50%);margin:11.11111111vw 0vw 0vw 0vw}
+.hd-general-kv-mo--top .hd-general-kv__content-area{margin:11.11111111vw 0vw 0vw 0vw;top:0 !important;transform:none !important}
+.hd-general-kv-mo--bottom .hd-general-kv__content-area{margin:11.11111111vw 0vw 0vw 0vw;bottom:6.66666667vw;top:unset !important;transform:none !important}
+.hd-general-kv-mo--left .hd-general-kv__content-area{text-align:left !important}
+.hd-general-kv-mo--center .hd-general-kv__content-area{text-align:center !important}
+.hd-general-kv-mo--center .hd-general-kv__content-area .cta{margin:0 auto !important}
+.hd-general-kv-mo--right .hd-general-kv__content-area{right:0 !important;text-align:right !important}
+.hd-general-kv-mo--right .hd-general-kv__content-area .hd-general-kv__cta .cta{float:right;clear:both}
+.hd-general-kv.hd-general-kv--small.hd-general-kv--top .hd-general-kv__content-area{margin-top:3.33333333vw;top:0}
+.hd-general-kv.hd-general-kv--small.hd-general-kv--middle .hd-general-kv__content-area{margin-top:0}
+.hd-general-kv.hd-general-kv--small.hd-general-kv--bottom .hd-general-kv__content-area{bottom:3.33333333vw}
+.hd-general-kv--m-large .hd-general-kv__sub-title{font-size:3.88888889vw}
+.hd-general-kv--m-medium .hd-general-kv__sub-title{font-size:3.88888889vw}
+.hd-general-kv--m-small .hd-general-kv__sub-title{font-size:3.88888889vw}
+.hd-general-kv__icon-down{border-width:0vw .55555556vw .55555556vw 0vw;padding:2.22222222vw;bottom:0vw}
+.hd-general-kv .hd-general-kv__ctas a.cta{margin:1.11111111vw}
+.hd-general-kv .hd-general-kv__ctas a.cta:last-child{margin-right:0}
+}
+html[lang^="th"] .hd-general-kv__title{font-family:'Kittithada','SamsungSharpSans',arial,sans-serif}
+html[lang^="th"] .hd-general-kv__sub-title{font-family:'Kittithada','SamsungOne',arial,sans-serif}
+html[lang^="th"] .hd-general-kv__desc{font-family:'Kittithada','SamsungOne',arial,sans-serif}
+@media only screen and (min-width:768px) and (max-width:1440px){}
+@media only screen and (max-width:767px){}

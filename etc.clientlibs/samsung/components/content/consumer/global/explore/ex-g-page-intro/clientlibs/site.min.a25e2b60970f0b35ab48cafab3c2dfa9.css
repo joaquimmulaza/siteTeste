@@ -1,0 +1,68 @@
+.ex-page-intro{margin:0 auto;max-width:1440px}
+.ex-page-intro__text{overflow:hidden;margin:0 auto;position:relative;z-index:2;text-align:center;max-width:720px}
+.ex-page-intro__text .ex-page-intro__sub-headline{margin-top:20px}
+.ex-page-intro__text>*{max-width:720px;margin:0 auto}
+.ex-page-intro__headline>*{padding-bottom:8px}
+.ex-page-intro__text .ex-page-intro__sub-headline>*{line-height:1.5;font-weight:normal}
+.ex-page-intro--font-small .ex-page-intro__headline>*{line-height:1.25}
+.ex-page-intro--font-normal .ex-page-intro__headline>*{line-height:1.25}
+.ex-page-intro__topic{overflow:hidden;margin:0 auto;max-width:1080px;text-align:center;white-space:nowrap}
+.ex-page-intro__topic .slick-list .slick-track{transform:none !important}
+.ex-page-intro__topic-wrapper{position:relative;padding:62px 0 8px;z-index:3}
+.ex-page-intro__topic-wrap{position:relative}
+.ex-page-intro__topic-wrap .slick-arrow{display:none;overflow:hidden;position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);width:16px;height:28px;font-size:0;line-height:0;z-index:3}
+.ex-page-intro__topic-wrap .slick-arrow.is-active,.ex-page-intro__topic-wrap .slick-arrow.is-inactive{background-repeat:no-repeat;background-size:100% 100%}
+.ex-page-intro__topic-wrap .slick-arrow.slick-next{right:100px;right:6.94444vw;background-image:url('../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/svg-arw-right.svg')}
+.ex-page-intro__topic-wrap .slick-arrow.slick-next.is-inactive{opacity:.2}
+.ex-page-intro__topic-wrap .slick-arrow.slick-prev{left:100px;left:6.94444vw;background-image:url('../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/svg-arw-left.svg')}
+.ex-page-intro__topic-wrap .slick-arrow.slick-prev.is-inactive{opacity:.2}
+.ex-page-intro__topic ul li{position:relative;display:inline-block;vertical-align:middle;margin:10px 0}
+.ex-page-intro__topic ul li a{overflow:hidden;display:block;margin:0 6px;padding:0 32px;height:56px;line-height:56px;font-size:20px;-webkit-border-radius:28px;border-radius:28px;font-weight:bold;white-space:nowrap;color:inherit;background-color:#eae9ed;-webkit-transition:all .5s;transition:all .5s}
+.ex-page-intro__topic ul{display:inline-block}
+.ex-page-intro__topic ul li a:hover,.ex-page-intro__topic ul li a:focus{color:#fff;background-color:#000}
+.ex-page-intro.bg-white .ex-page-intro__topic-more-btn{color:#000;background-color:transparent}
+.ex-page-intro.bg-black{color:#fff}
+.ex-page-intro.bg-black .ex-page-intro__topic-wrap .slick-arrow.slick-next{background-image:url('../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/svg-arw-right-white.svg')}
+.ex-page-intro.bg-black .ex-page-intro__topic-wrap .slick-arrow.slick-prev{background-image:url('../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/svg-arw-left-white.svg')}
+.ex-page-intro.bg-black .ex-page-intro__topic ul li a{color:#000}
+.ex-page-intro.bg-black .ex-page-intro__topic ul li a:hover,.ex-page-intro.bg-black .ex-page-intro__topic ul li a:focus,.ex-page-intro.bg-black .ex-page-intro__topic ul li a:active{color:#fff;background-color:#000;-webkit-box-shadow:0 0 0 1px #eae9ed inset;box-shadow:0 0 0 1px #eae9ed inset}
+.ex-page-intro .slick-slide:not(.slick-active){opacity:0;display:none}
+.ex-page-intro .slick-slide.slick-active.slick-current{opacity:1}
+.ex-page-intro .slick-slide.slick-active:not(.slick-center){zoom:unset;margin-top:0}
+.openvideo-popup .ex-page-intro__text{z-index:-1}
+@media only screen and (min-width:768px) and (max-width:1440px){.ex-page-intro .slick-slider{margin-left:auto}
+.ex-page-intro__text .ex-page-intro__sub-headline{margin-top:1.38888889vw}
+.ex-page-intro__headline>*{padding-bottom:.55555556vw}
+.ex-page-intro__topic-wrapper{padding:4.30555556vw 0vw .55555556vw 0vw}
+.ex-page-intro__topic-wrap .slick-arrow{width:1.11111111vw;height:1.94444444vw}
+.ex-page-intro__topic ul li a{margin:0vw .41666667vw;padding:0vw 2.22222222vw;height:3.88888889vw;line-height:3.88888889vw;font-size:1.38888889vw;right:1.94444444vw;-webkit-border-radius:1.94444444vw;border-radius:1.94444444vw}
+.ex-page-intro__topic ul li a:after{content:'';position:absolute;right:1.94444444vw;bottom:1.49305556vw;height:.97222222vw;width:0;background-image:url('../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/arw-more-short-white.html');background-repeat:no-repeat;background-size:auto 100%;background-position:200% 50%;opacity:0;-webkit-transition:all .3s ease-in;transition:all .3s ease-in}
+.ex-page-intro__topic ul li a:hover,.ex-page-intro__topic ul li a:focus{padding-left:1.38888889vw;padding-right:3.47222222vw}
+.ex-page-intro__topic ul li a:hover:after,.ex-page-intro__topic ul li a:focus:after{width:1.25vw;background-position:80% 50%;opacity:1}
+}
+@media only screen and (max-width:767px){.ex-page-intro__text>*{max-width:177.77777778vw}
+.ex-page-intro__text .ex-page-intro__sub-headline>*{margin-top:5.55555556vw;line-height:1.5}
+.ex-page-intro .ex-page-intro__headline>*{padding-bottom:1.11111111vw}
+.ex-page-intro--font-small .ex-page-intro__headline>*{line-height:1.25}
+.ex-page-intro--font-normal .ex-page-intro__headline>*{line-height:1.25}
+.ex-page-intro__topic{display:inline;overflow:hidden;max-width:100%;margin:0 auto;text-align:left;font-size:0;white-space:normal;vertical-align:middle}
+.ex-page-intro__topic-wrapper{overflow:hidden;padding:7.77777778vw 0vw 6.94444444vw 0vw}
+.ex-page-intro__topic-wrap{margin-left:2.77777778vw;margin-right:-2.77777778vw}
+.ex-page-intro__topic-wrap .slick-arrow{display:none}
+.ex-page-intro__topic-wrap .slick-arrow.is-active,.ex-page-intro__topic-wrap .slick-arrow.is-inactive{display:none;background-image:none}
+.ex-page-intro__topic ul{display:inline}
+.ex-page-intro__topic ul li{text-align:center}
+.ex-page-intro__topic ul li a{-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;display:block;margin:1.94444444vw 1.38888889vw;padding:0vw 3.88888889vw;width:44.44444444vw;height:12.5vw;line-height:12.5vw;font-size:4.16666667vw;-webkit-border-radius:6.11111111vw;border-radius:6.11111111vw;text-overflow:ellipsis;-webkit-transition:background-color,color .5s;transition:background-color,color .5s}
+.ex-page-intro__topic ul li.ex-page-intro--mo-long-btn a{width:91.11111111vw}
+.ex-page-intro__topic ul li.is-hide{display:none !important;opacity:0}
+.ex-page-intro__topic-more-wrap{display:none;text-align:left}
+.ex-page-intro__topic-more-btn{overflow:hidden;display:inline-block;margin:1.94444444vw 1.38888889vw;padding:0vw 3.88888889vw;width:44.44444444vw;height:12.5vw;font-size:4.16666667vw;border:0;-webkit-box-shadow:0 0 0 2px #eae9ed inset;box-shadow:0 0 0 2px #eae9ed inset;background-color:#fff;font-weight:bold;white-space:nowrap;text-overflow:ellipsis;text-transform:none;-webkit-transition-property:background-color,color,-webkit-box-shadow;transition-property:background-color,color,-webkit-box-shadow;transition-property:background-color,color,box-shadow;transition-property:background-color,color,box-shadow,-webkit-box-shadow;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out;letter-spacing:-0.5px;vertical-align:middle;text-align:center}
+.ex-page-intro__topic-more-btn:after{display:none;background-image:none}
+.ex-page-intro__topic-more-btn:hover,.ex-page-intro__topic-more-btn:focus{color:#fff;background-color:#000;border-color:#000;-webkit-box-shadow:0 0 0 2px #000 inset;box-shadow:0 0 0 2px #000 inset}
+.ex-page-intro__topic-more-btn:hover:after,.ex-page-intro__topic-more-btn:focus:after{display:none}
+.ex-page-intro.bg-black .ex-page-intro__topic ul li a:hover,.ex-page-intro.bg-black .ex-page-intro__topic ul li a:focus,.ex-page-intro.bg-black .ex-page-intro__topic ul li a:active{-webkit-box-shadow:0 0 0 2px #eae9ed inset;box-shadow:0 0 0 2px #eae9ed inset}
+.ex-page-intro.bg-black .ex-page-intro__topic-more-btn{background-color:#000;color:#fff}
+.ex-page-intro.bg-black .ex-page-intro__topic-more-btn:hover,.ex-page-intro.bg-black .ex-page-intro__topic-more-btn:focus,.ex-page-intro.bg-black .ex-page-intro__topic-more-btn:active{color:#000;background-color:#eae9ed;-webkit-box-shadow:0 0 0 2px #eae9ed inset;box-shadow:0 0 0 2px #eae9ed inset}
+}
+@media only screen and (min-width:768px) and (max-width:1440px){}
+@media only screen and (max-width:767px){}

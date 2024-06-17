@@ -1,0 +1,16 @@
+.blank-space{margin:0 auto;font-size:0}
+.blank-space--width-1440{max-width:1440px}
+.blank-space--width-1920{max-width:1920px}
+.aem-AuthorLayer-Edit .blank-space{height:24px}
+@media only screen and (min-width:1440px){.blank-space.blank-space--desktop-margin-small{height:32px}
+.blank-space.blank-space--desktop-margin-medium{height:64px}
+.blank-space.blank-space--desktop-margin-large{height:96px}
+}
+@media only screen and (min-width:768px) and (max-width:1440px){.blank-space.blank-space--desktop-margin-small{height:2.22222222vw}
+.blank-space.blank-space--desktop-margin-medium{height:4.44444444vw}
+.blank-space.blank-space--desktop-margin-large{height:6.66666667vw}
+}
+@media only screen and (max-width:767px){.blank-space.blank-space--mobile-margin-small{height:4.44444444vw}
+.blank-space.blank-space--mobile-margin-medium{height:8.88888889vw}
+.blank-space.blank-space--mobile-margin-large{height:17.77777778vw}
+}

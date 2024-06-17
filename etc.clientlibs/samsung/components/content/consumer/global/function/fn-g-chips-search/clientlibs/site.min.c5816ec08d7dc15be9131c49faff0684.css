@@ -1,0 +1,66 @@
+.explore-search{overflow:visible;z-index:500;max-width:1440px;margin:auto}
+.explore-search *{-webkit-box-sizing:border-box;box-sizing:border-box}
+.explore-search__landing,.explore-search__result{display:none}
+.explore-search__wrap{position:relative;margin:0 auto;width:100%;overflow:hidden;text-align:center;padding:48px}
+.explore-search__headline{font-family:'SamsungSharpSans',arial,sans-serif;font-size:38px;font-weight:bold;line-height:1.2;letter-spacing:normal;text-align:center;margin-bottom:32px;opacity:0;transform:translateY(80px);transition:all .5s;transition-timing-function:cubic-bezier(0.2,0.6,0.4,1)}
+.active .explore-search__headline{opacity:1;transform:translateY(0)}
+.explore-search__search-container{position:relative;width:600px;height:44px;border-radius:22px;background-color:#f4f4f4;margin:auto;opacity:0;transform:translateY(80px);transition:all .5s;transition-timing-function:cubic-bezier(0.2,0.6,0.4,1);transition-delay:.05s}
+.active .explore-search__search-container{opacity:1;transform:translateY(0)}
+.explore-search__search-container input:focus{border:#2189ff solid 2px;border-radius:20px}
+.explore-search__search-icon{display:inline-block;background-image:url("site/resources/search.png");width:24px;height:24px;background-repeat:no-repeat;background-position:center;background-size:contain;position:absolute;left:24px;top:10px}
+.explore-search__search-placeholder{position:absolute;font-family:'SamsungOne',arial,sans-serif;font-size:18px;font-weight:normal;font-style:normal;line-height:1.33;letter-spacing:normal;color:#8f8f8f;left:64px;top:10px;pointer-events:none;opacity:1;transition:opacity .5s}
+.explore-search__search-placeholder.disabled{opacity:0}
+.explore-search__search-cross{position:absolute;width:16px;height:16px;right:24px;top:14px;cursor:pointer;background-repeat:no-repeat;background-size:100%;background-image:url('../../../../../../../clientlibs/consumer/global/clientlib-common/resources/images/style-guide-icon-close-bold-black-hover.svg');display:none}
+.explore-search__search-field{padding:10px 48px 10px 64px;border:0;width:100%;font-family:'SamsungOne',arial,sans-serif;font-size:18px;font-weight:normal;font-style:normal;line-height:1.33;letter-spacing:normal;background-color:transparent}
+.explore-search__search-field::-ms-clear{display:none;height:0;width:0}
+.explore-search__search-field:focus{outline:0}
+.explore-search__search-field:focus+.explore-search__search-placeholder{opacity:0}
+.explore-search__chip-container{margin-top:16px;opacity:0;transition:opacity .5s;transition-timing-function:cubic-bezier(0.4,0,0.2,1)}
+.active .explore-search__chip-container{opacity:1}
+.explore-search__chip{display:inline-block;margin-right:8px;margin-bottom:8px;opacity:0;transition:opacity .2s;transition-timing-function:cubic-bezier(0.4,0,0.2,1)}
+.explore-search__chip:nth-child(1){transition-delay:.05s}
+.explore-search__chip:nth-child(2){transition-delay:.1s}
+.explore-search__chip:nth-child(3){transition-delay:.15s}
+.explore-search__chip:nth-child(4){transition-delay:.2s}
+.explore-search__chip:nth-child(5){transition-delay:.25s}
+.explore-search__chip:last-of-type{margin-right:0}
+.explore-search__chip-container.active .explore-search__chip{opacity:1}
+.explore-search__chip-res{display:inline-block;margin-bottom:16px;line-height:64px}
+.explore-search__no-res{font-family:'SamsungOne',arial,sans-serif;font-size:20px;font-weight:normal;line-height:1.33;text-align:center}
+.explore-search__no-res span{font-weight:700}
+.explore-search.margin-top--narrow,.explore-search.margin-top--normal,.explore-search.margin-top--wide{margin-top:0 !important}
+.explore-search.margin-bottom--narrow,.explore-search.margin-bottom--normal,.explore-search.margin-bottom--wide{margin-bottom:0 !important}
+@media only screen and (min-width:768px) and (max-width:1440px){.explore-search__wrap{padding:3.33333333vw}
+.explore-search__headline{font-size:2.63888889vw;margin-bottom:2.22222222vw}
+.explore-search__search-container{width:41.66666667vw;height:3.05555556vw;border-radius:1.52777778vw}
+.explore-search__search-icon{width:1.66666667vw;height:1.66666667vw;left:1.66666667vw;top:.69444444vw}
+.explore-search__search-placeholder{font-size:1.25vw;left:4.44444444vw;top:.69444444vw}
+.explore-search__search-cross{width:1.11111111vw;height:1.11111111vw;right:1.66666667vw;top:.97222222vw}
+.explore-search__search-field{padding:.69444444vw 3.33333333vw .69444444vw 4.44444444vw;font-size:1.25vw}
+.explore-search__chip-container{margin-top:1.11111111vw}
+.explore-search__chip{margin-right:.55555556vw;margin-bottom:.55555556vw}
+.explore-search__chip-res{margin-bottom:1.11111111vw;line-height:4.44444444vw}
+.explore-search__no-res{font-size:1.38888889vw}
+}
+@media only screen and (max-width:767px){.explore-search__wrap{padding:13.33333333vw}
+.explore-search__headline{font-size:7.22222222vw;margin-bottom:8.88888889vw}
+.explore-search__search-container{width:100%;height:12.22222222vw;border-radius:6.11111111vw}
+.explore-search__search-icon{width:4.44444444vw;height:4.44444444vw;left:4.44444444vw;top:3.88888889vw}
+.explore-search__search-placeholder{font-size:4.44444444vw;left:13.33333333vw;top:3.05555556vw}
+.explore-search__search-cross{width:4.44444444vw;height:4.44444444vw;right:6.66666667vw;top:3.88888889vw}
+.explore-search__search-field{padding:2.77777778vw 11.11111111vw 2.77777778vw 13.33333333vw;font-size:4.44444444vw}
+.explore-search__chip-container{margin-top:4.44444444vw}
+.explore-search__chip{margin-right:2.22222222vw;margin-bottom:2.22222222vw}
+.explore-search__chip-res{margin-bottom:4.44444444vw;line-height:10.55555556vw}
+.explore-search__no-res{font-size:3.33333333vw}
+}
+html[lang^="th"] .explore-search__headline{font-family:'Kittithada','SamsungSharpSans',arial,sans-serif}
+html[lang^="th"] .explore-search__search-placeholder{font-family:'Kittithada','SamsungOne',arial,sans-serif}
+html[lang^="th"] .explore-search__search-field{font-family:'Kittithada','SamsungOne',arial,sans-serif}
+html[lang^="th"] .explore-search__chip-res.chip__selected{line-height:64px}
+html[lang^="th"] .explore-search__chip.chip{height:auto}
+html[lang^="th"] .explore-search__no-res{font-family:'Kittithada','SamsungOne',arial,sans-serif}
+@media only screen and (min-width:768px) and (max-width:1440px){html[lang^="th"] .explore-search__chip-res.chip__selected{line-height:4.44444444vw}
+}
+@media only screen and (max-width:767px){html[lang^="th"] .explore-search__chip-res.chip__selected{line-height:10.55555556vw}
+}

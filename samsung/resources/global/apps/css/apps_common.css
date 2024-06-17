@@ -1,0 +1,814 @@
+@charset "utf-8";
+
+/* COMMON */
+@font-face {
+    font-family:'SamsungOne 200';
+    font-style:normal;
+    src:url("http://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungOne-200.eot");
+    src:url('http://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungOne-200.eot?#iefix') format('embedded-opentype'),
+    url("http://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungOne-200.woff") format('woff');
+}
+
+@font-face {
+    font-family:'ssM';
+    font-style:normal;
+    src:url("http://cdn.samsung.com/etc/designs/smg/global/templates/page-marketing-pd/fonts/samsungsharpsans-medium_v2.eot");
+    src:url("http://cdn.samsung.com/etc/designs/smg/global/templates/page-marketing-pd/fonts/samsungsharpsans-medium_v2.eot?#iefix") format('embedded-opentype'),
+    url("http://cdn.samsung.com/etc/designs/smg/global/templates/page-marketing-pd/fonts/samsungsharpsans-medium_v2.woff") format('woff');
+}
+
+@font-face {
+    font-family:'samsungOne Latin400';
+    src:url("http://cdn.samsung.com/etc/designs/smg/global/fonts/samsungoneuilatin-400.eot");
+    src:url("http://cdn.samsung.com/etc/designs/smg/global/fonts/samsungoneuilatin-400.eot?#iefix") format('embedded-opentype'),
+    url("http://cdn.samsung.com/etc/designs/smg/global/fonts/samsungoneuilatin-400.woff") format('woff'),
+    url("http://cdn.samsung.com/etc/designs/smg/global/fonts/samsungoneuilatin-400.ttf") format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:'samsungOne Latin700';
+    src:url("http://cdn.samsung.com/etc/designs/smg/global/fonts/samsungoneuilatin-700.eot");
+    src:url("http://cdn.samsung.com/etc/designs/smg/global/fonts/samsungoneuilatin-700.eot?#iefix") format('embedded-opentype'),
+    url("http://cdn.samsung.com/etc/designs/smg/global/fonts/samsungoneuilatin-700.woff") format('woff'),
+    url("http://cdn.samsung.com/etc/designs/smg/global/fonts/samsungoneuilatin-700.ttf") format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'pslkittithada';
+    font-style:normal;
+    src:url("http://cdn.samsung.com/etc/designs/smg/th/font/PSL_Kittithada_bold.eot");
+    src:url("http://cdn.samsung.com/etc/designs/smg/th/font/PSL_Kittithada_bold.eot?#iefix") format('embedded-opentype'),
+    url("http://cdn.samsung.com/etc/designs/smg/th/font/PSL_Kittithada_bold.woff") format('woff');
+}
+
+@font-face { font-family: 'zawgyione';
+	src: url("http://cdn.samsung.com/etc/designs/smg/mm/font/zawgyione.woff2") format("woff2"),
+	url("http://cdn.samsung.com/etc/designs/smg/mm/font/zawgyione.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/* RESET */
+button {border:0; background:none;}
+.blind, legend {overflow: hidden; position: absolute; top: 0; left: 0; width: 1px; height: 1px; font-size: 1px; line-height: 100px; white-space: nowrap;}
+#wrap #content {overflow:hidden; max-width:100%; z-index:1;}
+figure[data-media-video] video {height:auto;}
+
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+/* This one works */
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+.ie8 #wrap {min-width:1440px; margin:0 auto;}
+
+/* DISCLAIMER AREA */
+#contents .m_content-disclaimer {text-align:center;}
+#contents .m_content-disclaimer.black {background:#666; }
+#contents .m_content-disclaimer .disclaimer {max-width:1440px; margin:0 auto;}
+#contents .m_content-disclaimer .f_container {padding:43px 0 44px;}
+
+
+/* SUPPORT */
+#contents .m_content-support.black {background:#222;}
+#contents .m_content-support .btn_default {display:block; margin-bottom:20px; font-size:16px;}
+#contents .m_content-support .btn_default a {display:inline-block; padding:23px 50px 19px; background-color:transparent; -webkit-border-radius:45px; border-radius:50px; font-family:'ssM',sans-serif; line-height:1.2; border:1px solid #fff; -webkit-transition-duration:0.3s; -o-transition-duration:0.3s; transition-duration:0.3s; -webkit-transition-property:background,color,border-color; -o-transition-property:background,color,border-color; transition-property:background,color,border-color; -webkit-transition-timing-function:ease-in-out; -o-transition-timing-function:ease-in-out; transition-timing-function:ease-in-out; text-transform:uppercase;   color:#fff;}
+#contents .m_content-support .btn_default a:hover,
+#contents .m_content-support .btn_default a:focus {background-color:#f7f7f7; border:1px solid #f7f7f7; color:#000;}
+.firefox  #contents .m_content-support .btn_default a:focus {outline:1px dotted #777;}/* access qa */
+#contents .m_content-support .btn_default.mobile,
+#contents .m_content-support .btn_default.apple_btn {display:none;}
+
+#contents .m_content-support .inner_wrap {max-width:1440px; margin:0 auto; box-sizing:border-box;}
+#contents .m_content-support .inner {display:table; width:100%; padding:50px 0; table-layout:fixed;}
+#contents .m_content-support .support_list {display:table-cell; position:relative; padding:40px 0 145px; box-sizing:border-box; text-align:center; word-wrap:break-word; word-break:break-word;}
+#contents .m_content-support .support_list + .support_list {border-left:1px solid #363636;}
+#contents .m_content-support .list_inner {padding:0 4%;}
+#contents .m_content-support .support_icon {width:87px; height:74px; margin:0 auto 40px;}
+#contents .m_content-support .support_icon img {width:100%;}
+#contents .m_content-support .tit {display:block; margin-bottom:9px; font-size:34px; font-family:'SamsungOne', sans-serif; font-weight:bold;}
+#contents .m_content-support .desc {padding:0 10%; font-size:20px; font-family:'SamsungOne', sans-serif;}
+#contents .m_content-support .btn_box {position:absolute; bottom:20px; left:0; right:0; padding:0 4%; box-sizing:border-box;}
+.samsung-device #contents .m_content-support .btn_box,
+.apple-browser-all #contents .m_content-support .btn_box {min-height:166px;}
+.samsung-device #contents .m_content-support .support_list,
+.apple-browser-all #contents .m_content-support .support_list {padding-bottom:215px;}
+.apple-browser-all #contents .m_content-support .btn_default.apple_btn {display:block;}
+
+#contents .m_content-support .inner_wrap.download {background:#fff; max-width:inherit;}
+#contents .m_content-support .inner_wrap.download .support_list {padding-bottom:195px;}
+#contents .m_content-support .inner_wrap.download .txt_box .tit,
+#contents .m_content-support .inner_wrap.download .txt_box .desc {color:#000;}
+#contents .m_content-support .inner_wrap.download .btn_box.inline_type {font-size:0;}
+#contents .m_content-support .inner_wrap.download .inline_type .box_inner.mobile {display:none;}
+#contents .m_content-support .inner_wrap.download .inline_type .box_inner {width:300px; vertical-align:top; display:inline-block; text-align:center;}
+#contents .m_content-support .inner_wrap.download .inline_type .box_inner p {color:#666; font-size:14px; margin-top:20px; font-style:normal;}
+#contents .m_content-support .inner_wrap.download .btn_default a {border-color:#000; color:#000;}
+#contents .m_content-support .inner_wrap.download .btn_default a:hover,
+#contents .m_content-support .inner_wrap.download .btn_default a:focus {background:#000; color:#fff; border-color:#000;}
+
+/* SUPPORT : 버튼 높이 유동 */
+.samsung-device #contents .m_content-support .inner_wrap.fluid .btn_box,
+.apple-device #contents .m_content-support .inner_wrap.fluid .btn_box {min-height:auto}
+.samsung-device #contents .m_content-support .inner_wrap.fluid .support_list,
+.apple-device #contents .m_content-support .inner_wrap.fluid .support_list {padding-bottom:145px;}
+
+/* SUPPORT : GALAXY APPS */
+#contents .galaxy_apps .m_content-support {display:none;}
+.samsung-device #contents .galaxy_apps .m_content-support .support_list {padding:40px 0 145px;}
+.samsung-device #contents .galaxy_apps .m_content-support .btn_box {min-height:inherit;}
+.samsung-device #contents .galaxy_apps .m_content-support {display:block;}
+
+/* SUPPORT : BTN-TYPE */
+#contents .m_content-support.btn_2ea .support_list {padding-bottom:227px;}
+#contents .m_content-support.btn_2ea .btn_box {height:166px;}
+
+/* SUPPORT : BG-TYPE */
+#contents .m_content-support.bg_type {height:600px;}
+#contents .m_content-support.bg_type .support_list + .support_list {border-color:#fff;}
+#contents .m_content-support.bg_type .f_header {position:absolute; top:0; left:0; right:0; height:100%; z-index:2; font-size:0; text-align:center; padding:0; max-width:none;}
+#contents .m_content-support.bg_type .f_header:before {content:""; display:inline-block; height:100%; vertical-align:middle;}
+#contents .m_content-support.bg_type .f_header .inner_wrap {width:100%; display:inline-block; vertical-align:middle;}
+#contents .m_content-support.bg_type .f_header .inner_wrap .inner {max-width:1440px; margin:0 auto; padding:0;}
+
+/* beyond */
+/* SUPPORT : LINK-TYPE */
+#contents .m_content-support.link_type .inner_wrap.download {border-bottom:1px solid #ccc;}
+#contents .m_content-support.link_type .inner_wrap.download .support_list {padding-bottom:20px;}
+#contents .m_content-support.link_type .inner_wrap.download .inline_type {position:static; margin-top:46px;}
+#contents .m_content-support.link_type .inner_wrap.download .inline_type .box_inner {width:auto;}
+#contents .m_content-support.link_type .inner_wrap.download .inline_type .box_inner .btn_default {margin:0 20px 20px;}
+/* //beyond */
+
+/* PDP */
+#contents .m_content-pdp.black {background:#131313;}
+#contents .m_content-pdp .f_container {max-width:1440px; padding:75px 0; margin:0 auto; box-sizing:border-box;} /* beyond */
+#contents .m_content-pdp .inner:after {content:""; display:block; clear:both;} 
+#contents .m_content-pdp .item {float:left; width:50%; padding:21px 0 51px; text-align:center; box-sizing:border-box;} /* beyond */
+#contents .m_content-pdp .item + .item {border-left:1px solid #2b2b2b;} 
+#contents .m_content-pdp .item img {width:100%;}
+#contents .m_content-pdp .tit {margin:19px 0 28px; font-size:40px; font-family:'SamsungSharpSans', sans-serif; color:#fff;} /* beyond */
+#contents .m_content-pdp .btn_link {display:inline-block; font-size:16px; color:#fff; letter-spacing:2px; font-family:'SamsungOne', sans-serif; font-weight:bold;}
+#contents .m_content-pdp .btn_link + .btn_link {position:relative; margin-left:29px; padding-left:32px;}
+#contents .m_content-pdp .btn_link + .btn_link:before {position:absolute; top:50%; left:0; display:block; width:1px; height:13px; margin-top:-8px; content:""; background:#2b2b2b;}
+#contents .m_content-pdp .tit span {position:relative; top:-7px; font-size:30px; font-family: sans-serif; font-weight:100;} /* beyond */
+#contents .m_content-pdp .tit em {display:inline-block; font-size:26px; font-style:normal; font-family:inherit;} /* beyond */
+#contents .m_content-pdp .galaxy-dream .tit,
+#contents .m_content-pdp .galaxy-future .tit {font-size:40px !important; font-family:'SamsungSharpSans', sans-serif !important;} /* beyond */
+#contents .m_content-pdp .galaxy-future .tit {margin-top:-18px;} /* beyond */
+
+/* beyond */
+/* BTN */
+#contents .pc_only {display:block;} /* pc만 노출 */
+#contents .mobile_all {display:none !important;} /* 모바일과 타블릿에서 노출 */
+#contents .mobile_samsung {display:none !important;} /* 모바일에서 삼성단말기만 노출 */
+#contents .mobile_only {display:none !important;} /* 모바일에서만 노출 */
+.samsung-mobile-device #contents .mobile_samsung {display:none !important;} /* 삼성단말기 모바일에서만 노출 */
+.samsung-device.samsung-mobile-device #contents .mobile_samsung {display:none !important;}
+#contents .galaxy_btn {display:none !important;} /* 삼성 단말기(특정단말기) 모바일에서만 노출 */
+#contents .use_desktop,
+#contents .use_mobile_tablet {display:none;}
+.desktop #contents .use_desktop {display:block;}
+.desktop #contents .use_mobile_tablet {display:none;}
+.mobile #contents .use_mobile_tablet {display:block;}
+.mobile.desktop #contents .use_desktop,
+.mobile #contents .use_desktop  {display: none;}
+/* //beyond */
+
+/* APPS-PAGINATION */
+#contents .apps-pagination {position:relative;height:200px;background-color:#f6f6f7;overflow:hidden; /* border-top:1px solid #ddd; */}
+#contents .apps-pagination .inner {position:relative; height:100%; margin:0 auto;}
+#contents .apps-pagination .control{position:absolute; top:0;}
+#contents .apps-pagination .control .name{display:inline-block; position:relative; height:100%;/* font-family:'SamsungSharpSans',sans-serif; */ padding:85px 50px 65px 50px;z-index:3;}
+#contents .apps-pagination .control .name span{display:block; font-size:16px; color:#707070; font-weight:bold;}
+#contents .apps-pagination .control .name strong{display:inline-block; margin-top:1px;font-size:24px;font-family:'SamsungSharpSans',sans-serif !important;color:#212121;}
+#contents .apps-pagination .control div.name strong{color:#999;}
+#contents .apps-pagination .control .name em{font-family:'ssM',sans-serif;}
+#contents .apps-pagination .img{position:absolute; opacity:0; vertical-align:top;}
+#contents .apps-pagination .img.up{bottom:-20px;top:auto;}
+#contents .apps-pagination .img.down{bottom:auto;top:-20px;}
+#contents .apps-pagination .img img{vertical-align:middle;}
+#contents .apps-pagination a.name:hover + .img,
+#contents .apps-pagination a.name:focus + .img {bottom:0;opacity:1;}
+#contents .apps-pagination a.name:hover + .img.down, 
+#contents .apps-pagination a.name:focus + .img.down {bottom:auto;top:0;}
+#contents .apps-pagination .prev{left:0;}
+#contents .apps-pagination .prev .img {left:240px;}
+#contents .apps-pagination .prev .name{background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/button_arrow-left.png') 0 60% no-repeat;}
+#contents .apps-pagination .next{right:0;text-align:right;}
+#contents .apps-pagination .next .name{background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/button_arrow-right.png') 100% 60% no-repeat;}
+#contents .apps-pagination .next div.name{background-image:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/button_arrow-right-2.png');}
+#contents .apps-pagination .next .img{right:240px;}
+#contents .apps-pagination .go_to_list{position:relative;text-align:center;padding-top:70px;z-index:1;}
+#contents .apps-pagination .go_to_list a{width:248px;}
+#contents .apps-pagination .ani {
+-webkit-transition:all 0.65s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+-moz-transition:all 0.65s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+-o-transition:all 0.65s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+transition:all 0.65s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+#contents .apps-pagination.create-nav .control {height:100%;}
+#contents .apps-pagination.create-nav .name {display:table; height:100%; padding-top:0; padding-bottom:0; box-sizing:border-box; table-layout:fixed;}
+#contents .apps-pagination.create-nav .name .name_inner {display:table-cell; padding:10px 0 6px; vertical-align: middle;}
+#contents .apps-pagination.create-nav .name strong {max-width:220px;}
+#contents .apps-pagination.create-nav .prev .name{background-position:0 55%;}
+#contents .apps-pagination.create-nav .next .name{background-position:100% 55%;}
+
+#contents .apps-paging-banner {position:relative;width:100%;height:330px;}
+#contents .apps-paging-banner .banner {position:relative;top:0;width:50%;height:100%;}
+#contents .apps-paging-banner .banner.prev {left:0;}
+#contents .apps-paging-banner .banner.next {position:absolute;right:0;}
+#contents .apps-paging-banner .banner a {position:relative;display:block;width:100%;height:100%;overflow:hidden;cursor:pointer;text-decoration:none;}
+#contents .apps-paging-banner .banner a img {position:absolute;left:50%;top:0;display:block;width:960px;margin-left:-480px;}
+#contents .apps-paging-banner .banner a .name {display:block;position:absolute;left:49px;bottom:27px;margin-right:49px;color:#fff;font-family:'SamsungSharpSans',sans-serif; font-size:29px;line-height:37px;cursor:pointer;}
+
+.firefox #contents .apps-pagination .control .name:focus {border:2px solid #a1c3fa;}
+
+
+/* kids-mode 전용 */
+.samsung-device #contents .apps.kids-mode .m_content-support .btn_box,
+.apple-device #contents .apps.kids-mode .m_content-support .btn_box {min-height:auto}
+.samsung-device #contents .apps.kids-mode .m_content-support .support_list,
+.apple-device #contents .apps.kids-mode .m_content-support .support_list {padding-bottom:145px;}
+
+/* SMART SWITCH */
+#contents .smart_switch .m_content-support.white .btn_default a {color:#000; border-color:#000;} /* beyond */
+#contents .smart_switch .m_content-support.white .download .btn_default a {width:218px; padding:23px 10px 19px;} /* beyond */
+#contents .m_content-support.white .btn_default a:hover, 
+#contents .m_content-support.white .btn_default a:focus {background:#000; color:#fff; border-color:#000;}
+#contents .m_content-support.white .support_list + .support_list {border-left:1px solid #dadada;}
+
+/* SEC : SUPPORT */
+#contents .sec .m_content-support .tit {font-family:'SamsungSharpSans', 'SamsungOneKorean', 'Dotum', '돋움', 'Apple SD Gothic Neo', arial; font-weight:bold;}
+#contents .sec .m_content-support .desc {line-height:32px; font-family:'SamsungOneKorean', 'Dotum', '돋움', 'Apple SD Gothic Neo', arial;}
+#contents .sec .m_content-support .btn_default a {font-family:'SamsungOneKorean', 'Dotum', '돋움', 'Apple SD Gothic Neo', arial;}
+
+/* SEC : PDP */
+#contents .sec .m_content-pdp .tit {font-family:'SamsungSharpSans', 'SamsungOneKorean', 'Dotum', '돋움', 'Apple SD Gothic Neo', arial; font-weight:bold;}
+#contents .sec .m_content-pdp .btn_link {font-family:'SamsungOneKorean', 'Dotum', '돋움', 'Apple SD Gothic Neo', arial;}
+
+/* SEC : APPS-PAGINATION */
+#contents .sec .apps-pagination .control .name span {font-family:'SamsungOneKorean', 'Dotum', '돋움', 'Apple SD Gothic Neo', arial; font-weight:bold;}
+#contents .sec .apps-pagination .control .name strong {font-family:'SamsungSharpSans', 'SamsungOneKorean', 'Dotum', '돋움', 'Apple SD Gothic Neo', arial !important; font-weight:bold;}
+
+/* LANG_CN : APPS-PAGINATION */
+#contents .lang_cn .apps-pagination .control .name {font-weight:bold;}
+#contents .lang_cn .apps-pagination .control .name span {font-family:'Microsoft Yahei', '微软雅黑', 'Simsun', '宋体', arial, sans-serif !important; font-size:16px; font-weight:bold;}
+
+/* LANG_RU : PDP */
+#contents .apps_usp.lang_ru .m_content-pdp .tit {font-family:"SamsungOne", sans-serif; font-weight:bold;}
+#contents .apps_usp.lang_ru .m_content-pdp .btn_link span {font-family:"SamsungOne", sans-serif; font-weight:bold;}
+
+/* LANG_RU : APPS-PAGINATION */
+#contents .apps_usp.lang_ru .apps-pagination .control .name span {font-family:"SamsungOne", sans-serif; font-weight:bold;}
+#contents .apps.lang_ru .apps-pagination .control .name span {font-family:"SamsungOne", sans-serif; font-weight:bold;}
+
+/* LANG_TH : PDP */
+#contents .lang_th .m_content-pdp .tit {font-family:"pslkittithada", sans-serif;  font-size:64px;}
+#contents .lang_th .m_content-pdp .btn_link {font-family:"pslkittithada", sans-serif; font-size:32px;}
+
+/* LANG_TH : SUPPORT */
+#contents .lang_th .m_content-support .tit {font-family:"pslkittithada", sans-serif; font-size:51px;}
+#contents .lang_th .m_content-support .desc {font-family:"pslkittithada", sans-serif; font-size:24px;}
+#contents .lang_th .m_content-support .btn_default {font-size:24px;}
+#contents .lang_th .m_content-support .btn_default a {font-family:"pslkittithada", sans-serif; font-size:24px;}
+
+/* LANG_TH : APPS-PAGINATION */
+#contents .lang_th .apps-pagination .control .name span {font-family:"pslkittithada", sans-serif; font-size:24px;}
+
+/* LANG_IL : PDP */
+#contents .lang_il .m_content-pdp .tit {font-family:'SamsungOneHebrew', 'tahoma', sans-serif;}
+#contents .lang_il .m_content-pdp .btn_link {font-family:'SamsungOneHebrew', 'tahoma', sans-serif;}
+
+/* LANG_IL : SUPPORT */
+#contents .lang_il .m_content-support .desc {font-family:"SamsungOneHebrew", sans-serif;}
+#contents .lang_il .m_content-support .tit {font-family:'tahoma', sans-serif; font-weight:bold;}
+#contents .lang_il .m_content-support .btn_default a {font-family:"SamsungOneHebrew", sans-serif;}
+
+/* LANG_IL : APPS-PAGINATION */
+#contents .lang_il .apps-pagination .control .name span {font-family:'SamsungOneHebrew', 'tahoma', sans-serif; font-weight:bold;}
+#contents .lang_il .apps-pagination .control .name strong {font-family:"SamsungSharpSans","SamsungOneHebrew",tahoma !important;}
+
+/* LANG_SA : SUPPORT */
+#contents .lang_sa .m_content-support .tit {font-family:'tahoma', sans-serif; font-weight:bold;}
+#contents .lang_sa .m_content-support .btn_default a {font-family:"SamsungOneArabic", sans-serif;}
+#contents .lang_sa .m_content-support .desc {font-family:"SamsungOneArabic", sans-serif;}
+
+/* LANG_SA : DISCLAIMER */
+#contents .lang_sa .m_content-disclaimer .disclaimer {font-family:"SamsungOneArabic", sans-serif;}
+
+/* LANG_SA : PDP */
+#contents .lang_sa .m_content-pdp .btn_link {font-size:20px; font-family:"tahoma", sans-serif; font-weight:bold;}
+#contents .lang_sa .m_content-pdp .tit {font-family:"tahoma", sans-serif;}
+
+/* RTL : SUPPORT */
+#contents .rtl .m_content-support .support_list + .support_list {border-right:1px solid #363636; border-left:0;}
+
+/* RTL : PDP */
+#contents .rtl .m_content-pdp .item {float:right;}
+#contents .rtl .m_content-pdp .item + .item {border-right:1px solid #2b2b2b; border-left:0;}
+#contents .rtl .m_content-pdp .galaxy-dream .tit,
+#contents .rtl .m_content-pdp .galaxy-future .tit {direction:ltr;} /* beyond 수정 */
+
+/* RTL : APPS-PAGINATION */
+#contents .rtl .apps-pagination .next {right:auto; left:0; text-align:left;}
+#contents .rtl .apps-pagination .next .name {background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/button_arrow-left.png') 0 60% no-repeat;}
+#contents .rtl .apps-pagination .next .img {right:auto; left:240px;}
+#contents .rtl .apps-pagination .prev {right:0; left:auto;}
+#contents .rtl .apps-pagination .prev .name {background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/button_arrow-right.png') 100% 60% no-repeat;}
+#contents .rtl .apps-pagination .prev .img {right:240px; left:auto;}
+
+/* MM : SUPPORT */
+#contents .mm .m_content-support .tit {font-family:'zawgyione', arial, sans-serif}
+#contents .mm .m_content-support .desc {font-family:'zawgyione', arial, sans-serif}
+#contents .mm .m_content-support .btn_default a {font-family:'zawgyione', arial, sans-serif}
+
+/* MM : PDP */
+#contents .mm .m_content-pdp .tit {font-family:'zawgyione', arial, sans-serif}
+
+/* CN : SUPPORT */
+#contents .m_content-support .support_list.cn_apple-device {display:none;}
+.apple-device #contents .m_content-support .support_list.cn_apple-device {display:block;}
+#contents .m_content-support .support_list.cn_apple-device + .support_list {border-left:none;}
+.apple-device #contents .m_content-support .support_list.cn_apple-device + .support_list {border-left:1px solid #363636;}
+
+/* BR : APPS-PAGINATION */
+#contents .br .apps-pagination.create-nav .name strong {max-width:234px;}
+
+@media screen and (max-width:1440px) {
+
+    /* DISCLAIMER */
+    #contents .m_content-disclaimer .f_container {padding:2.9861vw 0 3.0555vw;}
+
+
+    /* SUPPORT */
+    #contents .m_content-support .btn_default {margin-bottom:1.3888vw; font-size:1.1111vw;}
+	#contents .m_content-support .btn_default a {padding:1.5972vw 3.4722vw 1.3194vw;}
+    #contents .m_content-support .inner {padding:3.4722vw 0;}
+    #contents .m_content-support .support_list {padding:2.7777vw 0 10.06944vw;}
+    #contents .m_content-support .support_icon {width:6.0416vw; height:5.1388vw; margin-bottom:2.7777vw;}
+    #contents .m_content-support .tit {margin-bottom:0.625vw; font-size:2.3611vw;}
+    #contents .m_content-support .desc {font-size:1.3888vw;}
+    /*.m_content-support .txt_box {min-height:7.3916vw;}*/
+    #contents .m_content-support .btn_box {bottom:1.3888vw;}
+    .samsung-device #contents .m_content-support .btn_box,
+    .apple-browser-all #contents .m_content-support .btn_box {min-height:11.5277vw;}
+    .samsung-device #contents .m_content-support .support_list,
+    .apple-browser-all #contents .m_content-support .support_list {padding-bottom:14.9305vw;}
+    #contents .m_content-support .inner_wrap.download .support_list {padding-bottom:16.5416vw;}
+    #contents .m_content-support .inner_wrap.download .inline_type .box_inner p {font-size:0.9722vw; margin-top:1.3888vw;}
+    #contents .m_content-support .inner_wrap.download .inline_type .box_inner {width:20.8333vw;}
+
+	/* SUPPORT : 버튼 높이 유동 */
+	.samsung-device #contents .m_content-support .inner_wrap.fluid .support_list,
+    .apple-device #contents .m_content-support .inner_wrap.fluid .support_list {padding-bottom:10.0694vw;}
+
+	/* SUPPORT : GALAXY APPS */
+	.samsung-device #contents .galaxy_apps .m_content-support .support_list {padding:2.7777vw 0 10.06944vw}
+
+    /* SUPPORT : BTN-TYPE */
+    #contents .m_content-support.btn_2ea .support_list {padding-bottom:15.7638vw;}
+    #contents .m_content-support.btn_2ea .btn_box {height:11.5277vw;}
+
+    /* SUPPORT : BG-TYPE */
+    #contents .m_content-support.bg_type {height:41.6666vw;}
+	
+	/* beyond */
+	/* SUPPORT : LINK-TYPE */
+	#contents .m_content-support.link_type .inner_wrap.download .support_list {padding-bottom:1.3888vw;}
+	#contents .m_content-support.link_type .inner_wrap.download .inline_type {margin-top:3.1944vw;}
+	#contents .m_content-support.link_type .inner_wrap.download .inline_type .box_inner .btn_default {margin:0 1.3888vw 1.3888vw;}
+	/* //beyond */
+
+     /* PDP */
+    #contents .m_content-pdp .f_container {padding:5.2083vw 0;} /* beyond */
+    #contents .m_content-pdp .item {padding:1.4583vw 0 3.5416vw;} /* beyond */
+    #contents .m_content-pdp .tit {margin:1.3194vw 0 1.9444vw; font-size:2.7777vw;} /* beyond */
+    #contents .m_content-pdp .btn_link {font-size:1.1111vw; letter-spacing:2px;}
+    #contents .m_content-pdp .btn_link + .btn_link {margin-left:2.0138vw; padding-left:2.2222vw;}
+    #contents .m_content-pdp .btn_link + .btn_link:before {height:0.9027vw; margin-top:-0.555vw;}
+	#contents .m_content-pdp .tit span {top:-0.4861vw; font-size:2.0833vw;} /* beyond */
+	#contents .m_content-pdp .tit em {font-size:1.8055vw;} /* beyond */
+	#contents .m_content-pdp .galaxy-dream .tit,
+	#contents .m_content-pdp .galaxy-future .tit {font-size:2.7777vw !important;}
+	#contents .m_content-pdp .galaxy-future .tit {margin-top:-1.25vw;} /* beyond */
+
+
+    /* SEC : SUPPORT */
+	#contents .sec .m_content-support .desc {line-height:2.2222vw;}
+
+    /* LANG_TH : PDP */
+	#contents .lang_th .m_content-pdp .tit {font-size:4.4444vw;}
+	#contents .lang_th .m_content-pdp .btn_link {font-size:2.2222vw;}
+
+    /* LANG_TH : SUPPORT */
+    #contents .lang_th .m_content-support .tit {font-size:3.5416vw;}
+	#contents .lang_th .m_content-support .desc {font-size:1.6666vw;}
+	#contents .lang_th .m_content-support .btn_default a {font-size:1.6666vw;}
+
+    /* LANG_SA : PDP */
+    #contents .lang_sa .m_content-pdp .btn_link {font-size:1.3888vw;}
+
+	/* kids-mode 전용 */
+	.samsung-device #contents .apps.kids-mode .m_content-support .support_list,
+    .apple-device #contents .apps.kids-mode .m_content-support .support_list {padding-bottom:10.0694vw;}
+    
+    /* SMART-SWITCH */
+    #contents .smart_switch .m_content-support.white .download .btn_default a {width:15.1388vw; padding:1.5972vw 0.6944vw 1.3194vw;} /* beyond */
+}
+
+
+@media screen and (max-width:1024px) {
+
+    /* SUPPORT */
+    #contents .m_content-support .btn_default {font-size:11px;}
+    #contents .m_content-support .desc {font-size:14px;}
+	#contents .m_content-support .support_list {word-wrap:normal; word-break:normal;}
+    .samsung-device #contents .m_content-support .btn_default.mobile {display:block;}
+    .samsung-device #contents .m_content-support .btn_box,
+    .apple-browser-all #contents .m_content-support .btn_box {min-height:12.5277vw;}
+    .samsung-device #contents .m_content-support .support_list,
+    .apple-browser-all #contents .m_content-support .support_list {padding-bottom:15.9305vw;}
+	/* kids-mode 전용 */
+/* 	.samsung-device #contents .apps.kids-mode .m_content-support .support_list,
+	.apple-device #contents .apps.kids-mode .m_content-support .support_list {padding-bottom:10.0694vw;} */
+
+
+    .samsung-device #contents .m_content-support .inner_wrap.download .inline_type .box_inner.mobile {display:inline-block;}
+    #contents .m_content-support .inner_wrap.download .inline_type .box_inner p {font-size:11px;} /* beyond  */
+
+	/* beyond */
+    /* BTN */
+    #contents .pc_only {display:none !important;}
+	#contents .mobile_all {display:inline-block !important;}
+	.samsung-device #contents .mobile_samsung {display:inline-block !important;}
+	.samsung-device #contents .m_content-support .mobile_samsung {display:block !important;}
+	.samsung-device #contents .m_content-support .inline_type .mobile_samsung {display:inline-block !important;}
+	.samsung-device #contents .m_content-support.mobile_samsung {display:block !important;}
+	.samsung-device #contents .samsung_hidden {display:none !important;} /* 삼성단말기 비노출 */
+	/* //beyond */
+
+	/* LANG_TH : SUPPORT */
+	#contents .lang_th .m_content-support .desc {font-size:18px;}
+
+}
+
+@media screen and (max-width:768px) {
+
+    /* DISCLAIMER AREA */
+    #contents .m_content-disclaimer .f_container {padding:5.9722vw 6% 6.1111vw; box-sizing:border-box;}
+
+
+    /* SUPPORT */
+    #contents .m_content-support .btn_default {margin-bottom:2.7777vw; font-size:3.0555vw;}
+	#contents .m_content-support .btn_default a {padding:3.888vw 9.7222vw 3.2222vw;}
+    #contents .m_content-support .inner {display:block; padding:0;}
+	#contents .m_content-support .list_inner {padding:0;}
+    #contents .m_content-support .support_list {display:block; width:100%; padding:12.2222vw 2.7777vw 11.8055vw;}
+    #contents .m_content-support .support_list + .support_list {border:none; border-top:1px solid #363636;}
+    #contents .m_content-support .support_icon {width:12.0833vw; height:10.2777vw; margin-bottom:5.5555vw;}
+    #contents .m_content-support .tit {margin-bottom:0; font-size:5.555vw; line-height:1.32;}
+    #contents .m_content-support .desc {margin-top:2.7777vw; padding:0 16%; line-height:1.4; font-size:2.777vw; letter-spacing:0;}
+    #contents .m_content-support .btn_box {position:static; left:auto; right:auto; padding:0; min-height:auto;}
+	#contents .m_content-support .txt_box {margin-bottom:6.25vw;}
+	.samsung-device #contents .m_content-support .support_list {padding-bottom:11.8055vw}
+    #contents .m_content-support .inner_wrap.download .support_list {padding-bottom:11.8055vw;}
+    #contents .m_content-support .download.inner_wrap .inline_type .box_inner,
+    #contents .m_content-support.link_type .inner_wrap.download .inline_type .box_inner {width:100%;} /* beyond */
+    #contents .m_content-support .download.inner_wrap .inline_type .box_inner p {font-size:2.77vw;}
+	/* SUPPORT : 버튼 높이 유동 */
+	.samsung-device #contents .m_content-support .inner_wrap.fluid .support_list,
+	.apple-device #contents .m_content-support .inner_wrap.fluid .support_list {padding-bottom:11.8055vw;}
+
+    /* beyond */
+    /* smart-switch */
+	#contents .smart_switch .m_content-support.white .download .btn_default a {width:39.1666vw; padding:3.888vw 1vw 3.2222vw; box-sizing:border-box;}
+    /* //beyond */
+
+	/* beyond */
+    /* BTN */
+	#contents .mobile_all {display:block !important;}
+    #contents .mobile_only {display:inline-block !important;}
+    .samsung-device #contents .mobile_samsung {display:inline-block !important;}
+	.samsung-device #contents .m_content-support.mobile_samsung {display:block !important;}
+    .samsung-device #contents .m_content-support .mobile_samsung {display:block !important;}
+    .samsung-device #contents .m_content-support .mobile_only {display:block !important;}
+	.samsung-device.samsung-tablet-device #contents .mobile_samsung {display:none !important;}
+	.samsung-device.samsung-mobile-device #contents .mobile_samsung {display:inline-block !important;}
+	.galaxy-series #contents .galaxy_btn {display:block !important;}
+	/* //beyond */
+
+
+	/* SUPPORT : GALAXY APPS */
+	.samsung-device #contents .galaxy_apps .m_content-support .support_list {padding:12.2222vw 2.7777vw 11.8055vw}
+
+    /* SUPPORT : BTN-TYPE */
+    #contents .m_content-support.btn_2ea .support_list {padding-bottom:11.8055vw;}
+    #contents .m_content-support.btn_2ea .btn_box {height:auto;}
+
+    /* SUPPORT : BG-TYPE */
+    #contents .m_content-support.bg_type .f_header {position:relative;}
+    #contents .m_content-support.bg_type .f_header:before {content:inherit; display:none;}
+    #contents .m_content-support.bg_type .f_header .inner_wrap {vertical-align:top;}
+    #contents .m_content-support.bg_type .f_header .inner_wrap .inner {max-width:none; margin:0;}
+    #contents .m_content-support.bg_type .f_container {position:absolute; left:0; top:0; height:100%;}
+    #contents .m_content-support.bg_type .f_container > figure {position:absolute; left:0; top:0;}
+    .ie9 .apps .bg_type.m_content-support .f_container figure {margin-top:0;}
+
+	/* beyond */
+    /* SUPPORT : LINK-TYPE */
+    #contents .m_content-support.link_type .inner_wrap.download {border-color:#dadada}        
+	#contents .m_content-support.link_type .inner_wrap.download .support_list {padding-bottom:11.8055vw;}
+	#contents .m_content-support.link_type .inner_wrap.download .inline_type {margin-top:0;}
+    #contents .m_content-support.link_type .inner_wrap.download .inline_type .box_inner .btn_default {margin:0 0 2.7777vw;}
+	/* //beyond */
+
+    /* PDP */
+    #contents .m_content-pdp .f_container {padding:0;}
+    #contents .m_content-pdp figure {margin:0;}
+    #contents .m_content-pdp .item {position:relative; width:100%; padding:14.4444vw 0 10.4166vw;} /* beyond */
+    #contents .m_content-pdp .item:first-child:after {position:absolute; left:5.5%; right:5.5%; bottom:0; height:1px; background:#2b2b2b; content:'';}
+    #contents .m_content-pdp .tit {margin:8.3333vw 0 5.2777vw; line-height:8.577vw; font-size:6.6666vw;}
+    #contents .m_content-pdp .btn_link {font-size:2.5vw;}
+    #contents .m_content-pdp .btn_link + .btn_link {margin-left:3.3333vw; padding-left:3.3333vw;}
+    #contents .m_content-pdp .btn_link + .btn_link:before {height:2.2222vw; margin-top:-1.1111vw;}
+	#contents .m_content-pdp .tit span {top:-1.25vw; font-size:4.1666vw;}
+	#contents .m_content-pdp .tit em {font-size:4.7222vw;} /* beyond */
+	#contents .m_content-pdp .galaxy-dream .tit,
+	#contents .m_content-pdp .galaxy-future .tit {font-size:6.6666vw !important;}
+	#contents .m_content-pdp .galaxy-future .tit {margin-top:-6.1111vw;} /* beyond */
+	
+	/* SMART SWITCH */
+	#contents .m_content-support.white .support_list + .support_list {border:none; border-top:1px solid #dadada;}
+
+    /* SEC : APPS-PAGINATION */
+    #contents .sec .apps-pagination .control .name span {font-size:11px;}
+
+    /* SEC : DISCLAIMER */
+    #contents .sec .m_content-disclaimer .disclaimer {padding:0; font-size:3.0555vw; line-height:5.2777vw;}
+
+    /* SEC : SUPPORT */
+    #contents .sec .m_content-support .txt_box {min-height:auto;}
+    #contents .sec .m_content-support .desc {line-height:1.4;}
+
+    /* LANG_CN : APPS-PAGINATION */
+    #contents .lang_cn .apps-pagination .control .name span {font-size:11px;}
+
+    /* LANG_CN : DISCLAIMER */
+    #contents .lang_cn .m_content-disclaimer .disclaimer {padding:0;}
+
+    /* LANG_RU : DISCLAIMER */
+    #contents .lang_ru .m_content-disclaimer .disclaimer {padding:0;}
+
+    /* LANG_RU : APPS-PAGINATION */
+    #contents .lang_ru .apps-pagination .control .name span {font-size:11px;}
+
+    /* LANG_TH : SUPPORT */
+	#contents .lang_th .m_content-support .tit {font-size:8.3333vw;}
+	#contents .lang_th .m_content-support .desc {font-size:4.1666vw;}
+	#contents .lang_th .m_content-support .btn_default a {font-size:4.1666vw;}
+
+    /* LANG_TH : PDP */
+	#contents .lang_th .m_content-pdp .tit {font-size:9.7222vw}
+	#contents .lang_th .m_content-pdp .btn_link {font-size:4.4444vw;}
+
+    /* LANG : RTL - APPS-PAGINATIO */
+    #contents .rtl .apps-pagination .next .name {background-position:6% 60%; background-size:10px auto;}
+    #contents .rtl .apps-pagination .prev .name {background-position:94% 60%; background-size:10px auto;}
+
+    /* LANG : RTL - SUPPORT */
+    #contents .rtl .m_content-support .support_list + .support_list {border-right:0;}
+
+    /* LANG_SA : PDP */
+    #contents .lang_sa .m_content-pdp .btn_link {font-size:3.0555vw;}
+
+	/* CN : SUPPORT */
+	#contents .m_content-support .support_list.cn_apple-device + .support_list {border:none;}
+    .apple-device #contents .m_content-support .support_list.cn_apple-device + .support_list {border:none; border-top:1px solid #363636;}
+
+	/* BR : APPS-PAGINATION */
+	#contents .br .apps-pagination.create-nav .name strong {max-width:140px;}
+
+	
+	/* kids-mode 전용 */
+	.samsung-device #contents .apps.kids-mode .m_content-support .support_list,
+	.apple-device #contents .apps.kids-mode .m_content-support .support_list {padding-bottom:11.8055vw;}
+}
+
+
+@media screen and (min-width:1024px){
+
+    /* APPS-PAGINATION */
+    #contents .apps-pagination .go_to_list{opacity:1;}
+    #contents .apps-pagination.hover .go_to_list{opacity:0;}
+    #contents .apps-paging-banner .banner a .block {white-space:nowrap;}
+    #contents .apps-paging-banner .banner a img {transition-duration:7s;-webkit-transition-duration:7s;-moz-transition-duration:7s;-o-transition-duration:7s;}
+    #contents .apps-paging-banner .banner a:focus span {text-decoration:underline;}
+    #contents .apps-paging-banner .banner a:hover img,
+    #contents .apps-paging-banner .banner a:focus img {
+        -webkit-transform:scale(1.115,1.115) rotate(0.001deg);
+        -moz-transform:scale(1.115,1.115) rotate(0.001deg);
+        -o-transform:scale(1.115,1.115) rotate(0.001deg);
+        -ms-transform:scale(1.05,1.05);
+        transform:scale(1.115,1.115) rotate(0.001deg);
+    }
+
+}
+
+@media screen and (max-width:1023px){
+    /* APPS-PAGINATION */
+    #contents .apps-pagination .img{display:none;}
+    #contents .apps-paging-banner .banner a .name {left:19px;bottom:14px;margin-right:19px;font-size:20px;line-height:25px;}
+    #contents .apps-paging-banner .banner a .block {display:block;}
+}
+
+@media screen and (max-width:767px) {
+    /* APPS-PAGINATION */
+    #contents .apps-pagination .go_to_list { padding-top:40px; }
+    #contents .apps-pagination .go_to_list a { width:186px; height:46px; }
+    #contents .apps-pagination .prev .name { background-position:6% 60%; background-size:10px auto; }
+    #contents .apps-pagination .next .name { background-position:94% 60%; background-size:10px auto; }
+    #contents .apps-pagination { height:90px; }
+    #contents .apps-pagination .control .name { padding:30px 30px 24px 30px; }
+    /*.apps-pagination .control .name span { font-size:9px; }*/
+    #contents .apps-pagination .control .name strong { margin-top:1px; font-size:15px; }
+
+    #contents .apps-pagination.create-nav .name {padding:0 30px;}
+    #contents .apps-pagination.create-nav .name .name_inner {padding:10px 0 6px;}
+    #contents .apps-pagination.create-nav .name strong {max-width:145px;}
+    .apple-device #contents .apps-pagination.create-nav .name strong {letter-spacing:-1px;}
+
+    #contents .apps-paging-banner { height:auto; }
+    #contents .apps-paging-banner .banner { position:relative; top:0; width:100%; height:auto; }
+    #contents .apps-paging-banner .banner a { height:auto; }
+    #contents .apps-paging-banner .banner a img { position:relative; left:0; width:100%; height:auto; margin:0; }
+    #contents .apps-paging-banner .banner a .name { left:14px; bottom:9px; margin-right:14px; font-size:16px; line-height:20px; }
+    #contents .apps-paging-banner .banner a .block { display:block; }
+}
+
+@media screen and (max-width:359px){
+    /* APPS-PAGINATION */
+    #contents .apps-pagination .control .name strong {font-size:14px;}
+}
+
+/* floating bar css */
+#apps_floating {display:none;}
+.cm-g-breadcrumb {display:block;}
+
+@media screen and (max-width:768px) {
+    #apps_floating {display: block;}
+    .apps-fixed .cl-sticky-navigation-text {position:fixed; top:calc(13.4259vw - 1px)!important; left:0; right:0; z-index:200; width:100%; margin-top:0 !important;}
+    .apps_rawcode .navi_wrap {position:relative; width:100%; height:13.4259vw;}
+    .apps_rawcode .navi_wrap.fixed {z-index:1100;}
+	.js-has-modal .apps_rawcode .navi_wrap.fixed {z-index:0;}
+    .apps_rawcode .navi_wrap a {color:#000; cursor:pointer;}
+    .apps_rawcode .navi_wrap .navi_section {height:13.4259vw; width:100%;}
+    .apps_rawcode .navi_wrap.fixed .navi_section {position:fixed; top:0;}
+    .apps_rawcode .navi_wrap.fixed .navi_contents .navi_inner {padding-top:16.6666vw;}
+    .apps_rawcode .navi_wrap .navi_section .navi_header {display:table; position:relative; z-index:110; width:100%; height:13.4259vw; padding:0 5.3703vw 0 6.4814vw; border-bottom:1px solid #dadada; background:#fff; box-sizing:border-box;}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn_box {display:table-cell; position:relative; /* width:33%; */ vertical-align:middle; font-size:3.7037vw; text-align:left;}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn_box .toggle_btn {display:inline-block; position:relative; padding:4.2vw 7.5925vw 3.8vw 0; font-weight:bold; font-size:3.7037vw; text-align:left;}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn:after,
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn:before {transition:all 0.5s; display:block; content:""; position:absolute; top:5.4407vw; right:4.6296vw; width:0.3777vw; height:auto; margin:0; padding:0; border-top:2.3148vw solid #000;}
+    /* .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn:before {transition:all 0.5s; display:block; content:""; position:absolute; top:5.4407vw; right:4.6296vw; width:0.3777vw; height:2.3148vw; margin:0; padding:0; background:#000;} */
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn:after {transform: rotate(0deg);}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn:before {transform: rotate(90deg);}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn.is_open:after {transform: rotate(135deg);}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn.is_open:before {transform: rotate(225deg);}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list {overflow:hidden; display:table-cell; /* width:67%; */ vertical-align:middle; text-align:right;}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list .navi_btn_inner {position:relative; right:0; transition:right 0.8s; transition-timing-function:ease;}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list a {display:inline-block; transition:transform 0.5s; transform:scale(1);}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list a.motion {transform:scale(0);}
+	.apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list a ~ a {margin-left:1vw;}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list a img {width:8.2407vw;}
+    .apps_rawcode .navi_wrap .navi_contents {overflow:hidden; display:none; position:relative;}
+    .apps_rawcode .navi_wrap .navi_contents.is_open {display:block;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner {overflow-y:auto; z-index:100; position:fixed; top:0; width:100%; height:100%; padding-top:calc(16.9445vw + 63px); padding-bottom:7.4074vw; background:#fff; box-sizing:border-box;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list {display:flex; flex-wrap:wrap; width:89.8148vw; margin:0 auto;}
+    /* .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li {width:14.3518vw; margin:3.9814vw; text-align:center;} */
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li {width:19.3518vw; margin:3.9814vw 1.55vw; text-align:center;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a {display:block; -webkit-tap-highlight-color:transparent;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a:hover,
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a:active {
+        animation-name:bounce2;
+        -webkit-animation-name: bounce2;
+        -moz-animation-name: bounce2;
+        -ms-animation-name: bounce2;
+        animation-duration:1.2s; 
+        -webkit-animation-duration: 1.2s;
+        -moz-animation-duration: 1.2s;
+        -ms-animation-duration: 1.2s;
+        animation-timing-function:ease-in-out;
+        -webkit-animation-timing-function:ease-in-out;
+        -moz-animation-timing-function:ease-in-out;
+        -ms-animation-timing-function:ease-in-out;
+        animation-iteration-count:infinite;
+        -webki-animation-iteration-count:infinite;
+        -moz-animation-iteration-count:infinite;
+        -ms-animation-iteration-count:infinite;
+    }
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a figure {display:inline-block; width:13.4259vw;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a figure img {width:100%;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a em {display:block; margin-top:0.8333vw; font-size:3.3333vw; /* line-height:4.6296vw; */ line-height:1.4; font-style:normal; word-break:break-word;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li.bounce {
+        animation-name: bounce;
+        -webkit-animation-name: bounce;
+        -moz-animation-name: bounce;
+        -ms-animation-name: bounce;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+        animation-timing-function:ease-in-out;
+        -webkit-animation-timing-function:ease-in-out;
+        -moz-animation-timing-function:ease-in-out;
+        -ms-animation-timing-function:ease-in-out;
+    }
+
+    @keyframes bounce { 
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0); -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0);}
+        40% {transform: translateY(-3px); -webkit-transform: translateY(-3px); -moz-transform: translateY(-3px); -ms-transform: translateY(-3px);}
+        60% {transform: translateY(-1px); -webkit-transform: translateY(-1px); -moz-transform: translateY(-1px); -ms-transform: translateY(-1px);}
+    }
+
+    @keyframes bounce2 { 
+        0% {transform:translateY(0); -webkit-transform:translateY(0); -moz-transform:translateY(0); -ms-transform:translateY(0);}
+        25% {transform:translateY(3px); -webkit-transform:translateY(3px); -moz-transform:translateY(3px); -ms-transform:translateY(3px);}
+        50% {transform:translateY(0); -webkit-transform:translateY(0); -moz-transform:translateY(0); -ms-transform:translateY(0);}
+        75% {transform:translateY(3px); -webkit-transform:translateY(3px); -moz-transform:translateY(3px); -ms-transform:translateY(3px);}
+        100% {transform:translateY(0); -webkit-transform:translateY(0); -moz-transform:translateY(0); -ms-transform:translateY(0);}
+    }
+    .js-sticky-placeholder[id|="js-lib_sticky"] {height:17.2222vw !important;}
+    .apps-fixed .js-sticky-placeholder[id|="js-lib_sticky"] {height:17.2222vw !important;}
+    .cm-g-breadcrumb {display:none;}
+
+	/* NATION : RTL */
+	.rtl .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn_box {text-align:right;}
+	.rtl .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn_box .toggle_btn {padding:4.2vw 0 3.8vw 7.5925vw;}
+	.rtl .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn:after,
+    .rtl .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn:before {right:auto; left:4.6296vw;}
+	.rtl .apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list {text-align:left;}
+
+	/* NATION : LANG_CN, SI, LT */
+	html[lang^="lt"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li,
+	html[lang^="zh"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li,
+    html[lang^="sl"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li {width:25%; margin:0; padding:3.9814vw 0; box-sizing:border-box;}
+    
+    /* NATION : SI */
+    html[lang^="sl"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li[data-role-name="samsung-kids-home"] .tit {font-size:2.7vw;}
+
+	/* NATION : TH */
+	html[lang^="th"] .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn_box .toggle_btn {font-size:5.0625vw;}
+	html[lang^="th"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a em {font-size:4.5vw; line-height:1;}
+
+	/* NATION : HU, EE */
+    html[lang^="hu"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a em,
+    html[lang^="et"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a em {word-break:initial;}
+
+	/* NATION : SK */
+	html[lang^="sk"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li[data-role-name="samsung-kids-home"] .tit {font-size:2.2222vw;}
+
+    /* NATION : KZ_KZ */
+    html[lang^="kk"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li {width:21.8vw; margin:3.9814vw 0.3222vw;}
+	html[lang^="kk"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li[data-role-name="samsung-kids-home"] .tit {font-size:3.0555vw;}
+
+	/* NATION : UA */
+	html[lang="uk-UA"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li[data-role-name="samsung-kids-home"] .tit {font-size:2.5vw;}
+    
+	/* NATION : BR */
+	.apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn_box:lang(pt-BR) {width:45%;}
+	.apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list:lang(pt-BR) {width:55%;}
+}
+
+/* br gnb */
+html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__main .s-btn-link,
+html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__main .s-btn-toggler,
+html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__sub .s-btn-link,
+html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__sub .s-btn-toggler{padding:0.41667vw 0.55555556vw}
+@media (min-width: 1440px){
+    html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__main .s-btn-link,
+    html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__main .s-btn-toggler,
+    html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__sub .s-btn-link,
+    html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__sub .s-btn-toggler{padding:6px 8px}
+}

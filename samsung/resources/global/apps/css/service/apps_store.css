@@ -1,0 +1,494 @@
+@charset "utf-8";
+
+/* GALAXY STORE */
+.apps.galaxy_store [class*="m_content-"] .btn_area [class*="btn-default"],
+.apps .f_header .btn_kv [class*="btn-default"],
+.apps .m_content-support .btn_default a {text-transform:none;}
+.apps.galaxy_store .f_header .logo > img {width:456px; height:auto;} 
+.galaxy_store .m_content-galaxy .card-list-wrap {padding-bottom:43px;}
+.galaxy_store .m_content-galaxy .card-list {width:239px;}
+.galaxy_store .m_content-galaxy .card-list + .card-list {margin-left:100px;}
+.galaxy_store .m_content-galaxy .card-list-desc {max-width:1440px; margin:0 auto; padding:0 20px 100px; text-align:center;}
+.galaxy_store .m_content-galaxy .disclaimer a {display:inline-block;} 
+.galaxy_store .m_content-galaxy .disclaimer a span {position:relative; color:#0053a7;} 
+.galaxy_store .m_content-galaxy .disclaimer a span:after {position:absolute; display:block; left:1px; right:1px; bottom:0px; border-bottom:1px solid #0053a7; content:'';} 
+.galaxy_store .m_content-kv .f_container .motion {height:1090px;}
+.galaxy_store .m_content-unique .base {height:872px;}
+.galaxy_store .m_content-unique .f_container {position:relative;}
+.galaxy_store .m_content-unique .f_container .base > figure {position: absolute; height:100%; left:50%; margin-left:-720px;}
+.galaxy_store .m_content-unique .f_container figure img {width:auto; height:100%;}
+.galaxy_store .m_content-unique .motion_img {display:block; opacity:0}
+.galaxy_store .m_content-unique .base .motion1 {opacity:1}
+.galaxy_store .m_content-special_offers {padding-bottom:120px;}
+.galaxy_store .m_content-special_offers .inner {position:relative; max-width:1440px; margin:0 auto; padding:0 20px;}
+.galaxy_store .m_content-special_offers .item {text-align:center;}
+.galaxy_store .m_content-special_offers .item .sub_title {font-size:0;}
+.galaxy_store .m_content-special_offers .item .title_text {display:inline-block; vertical-align:middle; padding-top:10px; font-size:38px;}
+.galaxy_store .m_content-special_offers .item .logo_img {display:inline-block; vertical-align:middle; text-align:left;}
+.galaxy_store .m_content-special_offers .item .logo_img img {height:100%;}
+.galaxy_store .m_content-special_offers .games .logo_img {height:64px; padding-right:13px;}
+
+
+.galaxy_store .m_content-special_offers .partners .logo_img {height:30px;} 
+.galaxy_store .m_content-special_offers .item .desc {margin-top:15px; font-size:20px;}
+.galaxy_store .m_content-special_offers .item .disclaimer {font-size:14px;}
+.galaxy_store .m_content-special_offers .item .feature_box {position:relative; margin:45px auto 0;}
+.galaxy_store .m_content-special_offers .item .feature_box figure {transition: left 0.6s;}
+.galaxy_store .m_content-special_offers .item .feature_box figure img {width:auto; height:100%;}
+.galaxy_store .m_content-special_offers .partners {margin-top:150px;}
+
+.galaxy_store .m_content-special_offers .game_offers {width:935px; height:303px;}
+.galaxy_store .m_content-special_offers .game_offers [class*="game_icon0"],
+.galaxy_store .m_content-special_offers .partners_screen [class*="screen0"] {position: absolute; height:100%;}
+.galaxy_store .m_content-special_offers .item .feature_box.game_offers .game_icon01 {left:284px; z-index:10;}
+.galaxy_store .m_content-special_offers .item .feature_box.game_offers .game_icon02 {left:194px; z-index:5;}
+.galaxy_store .m_content-special_offers .item .feature_box.game_offers .game_icon03 {left:469px; z-index:5;}
+.galaxy_store .m_content-special_offers .item .feature_box.game_offers .game_icon04 {left:177px; transition-duration:0.8s;}
+.galaxy_store .m_content-special_offers .item .feature_box.game_offers .game_icon05 {left:580px; transition-duration:0.8s;}
+
+.galaxy_store .m_content-special_offers .item .feature_box.game_offers.moving .game_icon02 {left:92px;}
+.galaxy_store .m_content-special_offers .item .feature_box.game_offers.moving .game_icon03 {left:567px;}
+.galaxy_store .m_content-special_offers .item .feature_box.game_offers.moving .game_icon04 {left:0px;}
+.galaxy_store .m_content-special_offers .item .feature_box.game_offers.moving .game_icon05 {left:752px;}
+
+.galaxy_store .m_content-special_offers .partners_screen {width:955px; height:340px;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen01 {left:360px; z-index:10;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen02 {left:320px; z-index:7; transition-delay:0.8s;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen03 {left:454px; z-index:7; transition-delay:0.8s;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen04 {left:280px; z-index:5; transition-delay:0.6s;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen05 {left:509px; z-index:5; transition-delay:0.6s;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen06 {left:240px; z-index:3; transition-delay:0.4s;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen07 {left:566px; z-index:3; transition-delay:0.4s;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen08 {left:230px; transition-delay:0.2s;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen09 {left:634px; transition-delay:0.2s;}
+
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen02 {left:233px; transition-delay:0s;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen03 {left:541px; transition-delay:0s;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen04 {left:126px; transition-delay:0.2s;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen05 {left:663px; transition-delay:0.2s;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen06 {left:36px; transition-delay:0.4s;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen07 {left:770px; transition-delay:0.4s;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen08 {left:0px; transition-delay:0.6s;}
+.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen09 {left:865px; transition-delay:0.6s;}
+
+.apps_cr [class*="m_content-"] .btn_kv {padding-bottom:120px}
+
+.old-series.samsung-device #contents .apps_cr.galaxy_store .m_content-galaxy .mobile_samsung {display:none !important;}
+.old-series.samsung-device #contents .apps_cr.galaxy_store .m_content-special_offers .mobile_samsung {display:none !important;}
+
+/* TH */
+.galaxy_store.th .m_content-special_offers .item .title_text {font-size:51.3px;}
+
+/* RTL */
+.rtl .galaxy_store .m_content-galaxy .card-list + .card-list {margin-right:100px; margin-left:0;}
+.rtl .galaxy_store .m_content-special_offers .games .logo_img {padding-right:0; padding-left:13px;}
+
+@media screen and (max-width:1440px) {
+	/* Galaxy Store */
+	.apps.galaxy_store .f_header .logo > img {width:31.6666vw; height:auto;} 
+	.galaxy_store .m_content-galaxy .card-list-wrap {padding-bottom:2.9861vw;}
+	.galaxy_store .m_content-galaxy .card-list {width:16.5972vw;}
+	.galaxy_store .m_content-galaxy .card-list + .card-list {margin-left:6.9444vw;}
+	.galaxy_store .m_content-galaxy .card-list-desc {padding:0 1.3888vw 6.9444vw;}
+	.samsung-device .apps.galaxy_store .card-list-wrap .card-list .btn_area {margin-top:1.3888vw;}
+	.samsung-device .apps.galaxy_store .card-list-wrap .card-list .btn_area a {padding:1.4583vw 2.4722vw 1.3194vw;}
+	.galaxy_store .m_content-kv .f_container .motion {height:75.6944vw;}
+	.galaxy_store .m_content-unique .base {height:60.5556vw;}
+	.galaxy_store .m_content-unique .f_container .base > figure {margin-left:-50vw;}
+	.galaxy_store .m_content-special_offers {padding-bottom:8.3333vw;}
+	.galaxy_store .m_content-special_offers .inner {max-width:100.0000vw; margin:0 auto; padding:0 1.3889vw;}
+	.galaxy_store .m_content-special_offers .item .title_text {padding-top:0.6944vw; font-size:2.6389vw;}
+	.galaxy_store .m_content-special_offers .games .logo_img {height:4.4444vw; padding-right:0.9028vw;}
+	.galaxy_store .m_content-special_offers .partners .logo_img {height:2.0833vw;} 
+	.galaxy_store .m_content-special_offers .item .desc {margin-top:1.0417vw; font-size:1.3888vw;}
+	.galaxy_store .m_content-special_offers .item .disclaimer {font-size:0.9722vw;}
+	.galaxy_store .m_content-special_offers .btn_area {margin-top:3.0555vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box {width:66.3888vw; margin:3.1250vw auto 0;}
+	.galaxy_store .m_content-special_offers .partners {margin-top:10.4167vw;}
+	.galaxy_store .m_content-special_offers .game_offers {width:44.0972vw; height:21.0416vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.game_offers .game_icon01 {left:19.7222vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.game_offers .game_icon02 {left:13.4722vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.game_offers .game_icon03 {left:32.5694vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.game_offers .game_icon04 {left:12.2916vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.game_offers .game_icon05 {left:40.2777vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.game_offers.moving .game_icon02 {left:6.3888vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.game_offers.moving .game_icon03 {left:39.375vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.game_offers.moving .game_icon04 {left:0vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.game_offers.moving .game_icon05 {left:52.2222vw;}
+	.galaxy_store .m_content-special_offers .partners_screen {width:66.3194vw; height:23.6111vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen01 {left:25vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen02 {left:22.2222vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen03 {left:31.5277vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen04 {left:19.4444vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen05 {left:35.3472vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen06 {left:16.6666vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen07 {left:39.3055vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen08 {left:15.9722vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen .screen09 {left:44.0277vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen02 {left:16.1805vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen03 {left:37.5694vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen04 {left:8.75vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen05 {left:46.0416vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen06 {left:2.5vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen07 {left:53.4722vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen08 {left:0vw;}
+	.galaxy_store .m_content-special_offers .item .feature_box.partners_screen.moving .screen09 {left:60.0694vw;}
+
+	.apps_cr [class*="m_content-"] .btn_kv {padding-bottom:8.3333vw}
+
+	/* TH */
+	.galaxy_store.th .m_content-special_offers .item .title_text {font-size:3.5625vw;}
+	/* RTL */
+	.rtl .galaxy_store .m_content-galaxy .card-list + .card-list {margin-right:6.9444vw; margin-left:0;}
+	.rtl .galaxy_store .m_content-special_offers .games .logo_img {padding-right:0; padding-left:0.9027vw;}
+}
+
+@media screen and (max-width:768px) {   
+	/* Galaxy Store */
+	.samsung-device .apps .mobile_samsung {display: block !important;}
+    .apps.galaxy_store .f_header .logo > img {width: 63.3333vw; height:auto;} 
+	.galaxy_store .m_content-galaxy .card-list-wrap {padding-bottom:9.1666vw;}
+	.galaxy_store .m_content-galaxy .card-list-wrap .card-list {display:block; height:auto;}
+	.galaxy_store .m_content-galaxy .card-list-wrap .card-list figure {width:50.6944vw;}
+    .galaxy_store .m_content-galaxy .card-list-wrap .slick-dots {bottom:0;}
+
+	.galaxy_store .m_content-galaxy .card-list {width:49.8611vw;}
+	.apps.galaxy_store .card-list-wrap .card-list .blind {position:static; width:100%; height:auto;	margin: 0 0 4.1666vw 0; font-size:3.8888vw; font-weight:bold; line-height: 6.1111vw;}
+	.apps.galaxy_store .card-list-wrap .card-list .sub-title {display:none;}
+	.samsung-device .apps.galaxy_store .card-list-wrap .card-list.slick-current .btn_area {display: block !important; margin-bottom:2px;}
+	.samsung-device .apps.galaxy_store .card-list-wrap .card-list .btn_area {display:none !important; margin-top:20px; margin-top:5.5555vw}
+	.samsung-device .apps.galaxy_store .card-list-wrap .card-list .btn_area ~ .btn_area {margin-top:2.7777vw;}
+	.samsung-device .apps.galaxy_store .card-list-wrap .card-list .btn_area a {padding:3.4722vw 8.75vw 3.4722vw}
+    .galaxy_store .m_content-galaxy .card-list-desc .disclaimer br,
+	.galaxy_store .m_content-unique .disclaimer br {display:block;} 
+    .galaxy_store .m_content-galaxy .card-list-desc {padding:7.5vw 5.5555vw 0;}
+    .galaxy_store .m_content-kv .f_container .motion {display:none;}
+
+	.galaxy_store .m_content-unique .base {height:76.25vw !important;} 
+	.galaxy_store .m_content-unique .f_container .base > figure {position:absolute; bottom:0;} 
+	.galaxy_store .m_content-special_offers {padding-bottom:16.6667vw;}
+    .galaxy_store .m_content-special_offers .inner {max-width:101.1111vw; margin:0 auto; padding:0 2.7778vw;}
+    .galaxy_store .m_content-special_offers .item .title_text {padding-top:1.3889vw; font-size:5.2778vw;}
+	.galaxy_store .m_content-special_offers .games .logo_img {height:8.8889vw; padding-right:1.8056vw;}
+    .galaxy_store .m_content-special_offers .partners .logo_img {height:4.1666vw;} 
+    .galaxy_store .m_content-special_offers .item .desc {margin-top:1.0417vw; font-size:3.3333vw;}
+	.galaxy_store .m_content-special_offers .item .disclaimer {font-size:3.0556vw;}
+	.galaxy_store .m_content-special_offers .btn_area {margin-top:44px; margin-top:6.1111vw;}
+    .galaxy_store .m_content-special_offers .item .feature_box {width:100%; margin-top:6.25vw;}
+    .galaxy_store .m_content-special_offers .partners {margin-top:10.4167vw;}
+	.galaxy_store .m_content-special_offers .game_offers [class*="game_icon0"],
+	.galaxy_store .m_content-special_offers .partners_screen [class*="screen0"] {display: none;}
+	.galaxy_store .m_content-special_offers .game_offers .game_icon01,
+	.galaxy_store .m_content-special_offers .partners_screen .screen01 {position: static; display:block;}
+	.galaxy_store .m_content-special_offers .item .feature_box {height:auto;}
+	.galaxy_store .m_content-special_offers .item .feature_box figure img {width:100%; height:auto;}
+	.apps .m_content-support .support_icon {width:77px; width:10.6944vw; height:78px; height:10.8333vw;}
+
+	.apps_cr [class*="m_content-"] .btn_kv {padding-bottom:18.0555vw}
+
+	/* TH */
+	.apps.galaxy_store.th .card-list-wrap .card-list .blind {font-size:5.25vw;}
+	.galaxy_store.th .m_content-special_offers .item .title_text {font-size:7.125vw;}
+
+	/* RTL */
+	.rtl .galaxy_store .m_content-galaxy .card-list + .card-list {margin-right:0;}
+	.rtl .galaxy_store .m_content-special_offers .games .logo_img {padding-right:0; padding-left:1.8056vw;}
+}
+	/* Galaxy Store */
+	.galaxy_store.ve .m_content-intro.br_pc br,
+	.galaxy_store.uk .m_content-intro.br_pc br, 
+	.galaxy_store.ie .m_content-intro.br_pc br,
+	.galaxy_store.ae .m_content-intro.br_pc br,
+	.galaxy_store.africa_en .m_content-intro.br_pc br,
+	.galaxy_store.au .m_content-intro.br_pc br,
+	.galaxy_store.ca .m_content-intro.br_pc br,
+	.galaxy_store.hk_en .m_content-intro.br_pc br,
+	.galaxy_store.in .m_content-intro.br_pc br,
+	.galaxy_store.latin_en .m_content-intro.br_pc br,
+	.galaxy_store.levant .m_content-intro.br_pc br,
+	.galaxy_store.my .m_content-intro.br_pc br,
+	.galaxy_store.nz .m_content-intro.br_pc br,
+	.galaxy_store.ph .m_content-intro.br_pc br,
+	.galaxy_store.pk .m_content-intro.br_pc br,
+	.galaxy_store.sg .m_content-intro.br_pc br,
+	.galaxy_store.za .m_content-intro.br_pc br {display:none;}
+
+	@media screen and (max-width:768px){
+	
+		/* Galaxy Store */
+		.galaxy_store.ve .m_content-intro.br_pc br,
+		.galaxy_store.uk .m_content-intro.br_pc br, 
+		.galaxy_store.ie .m_content-intro.br_pc br,
+		.galaxy_store.ae .m_content-intro.br_pc br,
+		.galaxy_store.africa_en .m_content-intro.br_pc br,
+		.galaxy_store.au .m_content-intro.br_pc br,
+		.galaxy_store.ca .m_content-intro.br_pc br,
+		.galaxy_store.hk_en .m_content-intro.br_pc br,
+		.galaxy_store.in .m_content-intro.br_pc br,
+		.galaxy_store.latin_en .m_content-intro.br_pc br,
+		.galaxy_store.levant .m_content-intro.br_pc br,
+		.galaxy_store.my .m_content-intro.br_pc br,
+		.galaxy_store.nz .m_content-intro.br_pc br,
+		.galaxy_store.ph .m_content-intro.br_pc br,
+		.galaxy_store.pk .m_content-intro.br_pc br,
+		.galaxy_store.sg .m_content-intro.br_pc br,
+		.galaxy_store.za .m_content-intro.br_pc br {display:block;}
+
+	}
+
+/* /////////// hero cta ADD /////////// */
+
+.apps_cr [class*="m_content-"].center .btn_area {
+	margin: 0 auto;
+    text-align: center;
+}
+
+/* COMMON - DEVICE CHECKE BUTTON */
+.apps_cr .pc_only {display:block;} /* pc만 노출 */
+.apps_cr .mobile_all {display:none !important;} /* 모바일과 타블릿에서 노출 */
+.apps_cr .mobile_samsung {display:none !important;} /* 모바일에서 삼성단말기만 노출 */
+.apps_cr .mobile_only {display:none !important;} /* 모바일에서만 노출 */
+.samsung-mobile-device .apps_cr .mobile_samsung {display:none !important;} /* 삼성단말기 모바일에서만 노출 */
+.samsung-device.samsung-mobile-device .apps_cr .mobile_samsung {display:none !important;}
+.apps_cr .galaxy_btn {display:none !important;} /* 삼성 단말기(특정단말기) 모바일에서만 노출 */
+.apps_cr .use_desktop,
+.apps_cr .use_mobile_tablet {display:none;}
+.desktop .apps_cr .use_desktop {display:block;}
+.desktop .apps_cr .use_mobile_tablet {display:none;}
+.mobile .apps_cr .use_mobile_tablet {display:block;}
+.mobile.desktop .apps_cr .use_desktop,
+.mobile .apps_cr .use_desktop  {display: none;}
+.samsung-device .apps_cr .mobile_samsung {display: block !important;}
+
+/* BUTTON */
+.apps_cr [class*="m_content-"] .btn_kv a {display:inline-block; width:135px; height:40px; vertical-align:middle;}
+.apps_cr [class*="m_content-"] .btn_kv a + a {margin-left:22px;}
+.apps_cr [class*="m_content-"] .btn_kv a img {width:100%;}
+.apps_cr [class*="m_content-"] .btn_kv [class*="btn-default"] {
+    position: relative;
+    display: inline-block;
+    padding: 21px 38px 19px;
+    background: transparent;
+    -webkit-border-radius: 45px;
+    border-radius: 50px;
+    line-height: 1;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: background,color,border-color;
+    -o-transition-property: background,color,border-color;
+    transition-property: background,color,border-color;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+	text-transform: uppercase;
+}
+
+.apps_cr [class*="m_content-"] .btn_kv .btn-default-black,
+.apps_cr [class*="m_content-"] .btn_area .btn-default-black {width:auto; height:auto; color:#000; background:none; border:1px solid #000; font-size:16px;}
+.apps_cr [class*="m_content-"] .btn_kv .btn-default-black:focus,
+.apps_cr [class*="m_content-"] .btn_kv .btn-default-black:hover,
+.apps_cr [class*="m_content-"] .btn_area .btn-default-black:focus,
+.apps_cr [class*="m_content-"] .btn_area .btn-default-black:hover {background:#000; border:1px solid #000; color:#fff;}
+
+.apps_cr [class*="btn-window"]:after {display:inline-block; width:11px; height:11px; margin-left:8px; background:url('../../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/galaxy-store/common/ico-newwindow-black.svg') no-repeat; background-size:100%; transition:background ease-in-out 0.3s; content:"";}
+.apps_cr .btn-window-black:after {background:url('../../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/galaxy-store/common/ico-newwindow-white.svg') no-repeat;} 
+.apps_cr .btn-window-black:hover:after,
+.apps_cr .btn-window-black:focus:after {background:url('../../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/galaxy-store/common/ico-newwindow-black.svg') no-repeat;} 
+.apps_cr .btn-window-white:after {background:url('../../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/galaxy-store/common/ico-newwindow-black.svg') no-repeat;}
+.apps_cr .btn-window-white:hover:after,
+.apps_cr .btn-window-white:focus:after {background:url('../../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/galaxy-store/common/ico-newwindow-white.svg') no-repeat;}
+.apps_cr .disclaimer [class*="btn-window"]:after {margin-left:0; vertical-align: middle;}
+
+.apps_cr .btn-default-black .btn-window-white:after {background:url('../../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/galaxy-store/common/ico-newwindow-black.svg') no-repeat;}
+.apps_cr .btn-default-black:hover .btn-window-white:after,
+.apps_cr .btn-default-black:active .btn-window-white:after {background:url('../../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/galaxy-store/common/ico-newwindow-white.svg') no-repeat;}
+
+/* SUPPORT */
+.apps_cr .m_content-support.black {background:#222;}
+.apps_cr .m_content-support .btn_default {display:block; margin-bottom:20px; font-size:16px;}
+.apps_cr .m_content-support .btn_default a {display:inline-block; padding:19px 50px 19px; background-color:transparent; -webkit-border-radius:45px; border-radius:50px; line-height:1.2; border:1px solid #fff; -webkit-transition-duration:0.3s; -o-transition-duration:0.3s; transition-duration:0.3s; -webkit-transition-property:background,color,border-color; -o-transition-property:background,color,border-color; transition-property:background,color,border-color; -webkit-transition-timing-function:ease-in-out; -o-transition-timing-function:ease-in-out; transition-timing-function:ease-in-out; text-transform:uppercase;   color:#fff;}
+.apps_cr .m_content-support .btn_default a:hover,
+.apps_cr .m_content-support .btn_default a:focus {background-color:#f7f7f7; border:1px solid #f7f7f7; color:#000;}
+.firefox  .apps_cr .m_content-support .btn_default a:focus {outline:1px dotted #777;}
+.apps_cr .m_content-support .btn_default.mobile,
+.apps_cr .m_content-support .btn_default.apple_btn {display:none;}
+
+.apps_cr .m_content-support .inner_wrap {max-width:1440px; margin:0 auto; box-sizing:border-box;}
+.apps_cr .m_content-support .inner {display:table; width:100%; padding:50px 0; table-layout:fixed;}
+.apps_cr .m_content-support .support_list {display:table-cell; position:relative; padding:40px 0 145px; box-sizing:border-box; text-align:center; word-wrap:break-word; word-break:break-word;}
+.apps_cr .m_content-support .support_list + .support_list {border-left:1px solid #363636;}
+.apps_cr .m_content-support .list_inner {padding:0 4%;}
+.apps_cr .m_content-support .support_icon {width:87px; height:74px; margin:0 auto 40px;}
+.apps_cr .m_content-support .support_icon img {width:100%;}
+.apps_cr .m_content-support .tit,
+.apps_cr .m_content-support .f_header .tit {display:block; margin-bottom:9px; font-size:34px; font-weight:bold;}
+.apps_cr .m_content-support .desc {padding:0 10%; font-size:20px;}
+.apps_cr .m_content-support .btn_box {position:absolute; bottom:20px; left:0; right:0; padding:0 4%; box-sizing:border-box;}
+.samsung-device .apps_cr .m_content-support .btn_box,
+.apple-browser-all .apps_cr .m_content-support .btn_box {min-height:166px;}
+.samsung-device .apps_cr .m_content-support .support_list,
+.apple-browser-all .apps_cr .m_content-support .support_list {padding-bottom:215px;}
+.apple-browser-all .apps_cr .m_content-support .btn_default.apple_btn {display:block;}
+
+.apps_cr .m_content-support .inner_wrap.download {background:#fff; max-width:inherit;}
+.apps_cr .m_content-support .inner_wrap.download .support_list {padding-bottom:195px;}
+.apps_cr .m_content-support .inner_wrap.download .txt_box .tit,
+.apps_cr .m_content-support .inner_wrap.download .txt_box .desc {color:#000;}
+.apps_cr .m_content-support .inner_wrap.download .btn_box.inline_type {font-size:0;}
+.apps_cr .m_content-support .inner_wrap.download .inline_type .box_inner.mobile {display:none;}
+.apps_cr .m_content-support .inner_wrap.download .inline_type .box_inner {width:300px; vertical-align:top; display:inline-block; text-align:center;}
+.apps_cr .m_content-support .inner_wrap.download .inline_type .box_inner p {color:#666; font-size:14px; margin-top:20px; font-style:normal;}
+.apps_cr .m_content-support .inner_wrap.download .btn_default a {border-color:#000; color:#000;}
+.apps_cr .m_content-support .inner_wrap.download .btn_default a:hover,
+.apps_cr .m_content-support .inner_wrap.download .btn_default a:focus {background:#000; color:#fff; border-color:#000;}
+
+/* SUPPORT : BG-TYPE */
+.apps_cr .m_content-support.bg_type {height:600px;}
+.apps_cr .m_content-support.bg_type .support_list + .support_list {border-color:#fff;}
+.apps_cr .m_content-support.bg_type .f_header {position:absolute; top:0; left:0; right:0; height:100%; z-index:2; font-size:0; text-align:center; padding:0; max-width:none;}
+.apps_cr .m_content-support.bg_type .f_header:before {content:""; display:inline-block; height:100%; vertical-align:middle;}
+.apps_cr .m_content-support.bg_type .f_header .inner_wrap {width:100%; display:inline-block; vertical-align:middle;}
+.apps_cr .m_content-support.bg_type .f_header .inner_wrap .inner {max-width:1440px; margin:0 auto; padding:0;}
+.apps_cr .m_content-support.bg_type .f_container > figure {position:absolute; left:50%; width:1920px; margin-left:-960px;}
+.apps_cr .m_content-support.bg_type .f_container > figure img {width:auto; height:100%;}
+
+/* SUPPORT : 버튼 높이 유동 */
+.samsung-device .apps_cr .m_content-support .inner_wrap.fluid .btn_box,
+.apple-device .apps_cr .m_content-support .inner_wrap.fluid .btn_box {min-height:auto}
+.samsung-device .apps_cr .m_content-support .inner_wrap.fluid .support_list,
+.apple-device .apps_cr .m_content-support .inner_wrap.fluid .support_list {padding-bottom:145px;}
+
+.apps_cr [class*="m_content-"].black .tit,
+.apps_cr [class*="m_content-"].black .desc {color:#fff;}
+
+/* RTL */
+.rtl .apps_cr [class*="btn-window"]:after {margin-left:0; margin-right:8px;}
+/* RTL : SUPPORT */
+.rtl .apps_cr .m_content-support .support_list + .support_list {border-right:1px solid #363636; border-left:0;}
+
+
+/* NATION : TH */
+html[lang^="th"] .apps_cr [class*="m_content-"] .btn_kv .btn-default-black,
+html[lang^="th"] .apps_cr [class*="m_content-"] .btn_area .btn-default-black {font-size:21.6px;}
+
+html[lang^="th"] .apps_cr .m_content-support .tit,
+html[lang^="th"] .apps_cr .m_content-support .f_header .tit {font-size:45.9px;}
+html[lang^="th"] .apps_cr .m_content-support .desc {font-size:27px;}
+html[lang^="th"] .apps_cr .m_content-support .inner_wrap.download .inline_type .box_inner p {font-size:18.9px;}
+
+
+@media screen and (max-width:1440px) {
+	.apps_cr [class*="m_content-"] .btn_kv [class*="btn-default"] {
+		padding: 1.4583vw 2.6388vw 1.3194vw;
+	}
+	.apps_cr [class*="m_content-"] .btn_kv .btn-default-black,
+	.apps_cr [class*="m_content-"] .btn_area .btn-default-black {
+		font-size: 1.1111vw;
+	}
+	.apps_cr [class*="btn-window"]:after [class*="btn-window"]:after {width:0.7638vw; height:0.7638vw; margin-left:0.5555vw;} 
+
+	/* SUPPORT */
+    .apps_cr .m_content-support .btn_default {margin-bottom:1.3888vw; font-size:1.1111vw;}
+	.apps_cr .m_content-support .btn_default a {padding:1.3194vw 3.4722vw 1.3194vw;}
+    .apps_cr .m_content-support .inner {padding:3.4722vw 0;}
+    .apps_cr .m_content-support .support_list {padding:2.7777vw 0 10.06944vw;}
+    .apps_cr .m_content-support .support_icon {width:6.0416vw; height:5.1388vw; margin-bottom:2.7777vw;}
+    .apps_cr .m_content-support .tit,
+	.apps_cr .m_content-support .f_header .tit {margin-bottom:0.625vw; font-size:2.3611vw;}
+    .apps_cr .m_content-support .desc {font-size:1.3888vw;}
+    .apps_cr .m_content-support .btn_box {bottom:1.3888vw;}
+    .samsung-device .apps_cr .m_content-support .btn_box,
+    .apple-browser-all .apps_cr .m_content-support .btn_box {min-height:11.5277vw;}
+    .samsung-device .apps_cr .m_content-support .support_list,
+    .apple-browser-all .apps_cr .m_content-support .support_list {padding-bottom:14.9305vw;}
+    .apps_cr .m_content-support .inner_wrap.download .support_list {padding-bottom:16.5416vw;}
+    .apps_cr .m_content-support .inner_wrap.download .inline_type .box_inner p {font-size:0.9722vw; margin-top:1.3888vw;}
+    .apps_cr .m_content-support .inner_wrap.download .inline_type .box_inner {width:20.8333vw;}
+
+	/* SUPPORT : BG-TYPE */
+    .apps_cr .m_content-support.bg_type {height:41.6666vw;}
+	.apps_cr .m_content-support.bg_type .f_container > figure {width:auto; height:100%; margin:0 -66.666vw;}
+
+	/* SUPPORT : 버튼 높이 유동 */
+	.samsung-device .apps_cr .m_content-support .inner_wrap.fluid .support_list,
+	.apple-device .apps_cr .m_content-support .inner_wrap.fluid .support_list {padding-bottom:10.0694vw;}
+
+	/* RTL */
+	.rtl .apps_cr [class*="btn-window"]:after {margin-left:0; margin-right:0.5555vw;}
+
+	/* NATION : TH */
+	html[lang^="th"] .apps_cr [class*="m_content-"] .btn_kv .btn-default-black,
+	html[lang^="th"] .apps_cr [class*="m_content-"] .btn_area .btn-default-black {font-size:1.5vw;}
+
+	html[lang^="th"] .apps_cr .m_content-support .tit,
+	html[lang^="th"] .apps_cr .m_content-support .f_header .tit {font-size:3.1874vw;}
+	html[lang^="th"] .apps_cr .m_content-support .desc {font-size:2.5488vw;}
+	html[lang^="th"] .apps_cr .m_content-support .inner_wrap.download .inline_type .box_inner p {font-size:1.3124vw;}
+
+}
+
+
+@media screen and (max-width:768px) {
+	.apps_cr [class*="m_content-"] .btn_kv [class*="btn-default"] {
+		padding: 3.2222vw 9.7222vw 3.2222vw;
+	}
+	.apps_cr [class*="m_content-"] .btn_kv .btn-default-black,
+	.apps_cr [class*="m_content-"] .btn_area .btn-default-black {
+		font-size: 3.0555vw;
+	}
+	.apps_cr [class*="btn-window"]:after {width:3.05556vw; height:3.05556vw; margin-left:1.3888vw; margin-bottom:-0.4166vw;} 
+
+	.apps_cr [class*="m_content-"] .btn_kv a{width:auto;}
+
+	/* SUPPORT */
+    .apps_cr .m_content-support .btn_default {margin-bottom:2.7777vw; font-size:3.0555vw;}
+	.apps_cr .m_content-support .btn_default a {padding:3.2222vw 9.7222vw 3.2222vw;}
+    .apps_cr .m_content-support .inner {display:block; padding:0;}
+	.apps_cr .m_content-support .list_inner {padding:0;}
+    .apps_cr .m_content-support .support_list {display:block; width:100%; padding:12.2222vw 2.7777vw 11.8055vw;}
+    .apps_cr .m_content-support .support_list + .support_list {border:none; border-top:1px solid #363636;}
+    .apps_cr .m_content-support .support_icon {width:12.0833vw; height:10.2777vw; margin-bottom:5.5555vw;}
+    .apps_cr .m_content-support .tit,
+	.apps_cr .m_content-support .f_header .tit {margin-bottom:0; font-size:5.555vw; line-height:1.32;}
+    .apps_cr .m_content-support .desc {margin-top:2.7777vw; padding:0 16%; line-height:1.4; font-size:2.777vw; letter-spacing:0;}
+    .apps_cr .m_content-support .btn_box {position:static; left:auto; right:auto; padding:0; min-height:auto;}
+	.apps_cr .m_content-support .txt_box {margin-bottom:6.25vw;}
+	.samsung-device .apps_cr .m_content-support .support_list {padding-bottom:11.8055vw}
+    .apps_cr .m_content-support .inner_wrap.download .support_list {padding-bottom:11.8055vw;}
+    .apps_cr .m_content-support .download.inner_wrap .inline_type .box_inner,
+    .apps_cr .m_content-support.link_type .inner_wrap.download .inline_type .box_inner {width:100%;}
+    .apps_cr .m_content-support .download.inner_wrap .inline_type .box_inner p {font-size:2.77vw;}
+
+	/* SUPPORT : BG-TYPE */
+    .apps_cr .m_content-support.bg_type .f_header {position:relative;}
+    .apps_cr .m_content-support.bg_type .f_header:before {content:inherit; display:none;}
+    .apps_cr .m_content-support.bg_type .f_header .inner_wrap {vertical-align:top;}
+    .apps_cr .m_content-support.bg_type .f_header .inner_wrap .inner {max-width:none; margin:0;}
+    .apps_cr .m_content-support.bg_type .f_container {position:absolute; left:0; top:0; width:100%; height:100%;}
+    .apps_cr .m_content-support.bg_type .f_container > figure {position:absolute; left:0; top:0; width:100%; height:auto; margin-left:0;}
+    .ie9 .apps_cr .bg_type.m_content-support .f_container figure {margin-top:0;}
+
+	/* RTL */
+	.rtl .apps_cr [class*="btn-window"]:after {margin-left:0; margin-right:1.3888vw;}
+
+	/* NATION : TH */
+	html[lang^="th"] .apps_cr [class*="m_content-"] .btn_kv .btn-default-black,
+	html[lang^="th"] .apps_cr [class*="m_content-"] .btn_area .btn-default-black {font-size:4.1249vw;}
+
+	html[lang^="th"] .apps_cr .m_content-support .tit,
+	html[lang^="th"] .apps_cr .m_content-support .f_header .tit {font-size:7.4992vw;}
+	html[lang^="th"] .apps_cr .m_content-support .desc {font-size:3.7489vw;}
+	html[lang^="th"] .apps_cr .m_content-support .inner_wrap.download .inline_type .box_inner p {font-size:3.753vw;}
+
+	/* COMMON - DEVICE CHECKE BUTTON */
+	.apps_cr .mobile_all {display:block !important;}
+    .apps_cr .mobile_only {display:inline-block !important;}
+    .samsung-device .apps_cr .mobile_samsung {display:inline-block !important;}
+	.samsung-device .apps_cr .m_content-support.mobile_samsung {display:block !important;}
+    .samsung-device .apps_cr .m_content-support .mobile_samsung {display:block !important;}
+    .samsung-device .apps_cr .m_content-support .mobile_only {display:block !important;}
+	.samsung-device.samsung-tablet-device .apps_cr .mobile_samsung {display:none !important;}
+	.samsung-device.samsung-mobile-device .apps_cr .mobile_samsung {display:inline-block !important;}
+
+}

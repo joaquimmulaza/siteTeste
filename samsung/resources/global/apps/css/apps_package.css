@@ -1,0 +1,2011 @@
+@charset "utf-8";
+
+/* RESET */
+.apps button {border:0; background:none;}
+.apps .blind, .apps legend {overflow: hidden; position: absolute; top: 0; left: 0; width: 1px; height: 1px; font-size: 1px; line-height: 100px; white-space: nowrap;}
+#wrap #content {overflow:hidden; max-width:100%; z-index:1;}
+.apps figure[data-media-video] video {height:auto;}
+
+/* APPS-PAGINATION */
+.apps-pagination {position:relative;height:200px;background-color:#f6f6f7;overflow:hidden; /* border-top:1px solid #ddd; */}
+.apps-pagination .inner {position:relative; height:100%; margin:0 auto;}
+.apps-pagination .control{position:absolute; top:0;}
+.apps-pagination .control .name{display:inline-block; position:relative; height:100%; padding:85px 50px 65px 50px;z-index:3;}
+.apps-pagination .control .name span{display:block; font-size:16px; color:#707070; font-weight:bold;}
+.apps-pagination .control .name strong{display:inline-block; margin-top:1px;font-size:24px; color:#212121;}
+.apps-pagination .control div.name strong{color:#999;}
+.apps-pagination .control .name em{font-weight:bold;}
+.apps-pagination .img{position:absolute; opacity:0; vertical-align:top;}
+.apps-pagination .img.up{bottom:-20px;top:auto;}
+.apps-pagination .img.down{bottom:auto;top:-20px;}
+.apps-pagination .img img{vertical-align:middle;}
+.apps-pagination a.name:hover + .img,
+.apps-pagination a.name:focus + .img {bottom:0;opacity:1;}
+.apps-pagination a.name:hover + .img.down,
+.apps-pagination a.name:focus + .img.down {bottom:auto;top:0;}
+.apps-pagination .prev{left:0;}
+.apps-pagination .prev .img {left:240px;}
+.apps-pagination .prev .name{background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/button_arrow-left.png') 0 60% no-repeat;}
+.apps-pagination .next{right:0;text-align:right;}
+.apps-pagination .next .name{background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/button_arrow-right.png') 100% 60% no-repeat;}
+.apps-pagination .next div.name{background-image:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/button_arrow-right-2.png');}
+.apps-pagination .next .img{right:240px;}
+.apps-pagination .go_to_list{position:relative;text-align:center;padding-top:70px;z-index:1;}
+.apps-pagination .go_to_list a{width:248px;}
+.apps-pagination .ani {
+-webkit-transition:all 0.65s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+-moz-transition:all 0.65s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+-o-transition:all 0.65s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+transition:all 0.65s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.apps-pagination.create-nav .control {height:100%;}
+.apps-pagination.create-nav .name {display:table; height:100%; padding-top:0; padding-bottom:0; box-sizing:border-box; table-layout:fixed;}
+.apps-pagination.create-nav .name .name_inner {display:table-cell; padding:10px 0 6px; vertical-align: middle;}
+.apps-pagination.create-nav .name strong {max-width:220px;}
+.apps-pagination.create-nav .prev .name{background-position:0 55%;}
+.apps-pagination.create-nav .next .name{background-position:100% 55%;}
+.firefox .apps-pagination .control .name:focus {border:2px solid #a1c3fa;}
+
+/* RTL : APPS-PAGINATION */
+.rtl .apps-pagination .next {right:auto; left:0; text-align:left;}
+.rtl .apps-pagination .next .name {background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/button_arrow-left.png') 0 60% no-repeat;}
+.rtl .apps-pagination .next .img {right:auto; left:240px;}
+.rtl .apps-pagination .prev {right:0; left:auto;}
+.rtl .apps-pagination .prev .name {background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/button_arrow-right.png') 100% 60% no-repeat;}
+.rtl .apps-pagination .prev .img {right:240px; left:auto;}
+
+/* PDP AREA */
+.common-xml-section .m_content-pdp {max-width:1440px; margin:0 auto;}
+.m_content-pdp {background:#131313;}
+.m_content-pdp .f_container {max-width:1440px; padding:75px 0; margin:0 auto; box-sizing:border-box;}
+.m_content-pdp .inner:after {content:""; display:block; clear:both;}
+.m_content-pdp .item {float:left; width:50%; padding:21px 0 51px; text-align:center; box-sizing:border-box;}
+.m_content-pdp .item + .item {border-left:1px solid #2b2b2b;}
+.m_content-pdp .item img {width:100%;}
+.m_content-pdp .tit {margin:19px 0 28px; font-size:40px; color:#fff;}
+.m_content-pdp .btn_link {display:inline-block; font-size:16px; color:#fff; letter-spacing:2px; font-weight:bold;}
+.m_content-pdp .btn_link + .btn_link {position:relative; margin-left:29px; padding-left:32px;}
+.m_content-pdp .btn_link + .btn_link:before {position:absolute; top:50%; left:0; display:block; width:1px; height:13px; margin-top:-8px; content:""; background:#2b2b2b;}
+.m_content-pdp .tit span {position:relative; top:-7px; font-size:30px; font-family: sans-serif; font-weight:100;}
+.m_content-pdp .tit em {display:inline-block; font-size:26px; font-style:normal; font-family:inherit;}
+.m_content-pdp .galaxy-future .tit,
+.m_content-pdp .galaxy-watch .tit {margin-top:-21px;}
+
+/* RTL : PDP */
+.rtl .m_content-pdp .item {float:right;}
+.rtl .m_content-pdp .item + .item {border-right:1px solid #2b2b2b; border-left:0;}
+.rtl .m_content-pdp .galaxy-future .tit,
+.rtl .m_content-pdp .galaxy-watch .tit {direction:ltr;}
+
+/* COMMON - SLIDE CAROUSEl */
+.apps .slick-dots {position:absolute; bottom:0; right:0; left:0; text-align:center; }
+.apps .slick-dots li {display:inline-block;}
+.apps .slick-dots li button {display:block; width:16px; height:16px; margin:0 8px; background:transparent; text-indent:-9999px; -moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%; border:2px solid #707070; box-sizing:border-box;}
+.apps .black .slick-dots li button { border:2px solid #999999; }
+.apps .slick-dots li button:focus,
+.apps .slick-dots li button:hover,
+.apps .slick-dots li.slick-active button {background:#464646; border-color:#464646;}
+.firefox .apps .slick-dots li button:focus {overflow:hidden; outline:1px dotted #000;}
+.apps .black .slick-dots li button:focus {border-color:#fff;}
+
+/* COMMON - SLICK RESET */
+.apps .slick-slider{position:relative; display:block; box-sizing:border-box; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; -webkit-touch-callout:none; -khtml-user-select:none; -ms-touch-action:pan-y; touch-action:pan-y; -webkit-tap-highlight-color:transparent;perspective:1px;}
+.apps .slick-list {position:relative; display:block; overflow:hidden; max-width:100%; height:100%; margin:0; padding:0; box-sizing:border-box;}
+.apps .slick-list:focus{outline:none;}
+.apps .slick-list.dragging{cursor:pointer; cursor:hand;}
+.apps .slick-slider .slick-track,
+.apps .slick-slider .slick-list{
+    -webkit-transform:translate3d(0, 0, 0);
+       -moz-transform:translate3d(0, 0, 0);
+        -ms-transform:translate3d(0, 0, 0);
+         -o-transform:translate3d(0, 0, 0);
+            transform:translate3d(0, 0, 0);
+}
+.apps .slick-track{position:relative; top:0; left:0; display:block; height:100%;}
+.apps .slick-track:before,
+.apps .slick-track:after{display:table; content:'';}
+.apps .slick-track:after{clear:both;}
+.apps .slick-loading .slick-track{visibility:hidden;}
+.apps .slick-slide{display:none; float:left; height:100%; min-height:1px; box-sizing:border-box;}
+[dir='rtl'] .apps .slick-slide,
+.rtl .apps .slick-slide{float:right;}
+.apps .slick-slide.slick-loading img{display:none;}
+.apps .slick-slide.dragging img{pointer-events:none;}
+.apps .slick-initialized .slick-slide{display:block;}
+.apps .slick-loading .slick-slide{visibility:hidden;}
+.apps .slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent;}
+.apps .slick-arrow.slick-hidden {display:none;}
+
+/* FLOATING BAR CSS */
+#apps_floating {display:none;}
+.cm-g-breadcrumb {display:block;}
+
+/* LAYOUT */
+.apps .br_mo br {display:none;}
+.apps {position:relative; background-color:#fff;}
+.apps .apps-content {max-width:1920px; overflow:hidden; margin:0 auto;}
+.apps [class*="m_content-"] {position:relative;  overflow:hidden; z-index:1;}
+.contents .apps [class*="m_content-"] {opacity:0;}
+.contents .apps.show [class*="m_content-"] {opacity:1; transition:opacity .5s ease 1.6s;}
+.contents .apps .m_content-intro {opacity:1;}
+.apps.show .m_content-intro .f_header .logo {opacity:1; transition:opacity .8s ease 1s;}
+.apps.show .m_content-intro .tit,
+.apps.show .m_content-intro .desc,
+.apps.show .m_content-intro .disclaimer,
+.apps.show .m_content-intro .f_header .btn_kv,
+.apps.show .m_content-intro.active .f_header .btn_kv,
+.apps.show .m_content-intro .f_container figure img {opacity:1; transition:opacity .8s ease 1.2s;}
+.apps [class*="m_content-"].white{color:#000; background-color:#fff;}
+.apps [class*="m_content-"].white .tit,
+.apps [class*="m_content-"].white .desc,
+.apps [class*="m_content-"].gray .tit,
+.apps [class*="m_content-"].gray .desc {color:#000;}
+.apps [class*="m_content-"].gray {background-color:#f7f7f7;}
+.apps [class*="m_content-"].black {color:#fff; background-color:#000;}
+.apps [class*="m_content-"].black .tit,
+.apps [class*="m_content-"].black .desc {color:#fff;}
+.apps [class*="m_content-"].white .disclaimer,
+.apps [class*="m_content-"].white .disclaimer p,
+.apps [class*="m_content-"].gray .disclaimer,
+.apps [class*="m_content-"].gray .disclaimer p,
+.apps [class*="m_content-"] .disclaimer a {color:#666;}
+.apps [class*="m_content-"].black .disclaimer,
+.apps [class*="m_content-"].black .disclaimer p{color:#fff;}
+.apps [class*="m_content-"] .f_header{position:relative; max-width:1440px; margin:0 auto; padding:140px 20px 115px; box-sizing:border-box;}
+.apps [class*="m_content-"].left .f_header,
+.apps [class*="m_content-"].right .f_header {display:table; position:absolute; left:50%; width:720px; height:100%; margin:0; padding-left:125px; text-align:left; z-index:10; box-sizing:border-box;}
+.apps [class*="m_content-"].right .f_header {padding-left:20px; padding-right:125px;}
+.apps [class*="m_content-"].left .f_header .tit,
+.apps [class*="m_content-"].right .f_header .tit {font-size:56px; /* line-height:64px; */ line-height:1.2;}
+.apps [class*="m_content-"].left .f_header {margin-left:-720px;}
+.apps [class*="m_content-"].center .f_header {margin:0 auto; text-align:center;}
+.apps [class*="m_content-"].left .f_header .inner,
+.apps [class*="m_content-"].right .f_header .inner {display:table-cell; vertical-align:middle;}
+.apps [class*="m_content-"] .disclaimer {font-size:16px;  line-height:32px;}
+.apps .f_header .desc + .disclaimer,
+.apps .f_header .disclaimer {margin-top:10px;}
+.apps .f_header .tit {margin:0 auto; font-size:56px; /* line-height:64px; */ line-height:1.2; word-break:break-word;}
+.apps .f_header .desc {margin:21px auto 0; font-size:20px; /* line-height:32px; */ line-height:1.8;}
+.apps .f_header .sub_tit {margin-top:10px; font-size:24px; font-weight:bold; line-height:1.8; color:#363636;}
+.apps .f_header > .desc {width:67%;}
+.apps .f_header .logo > img {height:80px;}
+.apps .f_header .lang_logo > img {display:inline-block; width:80px; vertical-align:middle;}
+.apps .f_header .lang_logo span {display:inline-block; vertical-align:middle; margin-left:20px; font-size:56px; color:#000; line-height:80px; text-align:center;}
+.apps .f_header .lang_logo span:after {display:inline-block; width:0; height:80px; line-height:100%; vertical-align:middle; content:"";  }
+.apps .f_header .btn_kv {margin-top:55px; opacity:0;}
+.apps .f_header .btn_kv a {display:inline-block; width:135px; height:40px; vertical-align:middle;}
+.apps .f_header .btn_kv a + a {margin-left:22px;}
+.apps .f_header .btn_kv a img {width:100%;}
+.apps .f_container figure img {width:100%;}
+.apps .f_container .base {position:relative; left:0; top:0; z-index:1; width:100%; height:100%; overflow:hidden;}
+.apps .f_container .base > figure {max-width:1440px; margin:0 auto;}
+.apps [class*="m_content-"].full .f_container {padding:0;}
+.apps [class*="m_content-"].full .base > figure {position:absolute; max-width:1920px; width:1920px; height:100%; left:50%; margin-left:-960px;}
+.apps [class*="m_content-"].full .base > figure img {width:auto; height:100%;}
+.apps [class*="m_content-"].full .base > figure > video {position:relative; width:100%; visibility:visible}
+.apps [class*="m_content-"].full.left .f_container,
+.apps [class*="m_content-"].full.right .f_container {display:block; top:0; left:0; width:100%; margin:0;}
+.apps [class*="m_content-"].full.left .base,
+.apps [class*="m_content-"].full.right .base {display:block;}
+.apps [class*="m_content-"].full.left .base > figure,
+.apps [class*="m_content-"].full.right .base > figure {max-width: 1920px;}
+.apps [class*="m_content-"].full.left .base > figure img,
+.apps [class*="m_content-"].full.right .base > figure img {height:100%; width:auto;}
+.firefox .apps [class*="btn-default"]:focus {outline:1px dotted #777;}
+.apps [class*="m_content-"].left .f_container,
+.apps [class*="m_content-"].right .f_container {position:absolute; display:table; left:50%; width:720px; padding:0; height:100%; box-sizing:border-box;}
+.apps [class*="m_content-"].right .f_container {left:auto; right:50%;}
+.apps [class*="m_content-"].left .base,
+.apps [class*="m_content-"].right .base {position:static; display:table-cell; padding-bottom:0; vertical-align:middle;}
+.apps [class*="m_content-"].left .base > figure,
+.apps [class*="m_content-"].right .base > figure {max-width:720px;}
+.apps [class*="m_content-"].left.bottom .base,
+.apps [class*="m_content-"].right.bottom .base {vertical-align: bottom;}
+.apps [class*="m_content-"].gap .f_container .base {padding-bottom:100px;}
+.apps [class*="m_content-"].left.wide .f_container,
+.apps [class*="m_content-"].right.wide .f_container {width:960px;}
+.apps [class*="m_content-"].left.wide .f_container .base > figure,
+.apps [class*="m_content-"].right.wide .f_container .base > figure {max-width:960px;}
+
+.apps .f_header .btn_kv [class*="btn-default"] {
+    position: relative;
+    display: inline-block;
+    padding:21px 38px 19px;
+    background:transparent;
+    -webkit-border-radius:45px;
+    border-radius:50px;
+    line-height:1;
+    -webkit-transition-duration:0.3s;
+    -o-transition-duration:0.3s;
+    transition-duration:0.3s;
+    -webkit-transition-property:background,color,border-color;
+    -o-transition-property:background,color,border-color;
+    transition-property:background,color,border-color;
+    -webkit-transition-timing-function:ease-in-out;
+    -o-transition-timing-function:ease-in-out;
+    transition-timing-function:ease-in-out;
+    text-transform:uppercase;
+}
+.apps [class*="m_content-"] .btn_area [class*="btn-default"] {
+	position: relative;
+    display: inline-block;
+    padding:21px 50px 19px;
+    background:transparent;
+    -webkit-border-radius:45px;
+    border-radius:50px;
+    line-height:1;
+    -webkit-transition-duration:0.3s;
+    -o-transition-duration:0.3s;
+    transition-duration:0.3s;
+    -webkit-transition-property:background,color,border-color;
+    -o-transition-property:background,color,border-color;
+    transition-property:background,color,border-color;
+    -webkit-transition-timing-function:ease-in-out;
+    -o-transition-timing-function:ease-in-out;
+    transition-timing-function:ease-in-out;
+    text-transform:uppercase;
+}
+.apps .f_header .btn_kv .btn-default-black,
+.apps [class*="m_content-"] .btn_area .btn-default-black {width:auto; height:auto; color:#000; background:none; border:1px solid #000; font-size:16px;}
+.apps .f_header .btn_kv .btn-default-black:focus,
+.apps .f_header .btn_kv .btn-default-black:hover,
+.apps [class*="m_content-"] .btn_area .btn-default-black:focus,
+.apps [class*="m_content-"] .btn_area .btn-default-black:hover {background:#000; border:1px solid #000; color:#fff;}
+
+/* RTL : LAYOUT */
+.rtl .apps .f_header .lang_logo {direction:ltr;}
+.rtl .apps [class*="m_content-"].full .f_container .base > figure {right:50%; left:0; margin-right:-960px; margin-left:0;}
+.rtl .apps [class*="m_content-"].left .f_header,
+.rtl .apps [class*="m_content-"].right .f_header {text-align:right;}
+.rtl .apps .f_header .btn_kv a + a {margin-right:22px; margin-left:0;}
+.rtl .apps .slick-slide {float:right;}
+.rtl .apps .m_content-step .step_list .slick-next {left:0; right:auto; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_howtouse_btn_prev.png') no-repeat; background-size:100%;}
+.rtl .apps .m_content-step .step_list .slick-prev {right:0; left:auto; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_howtouse_btn_next.png') no-repeat; background-size:100%;}
+
+
+/* SEC : LAYOUT */
+html[lang="ko"] .apps .f_header .tit {word-break:keep-all;}
+
+/* APPS PDP */
+.apps .m_content-pdp.black {background:#131313;}
+
+/* SUPPORT */
+.apps .m_content-support.black {background:#222;}
+.apps .m_content-support .btn_default {display:block; margin-bottom:20px; font-size:16px;}
+.apps .m_content-support .btn_default a {display:inline-block; padding:19px 50px 19px; background-color:transparent; -webkit-border-radius:45px; border-radius:50px; line-height:1.2; border:1px solid #fff; -webkit-transition-duration:0.3s; -o-transition-duration:0.3s; transition-duration:0.3s; -webkit-transition-property:background,color,border-color; -o-transition-property:background,color,border-color; transition-property:background,color,border-color; -webkit-transition-timing-function:ease-in-out; -o-transition-timing-function:ease-in-out; transition-timing-function:ease-in-out; text-transform:uppercase;   color:#fff;}
+.apps .m_content-support .btn_default a:hover,
+.apps .m_content-support .btn_default a:focus {background-color:#f7f7f7; border:1px solid #f7f7f7; color:#000;}
+.firefox  .apps .m_content-support .btn_default a:focus {outline:1px dotted #777;}
+.apps .m_content-support .btn_default.mobile,
+.apps .m_content-support .btn_default.apple_btn {display:none;}
+
+.apps .m_content-support .inner_wrap {max-width:1440px; margin:0 auto; box-sizing:border-box;}
+.apps .m_content-support .inner {display:table; width:100%; padding:50px 0; table-layout:fixed;}
+.apps .m_content-support .support_list {display:table-cell; position:relative; padding:40px 0 145px; box-sizing:border-box; text-align:center; word-wrap:break-word; word-break:break-word;}
+.apps .m_content-support .support_list + .support_list {border-left:1px solid #363636;}
+.apps .m_content-support .list_inner {padding:0 4%;}
+.apps .m_content-support .support_icon {width:87px; height:74px; margin:0 auto 40px;}
+.apps .m_content-support .support_icon img {width:100%;}
+.apps .m_content-support .tit,
+.apps .m_content-support .f_header .tit {display:block; margin-bottom:9px; font-size:34px; font-weight:bold;}
+.apps .m_content-support .desc {padding:0 10%; font-size:20px;}
+.apps .m_content-support .btn_box {position:absolute; bottom:20px; left:0; right:0; padding:0 4%; box-sizing:border-box;}
+.samsung-device .apps .m_content-support .btn_box,
+.apple-browser-all .apps .m_content-support .btn_box {min-height:166px;}
+.samsung-device .apps .m_content-support .support_list,
+.apple-browser-all .apps .m_content-support .support_list {padding-bottom:215px;}
+.apple-browser-all .apps .m_content-support .btn_default.apple_btn {display:block;}
+
+.apps .m_content-support .inner_wrap.download {background:#fff; max-width:inherit;}
+.apps .m_content-support .inner_wrap.download .support_list {padding-bottom:195px;}
+.apps .m_content-support .inner_wrap.download .txt_box .tit,
+.apps .m_content-support .inner_wrap.download .txt_box .desc {color:#000;}
+.apps .m_content-support .inner_wrap.download .btn_box.inline_type {font-size:0;}
+.apps .m_content-support .inner_wrap.download .inline_type .box_inner.mobile {display:none;}
+.apps .m_content-support .inner_wrap.download .inline_type .box_inner {width:300px; vertical-align:top; display:inline-block; text-align:center;}
+.apps .m_content-support .inner_wrap.download .inline_type .box_inner p {color:#666; font-size:14px; margin-top:20px; font-style:normal;}
+.apps .m_content-support .inner_wrap.download .btn_default a {border-color:#000; color:#000;}
+.apps .m_content-support .inner_wrap.download .btn_default a:hover,
+.apps .m_content-support .inner_wrap.download .btn_default a:focus {background:#000; color:#fff; border-color:#000;}
+
+/* RTL : SUPPORT */
+.rtl .apps .m_content-support .support_list + .support_list {border-right:1px solid #363636; border-left:0;}
+
+/* SUPPORT : BG-TYPE */
+.apps .m_content-support.bg_type {height:600px;}
+.apps .m_content-support.bg_type .support_list + .support_list {border-color:#fff;}
+.apps .m_content-support.bg_type .f_header {position:absolute; top:0; left:0; right:0; height:100%; z-index:2; font-size:0; text-align:center; padding:0; max-width:none;}
+.apps .m_content-support.bg_type .f_header:before {content:""; display:inline-block; height:100%; vertical-align:middle;}
+.apps .m_content-support.bg_type .f_header .inner_wrap {width:100%; display:inline-block; vertical-align:middle;}
+.apps .m_content-support.bg_type .f_header .inner_wrap .inner {max-width:1440px; margin:0 auto; padding:0;}
+.apps .m_content-support.bg_type .f_container > figure {position:absolute; left:50%; width:1920px; margin-left:-960px;}
+.apps .m_content-support.bg_type .f_container > figure img {width:auto; height:100%;}
+
+/* SUPPORT : 버튼 높이 유동 */
+.samsung-device .apps .m_content-support .inner_wrap.fluid .btn_box,
+.apple-device .apps .m_content-support .inner_wrap.fluid .btn_box {min-height:auto}
+.samsung-device .apps .m_content-support .inner_wrap.fluid .support_list,
+.apple-device .apps .m_content-support .inner_wrap.fluid .support_list {padding-bottom:145px;}
+
+/* COMMON - DEVICE CHECKE BUTTON */
+.apps .pc_only {display:block;} /* pc만 노출 */
+.apps .mobile_all {display:none !important;} /* 모바일과 타블릿에서 노출 */
+.apps .mobile_samsung {display:none !important;} /* 모바일에서 삼성단말기만 노출 */
+.apps .mobile_only {display:none !important;} /* 모바일에서만 노출 */
+.samsung-mobile-device .apps .mobile_samsung {display:none !important;} /* 삼성단말기 모바일에서만 노출 */
+.samsung-device.samsung-mobile-device .apps .mobile_samsung {display:none !important;}
+.apps .galaxy_btn {display:none !important;} /* 삼성 단말기(특정단말기) 모바일에서만 노출 */
+.apps .use_desktop,
+.apps .use_mobile_tablet {display:none;}
+.desktop .apps .use_desktop {display:block;}
+.desktop .apps .use_mobile_tablet {display:none;}
+.mobile .apps .use_mobile_tablet {display:block;}
+.mobile.desktop .apps .use_desktop,
+.mobile .apps .use_desktop  {display: none;}
+
+/* BUTTON */
+.apps [class*="btn-window"]:after {display:inline-block; width:11px; height:11px; margin-left:8px; background:url('../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/common/ico-newwindow-black.svg') no-repeat; background-size:100%; transition:background ease-in-out 0.3s; content:"";}
+.apps .btn-window-black:after {background:url('../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/common/ico-newwindow-white.svg') no-repeat;}
+.apps .btn-window-black:hover:after,
+.apps .btn-window-black:focus:after {background:url('../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/common/ico-newwindow-black.svg') no-repeat;}
+.apps .btn-window-white:after {background:url('../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/common/ico-newwindow-black.svg') no-repeat;}
+.apps .btn-window-white:hover:after,
+.apps .btn-window-white:focus:after {background:url('../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/common/ico-newwindow-white.svg') no-repeat;}
+.apps .btn-window-blue:after {background:url('../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/common/ico-newwindow-blue.svg') no-repeat;}
+.apps .disclaimer [class*="btn-window"]:after {margin-left:0; vertical-align: middle;}
+
+.apps .btn-default-black .btn-window-white:after {background:url('../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/common/ico-newwindow-black.svg') no-repeat;}
+.apps .btn-default-black:hover .btn-window-white:after,
+.apps .btn-default-black:active .btn-window-white:after {background:url('../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/common/ico-newwindow-white.svg') no-repeat;}
+
+/* RTL : BUTTON */
+.rtl .apps [class*="btn-window"]:after {margin-left:0; margin-right:8px;}
+.rtl .apps .disclaimer [class*="btn-window"]:after {margin-left:0; margin-right:0;}
+/* BG-TYPE */
+.apps [class*="m_content-"].bg-type {background-size:1920px auto; background-position:center; background-repeat:no-repeat;}
+.apps [class*="m_content-"].bg-type.top-bg {background-position:top center;}
+
+/* INTRO */
+.apps .m_content-intro {padding:120px 0 170px 0; box-sizing:border-box;}
+.apps .m_content-intro .f_header {padding:0;}
+.apps .m_content-intro .f_header .desc { width:70%; }
+.apps .m_content-intro .f_header .logo {opacity:0; font-size:0;}
+.apps .m_content-intro .tit {margin-top:127px; font-size:56px; line-height:72px; opacity:0}
+.apps .m_content-intro .desc { width:70%; margin-top:10px; opacity:0}
+.apps .m_content-intro .disclaimer {opacity:0;}
+.apps .m_content-intro .btn_intro {margin-top:58px;}
+.apps .m_content-intro .btn_intro span {display:inline-block; width:135px; height:40px;}
+.apps .m_content-intro .btn_intro span + span {margin-left:21px;}
+.apps .m_content-intro .btn_intro span img {width:100%;}
+.apps .m_content-intro.active .f_header .logo,
+.apps .m_content-intro.active .f_header .tit,
+.apps .m_content-intro.active .f_header .desc,
+.apps .m_content-intro.active .disclaimer,
+.apps .m_content-intro.active .f_header .btn_kv {opacity:1;}
+
+/* TEXT TYPE */
+.apps .text-wrap {max-width:1440px; margin:0 auto; padding:20px 20px 48px; text-align:center; box-sizing:border-box;}
+
+/* KV */
+.apps .m_content-kv .f_container {position:relative; height:900px;}
+.apps .m_content-kv .f_container figure {position:absolute; top:0; left:50%; height:100%; margin-left:-960px;}
+.apps .m_content-kv .f_container figure img {width:auto; height:100%;}
+
+/* INTRO & KV HERO STYLE */
+.apps.hero .f_header .tit,
+.apps.hero [class*="m_content-"].left .f_header .tit,
+.apps.hero [class*="m_content-"].right .f_header .tit {font-size:48px;}
+.apps.hero .f_header .desc {font-size:18px;}
+
+.apps.hero .f_header .logo > img {height:56px;}
+.apps.hero .m_content-intro {padding:90px 0 66px;}
+.apps.hero .m_content-intro .tit {margin-top:95px; font-size:48px;}
+.apps.hero .m_content-intro .desc {margin-top:36px; line-height:1.2;}
+.apps.hero .f_header .btn_kv {margin-top:37px;}
+
+.apps.hero .m_content-kv .f_container {max-width:1440px; height:840px; margin:0 auto; padding-bottom:113px;}
+.apps.hero .m_content-kv .f_container figure {margin:0 auto; left:0;}
+.apps.hero .m_content-kv .f_container figure img {width:100%; height:auto;}
+
+/* UTUBE TYPE */
+.apps .utube_type .f_container {max-width:1440px; height:auto; margin:0 auto;}
+.apps .utube_type .f_container figure {position:absolute; top:0; left:0; right:0; bottom:-1px; height:auto; margin:0; z-index:1; webkit-transition: opacity .3s ease-in-out; -o-transition: opacity .3s ease-in-out; transition: opacity .3s ease-in-out; }
+.apps .utube_type .f_container .utube-container { position:relative; width:100%; height:0; padding-bottom:56.25%; background:#000; }
+.apps .utube_type .f_container .utube-container img {width:100%;height:100%;}
+.apps .utube_type .f_container .utube-container .video-area { position:absolute; left:0; top:0; right:0; width:100%; height:100%; }
+.apps .utube_type .f_container .utube-container .video-area iframe { position:absolute; left:0; top:0; right:0; width:100%; height:100%;}
+.apps .utube_type .f_container .utube-container .btn-control-play {display:block; position:absolute; top:50%; left:50%; width:183px; height:183px; margin:-91px 0 0 -91px; cursor:pointer; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/btn-play-video-shadow.png') no-repeat left top; background-size:100%; transition:opacity 0.5s; transition: all 0.3s; z-index:1;}
+.apps .utube_type .f_container .utube-container .btn-control-play:hover {transform: scale(1.1,1.1);}
+
+/* DISCLAIMER AREA */
+.apps .m_content-disclaimer {text-align:center;}
+.apps .m_content-disclaimer.black {background:#666; }
+.apps .m_content-disclaimer .disclaimer {max-width:1440px; margin:0 auto;}
+.apps .m_content-disclaimer .f_container {padding:43px 0 44px;}
+
+/* CARD LIST TYPE */
+.apps .card-list-wrap {padding-bottom:100px; font-size:0; text-align: center;}
+.apps .card-list-wrap .card-list {display:inline-block;  position:relative; vertical-align: top;}
+.apps .card-list-wrap .card-list figure img {width:100%;}
+.apps .card-list-wrap .card-list .title {display:block; position:absolute; bottom:100%; width:100%; margin:0 0 23px 0; font-size:28px; line-height:32px; font-weight:bold;}
+.apps .card-list-wrap .card-list .sub-title {display:block; position:absolute; bottom:100%; width:100%; margin:0 0 23px 0; font-size:20px; line-height:32px; font-weight:bold;}
+.apps .card-list-wrap .card-list .desc {font-size:20px; line-height:32px; margin-top:15px;}
+.apps .card-list-wrap .card-list figure + .title,
+.apps .card-list-wrap .card-list figure + .sub-title {position:static; margin:40px 0 0 0;}
+.apps .card-tit-type .card-list {width:267px; vertical-align:bottom;}
+.apps .card-tit-type .card-list.top_pc .title,
+.apps .card-tit-type .card-list.top_pc .sub-title {position:absolute;}
+.apps .card-tit-type .card-list.top_pc .title,
+.apps .card-tit-type .card-list.top_pc .sub-title {margin:30px 0 35px 0;}
+.apps .card-tit-type .card-list figure + .title,
+.apps .card-tit-type .card-list figure + .sub-title {margin:40px 0 23px 0;}
+
+/* HALF-TAB */
+.apps .half-tab .f_container {position:relative; margin:0 auto; box-sizing:border-box; overflow:visible;}
+.apps .half-tab .inner {display:block; width:100%; min-height:935px; padding:0; box-sizing: border-box; } /* height find-my-mobile 기준 */
+.apps .half-tab .item_tit {font-size:20px; color:#000; font-weight:bold;}
+.apps .half-tab .item_wrap {display:table-cell; vertical-align:middle;}
+.apps .half-tab .item_txt_box {position:relative; max-width:1440px; margin:0 auto; padding:30px 45px; width:100%; box-sizing:border-box;}
+.apps .half-tab .item_txt_box:after {display:block; clear:both; content:"";}
+.apps .half-tab .item_layout {display:table; float:right;}
+.apps .half-tab.non-fade .item_wrap {position:relative; width:645px; padding:0; z-index:5;}
+.apps .half-tab .item_box .desc {font-size:20px; margin:0 0 0 90px;}
+.apps .half-tab .item_box + .item_box {margin-top:46px;}
+.apps .half-tab .item_box a {display:block;}
+.apps .half-tab .item_icon {display:table-cell; width:67px; height:67px; vertical-align:middle; background-size:contain !important;}
+.apps .half-tab .item_tit {display:table;}
+.apps .half-tab .item_txt .disclaimer {margin:15px 0 0 90px;}
+.apps .half-tab .tit_txt {display:table-cell; padding-left:21px; vertical-align:middle; font-size:28px;}
+.apps .half-tab .txt_box a {position:relative; display:block;}
+.apps .half-tab .overlay_wrap {position:absolute; bottom:0; left:50%; width:1920px; height:925px; margin-left:-960px;} /* height find-my-mobile 기준 */
+.apps .half-tab .overlay_box {position: relative; width:100%; height:100%;}
+.apps .half-tab .overlay_inner {position: absolute; left:0; width: 960px; height:100%; padding-top:48px; box-sizing: border-box;}
+.apps .half-tab .slide_img {display:none; position:absolute; top:0; left:0; width:100%; height:100%;}
+.apps .half-tab .slide_img figure {position: relative; height:100%;}
+.apps .half-tab .slide_img figure img {position: absolute; bottom:0;}
+.apps .half-tab .slick-slide .slide_img {opacity:0.3 !important}
+.apps .half-tab .slick-slide .slide_img figure {height:100%;}
+.apps .half-tab .slick-slide.active .slide_img {opacity:1 !important}
+.apps .half-tab .slide_img.active {display:block;}
+.apps .half-tab .slide_img video {display:block; position:absolute; width:100%}
+.apps .half-tab .fixed_img {position:relative;}
+.apps .half-tab .item_box .tit_txt,
+.apps .half-tab .item_box .desc,
+.apps .half-tab .item_box .item_icon,
+.apps .half-tab .item_box .disclaimer {opacity:1; color:#747474;}
+.apps .half-tab .item_box a:hover .tit_txt,
+.apps .half-tab .item_box a:focus .tit_txt,
+.apps .half-tab .item_box.active .tit_txt {color:#1428A0; text-decoration:underline;}
+.apps .half-tab .item_box a:hover .desc,
+.apps .half-tab .item_box a:focus .desc,
+.apps .half-tab .item_box.active .desc {color:#000;}
+.apps .half-tab .item_box a:hover .disclaimer,
+.apps .half-tab .item_box a:focus .disclaimer,
+.apps .half-tab .item_box.active .disclaimer{color:#666;}
+.apps .mo_cont_img {display:none !important; text-align:center;}
+.apps .mo_device_img {display:none !important; text-align:center;}
+.mobile .apps .mo_device_img,
+.touch .apps .mo_device_img {display:block !important;}
+
+/* RTL : HALF-TAB */
+.rtl .apps .half-tab .tit_txt {padding-left:0; padding-right:21px;}
+.rtl .apps .half-tab .item_txt .desc {margin:0 90px 0 0;}
+.rtl .apps .half-tab .item_txt .disclaimer {margin:15px 90px 0 0;}
+
+/* I-TYPE */
+.apps .i-type .tit + .desc {margin-top:30px;}
+.apps .i-type .add_txt .desc {margin-top:4px;}
+.apps .i-type .add_txt + .add_txt {margin-top:51px;}
+.apps .i-type .add_txt_wrap {margin-top:95px; padding-right:130px;}
+.apps .i-type .add_txt .sub_tit {font-size:22px; color:#000; font-weight:bold;}
+
+/* HOW TO USE */
+.apps .m_content-step {/* height:1437px; */ background:#f7f7f7;}
+.apps .m_content-step .m_feature {height:100%;}
+.apps .m_content-step .f_header {padding-bottom:43px;}
+.apps .m_content-step .f_container {position:relative;}
+.apps .m_content-step .tit {color:#000;}
+.apps .m_content-step .desc {color:#000;}
+.apps .m_content-step .f_tab {max-width:1440px; margin:0 auto; text-align:center; background:#363636; font-size:0;}
+.apps .m_content-step .f_tab:after {display:block; clear:both; content:"";}
+.apps .m_content-step .f_tab > li {display:inline-block; min-height:80px; line-height:80px; vertical-align:middle;}
+.apps .m_content-step .f_tab li .f_tab-header {position:relative; width:340px; min-height:80px; font-size:18px; letter-spacing:-0.5px; line-height:1.32; color:#aaa; vertical-align:top; cursor:pointer; word-break:break-word;}
+.firefox .apps .m_content-step .f_tab li .f_tab-header:focus {outline:1px solid #a5c7fe;}
+.apps .m_content-step .f_tab li .f_tab-header span {display:block; padding:3% 20px 2.5%;}
+.apps .m_content-step .f_tab li .f_tab-header .blind {padding:0;}
+.apps .m_content-step .f_tab li .f_tab-header h3 {font-weight:normal;}
+.apps .m_content-step .f_tab li .f_tab-header:after {display:block; position:absolute; right:0; top:50%; width:1px; height:17px; margin-top:-9px; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_howtouse_bar.gif') left center no-repeat; content:"";}
+.apps .m_content-step .f_tab li:first-child .f_tab-header:before {display:block; position:absolute; left:0; top:50%; width:1px; height:17px; margin-top:-9px; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_howtouse_bar.gif') right center no-repeat; content:"";}
+.apps .m_content-step .f_tab li .f_tab-header.on {font-size:18px; font-weight:bold; letter-spacing:0; color:#fff;}
+.apps .m_content-step .f_tab li .f_tab-content {display:none;}
+.apps #section-howtotab {transition: height 0.4s;}
+.apps #section-howtotab.m_content-step .f_tab li .f_tab-content.active {display:block;}
+.apps .m_content-step .f_tab-content {position:absolute; top:80px; left:50%; max-width:1440px; width:100%; height:100%; margin-left:-720px; line-height:1.32;}
+.apps .m_content-step .f_tab-content .step_desc {font-size:24px; transition: height 0.4s;}
+.apps .m_content-step .f_tab-content .step_desc strong {display:block; margin-top:54px; color:#000; font-weight:bold;}
+.apps .m_content-step .f_tab-content .step_desc .desc {overflow:hidden; min-height:68px; line-height:1.6; margin-top:14px; font-size:20px; color:#000;}
+.apps .m_content-step .f_tab-content .step_desc .desc .link {display:inline-block;}
+.apps .m_content-step .f_tab-content .step_desc .desc .disclaimer {display:block; margin-top:12px; color:#666;}
+.apps .m_content-step .bx-wrapper {position:relative; margin:35px auto 0; padding:0 80px;}
+.apps .m_content-step .bx-wrapper figcaption {overflow:hidden; position:absolute; top:0; left:-9999px; width:1px; height:1px; line-height:0; font-size:0; text-indent:-9999px}
+.apps .m_content-step .bx-wrapper .step_list {margin-left:-318px;}
+.apps .m_content-step .bx-wrapper .step_list > div {height:486px; opacity:0.3; text-align:center;}
+.apps .m_content-step .bx-wrapper .step_list > div img {display:inline-block; width:auto; height:100%}
+.apps .m_content-step .bx-wrapper .step_list > div .slick-slide {text-align:center;}
+.apps .m_content-step .bx-wrapper .bx-pager,
+.apps .m_content-step .bx-wrapper .bx-controls-auto {margin-top:50px;}
+.apps .m_content-step .bx-wrapper .bx-pager .bx-pager-item,
+.apps .m_content-step .bx-wrapper .bx-controls-auto .bx-controls-auto-item {display:inline-block;}
+.apps .m_content-step .bx-wrapper .bx-pager.bx-default-pager a {display:block; width:16px; height:16px; margin:0 8px; background:transparent; text-indent:-9999px; -moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%; border:2px solid #707070; box-sizing:border-box;}
+.apps .m_content-step .bx-wrapper .bx-pager.bx-default-pager a:focus,
+.apps .m_content-step .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.apps .m_content-step .bx-wrapper .bx-pager.bx-default-pager a.active {background:#464646; border-color:#464646;}
+.apps .m_content-step .bx-wrapper .bx-controls-direction a {position:absolute; top:50%; width:80px; height:80px; margin-top:-40px; text-indent:-9999px; z-index:9999;}
+.apps .m_content-step .bx-wrapper .bx-controls-direction a.disabled {display:none;}
+.apps .m_content-step .bx-wrapper .bx-prev {left:-29px; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/commonapps_howtouse_btn_prev.html') no-repeat; background-size:100%;}
+.apps .m_content-step .bx-wrapper .bx-next {right:-29px; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_howtouse_btn_next.png') no-repeat; background-size:100%;}
+.apps .m_content-step .bx-wrapper .bx-viewport:before {display:block; position:absolute; top:0; left:0; width:100px; height:100%; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_howtouse_bg_right.png') 100% 0 repeat-y; content:""; z-index:1;}
+.apps .m_content-step .bx-wrapper .bx-viewport:after {display:block; position:absolute; top:0; right:0; width:100px; height:100%; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_howtouse_bg_left.png') 0 0 repeat-y; content:"";}
+.apps .m_content-step .f_tab-content .step_list {overflow:hidden; max-width:1440px; height:auto; margin:35px auto 0; padding:0 80px; }
+.apps #section-howtotab.m_content-step .f_tab-content .step_list img {display:inline-block; width:100%; height:auto;}
+.apps .m_content-step .f_tab-content .step_list figure > .desc {height:0; margin-top:40px; padding:0 10%; overflow:hidden;}
+.apps .m_content-step .f_tab-content .step_list .slick-current figure > .desc {height:auto; font-size:20px;}
+.apps .m_content-step .f_tab-content .step_list figure > .disclaimer {height:auto; margin-top:40px; padding:0 15%; font-size:20px; line-height:1.7; color:#666; overflow:hidden;}
+.apps .m_content-step .f_tab-content .step_list .desc .disclaimer {display:block; margin-top:15px; font-size:16px; color:#666;}
+.apps .m_content-step .f_tab-content .step_list.slick-slider { max-height:850px; height:auto; padding-bottom:70px; box-sizing:border-box;}
+.apps .m_content-step .f_tab-content .slick-slider:before {display:block; position:absolute; top:0; left:0; width:180px; height:100%; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_howtouse_bg_right2.png') 0 0 repeat-y; content:""; z-index:1;}
+.apps .m_content-step .f_tab-content .slick-slider:after {display:block; position:absolute; top:0; right:0; width:180px; height:100%; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_howtouse_bg_left2.png') 100% 0 repeat-y; content:"";}
+.apps .m_content-step .f_tab-content .slick-list {overflow:visible; height:auto; margin:0 auto; padding:0 !important; perspective:1px;}
+.apps .m_content-step .f_tab-content .slick-slide {width:1035px; height:100%; opacity:.3}
+.apps .m_content-step .f_tab-content .slick-slide.slick-current {opacity:1; height:auto;}
+.apps .m_content-step .f_tab-content .slick-slide figure {width:1035px; height:auto; margin:0 auto;}
+.apps .m_content-step .f_tab-content.howto_type1 .slick-list {max-width:none;}
+.apps .m_content-step .f_tab-content.howto_type1 .slick-slider:after,
+.apps .m_content-step .f_tab-content.howto_type1 .slick-slider:before {display:none;}
+
+
+/* HOW TO USE DOUBLE TAB */
+.apps .m_content-step .f_tab.depth2 li .f_tab-header {min-height:70px; color:#666; font-size:18px;}
+.apps .m_content-step .f_tab.depth2 li .f_tab-header.on {font-weight:bold; color:#000; text-decoration:underline;}
+.apps .m_content-step .f_tab.depth2 {margin-top:0; background:#fff; border-bottom:1px solid #e0e0e0;}
+.apps .m_content-step .f_tab.depth2 > li {min-height:70px; line-height:70px; padding:0 0.5%; box-sizing:border-box;}
+.apps .m_content-step .f_tab .f_tab.depth2 li .f_tab-header:before,
+.apps .m_content-step .f_tab .f_tab.depth2 li .f_tab-header:after {background:none;}
+.apps .m_content-step .f_container > .f_tab li .f_tab-content.howto_type2 {display:none;}
+.apps #section-howtotab.m_content-step .f_container > .f_tab li .f_tab-content.howto_type2.active {display:block;}
+.apps .m_content-step .f_container > .f_tab li .f_tab-content.howto_type2 .f_tab.depth2 > li > .f_tab-content {display:none;}
+.apps #section-howtotab.m_content-step .f_container > .f_tab li .f_tab-content.howto_type2 .f_tab.depth2 > li > .f_tab-content.active {display:block;}
+.apps .m_content-step .f_tab .howto_type2 .m_f_tab {display:none;}
+
+/* HOW TO USE MIX TYPE */
+.apps .m_content-step .f_tab figcaption {overflow:hidden; position:absolute; top:0; left:0; width:1px; height:1px; font-size:1px; line-height:100px; white-space:nowrap; clip:rect(1px, 1px, 1px, 1px);}
+.apps .m_content-step .f_tab-content .mix_type.slick-slide {width:1280px;}
+.apps .m_content-step .f_tab-content .mix_type.slick-slide figure {width:auto}
+.apps .m_content-step .f_tab-content .mix_type figure:after {display:block; content:''; clear:both;}
+.apps .m_content-step .f_tab-content .mix_type .img_box {float:left; width:35.7%; padding-left:188px; box-sizing:border-box;}
+.apps .m_content-step .f_tab-content .mix_type .img_box img {height:auto;}
+.apps .m_content-step .f_tab-content .mix_type .desc_box {float:left; width:64.3%; padding:56px 80px 0 50px; color:#666; font-size:20px; line-height:32px; vertical-align:top; text-align:left; box-sizing:border-box;}
+.apps .m_content-step .f_tab-content .img_desc {margin-top:13px; font-size:16px; line-height:28px;}
+.apps .m_content-step .f_tab-content .img_desc strong {color:#363636;}
+.apps .m_content-step .f_tab-content .img_desc p {color:#666;}
+.apps .m_content-step .f_tab-content .step_desc .desc.only {margin-top:52px;}
+.apps .m_content-step .f_tab li h3 .f_tab-header .blind {display:none;}
+.apps .m_content-step .f_tab-content .step_list.mo-visible {display:none;}
+
+/* HOW TO US : SLIDE CAROUSEL */
+.apps .m_content-step .slick-dots {position:absolute; bottom:1px; right:0; left:0; text-align:center; }
+.apps .m_content-step .slick-dots li {display:inline-block;}
+.apps .m_content-step .slick-dots li button {display:block; width:16px; height:16px; margin:0 8px; background:transparent; text-indent:-9999px; -moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%; border:2px solid #707070; box-sizing:border-box;}
+.apps .m_content-step .slick-dots li button:focus,
+.apps .m_content-step .slick-dots li button:hover,
+.apps .m_content-step .slick-dots li.slick-active button {background:#464646; border-color:#464646;}
+.firefox .apps .m_content-step .slick-dots li button:focus {overflow:hidden; outline:1px dotted #000;}
+.apps .m_content-step .step_list .slick-arrow {position:absolute; top:50%; width:80px; height:80px; margin-top:-40px; text-indent:-9999px; z-index:9999;}
+.apps .m_content-step .step_list .slick-arrow.slick-disabled {display:none !important;}
+.apps .m_content-step .step_list .slick-prev {left:0; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_howtouse_btn_prev.png') no-repeat; background-size:100%;}
+.apps .m_content-step .step_list .slick-next {right:0; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_howtouse_btn_next.png') no-repeat; background-size:100%;}
+
+/* RTL : HOW TO US */
+.rtl .apps .m_content-step .f_tab li .f_tab-header:after {left:0; right:auto;}
+.rtl .apps .m_content-step .f_tab li:first-child .f_tab-header:before {right:0; left:auto;}
+
+/* TAB-SLIDE */
+.apps .slide-tab .inner {position:relative; padding:994px 0 188px; text-align:center;}
+.apps .slide-tab .tab-slide-cont {display:inline-block; max-width:16.6%; vertical-align:middle; word-break:break-word;}
+.apps .slide-tab .tab-slide-cont + .tab-slide-cont {margin-left:66px;}
+.apps .slide-tab .tab-title {padding-top:70px;}
+.apps .slide-tab .tab-title .title {font-size:22px; font-weight:bold;}
+.apps .slide-tab .tab-title .title a {color:#000;}
+.apps .slide-tab .tab-title .title a:hover,
+.apps .slide-tab .tab-title .title a:focus,
+.apps .slide-tab .tab-slide-cont.active a {color:#007bc1; text-decoration:underline;}
+.apps .slide-tab .tab-media {display:none; position:absolute; top:0; left:50%; width:1920px; margin-left:-960px;}
+.apps .slide-tab .tab-media figure > img {height:100%;}
+.apps .slide-tab .tab-media .screen-inner {display:table; width:100%; font-size:0;}
+.apps .slide-tab .tab-media .screen-inner > figure {display:table-cell; vertical-align:middle; height:636px; font-size:0;}
+.apps .slide-tab .tab-media .screen-inner > figure img {width:auto; height:100%;}
+.apps .slide-tab .tab-text {display:none; position:absolute; left:0; bottom:0; width:100%; height:188px; padding:31px 10% 10px; box-sizing:border-box;}
+.apps .slide-tab .tab-text .desc {font-size:20px; line-height:1.6;}
+.apps .slide-tab .tab-slide-cont.active .tab-media,
+.apps .slide-tab .tab-slide-cont.active .tab-text {display:block;}
+
+/* RTL : TAB-SLIDE */
+.rtl .apps .slide-tab .tab-slide-cont + .tab-slide-cont {margin-left:0; margin-right:66px;}
+
+/* MEDIA TAB TYPE */
+.apps .media_tab_wrap .swiper-container .inner {max-width:1200px; margin:0 auto 65px; text-align:center; box-sizing:border-box; transition:transform 0.5s; font-size:0;}
+.apps .media_tab_wrap .swiper-container .inner > .swiper-slide {display:inline-block; width:14.28%; padding:0 10px; vertical-align:middle; box-sizing:border-box; word-wrap:break-word;}
+.apps .media_tab_wrap .tit {font-size:22px;}
+.apps .media_tab_wrap .tit a {color:#757575;}
+.apps .media_tab_wrap .tit a:hover,
+.apps .media_tab_wrap .tit a:focus,
+.apps .media_tab_wrap .swiper-slide.active a {color:#000; text-decoration:underline;}
+
+/* MEDIA CONTENT TYPE */
+.apps .media_cont_wrap {display:table; width:100%; table-layout:fixed;}
+.apps .media_cont_wrap .media_list {display:table-cell; vertical-align:top; text-align:center; padding:0 10px;}
+.apps .media_cont_wrap .title {display:block; margin-top:45px; font-weight:bold; font-size:20px; line-height:34px;}
+
+/* slide TAB (extention tip) */
+.apps .list_slide_tab{max-width:1630px; margin:auto;}
+.apps .list_slide_tab .tab_btn_wrap {text-align: center;}
+.apps .list_slide_tab .tab_btn_wrap .title {display:inline-block; vertical-align: middle; border-radius: 50px;  background: #e3e4f3;}
+.apps .list_slide_tab .tab_btn_wrap .title + .title {margin-left:30px; }
+.apps .list_slide_tab .tab_btn_wrap .title .tab_btn{display:inline-block; padding:0 40px; width:220px; min-height:60px; vertical-align: middle; font-size:16px; color:#333; }
+.apps .list_slide_tab .tab_btn_wrap .title.active {background-color:#54589b}
+.apps .list_slide_tab .tab_btn_wrap .title.active .tab_btn {color:#fff;}
+.apps .list_slide_tab .tab_conts_wrap {margin-top:50px; padding:62px 0 70px; border-radius:50px; transition: height 0.4s; background-color: #fff;-ms-box-shadow: 0px 6px 7px 0px #c5c5c5;box-shadow: 0px 6px 7px 0px #c5c5c5; }
+.apps .list_slide_tab .tab_conts_wrap .tab_conts {display:none;}
+.apps .list_slide_tab .tab_conts_wrap .tab_conts.active{display:block;}
+.apps .list_slide_tab .tab_conts_wrap .card-list-wrap {position:relative; padding-bottom:60px;}
+.apps .list_slide_tab .tab_conts_wrap .card-list-wrap .slick-list {height:auto; transition: height 0.4s;}
+.apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list {width:100%}
+.apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list-inner {width:1310px; margin:auto;}
+.apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .list_item{display:inline-block; width:23.28%; vertical-align:top;}
+.apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .list_item + .list_item {margin-left:2.29%}
+.apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .sub-title {margin:34px 0 0 0; font-size:18px;line-height:1.3;}
+.apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .desc {font-size:14px; line-height:24px; color:#000;}
+.apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .desc_tit {margin-top:0; font-size:18px; font-weight: bold; line-height:1.38;}
+.apps .list_slide_tab .tab_conts_wrap .card-list-desc {margin-top:50px; text-align: center; font-size:14px;}
+.apps .list_slide_tab .tab_conts_wrap .disclaimer {max-width:1440px; margin:auto; font-size:14px; line-height:20px;}
+.apps .list_slide_tab .tab_conts_wrap .disclaimer .link_text{color:#0053a7; text-decoration: underline; word-break: break-all;}
+.apps .list_slide_tab .tab_conts_wrap .list_item .disclaimer {margin-top:23px; line-height:1.6;}
+.apps .list_slide_tab .tab_conts_wrap .tab_sub_title {margin-bottom:60px; font-size:24px; color:#333; font-weight:bold; text-align:center;}
+.apps .list_slide_tab .tab_conts_wrap .tab_depth2 {position:relative; margin-bottom:60px; text-align:center; z-index:1;}
+.apps .list_slide_tab .tab_conts_wrap .tab_depth2 .tab_btn{position:relative; padding:0 68px; font-size:24px;color:#666; font-weight:bold;}
+.apps .list_slide_tab .tab_conts_wrap .tab_depth2 .tab_btn + .tab_btn:after{content: ""; display: block; position:absolute; top:50%; left:0; margin-top:-10px; width:2px; height:20px; background-color: #666;}
+.apps .list_slide_tab .tab_conts_wrap .tab_depth2 .tab_btn.active span{color:#5f66df; border-bottom:2px solid #5f66df;}
+.apps .list_slide_tab .tab_conts_wrap .tab_depth2 + .card-list-wrap {margin-top:-91px; padding-top:91px;}
+.apps .list_slide_tab .card-list-wrap .slick-arrow{position: absolute; top: 413px; width: 16px; height: 28px; text-indent: -9999px; z-index: 10;}
+.apps .list_slide_tab .card-list-wrap .slick-arrow.slick-prev{left:95px; background: url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/btn_list_slide_arrow_prev.png') no-repeat; background-size: contain;}
+.apps .list_slide_tab .card-list-wrap .slick-arrow.slick-next{right:95px; background: url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/btn_list_slide_arrow_next.png') no-repeat; background-size: contain;}
+.apps .list_slide_tab .card-list-wrap .slick-arrow.slick-disabled{display:none !important;}
+.apps .list_slide_tab .card-list-wrap .slick-dots{bottom:0}
+.apps .list_slide_tab .card-list-wrap .slick-slide {visibility:hidden;}
+.apps .list_slide_tab .card-list-wrap .slick-current {visibility:visible;}
+.apps .list_slide_tab .slick-list:before {display:block; position:absolute; top:0; left:0; width:175px; height:100%; background:linear-gradient(to right, #fff, transparent); background:-webkit-linear-gradient(left,#fff,#fff 50%,rgba(255,255,255,0)); content:""; z-index:10;}
+.apps .list_slide_tab .slick-list:after {display:block; position:absolute; top:0; right:0; width:175px; height:100%; background:linear-gradient(to left, #fff, transparent); background:-webkit-linear-gradient(right,#fff,#fff 50%,rgba(255,255,255,0)); content:""; z-index:10;}
+.apps .slick-slider .slick-list{padding:0 !important}
+.apps .list_slide_tab .visible_pc{display:block;}
+.apps .list_slide_tab .visible_mo{display:none;}
+
+/* RTL : slide TAB (extention tip) */
+.rtl .apps .list_slide_tab .tab_btn_wrap .title + .title {margin-right:30px; margin-left:0; }
+.rtl .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .list_item + .list_item {margin-left:0; margin-right:2.29%}
+.rtl .apps .list_slide_tab .tab_conts_wrap .tab_depth2 .tab_btn + .tab_btn:after{left:auto;right:0;}
+.rtl .apps .list_slide_tab .card-list-wrap .slick-arrow.slick-prev{left:auto; right:95px; background: url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/btn_list_slide_arrow_next.png') no-repeat; background-size: contain;}
+.rtl .apps .list_slide_tab .card-list-wrap .slick-arrow.slick-next{right:auto;left:95px; background: url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/btn_list_slide_arrow_prev.png') no-repeat; background-size: contain;}
+
+/* VIDEO */
+.apps .video_poster {display:block; position:absolute; top:0; left:0; width:100%; height:100%; z-index:2;}
+/* .mobile .apps .video_poster {display:block;} */
+.apps .video-area {overflow:hidden; position:relative; height:580px;}
+.apps .video-area .video_wrap {height:100%;}
+.apps .video-area .video_wrap figure {position:relative; overflow:hidden; height:100%;}
+.apps .video-area .video_wrap video {display:block; position:relative; visibility:visible; width:100%; height:100%;}
+.apps .video-area .device-wrapper {position:absolute; top:0; left:0; right:0; bottom:0;}
+.apps [class*="m_content-"].half .video-area .screen img {width:auto;}
+
+/* VIDEO BUTTON */
+.apps .btn_media-play {display:block; position:absolute; top:0; left:0; right:0; bottom:0; width:100%; cursor:pointer; z-index:10;}
+.apps .btn_media-play::after {content:""; display:block; position:absolute; top:50%; left:50%; width:140px; height:140px; margin-top:-70px; margin-left:-70px; background:url("../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/btn-play-big-shadow.png") no-repeat center center; background-size:contain;}
+.apps .btn_media-play::before {opacity: 0; -webkit-opacity: 0; content:""; display:block; position:absolute; top:50%; left:50%; width:140px; height:140px; margin-top:-70px; margin-left:-70px; background:url("../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/btn-pause-big-shadow.png") no-repeat 0 0; background-size:contain;}
+.apps .btn_media-play::after,
+.apps .btn_media-play::before {
+    transition:opacity 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000), transform 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    -webkit-transition:opacity 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000), transform 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+.apps .btn_media-play.init::after,
+.apps .btn_media-play.init::before {opacity: 0; -webkit-opacity: 0; transform:scale(1,1) rotate(0.001deg); -webkit-transform:scale(1,1) rotate(0.001deg);}
+.apps .btn_media-play.play::before,
+.apps .btn_media-play.pause::after {
+    opacity: 0;
+    -webkit-opacity: 0;
+	display:none;
+}
+.apps .btn_media-play.play::after,
+.apps .btn_media-play.pause::before {
+    animation-name:youtube;
+	animation-duration:0.6s;
+	animation-timing-function:linear;
+	animation-fill-mode: forwards;
+    -webkit-animation-name:youtube;
+	-webkit-animation-duration:0.6s;
+	-webkit-animation-timing-function:linear;
+    -webkit-animation-fill-mode: forwards;
+}
+.apps .btn_media-play:focus {outline:2px solid #a5c7fe;}
+.mobile .apps .btn_media-play,
+.touch .apps .btn_media-play  {display:block}
+
+@-webkit-keyframes youtube {
+	0% {opacity:0; -webkit-opacity: 0; transform:scale(1,1) rotate(0.001deg); -webkit-transform:scale(1,1) rotate(0.001deg);}
+    50% {opacity:1; -webkit-opacity: 1; visibility: visible;}
+	100% {opacity:0; -webkit-opacity: 0; transform:scale(1.2,1.2) rotate(0.001deg); -webkit-transform:scale(1.2,1.2) rotate(0.001deg); visibility: hidden;}
+}
+@keyframes youtube {
+	0% {opacity:0; -webkit-opacity: 0; transform:scale(1,1) rotate(0.001deg); -webkit-transform:scale(1,1) rotate(0.001deg);}
+    50% {opacity:1; -webkit-opacity: 1; visibility: visible;}
+	100% {opacity:0; -webkit-opacity: 0; transform:scale(1.2,1.2) rotate(0.001deg); -webkit-transform:scale(1.2,1.2) rotate(0.001deg); visibility: hidden;}
+}
+
+/* SCROLL MOTION */
+.apps .scroll-motion {height:1080px;}
+.apps .scroll-motion:after {position:absolute; right:0; top:0; width:50%; height:100%; background:#eee; content:'';}
+.apps .scroll-motion [class*="f_header"] {top:280px;}
+.apps .scroll-motion.left .f_header {padding:0 7% 0 2%;}
+.apps .scroll-motion.stronger .add_txt {bottom:auto; margin-top:30px;}
+.apps .scroll-motion {overflow:visible; z-index:auto; position:relative;}
+.apps .scroll-motion.target01 {z-index:initial;}
+.apps .scroll-motion.target02 + [class*="m_content-"] {z-index:2;}
+.apps .scroll-motion .sub_tit {line-height:1.7;}
+.apps .scroll-motion .desc {width:100%; margin-top:30px;}
+.apps .scroll-motion .add_txt {margin:30px 0 0 13px; text-indent:-13px;}
+.apps .scroll-motion .f_container {overflow:visible;}
+.apps .scroll-motion .f_container > figure {
+    -moz-transform:translateZ(0) translateX(0) translateY(0px);
+    -webkit-transform:translateZ(0) translateX(0) translateY(0px);
+    -ms-transform:translateZ(0) translateX(0) translateY(0px);
+    -o-transform:translateZ(0) translateX(0) translateY(0px);
+    transform:translateZ(0) translateX(0) translateY(0px);
+}
+.apps .scroll-motion .f_container > figure {position:absolute; top:0; margin-top:0; width:960px; height:100%; z-index:1;}
+.apps .scroll-motion .f_container > figure:first-child {z-index:2;}
+.apps .scroll-motion .f_container > figure.moving {opacity:1; margin-top:0;}
+.apps .scroll-motion .f_container > figure.fixed1{
+    position:fixed;
+    -moz-transform:translateZ(0px) translateX(0) translateY(60px);
+    -webkit-transform:translateZ(0px) translateX(0) translateY(60px);
+    -ms-transform:translateZ(0px) translateX(0) translateY(60px);
+    -o-transform:translateZ(0px) translateX(0) translateY(60px);
+    transform:translateZ(0px) translateX(0) translateY(60px);
+}
+.apps .scroll-motion .f_container > figure.fixed2{ position:fixed;}
+.apps .scroll-motion .f_container > figure + figure + figure {
+    -moz-transition:opacity 1s, margin 1s;
+    -webkit-transition:opacity 1s, margin 1s;
+    -ms-transition:opacity 1s, margin 1s;
+    -o-transition:opacity 1s, margin 1s;
+    transition:opacity 1s, margin 1s;
+    opacity:0;
+    margin-top:600px;
+}
+.apps .scroll-motion .f_container > figure.fixed2:after {display:block; height:100%; background:#eee; content:"";}
+.apps .scroll-motion.target02 {background:none;}
+.apps .scroll-motion.target02 .f_container > figure {display:none;}
+.apps .scroll-motion .add_txt.pc {display:block;}
+.apps .scroll-motion .add_txt.mobile {display:none;}
+
+
+/* DEEPLINK POPUP */
+.apps .deeplink-popup {display:none;}
+
+/* WORD-BREAK */
+[id*="word-break"] {word-break:break-word;}
+
+/**************** NATION : SEC ****************/
+html[lang^="ko"] {word-break:keep-all;}
+
+
+/**************** NATION : TH ****************/
+/* NATION : TH - RESET */
+html[lang^="th"] body,
+html[lang^="th"] .apps textarea,
+html[lang^="th"] .apps input,
+html[lang^="th"] .apps select,
+html[lang^="th"] .apps textarea,
+html[lang^="th"] .apps button {line-height:1;}
+
+/* NATION : TH - APPS-PAGINATION */
+html[lang^="th"] .apps-pagination .control .name span{font-size:21.6px;}
+html[lang^="th"] .apps-pagination .control .name strong{font-size:32.4px;}
+
+/* NATION : TH - PDP AREA */
+html[lang^="th"] .m_content-pdp .tit {font-size:54px;}
+html[lang^="th"] .m_content-pdp .btn_link {font-size:21.6px;}
+html[lang^="th"] .m_content-pdp .tit em {font-size:35.1px;}
+
+/* NATION : TH - LAYOUT */
+html[lang^="th"] .apps [class*="m_content-"].left .f_header .tit,
+html[lang^="th"] .apps [class*="m_content-"].right .f_header .tit {font-size:75.6px; line-height:1;}
+html[lang^="th"] .apps .f_header .tit {font-size:75.6px; line-height:1;}
+html[lang^="th"] .apps .f_header .desc {font-size:27px; line-height:1;}
+html[lang^="th"] .apps .f_header .sub_tit {font-size:32.4px; line-height:1;}
+html[lang^="th"] .apps .f_header .lang_logo span {font-size:75.6px;}
+html[lang^="th"] .apps .f_header .btn_kv .btn-default-black,
+html[lang^="th"] .apps [class*="m_content-"] .btn_area .btn-default-black {font-size:21.6px;}
+html[lang^="th"] .apps [class*="m_content-"] .disclaimer {font-size:21.6px; line-height:1.3;}
+
+/* NATION : TH - SUPPORT */
+html[lang^="th"] .apps .m_content-support .btn_default {font-size:21.6px;}
+html[lang^="th"] .apps .m_content-support .tit,
+html[lang^="th"] .apps .m_content-support .f_header .tit {font-size:45.9px;}
+html[lang^="th"] .apps .m_content-support .desc {font-size:27px;}
+html[lang^="th"] .apps .m_content-support .inner_wrap.download .inline_type .box_inner p {font-size:18.9px;}
+
+/* NATION : TH - INTRO */
+html[lang^="th"] .apps .m_content-intro .tit {font-size:75.6px; line-height:1;}
+
+/* INTRO & KV HERO STYLE */
+html[lang^="th"] .apps.hero .m_content-intro .tit,
+html[lang^="th"] .apps.hero .f_header .tit,
+html[lang^="th"] .apps.hero [class*="m_content-"].left .f_header .tit,
+html[lang^="th"] .apps.hero [class*="m_content-"].right .f_header .tit {font-size:62.4px;}
+html[lang^="th"] .apps.hero .f_header .desc {font-size:24.3px;}
+
+/* NATION : TH - CARD LIST TYPE */
+html[lang^="th"] .card-list-wrap .card-list .title {font-size:37.8px; line-height:1;}
+html[lang^="th"] .card-list-wrap .card-list .sub-title {font-size:27px; line-height:1;}
+html[lang^="th"] .card-list-wrap .card-list .desc {font-size:27px; line-height:1;}
+
+/* NATION : TH - HALF-TAB */
+html[lang^="th"] .apps .half-tab .tit_txt {font-size:37.8px;}
+html[lang^="th"] .apps .half-tab .item_box .desc {font-size:27px;}
+
+/* NATION : TH - HOW TO USE */
+html[lang^="th"] .apps .m_content-step .f_tab li .f_tab-header {font-size:24.3px;}
+html[lang^="th"] .apps .m_content-step .f_tab li .f_tab-header.on {font-size:24.3px;}
+html[lang^="th"] .apps .m_content-step .f_tab-content .step_desc strong {font-size:32.4px;}
+html[lang^="th"] .apps .m_content-step .f_tab-content .step_desc .desc {font-size:27px; line-height:1;}
+html[lang^="th"] .apps .m_content-step .f_tab-content .step_list figure > .disclaimer {font-size:27px;}
+
+/* NATION : TH - HOW TO USE MIX TYPE */
+html[lang^="th"] .apps .m_content-step .f_tab-content .mix_type .desc_box {font-size:27px; line-height:1;}
+html[lang^="th"] .apps .m_content-step .f_tab-content .img_desc {font-size:21.6px; line-height:1;}
+
+/* NATION : TH - TAB-SLIDE */
+html[lang^="th"] .apps .slide-tab .tab-title .title {font-size:29.7px;}
+html[lang^="th"] .apps .slide-tab .tab-text .desc {font-size:27px;}
+
+/* NATION : TH - slide TAB (extention tip) */
+html[lang^="th"] .apps .list_slide_tab .tab_btn_wrap .title .tab_btn{font-size:21.6px}
+html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .sub-title {font-size:24.3px;}
+html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .desc {font-size:18.9px;line-height:32.4px;}
+html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .desc_tit {font-size:24.3px;}
+html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .card-list-desc {font-size:18.9px;}
+html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .disclaimer {font-size:18.9px; line-height:27px;}
+html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .tab_sub_title {font-size:32.4px;}
+html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .tab_depth2 .tab_btn{font-size:32.4px;}
+
+
+/**************** NATION : MM ****************/
+/* NATION : MM - LAYOUT */
+html[lang^="my-MM"] .apps .f_header .tit {line-height:1.4;}
+html[lang^="my-MM"] .apps [class*="m_content-"].left .f_header .tit,
+html[lang^="my-MM"] .apps [class*="m_content-"].right .f_header .tit {line-height:1.4;}
+
+@media screen and (max-width:1440px) {
+	/* PDP AREA */
+    .m_content-pdp .f_container {padding:5.2083vw 0;}
+    .m_content-pdp .item {padding:1.4583vw 0 3.5416vw;}
+    .m_content-pdp .tit {margin:1.3194vw 0 1.9444vw; font-size:2.7777vw;}
+    .m_content-pdp .btn_link {font-size:1.1111vw; letter-spacing:2px;}
+    .m_content-pdp .btn_link + .btn_link {margin-left:2.0138vw; padding-left:2.2222vw;}
+    .m_content-pdp .btn_link + .btn_link:before {height:0.9027vw; margin-top:-0.555vw;}
+	.m_content-pdp .tit span {top:-0.4861vw; font-size:2.0833vw;}
+	.m_content-pdp .tit em {font-size:1.8055vw;}
+    .m_content-pdp .galaxy-future .tit,
+    .m_content-pdp .galaxy-watch .tit {margin-top:-1.4583vw;}
+
+	/* LAYOUT */
+    .apps [class*="m_content-"] .f_header{padding:9.7222vw 20px 7.9861vw;}
+    .apps [class*="m_content-"].left .f_header,
+    .apps [class*="m_content-"].right .f_header {width:50vw; padding-left:8.6805vw;}
+	.apps [class*="m_content-"].right .f_header {padding-left:20px; padding-right:8.6805vw;}
+    .apps [class*="m_content-"].left .f_header {margin-left:-50vw;}
+    .apps [class*="m_content-"].left .f_header .tit,
+    .apps [class*="m_content-"].right .f_header .tit {font-size:3.8888vw; /* line-height:4.4444vw; */}
+    .apps [class*="m_content-"] .add_txt + .add_txt {margin-top:3.125vw;}
+    .apps [class*="m_content-"] .add_txt .sub_tit {font-size:1.3888vw; line-height:2.2222vw;}
+    .apps [class*="m_content-"] .add_txt .desc {margin-top:1.0416vw; font-size:1.3888vw; line-height:2.2222vw;}
+    .apps [class*="m_content-"] .disclaimer {font-size:1.1111vw; line-height:2.2222vw;}
+    .apps .f_header .desc + .disclaimer,
+	.apps .f_header .disclaimer {margin-top:0.6944vw;}
+    .apps .f_header .tit {font-size:3.8888vw; /* line-height:4.4444vw; */}
+    .apps .f_header .desc {margin:1.4583vw auto 0; font-size:1.3888vw; line-height:2.2222vw;}
+	.apps .f_header .sub_tit {margin-top:0.6944vw; font-size:1.6667vw;}
+    .apps .f_header .logo > img {height:5.5555vw;}
+    .apps .f_header .lang_logo > img {width:5.5555vw;}
+    .apps .f_header .lang_logo span {font-size:3.8888vw; line-height:5.5555vw; margin-left:1.3888vw;}
+    .apps .f_header .lang_logo span:after {height:6.1111vw}
+    .apps .f_header .btn_kv {margin-top:3.8194vw;}
+    .apps .f_header .btn_kv a + a {margin-left:1.5277vw;}
+    .apps [class*="m_content-"].full .base {position:relative; left:0; top:0; z-index:1; width:100%; height:100%; overflow:hidden;}
+    .apps [class*="m_content-"].full .base > figure {width:auto; margin:0 -66.6666vw;}
+    .apps [data-role="apps-video-type"] .f_container .base > figure {left:-16.6666vw; right:-16.6666vw; width:auto; margin:0;}
+	.apps .f_header .btn_kv [class*="btn-default"] {padding:1.4583vw 2.6388vw 1.3194vw;}
+    .apps .f_header .btn_kv .btn-default-black {font-size:1.1111vw;}
+	.apps [class*="m_content-"] .btn_area [class*="btn-default"] {padding:1.4583vw 3.4722vw 1.3194vw;}
+	.apps [class*="m_content-"] .btn_area .btn-default-black {font-size:1.1111vw;}
+	.apps [class*="m_content-"].left .f_container,
+	.apps [class*="m_content-"].right .f_container {width:50vw;}
+	.apps [class*="m_content-"].left .f_container {margin-right:-50vw;}
+    .apps [class*="m_content-"].right .f_container {margin-left:-50vw;}
+    .apps [class*="m_content-"].gap .f_container .base {padding-bottom:6.9444vw;}
+    .apps [class*="m_content-"].left.wide .f_container,
+    .apps [class*="m_content-"].right.wide .f_container {width:66.6666vw;}
+    .apps [class*="m_content-"].left.wide .f_container {margin-right:66.6666vw;}
+    .apps [class*="m_content-"].right.wide .f_container {margin-left:66.6666vw;}
+
+    /* RTL : LAYOUT */
+    .rtl .apps .m_content-loss .tit_txt {padding-left:0; padding-right:1.4583vw;}
+    .rtl .apps [class*="m_content-"].full .f_container .base > figure {margin:0 -66.6666vw;}
+	.rtl .apps .f_header .btn_kv a + a {margin-right:1.5277vw; margin-left:0;}
+	.rtl .apps .m_content-step .step_list .slick-next {left:10px; right:auto;}
+	.rtl .apps .m_content-step .step_list .slick-prev {right:10px; left:auto;}
+
+	/* BUTTON */
+	[class*="btn-window"]:after {width:0.7638vw; height:0.7638vw; margin-left:0.5555vw;}
+
+	/* RTL : BUTTON */
+	.rtl .apps [class*="btn-window"]:after {margin-right:0.5555vw;}
+
+	 /* SUPPORT */
+    .apps .m_content-support .btn_default {margin-bottom:1.3888vw; font-size:1.1111vw;}
+	.apps .m_content-support .btn_default a {padding:1.3194vw 3.4722vw 1.3194vw;}
+    .apps .m_content-support .inner {padding:3.4722vw 0;}
+    .apps .m_content-support .support_list {padding:2.7777vw 0 10.06944vw;}
+    .apps .m_content-support .support_icon {width:6.0416vw; height:5.1388vw; margin-bottom:2.7777vw;}
+    .apps .m_content-support .tit,
+	.apps .m_content-support .f_header .tit {margin-bottom:0.625vw; font-size:2.3611vw;}
+    .apps .m_content-support .desc {font-size:1.3888vw;}
+    .apps .m_content-support .btn_box {bottom:1.3888vw;}
+    .samsung-device .apps .m_content-support .btn_box,
+    .apple-browser-all .apps .m_content-support .btn_box {min-height:11.5277vw;}
+    .samsung-device .apps .m_content-support .support_list,
+    .apple-browser-all .apps .m_content-support .support_list {padding-bottom:14.9305vw;}
+    .apps .m_content-support .inner_wrap.download .support_list {padding-bottom:16.5416vw;}
+    .apps .m_content-support .inner_wrap.download .inline_type .box_inner p {font-size:0.9722vw; margin-top:1.3888vw;}
+    .apps .m_content-support .inner_wrap.download .inline_type .box_inner {width:20.8333vw;}
+
+	/* SUPPORT : BG-TYPE */
+    .apps .m_content-support.bg_type {height:41.6666vw;}
+	.apps .m_content-support.bg_type .f_container > figure {width:auto; height:100%; margin:0 -66.666vw;}
+
+	/* SUPPORT : 버튼 높이 유동 */
+	.samsung-device .apps .m_content-support .inner_wrap.fluid .support_list,
+    .apple-device .apps .m_content-support .inner_wrap.fluid .support_list {padding-bottom:10.0694vw;}
+
+	/* BG-TYPE */
+	.apps [class*="m_content-"].bg-type {background-size:133% auto;}
+
+	/* INTRO */
+	.apps .m_content-intro {padding:8.3333vw 0 11.8055vw 0;}
+    .apps .m_content-intro .f_header {padding:0 20px;}
+    .apps .m_content-intro .tit {margin-top:8.8194vw; font-size:3.8888vw; line-height:5vw;}
+    .apps .m_content-intro .desc {margin-top:0.6944vw;}
+    .apps .m_content-intro .btn_intro {margin-top:4.0277vw;}
+    .apps .m_content-intro .btn_intro span {width:9.375vw; height:2.7777vw;}
+
+	/* TEXT TYPE */
+	.apps .text-wrap {padding:1.3888vw 1.3888vw 3.3333vw;}
+
+	/* KV */
+	.apps .m_content-kv .f_container {height:62.5vw;}
+    .apps .m_content-kv .f_container figure {width:auto; margin:0 -66.6666vw;}
+
+	/* INTRO & KV HERO STYLE */
+	.apps.hero .f_header .tit,
+	.apps.hero [class*="m_content-"].left .f_header .tit,
+	.apps.hero [class*="m_content-"].right .f_header .tit {font-size:3.3333vw;}
+	.apps.hero .f_header .desc {font-size:1.25vw;}
+
+	.apps.hero .f_header .logo > img {height:3.8888vw;}
+	.apps.hero .m_content-intro {padding:6.25vw 0 4.5833vw;}
+	.apps.hero .m_content-intro .tit {margin-top:6.5972vw; font-size:3.3333vw;}
+	.apps.hero .m_content-intro .desc {margin-top:2.5vw;}
+	.apps.hero .f_header .btn_kv {margin-top:2.5694vw;}
+
+	.apps.hero .m_content-kv .f_container {height:58.3333vw; padding-bottom:7.8472vw;}
+
+	/* UTUBE TYPE */
+	.apps .utube_type .f_container .utube-container .btn-control-play {width:12.7083vw; height:12.7083vw; margin:-6.3194vw 0 0 -6.3194vw;}
+
+	/* DISCLAIMER AREA */
+    .apps .m_content-disclaimer .f_container {padding:2.9861vw 0 3.0555vw;}
+	.apps .m_content-disclaimer .disclaimer {padding:0 1.3888vw;}
+
+	/* CARD LIST TYPE */
+	.apps .card-list-wrap {padding-bottom:6.9444vw}
+    .apps .card-list-wrap .card-list .title {margin:0 0 1.5972vw 0; font-size:1.9444vw; line-height:2.2222vw}
+    .apps .card-list-wrap .card-list .sub-title {margin:0 0 1.5972vw 0; font-size:1.3888vw; line-height:2.2222vw}
+    .apps .card-list-wrap .card-list .desc {font-size:1.3888vw; line-height:2.2222vw; margin-top:1.0417vw;}
+    .apps .card-list-wrap .card-list figure + .title,
+    .apps .card-list-wrap .card-list figure + .sub-title {margin:2.7777vw 0 0 0;}
+
+	.apps .card-tit-type .card-list {width:18.5416vw;}
+	.apps .card-tit-type .card-list.top_pc .title,
+	.apps .card-tit-type .card-list.top_pc .sub-title {margin:2.0833vw 0 2.4305vw 0;}
+	.apps .card-tit-type .card-list figure + .title,
+    .apps .card-tit-type .card-list figure + .sub-title {margin:2.7777vw 0 1.5972vw 0;}
+
+    /* HALF-TAB */
+    .apps .half-tab .inner {min-height:64.9305vw; padding:0;} /* height find-my-mobile 기준 */
+    .apps .half-tab.non-fade .item_wrap {width:44.7916vw;}
+    .apps .half-tab .item_tit {font-size:1.3888vw;}
+    .apps .half-tab .item_box .desc {font-size:1.3888vw; margin-top:0.8333vw}
+    .apps .half-tab .item_box + .item_box {margin-top:3.1944vw;}
+    .apps .half-tab .item_icon {width:4.6527vw; height:4.6527vw;}
+    .apps .half-tab .item_txt_box {padding:2.0833vw 3.125vw;}
+    .apps .half-tab .tit_txt {padding-left:1.4583vw; font-size:1.9444vw}
+    .apps .half-tab .item_box .desc {margin:0 0 0 6.25vw;}
+    .apps .half-tab .item_txt .disclaimer {margin:1.0416vw 0 0 6.25vw;}
+    .apps .half-tab .overlay_wrap {height:64.2361vw; margin:0 -66.6666vw;} /* height find-my-mobile 기준 */
+    .apps .half-tab .overlay_inner {width: 66.6666vw; padding-top:3.3333vw;}
+    .apps .half-tab .item_wrap {padding:0 3.4722vw 0 2.2222vw;}
+
+    /* RTL : HALF-TAB */
+    .rtl .apps .half-tab .tit_txt {padding-left:0; padding-right:1.4583vw;}
+    .rtl .apps .half-tab .item_txt .desc {margin:0 6.25vw 0 0;}
+    .rtl .apps .half-tab .item_txt .disclaimer {margin:1.0416vw 6.25vw 0 0;}
+
+    /* I-TYPE */
+    .apps .i-type .tit + .desc {margin-top:2.0833vw;}
+    .apps .i-type .add_txt .desc {margin-top:0.2777vw;}
+    .apps .i-type .add_txt + .add_txt {margin-top:3.5416vw;}
+    .apps .i-type .add_txt_wrap {margin-top:6.5972vw; padding-right:9.0277vw;}
+    .apps .i-type .add_txt .sub_tit {font-size:1.5277vw;}
+
+   /* HOW TO USE */
+   .apps .m_content-step {/* height:99.7916vw; */}
+   .apps .m_content-step .f_header {padding-bottom:2.9861vw;}
+   .apps .m_content-step .f_tab > li {min-height:5.5555vw; line-height:5.5555vw;}
+   .apps .m_content-step .f_tab li .f_tab-header {width:23.6111vw; min-height:5.5555vw; font-size:1.25vw;}
+   .apps .m_content-step .f_tab li .f_tab-header span {padding:3% 1.3888vw 2.5%; }
+   .apps .m_content-step .f_tab li .f_tab-header.on {font-size:1.25vw;}
+   .apps .m_content-step .f_tab.column2 li .f_tab-header {width:34.7222vw;}
+   .apps .m_content-step .f_tab-content {top:5.5555vw; left:0; margin-left:0;}
+   .apps .m_content-step .f_tab-content .step_desc {font-size:1.6666vw;}
+   .apps .m_content-step .f_tab-content .step_desc strong {margin-top:3.75vw;}
+   .apps .m_content-step .f_tab-content .step_desc .desc {min-height:4.7222vw; margin-top:0.9722vw; padding:0; font-size:1.3888vw;}
+   .apps .m_content-step .f_tab-content .step_desc .desc .disclaimer {margin-top:0.8333vw;}
+   .apps .m_content-step .bx-wrapper {margin:2.4305vw auto 0; padding:0 5.5555vw 0 7vw;}
+   .apps .m_content-step .bx-wrapper .step_list {margin-left:-22.0833vw;}
+   .apps .m_content-step .bx-wrapper .step_list > div {width:40.6944vw !important; height:32.75vw; margin-right:3.4722vw !important; text-align:center; padding:1px; box-sizing:border-box;}
+   .apps .m_content-step .bx-wrapper .step_list > div figure {display:block; height:100%; margin:0;}
+   .apps .m_content-step .bx-wrapper .bx-pager,
+   .apps .m_content-step .bx-wrapper .bx-controls-auto {margin-top:3.4722vw;}
+   .apps .m_content-step .bx-wrapper .bx-pager.bx-default-pager a {width:1.1111vw; height:1.1111vw; margin:0 0.5555vw; width:16px; height:16px; margin:0 8px;}
+   .apps .m_content-step .bx-wrapper .bx-controls-direction a {width:5.5555vw; height:5.5555vw; margin-top:-5.5555vw; margin-left:10px; margin-right:10px;}
+   .apps .m_content-step .bx-wrapper .bx-prev {left:0;}
+   .apps .m_content-step .bx-wrapper .bx-next {right:0;}
+   .apps .m_content-step .bx-wrapper .bx-viewport {height:32.86vw !important}
+   .apps .m_content-step .f_tab-content .step_list {margin:2.4305vw 0 0 0; padding:0 5.5555vw;}
+   .apps .m_content-step .f_tab-content .step_list figure > .desc {margin-top:2.7777vw;}
+   .apps .m_content-step .f_tab-content .step_list .slick-current figure > .desc {font-size:1.3888vw;}
+   .apps .m_content-step .f_tab-content .step_list figure > .disclaimer {margin-top:2.7777vw; font-size:1.3888vw; line-height:1.7;}
+   .apps .m_content-step .f_tab-content .step_list .desc .disclaimer {margin-top:1.0416vw; font-size:1.1111vw;}
+   .apps .m_content-step .f_tab-content .step_list.slick-slider {max-height:59.0277vw;height:auto; padding-bottom:4.8611vw;}
+   .apps .m_content-step .f_tab-content .slick-list {max-width:44.1666vw;}
+   .apps .m_content-step .f_tab-content .slick-slide {width:40.6944vw; padding:1px; text-align:center; box-sizing:border-box;}
+   .apps .m_content-step .f_tab-content .slick-slide figure {width:71.875vw; height:auto; margin:0 auto;}
+   .apps .m_content-step .f_tab-content .slick-slider {margin:2.4305vw 0 0 0; padding:0 5.5555vw;}
+   .apps .m_content-step .f_tab-content .slick-slider:before {width:12.5vw; background-size:100%;}
+   .apps .m_content-step .f_tab-content .slick-slider:after {width:12.5vw; background-size:100%;}
+   .apps .m_content-step .step_list .slick-arrow {width:5.5555vw; height:5.5555vw; margin-top:-2.7777vw; background-size:100%;}
+   .apps .m_content-step .step_list .slick-prev {left:10px;}
+   .apps .m_content-step .step_list .slick-next {right:10px;}
+   .apps .m_content-step .slick-dots {bottom:1px;}
+
+   /* HOW TO USE DOUBLE TAB */
+   .apps .m_content-step .f_tab.depth2 > li {min-height:4.8611vw; line-height:4.8611vw;}
+   .apps .m_content-step .f_tab.depth2 li .f_tab-header {min-height:4.8611vw; padding:0; font-size:1.25vw;}
+
+    /* HOW TO USE MIX TYPE */
+	.apps .m_content-step .f_tab-content .mix_type.slick-slide {width:88.8888vw;}
+	.apps .m_content-step .f_tab-content .mix_type .img_box {padding-left:13.0555vw;}
+	.apps .m_content-step .f_tab-content .mix_type .desc_box {padding:3.8888vw 5.5555vw 0 3.4722vw; font-size:1.3888vw; line-height:2.2222vw;}
+	.apps .m_content-step .f_tab-content .img_desc {margin-top:0.9027vw; font-size:1.1111vw; line-height:1.9444vw;}
+	.apps .m_content-step .f_tab-content .step_desc .desc.only {margin-top:3.6111vw;}
+
+	/* TAB-SLIDE */
+	.apps .slide-tab .inner {padding:69.0277vw 0 13.0555vw;}
+	.apps .slide-tab .tab-slide-cont + .tab-slide-cont {margin-left:4.5833vw;}
+	.apps .slide-tab .tab-title {padding-top:4.8611vw;}
+	.apps .slide-tab .tab-title .title {font-size:1.5277vw;}
+	.apps .slide-tab .tab-media {left:0; width:auto; margin:0;}
+	.apps .slide-tab .tab-media figure {margin:0 -16.6666vw;}
+	.apps .slide-tab .tab-media figure > img {width:100%; height:auto;}
+	.apps .slide-tab .tab-media .screen-inner > figure {height:44.1666vw;}
+	.apps .slide-tab .tab-text {height:13.0555vw; padding:2.1527vw 10% 0.6924vw;}
+	.apps .slide-tab .tab-text .desc {font-size:1.3888vw;}
+
+	/* RTL : TAB-SLIDE */
+    .rtl .apps .slide-tab .tab-slide-cont + .tab-slide-cont {margin-right:4.5833vw;}
+
+    /* slide TAB (extention tip) */
+    .apps .list_slide_tab{max-width:113.1944vw;}
+    .apps .list_slide_tab .tab_btn_wrap .title {border-radius: 3.4722vw;}
+    .apps .list_slide_tab .tab_btn_wrap .title + .title {margin-left:2.0833vw; }
+    .apps .list_slide_tab .tab_btn_wrap .title .tab_btn{padding:0 2.7777vw; width:15.2777vw; min-height:4.1666vw; font-size:1.1111vw; }
+    .apps .list_slide_tab .tab_conts_wrap {margin-top:3.4722vw; padding:4.3055vw 0 4.8611vw; border-radius:3.4722vw; }
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap {padding-bottom:4.1666vw}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list-inner {width:90.9722vw}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .sub-title {margin:2.3611vw 0 0 0; font-size:1.25vw;}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .desc {font-size:0.9722vw; line-height:1.6667vw;}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .desc_tit {font-size:1.25vw;}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-desc {margin-bottom:3.4722vw; font-size:0.9722vw;}
+	.apps .list_slide_tab .tab_conts_wrap .card-list-wrap + .card-list-desc {margin-top:4.8611vw;}
+    .apps .list_slide_tab .tab_conts_wrap .disclaimer {padding: 0 2.0833vw; font-size:0.9722vw; line-height:1.3889vw;}
+    .apps .list_slide_tab .tab_conts_wrap .list_item .disclaimer {margin-top:1.5972vw;}
+    .apps .list_slide_tab .tab_conts_wrap .tab_sub_title {margin-bottom:4.1666vw; font-size:1.6666vw;}
+    .apps .list_slide_tab .tab_conts_wrap .tab_depth2 {margin-bottom:4.1666vw;}
+    .apps .list_slide_tab .tab_conts_wrap .tab_depth2 .tab_btn{padding:0 4.7222vw; font-size:1.6666vw;}
+    .apps .list_slide_tab .tab_conts_wrap .tab_depth2 .tab_btn + .tab_btn:after{margin-top:-0.6944vw; height:1.3888vw;}
+	.apps .list_slide_tab .tab_conts_wrap .tab_depth2 + .card-list-wrap {margin-top:-6.3194vw; padding-top:6.3194vw;}
+    .apps .list_slide_tab .card-list-wrap .slick-arrow{top: 28.6805vw; width: 1.1111vw; height: 1.9444vw;}
+    .apps .list_slide_tab .card-list-wrap .slick-arrow.slick-prev{left:1.8vw;}
+    .apps .list_slide_tab .card-list-wrap .slick-arrow.slick-next{right:1.8vw;}
+	.apps .list_slide_tab .slick-list:before {width:5.5555vw;}
+    .apps .list_slide_tab .slick-list:after {width:5.5555vw;}
+
+    /* RTL : slide TAB (extention tip) */
+    .rtl .apps .list_slide_tab .tab_btn_wrap .title + .title {margin-left:0; margin-right:2.0833vw;}
+    .rtl .apps .list_slide_tab .card-list-wrap .slick-arrow.slick-prev{left:auto; right:1.8vw;}
+    .rtl .apps .list_slide_tab .card-list-wrap .slick-arrow.slick-next{right:auto; left:1.8vw;}
+
+	/* MEDIA TAB TYPE */
+	.apps .media_tab_wrap .swiper-container .inner {width:86vw; margin:0 auto 4.5138vw;}
+	.apps .media_tab_wrap .swiper-container .inner > .swiper-slide {padding:0 0.6944vw;}
+	.apps .media_tab_wrap .tit {font-size:1.5277vw;}
+
+	/* MEDIA CONTENT TYPE */
+    .apps .media_cont_wrap .media_list {padding:0 0.6944vw;}
+    .apps .media_cont_wrap .title {margin-top:3.125vw; font-size:1.3888vw; line-height:2.3611vw;}
+
+	/* VIDEO */
+	.apps .video-area {height:40.2777vw;}
+
+	/* VIDEO BUTTON */
+	.apps .btn_media-play:after {width:9.7222vw; height:9.7222vw; margin-top:-4.8611vw; margin-left:-4.8611vw;}
+	.apps .btn_media-play:before {width:9.7222vw; height:9.7222vw; margin-top:-4.8611vw; margin-left:-4.8611vw;}
+
+	/* SCROLL MOTION */
+	.apps .scroll-motion {height:75vw;}
+	.apps .scroll-motion [class*="f_header"] {top:19.4444vw;}
+	.apps .scroll-motion.left .f_header {padding-left:2%;}
+	.apps .scroll-motion.target02 .disclaimer {margin-top:2.0833vw;}
+	.apps .scroll-motion .desc {margin-top:2.0833vw;}
+	.apps .scroll-motion .disclaimer {margin:2.0833vw 0 0 0.9027vw; text-indent:-0.9027vw;}
+	.apps .scroll-motion .f_container > figure {width:66.6666vw;}
+	.apps .scroll-motion .f_container > figure + figure + figure {margin-top:41.6666vw;}
+
+
+	/* DEEPLINK POPUP */
+    .apps .deeplink-popup {position:fixed; left:50%; width:44.4444vw; margin-left:-22.2222vw; z-index:9999;}
+    .apps .deeplink-popup.active {display:block;}
+    .apps .deeplink-popup:before {position:fixed; top:0; left:0; bottom:0; right:0; background:#000; opacity:0.7; content:''; z-index:-1;}
+    .apps .deeplink-popup .m_feature {position:relative; padding:2.0833vw; background:#fff;}
+    .apps .deeplink-popup .m_feature .f_header {padding:2.7777vw 2.7777vw 0.8333vw;}
+    .apps .deeplink-popup .m_feature .f_header .tit {font-size:2.7777vw; line-height:1.32; text-align:center; font-weight:bold;}
+    .apps .deeplink-popup .btn_close {position:absolute; top:2.0833vw; right:2.0833vw; width:2.7777vw; height:2.7777vw; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/btn_popup_close.png') no-repeat center; background-size:100%;}
+    .apps .deeplink-popup .f_container .btn_area {padding:2.5vw 0;}
+    .apps .deeplink-popup .f_container .btn_area:after {display:block; content:''; clear:both;}
+    .apps .deeplink-popup .f_container .btn_box {float:left; width:50%; padding:0 0.6944vw; box-sizing:border-box;}
+    .apps .deeplink-popup .f_container .btn_box a {display:inline-block;}
+    .apps .deeplink-popup .f_container .btn_box a img {width:100%;}
+
+	/* RTL : DEEPLINK POPUP */
+	.rtl .apps .deeplink-popup .f_container .btn_box {float:right;}
+	.rtl .apps .deeplink-popup .btn_close {left:2.0833vw; right:auto;}
+
+	/**************** NATION : TH ****************/
+	/* NATION : TH - PDP AREA */
+	html[lang^="th"] .m_content-pdp .tit {font-size:3.75vw;}
+	html[lang^="th"] .m_content-pdp .btn_link {font-size:1.5vw;}
+	html[lang^="th"] .m_content-pdp .tit em {font-size:2.4375vw;}
+
+	/* NATION : TH - LAYOUT */
+	html[lang^="th"] .apps [class*="m_content-"].left .f_header .tit,
+	html[lang^="th"] .apps [class*="m_content-"].right .f_header .tit {font-size:5.25vw;}
+	html[lang^="th"] .apps .f_header .tit {font-size:5.25vw;}
+    html[lang^="th"] .apps .f_header .desc {font-size:1.875vw;}
+	html[lang^="th"] .apps .f_header .sub_tit {font-size:2.25vw;}
+    html[lang^="th"] .apps .f_header .lang_logo span {font-size:5.25vw;}
+    html[lang^="th"] .apps .f_header .btn_kv .btn-default-black,
+	html[lang^="th"] .apps [class*="m_content-"] .btn_area .btn-default-black {font-size:1.5vw;}
+	html[lang^="th"] .apps [class*="m_content-"] .disclaimer {font-size:1.5vw;}
+
+	/* NATION : TH - SUPPORT */
+	html[lang^="th"] .apps .m_content-support .btn_default {font-size:1.5vw;}
+	html[lang^="th"] .apps .m_content-support .tit,
+	html[lang^="th"] .apps .m_content-support .f_header .tit {font-size:3.1875vw;}
+	html[lang^="th"] .apps .m_content-support .desc {font-size:1.875vw;}
+	html[lang^="th"] .apps .m_content-support .inner_wrap.download .inline_type .box_inner p {font-size:1.3125vw;}
+
+	/* NATION : TH - INTRO */
+	html[lang^="th"] .apps .m_content-intro .tit {font-size:5.25vw;}
+
+	/* INTRO & KV HERO STYLE */
+	html[lang^="th"] .apps.hero .f_header .tit,
+	html[lang^="th"] .apps.hero .m_content-intro .tit,
+	html[lang^="th"] .apps.hero [class*="m_content-"].left .f_header .tit,
+	html[lang^="th"] .apps.hero [class*="m_content-"].right .f_header .tit {font-size:4.3333vw;}
+	html[lang^="th"] .apps.hero .f_header .desc {font-size:1.6875vw;}
+
+	/* NATION : TH - CARD LIST TYPE */
+	html[lang^="th"] .card-list-wrap .card-list .title {font-size:2.625vw;}
+	html[lang^="th"] .card-list-wrap .card-list .sub-title {font-size:1.875vw;}
+    html[lang^="th"] .card-list-wrap .card-list .desc {font-size:1.875vw;}
+
+    /* NATION : TH - HALF-TAB */
+    html[lang^="th"] .apps .half-tab .tit_txt {font-size:2.625vw;}
+    html[lang^="th"] .apps .half-tab .item_box .desc {font-size:1.875vw;}
+
+    /* NATION : TH - HOW TO USE */
+    html[lang^="th"] .apps .m_content-step .f_tab li .f_tab-header {font-size:1.6875vw;}
+    html[lang^="th"] .apps .m_content-step .f_tab li .f_tab-header.on {font-size:1.6875vw;}
+    html[lang^="th"] .apps .m_content-step .f_tab-content .step_desc strong {font-size:2.25vw;}
+    html[lang^="th"] .apps .m_content-step .f_tab-content .step_desc .desc {font-size:1.875vw;}
+    html[lang^="th"] .apps .m_content-step .f_tab-content .step_list figure > .disclaimer {font-size:1.875vw;}
+
+	/* NATION : TH - HOW TO USE MIX TYPE */
+	html[lang^="th"] .apps .m_content-step .f_tab-content .mix_type .desc_box {font-size:1.875vw;}
+	html[lang^="th"] .apps .m_content-step .f_tab-content .img_desc {font-size:1.5vw;}
+
+	/* NATION : TH - TAB-SLIDE */
+	html[lang^="th"] .apps .slide-tab .tab-title .title {font-size:2.0625vw;}
+    html[lang^="th"] .apps .slide-tab .tab-text .desc {font-size:1.875vw;}
+
+    /* NATION : TH - slide TAB (extention tip) */
+    html[lang^="th"] .apps .list_slide_tab .tab_btn_wrap .title .tab_btn{font-size:1.5vw}
+    html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .sub-title {font-size:1.6875vw;}
+    html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .desc {font-size:1.3152vw; line-height:2.2500vw;}
+    html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .desc_tit {font-size:1.6875vw;}
+    html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .card-list-desc {font-size:1.3152vw;}
+    html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .disclaimer {font-size:1.3125vw; line-height:1.8750vw;}
+    html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .tab_sub_title {font-size:2.25vw;}
+    html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .tab_depth2 .tab_btn{font-size:2.25vw;}
+}
+
+@media screen and (max-width:1024px){
+	/* SUPPORT */
+    .apps .m_content-support .btn_default {font-size:11px;}
+    .apps .m_content-support .desc {font-size:14px;}
+	.apps .m_content-support .support_list {word-wrap:normal; word-break:normal;}
+	.samsung-device .apps .m_content-support .btn_box,
+    .apple-browser-all .apps .m_content-support .btn_box {min-height:12.5277vw;}
+    .samsung-device .apps .m_content-support .support_list,
+    .apple-browser-all .apps .m_content-support .support_list {padding-bottom:15.9305vw;}
+
+	/* COMMON - DEVICE CHECKE BUTTON */
+	.apps .pc_only {display:none !important;}
+	.apps .mobile_all {display:inline-block !important;}
+	.samsung-device .apps .mobile_samsung {display:inline-block !important;}
+	.samsung-device .apps .m_content-support .mobile_samsung {display:block !important;}
+	.samsung-device .apps .m_content-support .inline_type .mobile_samsung {display:inline-block !important;}
+	.samsung-device .apps .m_content-support.mobile_samsung {display:block !important;}
+    .samsung-device .apps .samsung_hidden {display:none !important;} /* 삼성단말기 비노출 */
+
+	/* BUTTON */
+	.apps [class*="btn-window"]:after {width:0.9765vw; height:0.9765vw;}
+
+    /* LAYOUT */
+    .apps [class*="m_content"] .desc {font-size:14px; line-height:22px;}
+    .apps [class*="m_content-"] .add_txt .sub_tit {font-size:16px;}
+    .apps [class*="m_content-"] .disclaimer {font-size:12px; }
+    .apps .f_header .btn_kv .btn-default-black {font-size:12px;}
+	.apps [class*="m_content-"] .btn_area .btn-default-black {font-size:12px;}
+
+    /* I-TYPE */
+    .apps .i-type .add_txt .desc {font-size:14px; line-height:22px;}
+
+	/* NATION : TH - LAYOUT */
+    html[lang^="th"] .apps [class*="m_content-"] .desc {font-size:18.9px; line-height:1;}
+    html[lang^="th"] .apps [class*="m_content-"] .add_txt .sub_tit {font-size:21.6px;}
+    html[lang^="th"] .apps [class*="m_content-"] .disclaimer {font-size:16.2px; }
+    html[lang^="th"] .apps .f_header .btn_kv .btn-default-black {font-size:16.2px;}
+	html[lang^="th"] .apps [class*="m_content-"] .btn_area .btn-default-black {font-size:16.2px;}
+}
+
+@media screen and (max-width:1023px){
+    /* APPS-PAGINATION */
+    .apps-pagination .img{display:none;}
+}
+
+@media screen and (max-width:767px) {
+    /* APPS-PAGINATION */
+    .apps-pagination .go_to_list { padding-top:40px; }
+    .apps-pagination .go_to_list a { width:186px; height:46px; }
+    .apps-pagination .prev .name { background-position:6% 60%; background-size:10px auto; }
+    .apps-pagination .next .name { background-position:94% 60%; background-size:10px auto; }
+    .apps-pagination { height:90px; }
+    .apps-pagination .control .name { padding:30px 30px 24px 30px; }
+    .apps-pagination .control .name strong { margin-top:1px; font-size:15px; }
+
+    .apps-pagination.create-nav .name {padding:0 30px;}
+    .apps-pagination.create-nav .name .name_inner {padding:10px 0 6px;}
+    .apps-pagination.create-nav .name strong {max-width:145px;}
+    .apple-device .apps-pagination.create-nav .name strong {letter-spacing:-1px;}
+
+	/**************** NATION : TH ****************/
+	/* NATION : TH - APPS-PAGINATION */
+	html[lang^="th"] .apps-pagination .control .name span{font-size:21.6px;}
+	html[lang^="th"] .apps-pagination .control .name strong{font-size:20.25px;}
+}
+
+@media screen and (max-width:768px) {
+	/* RTL : APPS-PAGINATIO */
+    .rtl .apps-pagination .next .name {background-position:6% 60%; background-size:10px auto;}
+    .rtl .apps-pagination .prev .name {background-position:94% 60%; background-size:10px auto;}
+
+	/* PDP AREA */
+    .m_content-pdp .f_container {padding:0;}
+    .m_content-pdp figure {margin:0;}
+    .m_content-pdp .item {position:relative; width:100%; padding:14.4444vw 0 10.4166vw;}
+    .m_content-pdp .item:first-child:after {position:absolute; left:5.5%; right:5.5%; bottom:0; height:1px; background:#2b2b2b; content:'';}
+    .m_content-pdp .tit {margin:8.3333vw 0 5.2777vw; line-height:8.577vw; font-size:6.6666vw;}
+    .m_content-pdp .btn_link {font-size:2.5vw;}
+    .m_content-pdp .btn_link + .btn_link {margin-left:3.3333vw; padding-left:3.3333vw;}
+    .m_content-pdp .btn_link + .btn_link:before {height:2.2222vw; margin-top:-1.1111vw;}
+	.m_content-pdp .tit span {top:-1.25vw; font-size:4.1666vw;}
+	.m_content-pdp .tit em {font-size:4.7222vw;}
+    .m_content-pdp .galaxy-future .tit {margin-top:-7.2222vw;}
+    .m_content-pdp .galaxy-watch .tit {margin-top:0.9722vw;}
+
+	/* FLOATING BAR CSS */
+    #apps_floating {display: block;}
+    .apps-fixed .cl-sticky-navigation-text {position:fixed; top:calc(13.4259vw - 1px)!important; left:0; right:0; z-index:200; width:100%; margin-top:0 !important;}
+    .apps_rawcode .navi_wrap {position:relative; width:100%; height:13.4259vw;}
+    .apps_rawcode .navi_wrap.fixed {z-index:1100;}
+	.js-has-modal .apps_rawcode .navi_wrap.fixed {z-index:0;}
+    .apps_rawcode .navi_wrap a {color:#000; cursor:pointer;}
+    .apps_rawcode .navi_wrap .navi_section {height:13.4259vw; width:100%;}
+    .apps_rawcode .navi_wrap.fixed .navi_section {position:fixed; top:0;}
+    .apps_rawcode .navi_wrap.fixed .navi_contents .navi_inner {padding-top:16.6666vw;}
+    .apps_rawcode .navi_wrap .navi_section .navi_header {display:table; position:relative; z-index:110; width:100%; height:13.4259vw; padding:0 5.3703vw 0 6.4814vw; border-bottom:1px solid #dadada; background:#fff; box-sizing:border-box;}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn_box {display:table-cell; position:relative; vertical-align:middle; font-size:3.7037vw; text-align:left;}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn_box .toggle_btn {display:inline-block; position:relative; padding:4.2vw 7.5925vw 3.8vw 0; font-weight:bold; font-size:3.7037vw; text-align:left;}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn:after,
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn:before {transition:all 0.5s; display:block; content:""; position:absolute; top:5.4407vw; right:4.6296vw; width:0.3777vw; height:auto; margin:0; padding:0; border-top:2.3148vw solid #000;}
+    /* .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn:before {transition:all 0.5s; display:block; content:""; position:absolute; top:5.4407vw; right:4.6296vw; width:0.3777vw; height:2.3148vw; margin:0; padding:0; background:#000;} */
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn:after {transform: rotate(0deg);}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn:before {transform: rotate(90deg);}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn.is_open:after {transform: rotate(135deg);}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn.is_open:before {transform: rotate(225deg);}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list {overflow:hidden; display:table-cell; vertical-align:middle; text-align:right;}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list .navi_btn_inner {position:relative; right:0; transition:right 0.8s; transition-timing-function:ease;}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list a {display:inline-block; transition:transform 0.5s; transform:scale(1);}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list a.motion {transform:scale(0);}
+	.apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list a ~ a {margin-left:1vw;}
+    .apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list a img {width:8.2407vw;}
+    .apps_rawcode .navi_wrap .navi_contents {overflow:hidden; display:none; position:relative;}
+    .apps_rawcode .navi_wrap .navi_contents.is_open {display:block;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner {overflow-y:auto; z-index:100; position:fixed; top:0; width:100%; height:100%; padding-top:calc(16.9445vw + 63px); padding-bottom:7.4074vw; background:#fff; box-sizing:border-box;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list {display:flex; flex-wrap:wrap; width:89.8148vw; margin:0 auto;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li {width:19.3518vw; margin:3.9814vw 1.55vw; text-align:center;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a {display:block; -webkit-tap-highlight-color:transparent;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a:hover,
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a:active {
+        animation-name:bounce2;
+        -webkit-animation-name: bounce2;
+        -moz-animation-name: bounce2;
+        -ms-animation-name: bounce2;
+        animation-duration:1.2s;
+        -webkit-animation-duration: 1.2s;
+        -moz-animation-duration: 1.2s;
+        -ms-animation-duration: 1.2s;
+        animation-timing-function:ease-in-out;
+        -webkit-animation-timing-function:ease-in-out;
+        -moz-animation-timing-function:ease-in-out;
+        -ms-animation-timing-function:ease-in-out;
+        animation-iteration-count:infinite;
+        -webki-animation-iteration-count:infinite;
+        -moz-animation-iteration-count:infinite;
+        -ms-animation-iteration-count:infinite;
+    }
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a figure {display:inline-block; width:13.4259vw;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a figure img {width:100%;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a em {display:block; margin-top:0.8333vw; font-size:3.3333vw; /* line-height:4.6296vw; */ line-height:1.4; font-style:normal; word-break:break-word;}
+    .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li.bounce {
+        animation-name: bounce;
+        -webkit-animation-name: bounce;
+        -moz-animation-name: bounce;
+        -ms-animation-name: bounce;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+        animation-timing-function:ease-in-out;
+        -webkit-animation-timing-function:ease-in-out;
+        -moz-animation-timing-function:ease-in-out;
+        -ms-animation-timing-function:ease-in-out;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0); -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0);}
+        40% {transform: translateY(-3px); -webkit-transform: translateY(-3px); -moz-transform: translateY(-3px); -ms-transform: translateY(-3px);}
+        60% {transform: translateY(-1px); -webkit-transform: translateY(-1px); -moz-transform: translateY(-1px); -ms-transform: translateY(-1px);}
+    }
+
+    @keyframes bounce2 {
+        0% {transform:translateY(0); -webkit-transform:translateY(0); -moz-transform:translateY(0); -ms-transform:translateY(0);}
+        25% {transform:translateY(3px); -webkit-transform:translateY(3px); -moz-transform:translateY(3px); -ms-transform:translateY(3px);}
+        50% {transform:translateY(0); -webkit-transform:translateY(0); -moz-transform:translateY(0); -ms-transform:translateY(0);}
+        75% {transform:translateY(3px); -webkit-transform:translateY(3px); -moz-transform:translateY(3px); -ms-transform:translateY(3px);}
+        100% {transform:translateY(0); -webkit-transform:translateY(0); -moz-transform:translateY(0); -ms-transform:translateY(0);}
+    }
+    .js-sticky-placeholder[id|="js-lib_sticky"] {height:17.2222vw !important;}
+    .apps-fixed .js-sticky-placeholder[id|="js-lib_sticky"] {height:17.2222vw !important;}
+    .cm-g-breadcrumb {display:none;}
+
+	/* NATION : RTL */
+	.rtl .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn_box {text-align:right;}
+	.rtl .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn_box .toggle_btn {padding:4.2vw 0 3.8vw 7.5925vw;}
+	.rtl .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn:after,
+    .rtl .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn:before {right:auto; left:4.6296vw;}
+	.rtl .apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list {text-align:left;}
+
+	/* NATION : SEC */
+	html[lang="ko"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li[data-role-name="find my mobile"] a em {padding:0 3%;}
+
+	/* NATION : LANG_CN, SI, LT */
+	html[lang^="lt"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li,
+	html[lang^="zh"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li,
+    html[lang^="sl"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li {width:25%; margin:0; padding:3.9814vw 0; box-sizing:border-box;}
+
+    /* NATION : SI */
+    html[lang^="sl"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li[data-role-name="samsung-kids-home"] .tit {font-size:2.7vw;}
+
+	/* NATION : TH */
+	html[lang^="th"] .apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn_box .toggle_btn {font-size:5.0625vw;}
+	html[lang^="th"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a em {font-size:4.5vw; line-height:1;}
+
+	/* NATION : HU, EE */
+    html[lang^="hu"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a em,
+    html[lang^="et"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li a em {word-break:initial;}
+
+	/* NATION : SK */
+	html[lang^="sk"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li[data-role-name="samsung-kids-home"] .tit {font-size:2.2222vw;}
+
+    /* NATION : KZ_KZ */
+    html[lang^="kk"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li {width:21.8vw; margin:3.9814vw 0.3222vw;}
+	html[lang^="kk"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li[data-role-name="samsung-kids-home"] .tit {font-size:3.0555vw;}
+
+	/* NATION : UA */
+	html[lang="uk-UA"] .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li[data-role-name="samsung-kids-home"] .tit {font-size:2.5vw;}
+
+	/* NATION : BR */
+	.apps_rawcode .navi_wrap .navi_section .navi_header .toggle_btn_box:lang(pt-BR) {width:45%;}
+	.apps_rawcode .navi_wrap .navi_section .navi_header .navi_btn_list:lang(pt-BR) {width:55%;}
+
+	/* IE9 : FLOATING BAR CSS */
+	.ie9 .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list {display:block;}
+	.ie9 .apps_rawcode .navi_wrap .navi_contents .navi_inner .navi_service_list > li {display:inline-block; vertical-align:top;}
+
+
+    /* SUPPORT */
+    .apps .m_content-support .btn_default {margin-bottom:2.7777vw; font-size:3.0555vw;}
+	.apps .m_content-support .btn_default a {padding:3.2222vw 9.7222vw 3.2222vw;}
+    .apps .m_content-support .inner {display:block; padding:0;}
+	.apps .m_content-support .list_inner {padding:0;}
+    .apps .m_content-support .support_list {display:block; width:100%; padding:12.2222vw 2.7777vw 11.8055vw;}
+    .apps .m_content-support .support_list + .support_list {border:none; border-top:1px solid #363636;}
+    .apps .m_content-support .support_icon {width:12.0833vw; height:10.2777vw; margin-bottom:5.5555vw;}
+    .apps .m_content-support .tit,
+	.apps .m_content-support .f_header .tit {margin-bottom:0; font-size:5.555vw; line-height:1.32;}
+    .apps .m_content-support .desc {margin-top:2.7777vw; padding:0 16%; line-height:1.4; font-size:2.777vw; letter-spacing:0;}
+    .apps .m_content-support .btn_box {position:static; left:auto; right:auto; padding:0; min-height:auto;}
+	.apps .m_content-support .txt_box {margin-bottom:6.25vw;}
+	.samsung-device .apps .m_content-support .support_list {padding-bottom:11.8055vw}
+    .apps .m_content-support .inner_wrap.download .support_list {padding-bottom:11.8055vw;}
+    .apps .m_content-support .download.inner_wrap .inline_type .box_inner,
+    .apps .m_content-support.link_type .inner_wrap.download .inline_type .box_inner {width:100%;}
+    .apps .m_content-support .download.inner_wrap .inline_type .box_inner p {font-size:2.77vw;}
+
+	/* SUPPORT : BG-TYPE */
+    .apps .m_content-support.bg_type .f_header {position:relative;}
+    .apps .m_content-support.bg_type .f_header:before {content:inherit; display:none;}
+    .apps .m_content-support.bg_type .f_header .inner_wrap {vertical-align:top;}
+    .apps .m_content-support.bg_type .f_header .inner_wrap .inner {max-width:none; margin:0;}
+    .apps .m_content-support.bg_type .f_container {position:absolute; left:0; top:0; width:100%; height:100%;}
+    .apps .m_content-support.bg_type .f_container > figure {position:absolute; left:0; top:0; width:100%; height:auto; margin-left:0;}
+    .ie9 .apps .bg_type.m_content-support .f_container figure {margin-top:0;}
+
+	/* COMMON - DEVICE CHECKE BUTTON */
+	.apps .mobile_all {display:block !important;}
+    .apps .mobile_only {display:inline-block !important;}
+    .samsung-device .apps .mobile_samsung {display:inline-block !important;}
+	.samsung-device .apps .m_content-support.mobile_samsung {display:block !important;}
+    .samsung-device .apps .m_content-support .mobile_samsung {display:block !important;}
+    .samsung-device .apps .m_content-support .mobile_only {display:block !important;}
+	.samsung-device.samsung-tablet-device .apps .mobile_samsung {display:none !important;}
+	.samsung-device.samsung-mobile-device .apps .mobile_samsung {display:inline-block !important;}
+
+	/* BUTTON */
+	.apps [class*="btn-window"]:after {width:3.05556vw; height:3.05556vw; margin-left:1.3888vw; margin-bottom:-0.4166vw;}
+
+	/* RTL : BUTTON */
+	.rtl .apps [class*="btn-window"]:after {margin-right:1.3888vw;}
+
+	/* SUPPORT : 버튼 높이 유동 */
+	.samsung-device .apps .m_content-support .inner_wrap.fluid .support_list,
+	.apple-device .apps .m_content-support .inner_wrap.fluid .support_list {padding-bottom:11.8055vw;}
+
+	/* LAYOUT */
+    .apps .br_pc br {display:none;}
+    .apps .br_mo br {display:block;}
+    .apps [class*="m_content-"] {height:auto !important; opacity:1}
+    .apps.show [class*="m_content-"] {opacity:1;}
+    .apps [class*="m_content-"] .f_header {position:static; margin-left:0; padding:18.0555vw 5.5555vw; text-align:center;}
+    .apps [class*="m_content-"].left .f_header,
+    .apps [class*="m_content-"].right .f_header {display:block; position:static; width:100%; margin:0; padding:18.0555vw 5.5555vw 13.8888vw; text-align:center;}
+	.apps [class*="m_content-"].right .f_header {padding-right:5.5555vw;}
+    .apps [class*="m_content-"] .inner_right,
+    .apps [class*="m_content-"] .inner_left {height:auto !important;}
+    .apps [class*="m_content-"].left .f_header .tit,
+    .apps [class*="m_content-"].right .f_header .tit {font-size:68px; font-size:9.4444vw; line-height:11.1111vw; /* line-height:80px; */}
+    .apps [class*="m_content-"].left .base,
+    .apps [class*="m_content-"].right .base {position:static;}
+    .apps [class*="m_content-"].left .f_header .inner,
+    .apps [class*="m_content-"].right .f_header .inner {display:block;}
+	.apps [class*="m_content-"].left .f_container .base,
+	.apps [class*="m_content-"].right .f_container .base {display:block;}
+    .apps [class*="m_content-"] .desc {font-size:24px; font-size:3.3333vw; line-height:40px; line-height:5.5555vw; letter-spacing:-0.5px;}
+    .apps [class*="m_content-"] .base {height:auto !important;}
+	.apps [class*="m_content-"] .disclaimer {line-height:1.4;}
+    .apps .m_feature {position:static; left:auto; right:auto; top:auto; bottom:auto;}
+    .apps .f_container {position:static;left:auto;top:auto; height:auto;}
+    .apps .f_container figure {position:static; width:100%; height:auto; margin-left:0;}
+    .apps .f_container figure img {display:block; width:100%; height:auto;}
+    .apps .m_content-kv .f_container figure img {width:100%; height:auto;}
+	.apps [class*="m_content-"].full .base > figure {position:relative; width:100%; height:auto; margin:0; left:0; right:0;}
+	.apps [class*="m_content-"].full .base > figure img {width:100%; height:auto;}
+	.apps .f_header .logo > img {height:11.1111vw;}
+    .apps .f_header .lang_logo > img {width:11.1111vw;}
+    .apps .f_header .lang_logo span {font-size:7.7777vw; line-height:11.1111vw; margin-left:2.7777vw}
+    .apps .f_header .lang_logo span:after {height:11.1111vw;}
+	.apps .f_header .tit {font-size:68px; font-size:9.4444vw; line-height:11.1111vw;}
+    .apps .f_header .desc {margin-top:20px; margin-top:2.7777vw;}
+	.apps .f_header .sub_tit {margin-top:2.7777vw; font-size:28px; font-size:3.8888vw; line-height:1.6;}
+    .apps .f_header > .desc { width:auto; }
+    .apps .f_header .desc + .disclaimer,
+	.apps .f_header .disclaimer {margin-top:1.3888vw;}
+    .apps .f_header .btn_kv {margin-top:11.1111vw;}
+    .apps .f_header .btn_kv a {width:37.5vw; height:11.1111vw;}
+    .apps .f_header .btn_kv a + a {margin-left:4.4444vw;}
+    .apps .m_content-intro {padding:0;}
+	.apps .f_header .btn_kv [class*="btn-default"] {padding:3.2222vw 9.7222vw 3.2222vw;}
+    .apps .f_header .btn_kv .btn-default-black {font-size:3.0555vw;}
+	.apps [class*="m_content-"] .disclaimer {width:100%; font-size:3.125vw; text-align:center; line-height:4.4444vw; box-sizing:border-box;}
+	.apps [class*="m_content-"] .btn_area [class*="btn-default"] {padding:3.4722vw 8.75vw 3.4722vw;}
+	.apps [class*="m_content-"] .btn_area .btn-default-black {font-size:3.0555vw;}
+	.apps [class*="m_content-"].left .f_container,
+    .apps [class*="m_content-"].right .f_container {position:static; display:block; width:100%; margin:0;}
+    .apps [class*="m_content-"].gap .f_container .base {padding-bottom:13.8888vw;}
+    .apps [class*="m_content-"].left.wide .f_container,
+    .apps [class*="m_content-"].right.wide .f_container {width:100%;}
+    .apps [class*="m_content-"].left.wide .f_container {margin-right:0;}
+    .apps [class*="m_content-"].right.wide .f_container {margin-left:0;}
+
+    /* RTL : LAYOUT */
+    .rtl .apps [class*="m_content-"].full .f_container .base > figure {right:0; margin:0;}
+	.rtl .apps [class*="m_content-"].left .f_header,
+    .rtl .apps [class*="m_content-"].right .f_header {text-align:center;}
+	.rtl .apps .f_header .btn_kv a + a {margin-right:4.4444vw; margin-left:0;}
+
+	/* BG-TYPE */
+	.apps [class*="m_content-"].bg-type {background-size:100%;}
+
+	/* INTRO */
+	.apps .m_content-intro .f_header .logo {opacity:1;}
+    .apps .m_content-intro .f_header .tit {margin-top:120px; margin-top:15.2777vw; opacity:1;}
+    .apps .m_content-intro .f_header .desc { width:auto; margin-top:40px; margin-top:5.5555vw; font-size:28px; font-size:3.8888vw; opacity:1;}
+    .apps .m_content-intro .btn_intro {margin-top:40px; margin-top:5.5555vw;}
+    .apps .m_content-intro .btn_intro span {width:226px; width:31.3888vw; height:67px; height:9.3055vw;}
+
+	/* TEXT TYPE */
+    .apps .text-wrap {padding:2.7777vw;}
+
+	/* KV */
+	.apps .m_content-kv .f_container {height:100% !important;}
+    .apps .m_content-kv .f_container figure {width:auto; margin:0; position:static; left:0;}
+
+	/* INTRO & KV HERO STYLE */
+	.apps.hero .f_header .tit,
+	.apps.hero [class*="m_content-"].left .f_header .tit,
+	.apps.hero [class*="m_content-"].right .f_header .tit {font-size:7.7777vw;}
+	.apps.hero .f_header .desc {font-size:3.8888vw;}
+
+	.apps.hero .f_header .logo > img {height:9.0277vw;}
+	.apps.hero .m_content-intro .tit {margin-top:16.3888vw; font-size:7.7777vw;}
+	.apps.hero .m_content-intro .desc {margin-top:5.8333vw; line-height:1.4;}
+	.apps.hero .f_header .btn_kv {margin-top:9.7222vw;}
+	.apps.hero .m_content-intro {padding:0;}
+	.apps.hero .m_content-intro .f_header {padding:6.5277vw 5.5555vw 13.8888vw;}
+
+	.apps.hero .m_content-kv .f_container {padding:0;}
+
+	/* UTUBE TYPE */
+	.apps .utube_type .f_container .utube-container .btn-control-play {width:31.9444vw; height:31.9444vw; margin:-15.9722vw 0 0 -15.9722vw;}
+
+	/* DISCLAIMER AREA */
+    .apps .m_content-disclaimer .f_container {padding:5.9722vw 6% 6.1111vw; box-sizing:border-box;}
+
+	/* CARD LIST TYPE */
+	.apps .card-list-wrap {padding-bottom:22.2222vw;}
+    .apps .card-list-wrap:after {display:block; content:""; clear:both;}
+    .apps .card-list-wrap .slick-dots {bottom:13.8888vw}
+    .apps .card-list-wrap .card-list {float:left; margin-left:0 !important;}
+    .apps .card-list-wrap .card-list figure {width:50.9722vw; margin:0 auto;}
+    .apps .card-list-wrap .card-list .title {position:static; margin:0 0 7.5vw 0; font-size:3.8888vw !important; line-height:6.1111vw}
+    .apps .card-list-wrap .card-list .sub-title {position:static; margin:0 0 7.5vw 0; font-size:3.8888vw !important; line-height:6.1111vw}
+    .apps .card-list-wrap .card-list .desc {font-size:2.7777vw; line-height:6.1111vw; margin-top:2.0833vw;}
+    .apps .card-list-wrap .card-list figure + .title,
+    .apps .card-list-wrap .card-list figure + .sub-title {margin:6.9444vw 0 0 0;}
+	.apps .card-tit-type .card-list .title,
+	.apps .card-tit-type .card-list.top_pc .sub-title {position:static; width:100%;}
+    .apps .card-tit-type .card-list.top_pc figure + .title,
+	.apps .card-tit-type .card-list.top_pc figure + .sub-title {margin:6.9444vw 0 0 0;}
+
+	/* RTL : CARD LIST TYPE */
+	.rtl .apps .card-list-wrap .card-list {float:right;}
+
+    /* HALF-TAB */
+    .apps .half-tab .inner {display:block; min-height:auto; padding:0 0 13.8888vw 0;}
+    .apps .half-tab .overlay_wrap {display:none;}
+    .apps .half-tab .item_layout {display:block; min-height:inherit; float:none;}
+    .apps .half-tab .item_wrap {display:block;}
+    .apps .half-tab .item_box a {display:block; margin-top:7.7777vw; cursor:default;}
+    .apps .half-tab .item_box .desc {margin:2.2222vw 0 0 0; padding:0 5.5555vw; font-size:3.3333vw; line-height:4.4444vw; color:#000000 !important;}
+    .apps .half-tab .item_box + .item_box {margin-top:0;}
+    .apps .half-tab .item_txt_box {padding:0;}
+    .apps .half-tab .item_tit {display:block;}
+    .apps .half-tab .item_txt {text-align:center;}
+    .apps .half-tab .item_txt .disclaimer {margin:2.7777vw auto 0; padding:0 5.5555vw; box-sizing:border-box;}
+    .apps .half-tab .item_icon {display:block; width:14.0277vw; height:14.0277vw; margin:0 auto; margin-bottom:1.8055vw;}
+    .apps .half-tab .tit_txt {display:block; padding:0; font-size:3.888vw;}
+    .apps .half-tab .item_box .tit_txt {color:#000000 !important; text-decoration:underline !important; }
+    .apps .half-tab .slide_img {position:relative; display:block;}
+    .apps .half-tab.non-fade .f_container figure {height:auto;}
+    .apps .half-tab.non-fade .f_container .inner {padding:0 0 13.8888vw 0;}
+    .apps .half-tab.non-fade .item_wrap {width:100%; padding:0 0 9.1666vw 0;}
+    .apps .half-tab.non-fade .slide_img {position:static;}
+    .apps .mo_cont_img {display:block !important;}
+    .apps .mo_device_img {display:block !important; width:55.8333vw; margin:0 auto;}
+    .apps .mo_cont_img img,
+    .apps .mo_device_img img {max-width:100%; height:auto;}
+
+    /* RTL : HALF-TAB*/
+    .rtl .apps .half-tab .tit_txt {padding-left:0; padding-right:0;}
+    .rtl .apps .half-tab .item_txt .desc {margin:2.2222vw 0 0 0;}
+    .rtl .apps .half-tab .item_txt .disclaimer {margin:2.7777vw auto 0;}
+
+    /* I-TYPE */
+    .apps .i-type .add_txt_wrap {padding:0; margin-top:8.0555vw;}
+    .apps .i-type .add_txt .sub_tit {font-size:3.3333vw; line-height:4.4444vw;}
+    .apps .i-type .add_txt .desc {margin-top:2.0833vw; padding:0 9%; font-size:3.3333vw; line-height:4.4444vw;}
+    .apps .i-type .add_txt + .add_txt {margin-top:6.9444vw;}
+
+    /* HOW TO USE */
+    .apps .m_content-step {padding-bottom:6.944vw;}
+    .apps .m_content-step .f_header {padding-top:13.6111vw; padding-bottom:7.2222vw;}
+    .apps .m_content-step .f_tab {background:#f7f7f7;}
+    .apps .m_content-step .f_tab > li {display:block; height:auto; padding:0;}
+    .apps .m_content-step .f_tab li + li {background:none;}
+    .apps .m_content-step .f_tab li + li .f_tab-header {border-top:1px solid #888;}
+    .apps .m_content-step .f_tab li + li .f_tab-header:before {display:none;}
+    .apps .m_content-step .f_tab li .f_tab-header {display:block; width:90vw; min-height:inherit; margin:0 auto; line-height:1.4; background:#363636; text-align:center; box-sizing:border-box; font-size:3.8888vw;}
+    .apps .m_content-step .f_tab li .f_tab-header span {padding:2.5vw 10%;}
+    .apps .m_content-step .f_tab li .f_tab-header:after {position:absolute; top:50%; right:30px; right:4.1666vw; width:28px; width:3.8888vw; height:28px; height:3.8888vw; margin-top:-14px; margin-top:-1.9444vw; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_howtouse_btn_plus.png') no-repeat; background-size:100%; content:"";}
+    .apps .m_content-step .f_tab li .f_tab-header.on {font-size:3.8888vw;}
+    .apps .m_content-step .f_tab li .f_tab-header.on:after {width:28px; width:3.8888vw; height:2px; margin-top:-1px; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_howtouse_btn_minus.png') no-repeat;}
+    .apps .m_content-step .f_tab.column2 li .f_tab-header {width:90vw; height:80px; height:11.1vw; text-align:center !important;}
+    .apps .m_content-step .f_tab-content {position:static; margin:0 auto; padding:73px 0; padding:10.1388vw 0;}
+    .apps .m_content-step .f_tab-content .step_desc {margin:0 5vw;}
+    .apps .m_content-step .f_tab-content .step_desc .desc {min-height:auto; margin-top:9px; margin-top:1.25vw; font-size:3.3333vw;}
+    .apps .m_content-step .f_tab-content .step_desc .desc .disclaimer {margin-top:2.9166vw;}
+    .apps .m_content-step .f_tab-content .step_desc strong {margin:0; font-size:28px; font-size:3.8888vw;}
+    .apps .m_content-step .bx-wrapper {width:90.27vw; margin-top:8.3333vw; padding:0;}
+    .apps .m_content-step .bx-wrapper .step_list {margin-left:0;}
+    .apps .m_content-step .bx-wrapper .step_list > div {width:90.2777vw !important; height:82.0833vw; opacity:1 !important; margin:0 !important;}
+    .apps .m_content-step .slick-slide.active .slide_img {opacity:1 !important}
+    .apps .m_content-step .bx-wrapper .step_list > div img {max-width:100%; height:100%;}
+    .apps .m_content-step .bx-wrapper .bx-pager,
+    .apps .m_content-step .bx-wrapper .bx-controls-auto {margin-top:11.1111vw;}
+    .apps .m_content-step .bx-wrapper .bx-pager {height:16px;}
+    .apps .m_content-step .bx-wrapper .bx-controls-direction a {display:none;}
+    .apps .m_content-step .bx-wrapper .bx-pager.bx-default-pager a {width:16px; height:16px; margin:0 1.1111vw; margin:0 8px;}
+    .apps .m_content-step .bx-wrapper .bx-viewport {height:82.0833vw !important;}
+    .apps .m_content-step .bx-wrapper .bx-viewport:before {display:none;}
+    .apps .m_content-step .bx-wrapper .bx-viewport:after {display:none;}
+    .apps .m_content-step .step_list .slick-arrow {display:none !important;}
+    .apps .m_content-step .f_tab-content .step_list {height:82.0833vw; margin:8.3333vw auto 14.6666vw; padding:0;}
+    .apps #section-howtotab.m_content-step .f_tab-content .step_list img {width:100%; height:auto;}
+    .apps .m_content-step .f_tab-content .step_list figure > .desc {height:0; margin-top:4.1666vw; box-sizing:border-box;}
+    .apps .m_content-step .f_tab-content .step_list .slick-current figure > .desc {height:auto; font-size:3.3333vw;}
+    .apps .m_content-step .f_tab-content .step_list figure > .disclaimer {height:0; margin-top:4.1666vw; font-size:2.5vw; box-sizing:border-box;}
+    .apps .m_content-step .f_tab-content .step_list .slick-current figure > .disclaimer {height:auto;}
+    .apps .m_content-step .f_tab-content .step_list figure > .disclaimer br {display:none;}
+    .apps .m_content-step .f_tab-content .step_list .desc .disclaimer {margin-top:2.7777vw; font-size:3.125vw;}
+    .apps .m_content-step .f_tab-content .step_list.slick-slider {max-height:none; margin:8.3333vw auto 0; padding-bottom:0;}
+    .apps .m_content-step .f_tab-content .slick-slider {width:100%;}
+    .apps .m_content-step .f_tab-content .slick-slider:before {display:none;}
+    .apps .m_content-step .f_tab-content .slick-slider:after {display:none;}
+    .apps .m_content-step .f_tab-content .slick-list {max-width:none; height:auto;}
+    .apps .m_content-step .f_tab-content .slick-slide {width:90.2777vw; height:auto; margin:0;}
+    .apps .m_content-step .f_tab-content .slick-slide figure {height:100%;}
+    .apps .m_content-step .f_tab-content .slick-slide figure {width:100%; height:auto; margin:0 auto;}
+    #contents .apps .m_content-step .slick-dots {position:relative; margin-top:50px;}
+
+    /* HOW TO USE DOUBLE TAB */
+    .apps .m_content-step .f_container > .f_tab > li .f_tab-content.howto_type2 {padding:0;}
+    .apps .m_content-step .f_container .f_tab.depth2 li .f_tab-content {padding:10.1388vw 0;}
+    .apps .m_content-step .f_tab.depth2 {width:100%; height:auto; margin:0 auto; background:none; border:0;}
+    .apps .m_content-step .f_tab.depth2 > li {min-height:inherit; padding:0;}
+    .apps .m_content-step .f_tab li:first-child .f_tab-header:before {background:none;}
+    .apps .m_content-step .f_tab .howto_type2 .m_f_tab {position:relative; display:block;}
+    .apps .m_content-step .f_tab .howto_type2 .m_f_tab button {position:relative; display:block; width:90vw; min-height:11.1111vw; margin:0 auto; padding:2.5vw 10%; border-bottom:1px solid #dfdfdf; background:#fff; font-weight:bold; font-size:3.888vw; color:#000;}
+    .apps .m_content-step .f_tab .howto_type2 .m_f_tab button:hover {background:#fff; color:#000;}
+    .apps .m_content-step .f_tab .howto_type2 .m_f_tab button:after {position:absolute; right:4.1666vw; top:50%; width:4.0277vw; height:2.2222vw; margin-top:-1.3888vw; background-size:100%;  background:#fff url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_smart-call_btn_arrw_down.png') left center no-repeat; background-size:100%; content:'';}
+    .apps .m_content-step .f_tab .howto_type2 .m_f_tab button.active:after {position:absolute; right:4.1666vw; top:50%; width:4.0277vw; height:2.2222vw; margin-top:-1.3888vw; background:url('../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/common/apps_smart-call_btn_arrw_up.png') left center no-repeat; background-size:100%; content:'';}
+    .apps .m_content-step .f_tab .howto_type2 .m_f_tab button.on {color:#000;}
+    .apps .m_content-step .f_tab .howto_type2 .m_f_tab button.on:hover {color:#000;}
+    .apps #section-howtotab.m_content-step .f_tab .howto_type2 .m_f_tab .m_f_tab-list {overflow:hidden; position:absolute; top:11.1111vw; left:0; right:0; width:90vw; height:0; margin:0 auto; z-index:1; transition: height 0.3s;}
+    .apps .m_content-step .f_tab .howto_type2 .m_f_tab .m_f_tab-list button {width:90vw; margin:0 auto; background:#eee; color:#666;}
+    .apps .m_content-step .f_tab .howto_type2 .m_f_tab .m_f_tab-list button:after {content:none;}
+    .apps .m_content-step .f_tab .howto_type2 .m_f_tab .m_f_tab-list button:hover,
+	.apps .m_content-step .f_tab .howto_type2 .m_f_tab .m_f_tab-list button:focus {background:#666; color:#fff;}
+    .apps .m_content-step .f_tab.depth2 li .f_tab-header {display:none;}
+
+	/* HOW TO USE MIX TYPE */
+	.apps .m_content-step .f_tab li h3 .f_tab-header .blind {display:block;}
+	.apps .m_content-step .f_tab-content .step_list.pc-visible {display:none;}
+	.apps .m_content-step .f_tab-content .step_list.mo-visible {display:block;}
+	.apps .m_content-step .f_tab-content .mix_type .img_box {float:none; width:100%; padding-left:0;}
+	.apps .m_content-step .f_tab-content .img_desc {height:0; margin:3.3333vw auto 0; padding:0 5vw; font-size:2.7777vw; line-height:4.4444vw;}
+	.apps .m_content-step .f_tab-content .slick-current .img_desc {height:auto;}
+	.apps .m_content-step .f_tab-content .mix_type .desc_box {float:none; width:100%; height:0; margin-top:5.2777vw; padding:0 5vw; font-size:3.3333vw; line-height:4.8611vw; text-align:center;}
+	.apps .m_content-step .f_tab-content .mix_type.slick-current .desc_box {height:auto;}
+	.apps .m_content-step .f_tab-content .step_desc .desc.only {margin-top:0;}
+
+	/* RTL : HOW TO US */
+	.rtl .apps .m_content-step .f_tab li .f_tab-header:after {left:4.1666vw;}
+	.rtl .apps .m_content-step .f_tab .howto_type2 .m_f_tab button:after {left:4.1666vw; right:auto;}
+
+	/* TAB-SLIDE */
+	.apps .slide-tab .inner {padding:0 0 50px;}
+	.apps .slide-tab .tab-slide-cont {position:relative; width:100%; max-width:100%; padding-top:62.5vw;}
+	.apps .slide-tab .tab-slide-cont + .tab-slide-cont {margin:0;}
+	.apps .slide-tab .tab-media {display:block; width:100%;}
+	.apps .slide-tab .tab-media figure {margin:0;}
+	.apps .slide-tab .tab-media .screen-inner > figure {display:inline-block; width:46%; height:86.1111vw; padding:0;}
+	.apps .slide-tab .tab-media .screen-inner > figure img {display:inline-block; width:auto; height:100%;}
+	.apps .slide-tab .tab-title {padding-top:6.9444vw;}
+	.apps .slide-tab .tab-title .title {font-size:3.8888vw;}
+	.apps .slide-tab .tab-title .title a:hover,
+	.apps .slide-tab .tab-title .title a:focus,
+	.apps .slide-tab .tab-slide-cont.active a {color:#000; text-decoration:none;}
+	.apps .slide-tab .tab-text {display:block; position:static; height:auto; padding:0 4%;}
+	.apps .slide-tab .tab-text .desc {font-size:3.3333vw;}
+
+	/* RTL : TAB-SLIDE */
+    .rtl .apps .slide-tab .tab-slide-cont + .tab-slide-cont {margin:0;}
+
+    /* slide TAB (extention tip) */
+    .apps .list_slide_tab{max-width:100%; padding:0 4.1666vw;}
+    .apps .list_slide_tab .tab_btn_wrap {text-align: left;}
+    .apps .list_slide_tab .tab_conts_wrap{padding:4.16vw;}
+    .apps .list_slide_tab .tab_btn_wrap .title {margin-right:1.3888vw; margin-bottom:1.3888vw; border-radius:6.9444vw;}
+    .apps .list_slide_tab .tab_btn_wrap .title + .title {margin-left:0; }
+    .apps .list_slide_tab .tab_btn_wrap .title .tab_btn{padding:0 4.0277vw; width:auto; min-height:8.333vw; font-size:3.3333vw;}
+    .apps .list_slide_tab .tab_conts_wrap {height:auto; margin-top:4.1666vw; padding:9.72vw 0; border-radius:6.9444vw;}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap {padding-bottom:9.1666vw}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list-inner {width:100%}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list figure {width:100%}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .list_item{width:100%;}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .list_item + .list_item {margin-left:0}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .sub-title {margin:7.5vw 0 0 0; font-size:3.1111vw;}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .desc,
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .desc_tit,
+    .apps .list_slide_tab .tab_conts_wrap .card-list-desc{padding:0 4.1666vw}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .desc {font-size:3.3333vw; line-height:5.2778vw;}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .desc_tit {font-size:3.8888vw;}
+    .apps .list_slide_tab .tab_conts_wrap .card-list-desc {margin-top:2.0833vw; font-size:1.9444vw;}
+    .apps .list_slide_tab .tab_conts_wrap .disclaimer {padding: 0 4.1666vw; font-size:3.3333vw; line-height:5.2778vw}
+    .apps .list_slide_tab .tab_conts_wrap .list_item .disclaimer {margin-top:7.3611vw;}
+    .apps .list_slide_tab .tab_conts_wrap .tab_sub_title {margin-bottom:7.916vw; padding:0 6.25vw; font-size:4.4444vw;}
+    .apps .list_slide_tab .tab_conts_wrap .tab_depth2 {display:none;}
+    .apps .list_slide_tab .visible_pc{display:none !important;}
+    .apps .list_slide_tab .visible_mo{display:block !important;}
+    .apps .list_slide_tab .card-list-wrap .slick-arrow{display:none !important}
+	.apps .list_slide_tab .slick-list:before {display:none;}
+    .apps .list_slide_tab .slick-list:after {display:none;}
+
+    /* RTL : slide TAB (extention tip) */
+    .rtl .apps .list_slide_tab .tab_btn_wrap .title + .title {margin-left:0; margin-right:2.0833vw;}
+    .rtl .apps .list_slide_tab .card-list-wrap .slick-arrow.slick-prev{left:auto; right:1.8vw;}
+    .rtl .apps .list_slide_tab .card-list-wrap .slick-arrow.slick-next{right:auto; left:1.8vw;}
+
+	/* MEDIA TAB TYPE */
+	.apps .media_tab_wrap .swiper-container {overflow:hidden; position:relative;}
+    .apps .media_tab_wrap .swiper-container:before {display:block; content:""; z-index:10; position:absolute; top:0; left:0; width:8.3333vw; height:10.9722vw; background:linear-gradient(to right, #fff, transparent); background:-webkit-linear-gradient(left,white,white 50%,rgba(255,255,255,0));}
+    .apps .media_tab_wrap .swiper-container:after {display:block; content:""; z-index:10; position:absolute; top:0; right:0; width:8.3333vw; height:10.9722vw; background:linear-gradient(to left, #fff, transparent); background:-webkit-linear-gradient(right,white,white 50%,rgba(255,255,255,0));}
+    .apps .media_tab_wrap .swiper-container .inner {width:auto; white-space:nowrap; font-size:0; margin:0 0 6.9444vw;}
+	.apps .media_tab_wrap .swiper-container .inner > .swiper-slide {width:auto; padding:0;}
+	.apps .media_tab_wrap .swiper-container .inner > .swiper-slide + .swiper-slide {margin-left:8.3333vw;}
+	.apps .media_tab_wrap .swiper-container .inner > .swiper-slide:first-child {margin-left:8.3333vw;}
+	.apps .media_tab_wrap .swiper-container .inner > .swiper-slide:last-child {margin-right:8.3333vw;}
+    .apps .media_tab_wrap .tit {font-size:4.4444vw;}
+	.apps .media_tab_wrap .tit a:hover {color:#757575; text-decoration:none;}
+	.apps .media_tab_wrap .tit a:focus,
+	.apps .media_tab_wrap .swiper-slide.active a {color:#000; text-decoration:underline;}
+
+	/* RTL : MEDIA TAB TYPE */
+	.rtl .apps .media_tab_wrap .swiper-container .inner > .swiper-slide + .swiper-slide {margin-left:0; margin-right:8.3333vw;}
+	.rtl .apps .media_tab_wrap .swiper-container .inner > .swiper-slide:first-child {margin-left:0; margin-right:8.3333vw;}
+	.rtl .apps .media_tab_wrap .swiper-container .inner > .swiper-slide:last-child {margin-right:8.3333vw; margin-left:8.3333vw;}
+
+	/* MEDIA CONTENT TYPE */
+    .apps .media_cont_wrap .media_list {padding:0 0.6944vw;}
+    .apps .media_cont_wrap .title {margin-top:3.125vw; font-size:1.3888vw; line-height:2.3611vw;}
+	.apps .media_cont_wrap .btn_area > a {margin:2.7777vw 0 4.1666vw;}
+
+	/* VIDEO */
+	.apps .video-area {height:100%;}
+	.apps .video-area .video-wrap {position:absolute; width:360px; left:50%; margin-left:-175px; top:30px; height:auto;}
+	.apps .video-area .device-wrapper {position:relative;}
+
+	/* VIDEO BUTTON */
+	.apps .btn_media-play {top:55px; top:7.6388vw; margin-left:-179px; margin-left:-24.8611vw; width:49.5833vw; height:742px; height:103.0555vw;}
+	.apps .btn_media-play:after {width:168px; height:168px; width:23.3333vw; height:23.3333vw; margin-left:-11.6666vw; margin-top:-11.6666vw;}
+    .apps .btn_media-play:before {width:168px; height:168px; width:23.3333vw; height:23.3333vw; margin-left:-11.6666vw; margin-top:-11.6666vw;}
+
+	/* SCROLL MOTION */
+	.apps .scroll-motion .motion {display:none !important;}
+	.apps .scroll-motion .f_container > figure {position:static; width:100%;}
+	.apps .scroll-motion:after {display:none;}
+	.apps .scroll-motion .mobile_only {display:block !important; margin:0; text-indent:0;}
+	.apps .scroll-motion .disclaimer {padding:6.1111vw 2.0833vw 10vw; background:#444;}
+	.apps .scroll-motion.white .disclaimer p {color:#fff;}
+	.apps .scroll-motion.target02 .f_container > figure {display:block;}
+
+	/* DEEPLINK POPUP */
+    .apps .deeplink-popup {left:5.5%; width:89%; margin-left:0;}
+    .apps .deeplink-popup .m_feature {padding:4.1666vw;}
+    .apps .deeplink-popup .m_feature .f_header {padding:4.7222vw 5.5555vw 1.6666vw;}
+    .apps .deeplink-popup .m_feature .f_header .tit {font-size:5.5555vw; line-height:1.32;}
+    .apps .deeplink-popup .btn_close {top:4.1666vw; right:4.1666vw; width:5.5555vw; height:5.5555vw;}
+    .apps .deeplink-popup .f_container .btn_area {padding:5vw 0;}
+    .apps .deeplink-popup .f_container .btn_box {padding:0 1.3888vw;}
+
+	/* RTL : DEEPLINK POPUP */
+	.rtl .apps .deeplink-popup .btn_close {left:4.1666vw;}
+
+	/**************** NATION : TH ****************/
+	/* NATION : TH - PDP AREA */
+	html[lang^="th"] .m_content-pdp .tit {font-size:64.8px; font-size:9vw;}
+	html[lang^="th"] .m_content-pdp .btn_link {font-size:24.3px; font-size:3.375vw;}
+	html[lang^="th"] .m_content-pdp .tit em {font-size:45.9px; font-size:6.375vw;}
+
+	/* NATION : TH - LAYOUT */
+	html[lang^="th"] .apps .f_header .tit {font-size:91.8px; font-size:12.75vw;}
+	html[lang^="th"] .apps [class*="m_content-"].left .f_header .tit,
+	html[lang^="th"] .apps [class*="m_content-"].right .f_header .tit {font-size:91.8px; font-size:12.75vw;}
+	html[lang^="th"] .apps [class*="m_content-"] .desc {font-size:32.4px; font-size:4.5vw; line-height:1;}
+	html[lang^="th"] .apps .f_header .sub_tit {font-size:37.8px; font-size:5.25vw;}
+	html[lang^="th"] .apps .f_header .btn_kv .btn-default-black {font-size:29.7px; font-size:4.125vw;}
+    html[lang^="th"] .apps [class*="m_content-"] .disclaimer {font-size:30.375px; font-size:4.2187vw; line-height:1;}
+    html[lang^="th"] .apps .f_header .lang_logo span {font-size:10.5vw;}
+    html[lang^="th"] .apps .f_header .btn_kv .btn-default-black,
+	html[lang^="th"] .apps [class*="m_content-"] .btn_area .btn-default-black {font-size:29.7px; font-size:4.125vw;}
+
+	/* NATION : TH - SUPPORT */
+	html[lang^="th"] .apps .m_content-support .btn_default {font-size:29.7px; font-size:4.125vw;}
+	html[lang^="th"] .apps .m_content-support .tit,
+	html[lang^="th"] .apps .m_content-support .f_header .tit {font-size:54px; font-size:7.7vw;}
+	html[lang^="th"] .apps .m_content-support .desc {font-size:27px; font-size:3.75vw;}
+	html[lang^="th"] .apps .m_content-support .inner_wrap.download .inline_type .box_inner p {font-size:27px; font-size:3.75vw;}
+
+	/* NATION : TH - INTRO */
+	html[lang^="th"] .apps .m_content-intro .f_header .desc {font-size:37.8px; font-size:5.25vw;}
+
+	/* INTRO & KV HERO STYLE */
+	html[lang^="th"] .apps.hero .f_header .tit,
+	html[lang^="th"] .apps.hero .m_content-intro .tit,
+	html[lang^="th"] .apps.hero [class*="m_content-"].left .f_header .tit,
+	html[lang^="th"] .apps.hero [class*="m_content-"].right .f_header .tit {font-size:72.8px; font-size:10.1111vw;}
+	html[lang^="th"] .apps.hero .f_header .desc {font-size:37.8px; font-size:5.25vw;}
+
+	/* NATION : TH - CARD LIST TYPE */
+	html[lang^="th"] .card-list-wrap .card-list .title {font-size:37.8px; font-size:5.25vw !important; line-height:1;}
+	html[lang^="th"] .card-list-wrap .card-list .sub-title {font-size:37.8px; font-size:5.25vw !important; line-height:1;}
+    html[lang^="th"] .card-list-wrap .card-list .desc {font-size:27px; font-size:3.75vw; line-height:1;}
+
+    /* NATION : TH - HALF-TAB */
+    html[lang^="th"] .apps .half-tab .tit_txt {font-size:5.25vw;}
+    html[lang^="th"] .apps .half-tab .item_box .desc {font-size:4.5vw;}
+
+    /* NATION : TH - HOW TO USE */
+    html[lang^="th"] .apps .m_content-step .f_tab li .f_tab-header {font-size:5.25vw;}
+    html[lang^="th"] .apps .m_content-step .f_tab li .f_tab-header.on {font-size:5.25vw;}
+    html[lang^="th"] .apps .m_content-step .f_tab-content .step_desc strong {font-size:5.25vw;}
+    html[lang^="th"] .apps .m_content-step .f_tab-content .step_desc .desc {font-size:4.5vw;}
+    html[lang^="th"] .apps .m_content-step .f_tab-content .step_list figure > .disclaimer {font-size:3.375vw;}
+
+	/* NATION : TH - HOW TO USE MIX TYPE */
+	html[lang^="th"] .apps .m_content-step .f_tab-content .mix_type .desc_box {font-size:32.4px; font-size:4.5vw;}
+	html[lang^="th"] .apps .m_content-step .f_tab-content .img_desc {font-size:27px; font-size:3.75vw;}
+
+	/*  NATION : TH - TAB-SLIDE */
+	html[lang^="th"] .apps .slide-tab .tab-title .title {font-size:37.8px; font-size:5.25vw;}
+    html[lang^="th"] .apps .slide-tab .tab-text .desc {font-size:32.4px; font-size:4.5vw;}
+
+    /* NATION : TH - slide TAB (extention tip) */
+    html[lang^="th"] .apps .list_slide_tab .tab_btn_wrap .title .tab_btn{font-size:4.4999vw}
+    html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .sub-title {font-size:1.6875vw;}
+    html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .desc {font-size:4.4999vw; line-height:7.1250vw;}
+    html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .card-list-wrap .card-list .desc_tit {font-size:5.25vw;}
+    html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .card-list-desc {font-size:1.3125vw;}
+    html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .disclaimer {font-size:4.4999vw; line-height:7.1250vw}
+    html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .tab_sub_title {font-size:5.9999vw;}
+    html[lang^="th"] .apps .list_slide_tab .tab_conts_wrap .tab_depth2 .tab_btn{font-size:2.25vw;}
+
+    /* compontent button font-size setting */
+    .cl-btn-inherit a.s-btn-encased {font-size:3.3333vw}
+
+    /* NATION : CN floating bar */
+    html[lang="zh-CN"] .apps_rawcode .navi_wrap .navi_contents .navi_inner {padding-top:calc(16.9445vw + 90px);}
+    html[lang="zh-CN"] .apps_rawcode .navi_wrap.fixed .navi_contents .navi_inner {padding-top:16.6666vw;}
+}
+
+
+
+@media screen and (max-width:359px){
+    /* APPS-PAGINATION */
+    .apps-pagination .control .name strong {font-size:14px;}
+}
+
+
+/* game-launcher feature_benefit_48 */
+.feature-benefit__title[data-font-size-pc="48"] {font-size:48px;font-size:3.33333vw;}
+
+@media screen and (min-width: 1440px) {
+    .feature-benefit__title[data-font-size-pc="48"] {font-size:48px;}
+}
+@media screen and (max-width: 768px){
+    .feature-benefit__title[data-font-size-mo="56"] {font-size: 59.73333px; font-size: 7.77778vw;}
+}
+
+/* br gnb */
+html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__main .s-btn-link,
+html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__main .s-btn-toggler,
+html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__sub .s-btn-link,
+html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__sub .s-btn-toggler{padding:0.41667vw 0.55555556vw}
+@media (min-width: 1440px){
+    html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__main .s-btn-link,
+    html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__main .s-btn-toggler,
+    html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__sub .s-btn-link,
+    html[lang^="pt-BR"] .gb-gnb.gb-gnb-202006 .gb-gnb__sub .s-btn-toggler{padding:6px 8px}
+}
+
+/* samsung kids init */
+.kids-carousel .cl-icons-carousel-textbox-img-product__slider{visibility:hidden}
+
+.mobile.desktop #samsungkids-pc-sm-only-one .txt-mobile-only {display:none !important;}
+@media screen and (max-width:768px) {
+    #samsungkids-pc-sm-only-one {display:none !important;}
+    .samsung-device.apps-device-phone #samsungkids-pc-sm-only-one {display:block !important;}
+    .samsung-device.apps-device-phone #samsungkids-pc-sm-only-one .txt-mobile-only {display:block !important;}
+}
+

@@ -1,0 +1,77 @@
+.co-title-text{max-width:1440px;margin:0 auto}
+@media only screen and (min-width:1440px){.co-title-text.margin-top-none{padding-top:0}
+}
+@media only screen and (min-width:768px) and (max-width:1440px){.co-title-text.margin-top-none{padding-top:0vw}
+}
+@media only screen and (max-width:767px){.co-title-text.margin-top-none{padding-top:0vw}
+}
+@media only screen and (min-width:1440px){.co-title-text.margin-top-narrow{padding-top:16px}
+}
+@media only screen and (min-width:768px) and (max-width:1440px){.co-title-text.margin-top-narrow{padding-top:1.11111111vw}
+}
+@media only screen and (max-width:767px){.co-title-text.margin-top-narrow{padding-top:4.44444444vw}
+}
+@media only screen and (min-width:1440px){.co-title-text.margin-top--normal{padding-top:24px}
+}
+@media only screen and (min-width:768px) and (max-width:1440px){.co-title-text.margin-top--normal{padding-top:1.66666667vw}
+}
+@media only screen and (max-width:767px){.co-title-text.margin-top--normal{padding-top:6.66666667vw}
+}
+@media only screen and (min-width:1440px){.co-title-text.margin-top--wide{padding-top:48px}
+}
+@media only screen and (min-width:768px) and (max-width:1440px){.co-title-text.margin-top--wide{padding-top:3.33333333vw}
+}
+@media only screen and (max-width:767px){.co-title-text.margin-top--wide{padding-top:13.33333333vw}
+}
+@media only screen and (min-width:1440px){.co-title-text.margin-top--verywide{padding-top:52px}
+}
+@media only screen and (min-width:768px) and (max-width:1440px){.co-title-text.margin-top--verywide{padding-top:3.61111111vw}
+}
+@media only screen and (max-width:767px){.co-title-text.margin-top--verywide{padding-top:14.44444444vw}
+}
+.co-title-text__text{font-weight:normal;font-style:normal;text-decoration:none;text-transform:none;font-family:'SamsungOne',arial,sans-serif;line-height:1.2}
+.co-title-text__textblack{color:#000}
+.co-title-text__textwhite{color:#fff}
+.co-title-text__textblue{color:#1428a0}
+.co-title-text__alignleft{text-align:left}
+.co-title-text__aligncenter{text-align:center}
+.co-title-text__alignright{text-align:right}
+.co-title-text__style-bold{font-weight:bold}
+.co-title-text__style-italic{font-style:italic}
+.co-title-text__style-underline{text-decoration:underline}
+.co-title-text__style-capital{text-transform:uppercase}
+.co-title-text__size-x-large>*{font-family:'SamsungSharpSans',arial,sans-serif;line-height:1.33}
+@media only screen and (min-width:1440px){.co-title-text__size-x-large>*{font-size:60px}
+}
+@media only screen and (min-width:768px) and (max-width:1440px){.co-title-text__size-x-large>*{font-size:4.16666667vw}
+}
+@media only screen and (max-width:767px){.co-title-text__size-x-large>*{font-size:6.11111111vw}
+}
+@media only screen and (min-width:1440px){.co-title-text__size-large>*{font-size:28px}
+}
+@media only screen and (min-width:768px) and (max-width:1440px){.co-title-text__size-large>*{font-size:1.94444444vw}
+}
+@media only screen and (max-width:767px){.co-title-text__size-large>*{font-size:3.88888889vw}
+}
+@media only screen and (min-width:1440px){.co-title-text__size-medium>*{font-size:24px}
+}
+@media only screen and (min-width:768px) and (max-width:1440px){.co-title-text__size-medium>*{font-size:1.66666667vw}
+}
+@media only screen and (max-width:767px){.co-title-text__size-medium>*{font-size:3.33333333vw}
+}
+@media only screen and (min-width:1440px){.co-title-text__size-small>*{font-size:22px}
+}
+@media only screen and (min-width:768px) and (max-width:1440px){.co-title-text__size-small>*{font-size:1.52777778vw}
+}
+@media only screen and (max-width:767px){.co-title-text__size-small>*{font-size:2.77777778vw}
+}
+html[lang^="th"] .co-title-text__text{font-family:'Kittithada','SamsungOne',arial,sans-serif}
+html[lang^="th"] .co-title-text__size-x-large{font-family:'Kittithada','SamsungSharpSans',arial,sans-serif}
+@media only screen and (min-width:768px) and (max-width:1440px){}
+@media only screen and (max-width:767px){}
+@media only screen and (min-width:768px) and (max-width:1440px){}
+@media only screen and (max-width:767px){}
+@media only screen and (min-width:768px) and (max-width:1440px){}
+@media only screen and (max-width:767px){}
+@media only screen and (min-width:768px) and (max-width:1440px){}
+@media only screen and (max-width:767px){}

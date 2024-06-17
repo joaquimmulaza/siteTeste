@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+/* COMMON */
+[id*="pc-only"],
+[id*="mo-only"] {display:none;}
+
+.desktop [id*="pc-only"] {display:block;}
+.desktop [id*="mo-only"] {display:none;}
+.mobile [id*="mo-only"] {display:block;}
+.mobile.desktop [id*="pc-only"],
+.mobile [id*="pc-only"] {display: none;}
+
+/* LAYOUT */
+.apps_cr [class*="m_content-"] {position:relative; max-width:1440px; margin:0 auto; box-sizing:border-box;}
+.apps_cr [class*="m_content-"] .disclaimer,
+.apps_cr [class*="m_content-"] .disclaimer p,
+.apps_cr [class*="m_content-"] .disclaimer a {color:#666;}
+.apps_cr [class*="m_content-"] .disclaimer {font-size:14px; box-sizing:border-box;}
+.apps_cr .f_container figure img {height:100%;}
+.apps_cr [class*="m_content-"].center .btn_area {margin:0 auto; text-align:center;}
+
+/* COMMON - DEVICE CHECKE BUTTON */
+.cl-textbox__text .pc_only {display:block} /* 컴포넌트영역 PC에서만 노출 */
+.apps_cr .pc_only {display:block;} /* pc만 노출 */
+.apps_cr .mobile_all {display:none !important;} /* 모바일과 타블릿에서 노출 */
+.apps_cr .mobile_samsung {display:none !important;} /* 모바일에서 삼성단말기만 노출 */
+.apps_cr .mobile_only {display:none !important;} /* 모바일에서만 노출 */
+.samsung-mobile-device .apps_cr .mobile_samsung {display:none !important;} /* 삼성단말기 모바일에서만 노출 */
+.samsung-device.samsung-mobile-device .apps_cr .mobile_samsung {display:none !important;}
+.apps_cr .galaxy_btn {display:none !important;} /* 삼성 단말기(특정단말기) 모바일에서만 노출 */
+.apps_cr .use_desktop,
+.apps_cr .use_mobile_tablet {display:none;} /* tryitnow mobile에서만 노출 */
+.desktop .apps_cr .use_desktop {display:block;} /* gettheapp PC tablet 노출 */
+.desktop .apps_cr .use_mobile_tablet {display:none;} /* tryitnow mobile에서만 노출 */
+.mobile .apps_cr .use_mobile_tablet {display:block;} /* tryitnow mobile에서만 노출 */
+.mobile.desktop .apps_cr .use_desktop,
+.mobile .apps_cr .use_desktop  {display: none;} /* gettheapp PC tablet 노출 */
+
+/* TABLET DEVICE BUTTON */
+.mobile.apps-device-tablet .apps_cr .pc_only {display:block !important;}
+.mobile.apps-device-tablet .apps_cr .mobile_only {display:none !important;}
+.mobile.apps-device-phone .apps_cr .pc_only {display:none !important;}
+.mobile.apps-device-phone .apps_cr .mobile_only {display:block !important;}
+.mobile.apps-device-tablet  .cl-textbox__text .pc_only {display:block !important;} /* 컴포넌트영역 PC에서만 노출 */
+.mobile.apps-device-phone  .cl-textbox__text .pc_only {display:none !important;} /* 컴포넌트영역 PC에서만 노출 */
+.mobile.apps-device-tablet  .apps_cr .use_mobile_tablet {display:none;} /* tryitnow mobile에서만 노출 */
+.mobile.apps-device-phone  .apps_cr .use_mobile_tablet {display:block;} /* tryitnow mobile에서만 노출 */
+.mobile.apps-device-tablet .apps_cr .use_desktop {display:block;} /* gettheapp PC tablet 노출 */
+
+
+/* BUTTON */
+.apps_cr [class*="m_content-"] .btn_area [class*="btn-default"] {
+	position: relative;
+    display: inline-block;
+    padding:12px 38px;
+    background:transparent;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    line-height:1;
+    letter-spacing: .15em;
+    font-weight: bold;
+    -webkit-transition-duration:0.3s;
+    -o-transition-duration:0.3s;
+    transition-duration:0.3s;
+    -webkit-transition-property:background,color,border-color;
+    -o-transition-property:background,color,border-color;
+    transition-property:background,color,border-color;
+    -webkit-transition-timing-function:ease-in-out;
+    -o-transition-timing-function:ease-in-out;
+    transition-timing-function:ease-in-out;
+    text-transform:uppercase;
+}
+
+.apps_cr [class*="m_content-"] .btn_area .btn-default-black {width:auto; height:auto; margin:0 10px; color:#000; background:none; border:1px solid #000; font-size:14px;}
+.apps_cr [class*="m_content-"] .btn_area .btn-default-black:focus,
+.apps_cr [class*="m_content-"] .btn_area .btn-default-black:hover {background:#000; border:1px solid #000; color:#fff;}
+
+.apps_cr [class*="btn-window"]:after {display:inline-block; width:11px; height:11px; margin-left:8px; background:url('../../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/samsung-health/common/ico-newwindow-black.svg') no-repeat; background-size:100%; transition:background ease-in-out 0.3s; content:"";}
+.apps_cr .btn-window-black:after {background:url('../../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/samsung-health/common/ico-newwindow-white.svg') no-repeat;}
+.apps_cr .btn-window-black:hover:after,
+.apps_cr .btn-window-black:focus:after {background:url('../../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/samsung-health/common/ico-newwindow-black.svg') no-repeat;}
+.apps_cr .btn-window-white:after {background:url('../../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/samsung-health/common/ico-newwindow-black.svg') no-repeat;}
+.apps_cr .btn-window-white:hover:after,
+.apps_cr .btn-window-white:focus:after {background:url('../../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/samsung-health/common/ico-newwindow-white.svg') no-repeat;}
+.apps_cr .disclaimer [class*="btn-window"]:after {margin-left:0; vertical-align: middle;}
+
+.apps_cr .btn-default-black .btn-window-white:after {background:url('../../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/samsung-health/common/ico-newwindow-black.svg') no-repeat;}
+.apps_cr .btn-default-black:hover .btn-window-white:after,
+.apps_cr .btn-default-black:active .btn-window-white:after {background:url('../../../../../../../images.samsung.com/is/content/samsung/assets/apps/global/samsung-health/common/ico-newwindow-white.svg') no-repeat;}
+
+/* DEEPLINK POPUP */
+.apps_cr .deeplink-popup {display:none;}
+
+/* SUPPORT */
+.apps_cr .m_content-support .inner_wrap {max-width:1440px; margin:0 auto; box-sizing:border-box;}
+.apps_cr .m_content-support .inner {display:table; width:100%; padding:50px 0; table-layout:fixed;}
+.apps_cr .m_content-support .support_list {display:table-cell; position:relative; padding:40px 0 145px; box-sizing:border-box; text-align:center; word-wrap:break-word; word-break:break-word;}
+.apps_cr .m_content-support .support_list + .support_list {border-left:1px solid #363636;}
+.apps_cr .m_content-support .list_inner {padding:0 4%;}
+.apps_cr .m_content-support .support_icon {width:87px; height:74px; margin:0 auto 40px;}
+.apps_cr .m_content-support .support_icon img {width:100%;}
+.apps_cr .m_content-support .tit,
+.apps_cr .m_content-support .f_header .tit {display:block; margin-bottom:9px; font-size:34px; font-weight:bold;}
+.apps_cr .m_content-support .desc {padding:0 10%; font-size:20px;}
+.apps_cr .m_content-support .btn_box {position:absolute; bottom:20px; left:0; right:0; padding:0 4%; box-sizing:border-box;}
+.samsung-device .apps_cr .m_content-support .btn_box,
+.apple-browser-all .apps_cr .m_content-support .btn_box {min-height:166px;}
+.samsung-device .apps_cr .m_content-support .support_list,
+.apple-browser-all .apps_cr .m_content-support .support_list {padding-bottom:215px;}
+.apple-browser-all .apps_cr .m_content-support .btn_default.apple_btn {display:block;}
+
+/* .apps_cr .m_content-support .btn_area [class*="btn-default"] {margin-bottom:20px; padding:19px 50px 19px; line-height:1.2;} */
+.apps_cr .m_content-support .btn_area [class*="btn-default"] {margin-bottom:36px;}
+
+/* SUPPORT : 버튼 높이 유동 */
+.samsung-device .apps_cr .m_content-support .inner_wrap.fluid .btn_box,
+.apple-device .apps_cr .m_content-support .inner_wrap.fluid .btn_box {min-height:auto}
+.samsung-device .apps_cr .m_content-support .inner_wrap.fluid .support_list,
+.apple-device .apps_cr .m_content-support .inner_wrap.fluid .support_list {padding-bottom:145px;}
+
+/* health */
+.apps_cr .m_content-support{background-color:#000}
+.apps_cr .m_content-support.black .tit, .apps_cr .m_content-support.black .desc{color: #fff;}
+.apps_cr .m_content-yourhands .btn_area .btn_box.mobile_only{padding-bottom:46px}
+.apps_cr .m_content-support .btn_area .btn-default-black{color:#fff; background:none; border:1px solid #fff;}
+.apps_cr .m_content-support  .btn_area .btn-default-black:focus,
+.apps_cr .m_content-support  .btn_area .btn-default-black:hover {background:#fff; border:1px solid #fff; color:#000;}
+
+/* NATION : TH */
+html[lang^="th"] .apps_cr [class*="m_content-"] .disclaimer {font-size:18.9px;}
+html[lang^="th"] .apps_cr [class*="m_content-"] .btn_area .btn-default-black {font-size:18px;}
+html[lang^="th"] .apps_cr .m_content-support .f_header .tit {font-size:45.9px;}
+html[lang^="th"] .apps_cr .m_content-support .desc {font-size:27px}
+
+
+/* NATION : TH - SUPPORT */
+html[lang^="th"] .apps_cr .m_content-support .btn_default {font-size:21.6px;}
+html[lang^="th"] .apps_cr .m_content-support .tit,
+html[lang^="th"] .apps_cr .m_content-support .f_header .tit {font-size:45.9px;}
+html[lang^="th"] .apps_cr .m_content-support .desc {font-size:27px;}
+html[lang^="th"] .apps_cr .m_content-support .inner_wrap.download .inline_type .box_inner p {font-size:18.9px;}
+
+/* RTL */
+.rtl .apps_cr [class*="btn-window"]:after {margin-left:0; margin-right:8px;}
+.rtl .apps_cr .disclaimer [class*="btn-window"]:after {margin-left:0; margin-right:0;}
+
+/* RTL : SUPPORT */
+.rtl .apps_cr .m_content-support .support_list + .support_list {border-right:1px solid #363636; border-left:0;}
+
+@media screen and (max-width:1440px) {
+    /* LAYOUT */
+    .apps_cr [class*="m_content-"] .disclaimer {font-size:0.9722vw;}
+
+    /* BUTTON */
+    .apps_cr [class*="m_content-"] .btn_area [class*="btn-default"] {padding:0.8333vw 2.6389vw;}
+    .apps_cr [class*="m_content-"] .btn_area .btn-default-black {margin:0 0.6944vw; font-size:0.97222vw;}
+    .apps_cr [class*="btn-window"]:after {width:0.7639vw; height:0.7639vw; margin-left:0.5556vw;}
+
+    /* DEEPLINK POPUP */
+    .apps_cr .deeplink-popup {position:fixed; left:50%; width:44.4444vw; margin-left:-22.2222vw; z-index:9999;}
+    .apps_cr .deeplink-popup.active {display:block;}
+    .apps_cr .deeplink-popup:before {position:fixed; top:0; left:0; bottom:0; right:0; background:#000; opacity:0.7; content:''; z-index:-1;}
+    .apps_cr .deeplink-popup .m_feature {position:relative; padding:2.0833vw; background:#fff;}
+    .apps_cr .deeplink-popup .m_feature .f_header {padding:2.7777vw 2.7777vw 0.8333vw;}
+    .apps_cr .deeplink-popup .m_feature .f_header .tit {font-size:2.7777vw; line-height:1.32; text-align:center; color: #363636; font-weight:bold;}
+    .apps_cr .deeplink-popup .btn_close {position:absolute; top:2.0833vw; right:2.0833vw; width:2.7777vw; height:2.7777vw; background:url('../../../../../../../images.samsung.com/is/image/samsung/assets/apps/global/samsung-health/common/btn_popup_close.png') no-repeat center; background-size:100%;}
+    .apps_cr .deeplink-popup .f_container .btn_area {padding:2.5vw 0;}
+    .apps_cr .deeplink-popup .f_container .btn_area:after {display:block; content:''; clear:both;}
+    .apps_cr .deeplink-popup .f_container .btn_box {float:left; width:50%; padding:0 0.6944vw; box-sizing:border-box;}
+    .apps_cr .deeplink-popup .f_container .btn_box a {display:inline-block;}
+    .apps_cr .deeplink-popup .f_container .btn_box a img {width:100%;}
+
+    /* SUPPORT */
+    .apps_cr .m_content-support .inner {padding:3.4722vw 0;}
+    .apps_cr .m_content-support .support_list {padding:2.7777vw 0 10.06944vw;}
+    .apps_cr .m_content-support .support_icon {width:6.0416vw; height:5.1388vw; margin-bottom:2.7777vw;}
+    .apps_cr .m_content-support .tit,
+	.apps_cr .m_content-support .f_header .tit {margin-bottom:0.625vw; font-size:2.3611vw;}
+    .apps_cr .m_content-support .desc {font-size:1.3888vw;}
+    .apps_cr .m_content-support .btn_box {bottom:1.3888vw;}
+    .samsung-device .apps_cr .m_content-support .btn_box,
+    .apple-browser-all .apps_cr .m_content-support .btn_box {min-height:11.5277vw;}
+    .samsung-device .apps_cr .m_content-support .support_list,
+    .apple-browser-all .apps_cr .m_content-support .support_list {padding-bottom:14.9305vw;}
+
+    /* .apps_cr .m_content-support .btn_area [class*="btn-default"] {margin-bottom:1.3888vw; padding:1.3194vw 3.4722vw 1.3194vw;} */
+    .apps_cr .m_content-support .btn_area [class*="btn-default"] {margin-bottom:2.5vw;}
+
+	/* SUPPORT : 버튼 높이 유동 */
+	.samsung-device .apps_cr .m_content-support .inner_wrap.fluid .support_list,
+    .apple-device .apps_cr .m_content-support .inner_wrap.fluid .support_list {padding-bottom:10.0694vw;}
+
+    /* health */
+    .apps_cr .m_content-support{padding-bottom:2.0833vw;background-color:#000}
+    .apps_cr .m_content-yourhands .btn_area .btn_box.mobile_only{padding-bottom:3.1944vw}
+
+    /* NATION : TH */
+    html[lang^="th"] .apps_cr [class*="m_content-"] .disclaimer {font-size:1.3125vw;}
+    html[lang^="th"] .apps_cr [class*="m_content-"] .btn_area .btn-default-black {font-size:1.12500vw}
+    html[lang^="th"] .apps_cr .m_content-support .f_header .tit {font-size:3.1875vw;}
+    html[lang^="th"] .apps_cr .m_content-support .desc {font-size:1.8750vw;}
+
+    /* NATION : TH - SUPPORT */
+	html[lang^="th"] .apps_cr .m_content-support .btn_default {font-size:1.5vw;}
+	html[lang^="th"] .apps_cr .m_content-support .tit,
+	html[lang^="th"] .apps_cr .m_content-support .f_header .tit {font-size:3.1875vw;}
+	html[lang^="th"] .apps_cr .m_content-support .desc {font-size:1.875vw;}
+	html[lang^="th"] .apps_cr .m_content-support .inner_wrap.download .inline_type .box_inner p {font-size:1.3125vw;}
+
+    /* RTL */
+    .rtl .apps_cr [class*="btn-window"]:after {margin-left:0; margin-right:0.5556vw;}
+    .rtl .apps_cr .disclaimer [class*="btn-window"]:after {margin-left:0; margin-right:0;}
+
+    /* RTL : DEEPLINK POPUP */
+	.rtl .apps_cr .deeplink-popup .f_container .btn_box {float:right;}
+    .rtl .apps_cr .deeplink-popup .btn_close {left:2.0833vw; right:auto;}
+
+    }
+
+@media screen and (max-width:768px) {
+	/* LAYOUT */
+    .apps_cr [class*="m_content-"] .disclaimer {width:100%; font-size:2.7777vw; text-align:center;}
+
+    /* COMMON - DEVICE CHECKE BUTTON */
+    .apps_cr .mobile_only {display:none !important;}
+    .apps_cr .pc_only {display:none !important;}
+    .apps_cr .pc_only > a:first-child {margin-bottom:2.7777vw !important;}
+    .apps-device-desktop .apps_cr .pc_only {display:block !important;}
+    .apps-device-phone .apps_cr .mobile_only {display:block !important;}
+    .samsung-device .apps_cr .mobile_samsung {display:inline-block !important;}
+	.samsung-device.samsung-tablet-device .apps_cr .mobile_samsung {display:none !important;}
+	.samsung-device.samsung-mobile-device .apps_cr .mobile_samsung {display:inline-block !important;}
+
+    /* BUTTON */
+    .apps_cr [class*="m_content-"] .btn_area [class*="btn-default"] {
+        padding:3.2222vw 9.7222vw 3.2222vw;
+    }
+    .apps_cr [class*="m_content-"] .btn_area .btn-default-black {font-size:3.3333vw}
+    .apps_cr [class*="btn-window"]:after {width:3.05556vw; height:3.05556vw; margin-left:1.3888vw; margin-bottom:-0.4166vw;}
+
+    /* DEEPLINK POPUP */
+    .apps_cr .deeplink-popup {left:5.5%; width:89%; margin-left:0;}
+    .apps_cr .deeplink-popup .m_feature {padding:4.1666vw;}
+    .apps_cr .deeplink-popup .m_feature .f_header {padding:4.7222vw 5.5555vw 1.6666vw;}
+    .apps_cr .deeplink-popup .m_feature .f_header .tit {font-size:5.5555vw; line-height:1.32;}
+    .apps_cr .deeplink-popup .btn_close {top:4.1666vw; right:4.1666vw; width:5.5555vw; height:5.5555vw;}
+    .apps_cr .deeplink-popup .f_container .btn_area {padding:5vw 0;}
+    .apps_cr .deeplink-popup .f_container .btn_box {padding:0 1.3888vw;}
+
+    /* SUPPORT */
+    .apps_cr .m_content-support .inner {display:block; padding:0;}
+	.apps_cr .m_content-support .list_inner {padding:0;}
+    .apps_cr .m_content-support .support_list {display:block; width:100%; padding:12.2222vw 2.7777vw 11.8055vw;}
+    .apps_cr .m_content-support .support_list + .support_list {border:none; border-top:1px solid #363636;}
+    .apps_cr .m_content-support .support_icon {width:12.0833vw; height:10.2777vw; margin-bottom:5.5555vw;}
+    .apps_cr .m_content-support .tit,
+	.apps_cr .m_content-support .f_header .tit {margin-bottom:0; font-size:5.555vw; line-height:1.32;}
+    .apps_cr .m_content-support .desc {margin-top:2.7777vw; padding:0 16%; line-height:1.4; font-size:2.777vw; letter-spacing:0;}
+    .apps_cr .m_content-support .btn_box {position:static; left:auto; right:auto; padding:0; min-height:auto;}
+	.apps_cr .m_content-support .txt_box {margin-bottom:6.25vw;}
+	.samsung-device .apps_cr .m_content-support .support_list {padding-bottom:11.8055vw}
+    .apps_cr .m_content-support .download.inner_wrap .inline_type .box_inner,
+    .apps_cr .m_content-support .download.inner_wrap .inline_type .box_inner p {font-size:2.77vw;}
+
+    .apps_cr .m_content-support .btn_area [class*="btn-default"] {margin-bottom:2.7777vw; padding: 3.2222vw 5.5555vw 3.2222vw;}
+
+    /* RTL : DEEPLINK POPUP */
+    .rtl .apps_cr .deeplink-popup .btn_close {left:4.1666vw;}
+
+    /* SUPPORT : 버튼 높이 유동 */
+	.samsung-device .apps_cr .m_content-support .inner_wrap.fluid .support_list,
+	.apple-device .apps_cr .m_content-support .inner_wrap.fluid .support_list {padding-bottom:11.8055vw;}
+
+    /* health */
+    .apps_cr .m_content-support{background-color:#000}
+    .apps_cr .m_content-yourhands .btn_area .btn_box.mobile_only{padding-bottom:13.33333vw}
+
+    /* NATION : TH */
+    html[lang^="th"] .apps_cr [class*="m_content-"] .disclaimer {font-size:3.7500vw;}
+    html[lang^="th"] .apps_cr [class*="m_content-"] .btn_area .btn-default-black {font-size:5.25vw;}
+
+    /* NATION : TH - SUPPORT */
+	html[lang^="th"] .apps_cr .m_content-support .btn_default {font-size:29.7px; font-size:4.125vw;}
+	html[lang^="th"] .apps_cr .m_content-support .tit,
+	html[lang^="th"] .apps_cr .m_content-support .f_header .tit {font-size:54px; font-size:7.7vw;}
+	html[lang^="th"] .apps_cr .m_content-support .desc {font-size:27px; font-size:3.75vw;}
+	html[lang^="th"] .apps_cr .m_content-support .inner_wrap.download .inline_type .box_inner p {font-size:27px; font-size:3.75vw;}
+
+    /* RTL */
+    .rtl .apps_cr [class*="btn-window"]:after {margin-left:0; margin-right:1.3888vw;}
+    .rtl .apps_cr .disclaimer [class*="btn-window"]:after {margin-left:0; margin-right:0;}
+
+	/* NATION : UZ_UZ */
+    html[lang^="uz-uz"] .apps_cr .m_content-yourhands .btn_area .btn_box.mobile_only{padding:0 2.7777vw 13.3333vw;}
+}
+
+/* ca_fr only */
+html[lang="fr-CA"] .apps_cr .m_content-yourhands {margin-bottom:25px}
+
+@media screen and (max-width:1440px) {
+    html[lang="fr-CA"] .apps_cr .m_content-yourhands {margin-bottom:1.7361vw}
+}
+
+@media screen and (max-width:768px) {
+    html[lang="fr-CA"] .apps_cr .m_content-yourhands {margin-bottom:0;}
+}
+
+/* 북경 올림픽 대응 2022-01-19 추가 */
+#linkJoinChallenge{display:none}
+.samsung-device #linkJoinChallenge{display:block}
+
+/* 인터렉티브 컴포넌트 텍스트 오버레이 이슈 수정 */
+
+@media only screen and (min-width:1441px) {
+    html[lang=de-DE] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=kk-KZ] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=ru-KZ] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=ru-RU] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=uk-UA] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=uz-uz] #samsunghealth-interactive-one .mkt-interactive-container__asset {width:500px !important;}
+}
+@media only screen and (min-width:1025px) and (max-width:1440px) {
+    html[lang=de-DE] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=kk-KZ] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=ru-KZ] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=ru-RU] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=uk-UA] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=uz-uz] #samsunghealth-interactive-one .mkt-interactive-container__asset {width:34.722vw !important;}
+}
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    html[lang=de-DE] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=kk-KZ] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=ru-KZ] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=ru-RU] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=uk-UA] #samsunghealth-interactive-one .mkt-interactive-container__asset,
+    html[lang=uz-uz] #samsunghealth-interactive-one .mkt-interactive-container__asset {width:33.333vw !important;}
+}
+
+/* 모바일 하단 녹스 배너  텍스트 오버레이 이슈 수정 */
+@media only screen and (max-width: 767px) {
+    #health-knox-banner{background: #222 !important}
+    #health-knox-banner .st-feature-benefit-full-bleed__wrap{-webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse}
+    #health-knox-banner .st-feature-benefit-full-bleed__figure {margin-top:-51.389vw}
+    #health-knox-banner .st-feature-benefit-full-bleed__content-wrap{margin-left:0}
+    .rtl #health-knox-banner .st-feature-benefit-full-bleed__content-wrap{margin-right:0;}
+}

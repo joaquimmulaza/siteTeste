@@ -1,0 +1,32 @@
+.icon-three-columns{overflow:hidden;max-width:1440px;margin:0 auto;padding:73px 48px 0 48px;text-align:center}
+.icon-three-columns__title{font-family:'SamsungSharpSans',arial,sans-serif;font-weight:bold;font-size:48px;line-height:1.2;color:#000;word-wrap:break-word}
+.icon-three-columns__list{overflow:hidden;margin-top:32px}
+.icon-three-columns__list ul{display:-webkit-box;display:-ms-flexbox;display:flex}
+.icon-three-columns__list ul li{-webkit-box-flex:1;-ms-flex:1;flex:1;border-left:1px solid #000;vertical-align:top}
+.icon-three-columns__list ul li:first-child{border:0}
+.icon-three-columns__info{padding:8px 48px 3px 48px}
+.icon-three-columns__info dl dt{margin-bottom:13px;font-size:20px;line-height:1.33;font-weight:bold;color:#000;word-wrap:break-word}
+.icon-three-columns__info dl dd{font-size:16px;line-height:1.33;color:#666;word-wrap:break-word}
+.icon-three-columns__icon{display:block;width:96px;height:56px;margin:0 auto 32px auto}
+.icon-three-columns__icon img{max-width:100%;height:56px}
+@media only screen and (min-width:768px) and (max-width:1440px){.icon-three-columns{padding:5.06944444vw 3.33333333vw 0vw 3.33333333vw}
+.icon-three-columns__title{font-size:3.33333333vw}
+.icon-three-columns__list{margin-top:2.22222222vw}
+.icon-three-columns__info{padding:.55555556vw 3.33333333vw .20833333vw 3.33333333vw}
+.icon-three-columns__info dl dt{margin-bottom:.90277778vw;font-size:1.38888889vw}
+.icon-three-columns__info dl dd{font-size:1.11111111vw}
+.icon-three-columns__icon{width:6.66666667vw;height:3.88888889vw;margin-top:0vw;margin-bottom:2.22222222vw}
+.icon-three-columns__icon img{height:3.88888889vw}
+}
+@media only screen and (max-width:767px){.icon-three-columns{padding:12.77777778vw 5vw 0vw 5vw}
+.icon-three-columns__title{font-size:10vw;line-height:1.2}
+.icon-three-columns__list{margin-top:.83333333vw}
+.icon-three-columns__list ul{display:block}
+.icon-three-columns__list ul li{display:block;width:100%;border-left:0;border-bottom:1px solid #000}
+.icon-three-columns__list ul li:first-child{border-left:0;border-bottom:1px solid #000}
+.icon-three-columns__info{position:relative;padding:4.72222222vw 0vw 5.55555556vw 23.33333333vw}
+.icon-three-columns__info dl dt{margin-bottom:1.38888889vw;font-size:4.16666667vw;text-align:left}
+.icon-three-columns__info dl dd{font-size:3.33333333vw;text-align:left}
+.icon-three-columns__icon{position:absolute;top:50%;left:1.38888889vw;width:16.66666667vw;height:10vw;margin:-5vw 0vw 0vw 0vw}
+.icon-three-columns__icon img{max-width:100%;height:10vw}
+}

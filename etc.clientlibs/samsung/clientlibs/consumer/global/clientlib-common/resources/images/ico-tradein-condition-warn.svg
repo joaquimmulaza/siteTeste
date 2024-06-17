@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / Regular / Trade-in / Warning</title>
+    <g id="Icon-/-Regular-/-Trade-in-/-Warning" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M92,89.5 L4,89.5 C2.88861156,89.5293988 1.84817482,88.9556286 1.28,88 C0.731761484,87.0273456 0.750876194,85.8345877 1.33,84.88 L45.33,8.62 C45.8432879,7.61810135 46.8742712,6.98788157 48,6.98788157 C49.1257288,6.98788157 50.1567121,7.61810135 50.67,8.62 L94.67,84.88 C95.2784073,85.8253014 95.3072654,87.0314166 94.744764,88.0047337 C94.1822625,88.9780508 93.1228117,89.5552083 92,89.5 L92,89.5 Z M7.33,84.5 L88.67,84.5 L48,14 L7.33,84.5 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+        <path d="M44.24,74 C44.24,71.9234093 45.9234093,70.24 48,70.24 C50.0765907,70.24 51.76,71.9234093 51.76,74 C51.76,76.0765907 50.0765907,77.76 48,77.76 C45.9256897,77.7545051 44.2454949,76.0743103 44.24,74 L44.24,74 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+        <rect id="Rectangle" fill="#000000" fill-rule="nonzero" x="45.5" y="37" width="5" height="27"></rect>
+        <rect id="Rectangle" x="0" y="0" width="96" height="96"></rect>
+    </g>
+</svg>
