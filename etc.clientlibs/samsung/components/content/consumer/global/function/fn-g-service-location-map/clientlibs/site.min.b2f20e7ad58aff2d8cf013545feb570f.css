@@ -132,7 +132,7 @@
 .service-location-map .search-field .support-input__wrap .support-input__label{top:0;left:0;right:54px;font-size:16px;line-height:29px;color:#666}
 .service-location-map .search-field .support-input__wrap .support-input__input{width:100%;height:46px;padding:10px 15px;font-size:16px;border:0;border-radius:4px 0 0 4px}
 .service-location-map .s-ico-search{overflow:hidden;position:absolute;top:0;right:0;left:auto;bottom:0;width:54px;height:46px;padding:12px 15px;font-size:0;color:#fff}
-.service-location-map .s-ico-search:after{content:'';display:inline-block;width:24px;height:24px;background:url("/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/icon-search.svg") no-repeat}
+.service-location-map .s-ico-search:after{content:'';display:inline-block;width:24px;height:24px;background:url("./etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/icon-search.svg") no-repeat}
 .service-location-map .map-search-w{padding:16px 7px 0;margin:0}
 .service-location-map .map-search-w .search-field{margin:0}
 .service-location-map .map-search-w .hortab-w{position:relative;margin:8px -8px 4px 0;text-align:left}
